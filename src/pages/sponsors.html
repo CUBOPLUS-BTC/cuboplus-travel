@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from ampire.netlify.app/pages/customers by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Dec 2023 04:01:38 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../assets/icono.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="tailus ui html-vite and tailwindcss 3.1 boilerplate" />
+    <title>Cubo+</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script type="module" crossorigin src="../assets/script.js"></script>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            content: ["./*.html"],
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            blue: {
+                                light: "#00ccdd"
+                            }
+                        },
+                    }
+                }
+            },
+            darkMode: "class"
+        };
+    </script>
+
+    <script>
+        if (
+            localStorage.getItem("color-theme") === "dark" ||
+            (!("color-theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    </script>
+</head>
+
+<body class="font-[Poppins] min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
+    <header>
+        <nav id="navbar"
+            class="shadow-lg fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
+            <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+                <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
+                    <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+                        <a href="index.html" aria-label="logo" class="flex items-center space-x-2">
+                            <img src="../img/logocuboplus.png" style="height: 64px;" alt="">
+                        </a>
+
+                        <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
+                            <div aria-hidden="true"
+                                class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300">
+                            </div>
+                            <div aria-hidden="true"
+                                class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300">
+                            </div>
+                        </button>
+                    </div>
+                    <div id="layer" aria-hidden="true"
+                        class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-gray-900/70 lg:hidden">
+                    </div>
+                    <div id="navlinks"
+                        class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0 dark:lg:bg-transparent">
+                        <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
+                            <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
+                                <li>
+                                    <a class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='pages/solution.html'>
+                                        <span>About us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='pages/customers.html'>
+                                        <span>Program 2023</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='pages/pricing.html'>
+                                        <span>Sponsors</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='pages/blog.html'>
+                                        <span>Another link</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
+                            <a class='relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
+                                before:bg-blue-500 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 
+                                active:before:scale-95 dark:before:border-gray-700 dark:before:bg-blue-400 sm:px-4 lg:before:border 
+                                lg:before:border-blue-200 lg:before:bg-blue-50 lg:dark:before:bg-gray-800'
+                                href='/pages/contact'>
+                                <span
+                                    class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white">Cubo+
+                                    2024
+                                </span>
+                            </a>
+                        </div>
+                        <button aria-label="switch theme"
+                            class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="fixed top-3 right-14 z-20 sm:right-24 lg:hidden">
+                        <button aria-label="switche theme"
+                            class="switcher group relative flex h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="pt-20 bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+            <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-orange-500 dark:text-white">Our Sponsors
+                </h2>
+                <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Through their commitment to
+                    education and innovation, The Bitcoin Office and Fulgur Ventures have created the path for talented
+                    young people in El Salvador to become the next generation of developers in Bitcoin and Lightning
+                    technologies.</p>
+            </div>
+            <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
+                <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="../img/PjodJZ53_400x400.jpg"
+                            alt="the bitcoin office logo">
+                    </a>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            <a href="#">The Bitcoin Office</a>
+                        </h3>
+                        <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">The National Bitcoin Office of
+                            El Salvador under President
+                            Nayib Bukele</p>
+                        <ul class="flex space-x-4 sm:mt-0">
+                            <li>
+                                <a href="https://twitter.com/bitcoinofficesv"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="../img/IuAnLqN1_400x400.png"
+                            alt="fulgur ventures logo">
+                    </a>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            <a href="#">Fulgur Ventures</a>
+                        </h3>
+                        <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">We invest in early stage
+                            startups focused on Bitcoin and the Lightning Network</p>
+                        <ul class="flex space-x-4 sm:mt-0">
+                            <li>
+                                <a href="https://twitter.com/FulgurVentures"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path
+                                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://fulgur.ventures/"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                    </svg>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
+            <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold   text-orange-500 dark:text-white">Our Alliances
+                </h2>
+                <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">The cubo+ team thanks our allies for
+                    being part of this project and for allowing our students to gain experience in their companies</p>
+            </div>
+            <div class="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="../img/zebedee.png" alt="zebedee logo">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">ZEBEDEE</a>
+                    </h3>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="https://twitter.com/zebedeeio"
+                                class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://zebedee.io/"
+                                class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="../img/galoy.png" alt="galoy logo">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Galoy</a>
+                    </h3>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="https://twitter.com/GaloyMoney"
+                                class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://galoy.io/"
+                                class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="../img/ibex.png" alt="ibex logo">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">IBEX</a>
+                    </h3>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="https://twitter.com/PoweredbyIBEX"
+                                class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.poweredbyibex.io/"
+                                class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="../img/decouvre.jpg"
+                        alt="decouvre bitcoin logo">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Découvre Bitcoin</a>
+                    </h3>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="https://twitter.com/DecouvreBitcoin"
+                                class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://decouvrebitcoin.fr/"
+                                class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="../img/bitfinex.png" alt="bitfinex logo">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Bitfinex</a>
+                    </h3>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="https://twitter.com/bitfinex"
+                                class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.bitfinex.com/"
+                                class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="../img/tiankii.jpg" alt="tiankii logo">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Tiankii</a>
+                    </h3>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="https://twitter.com/TiankiiApp"
+                                class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiankii.com/"
+                                class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="../img/k1.png" alt="tiankii logo">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">K1 Technology</a>
+                    </h3>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="https://twitter.com/k1elsalvador"
+                                class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.k1.sv/"
+                                class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="../img/satsback.png" alt="satsback logo">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Satsback</a>
+                    </h3>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="https://twitter.com/Satsback"
+                                class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://satsback.com/"
+                                class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <!-- planb network logo pending -->
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full block dark:hidden" src="../img/logo dark.svg"
+                        alt="planb network logo">
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full hidden dark:block" src="../img/logo light.svg"
+                        alt="planb network logo">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">PlanB Network</a>
+                    </h3>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="https://twitter.com/DecouvreBitcoin"
+                                class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://planb.network"
+                                class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center text-gray-500 dark:text-gray-400">
+                    <img class="mx-auto mb-4 w-36 h-36 rounded-full" src="../img/udb.png" alt="udb logo">
+                    <h3 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <a href="#">Universidad Don Bosco</a>
+                    </h3>
+                    <ul class="flex justify-center mt-4 space-x-4">
+                        <li>
+                            <a href="https://twitter.com/UDBelsalvador"
+                                class="text-[#00acee] hover:text-gray-900 dark:hover:text-white">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.udb.edu.sv/udb/"
+                                class="text-[#ea4c89] hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                                </svg>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="flex items-center">
+                        <!-- Logo blanco visible solo en modo oscuro -->
+                        <img src="../img/cubo_logo_blanco.png" class="h-40 me-3 hidden dark:block"
+                            alt="Cubo Plus Logo Blanco" />
+                        <!-- Logo azul visible solo en modo claro -->
+                        <img src="../img/cubo_logo_azul.png" class="h-40 me-3 block dark:hidden"
+                            alt="Cubo Plus Logo Azul" />
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">info@cuboplus.dev</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                        <div class="sm:flex sm:items-center sm:justify-between">
+                            <div class="flex mt-4 sm:justify-center sm:mt-0">
+                                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 20 14">
+                                        <path fill-rule="evenodd"
+                                            d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="sr-only">Youtube channel</span>
+                                </a>
+                                <a href="https://twitter.com/cuboplus"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 20 17">
+                                        <path fill-rule="evenodd"
+                                            d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="sr-only">Twitter page</span>
+                                </a>
+                                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                    <span class="sr-only">Instagram page</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Links</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">FAQ</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Resources</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="https://bitcoin.org/bitcoin.pdf" class="hover:underline">Bitcoin whitepaper</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
+                        href="https://cuboplus.dev/" class="hover:underline">cuboplus™</a>. All Rights Reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+<!-- Mirrored from ampire.netlify.app/pages/customers by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Dec 2023 04:02:01 GMT -->
+
+</html>

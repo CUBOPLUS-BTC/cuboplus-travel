@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/icono.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="tailus ui html-vite and tailwindcss 3.1 boilerplate" />
+    <title>Cubo+</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script type="module" crossorigin src="./assets/script.js"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            content: ["./*.html"],
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            blue: {
+                                light: "#00ccdd"
+                            }
+                        },
+                    }
+                }
+            },
+            darkMode: "class"
+        };
+    </script>
+
+    <script>
+        if (
+            localStorage.getItem("color-theme") === "dark" ||
+            (!("color-theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    </script>
+</head>
+
+<body class="font-[Poppins] min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
+    <header>
+        <nav id="navbar"
+            class="shadow-lg fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
+            <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+                <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
+                    <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+                        <a href="index.html" aria-label="logo" class="flex items-center space-x-2">
+                            <img src="img/logocuboplus.png" style="height: 64px;" alt="">
+                        </a>
+
+                        <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
+                            <div aria-hidden="true"
+                                class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300">
+                            </div>
+                            <div aria-hidden="true"
+                                class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300">
+                            </div>
+                        </button>
+                    </div>
+                    <div id="layer" aria-hidden="true"
+                        class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-gray-900/70 lg:hidden">
+                    </div>
+                    <div id="navlinks"
+                        class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0 dark:lg:bg-transparent">
+                        <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
+                            <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
+                                <li>
+                                    <a class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='pages/solution.html'>
+                                        <span>About us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='pages/customers.html'>
+                                        <span>Program 2023</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='pages/sponsors.html'>
+                                        <span>Sponsors</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='pages/blog.html'>
+                                        <span>Another link</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
+                            <a class='relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
+                                before:bg-blue-500 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 
+                                active:before:scale-95 dark:before:border-gray-700 dark:before:bg-blue-400 sm:px-4 lg:before:border 
+                                lg:before:border-blue-200 lg:before:bg-blue-50 lg:dark:before:bg-gray-800'
+                                href='/pages/contact'>
+                                <span
+                                    class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white">Cubo+
+                                    2024
+                                </span>
+                            </a>
+                        </div>
+                        <button aria-label="switch theme"
+                            class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="fixed top-3 right-14 z-20 sm:right-24 lg:hidden">
+                        <button aria-label="switche theme"
+                            class="switcher group relative flex h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="pt-32 sm:pt-40 md:pt-48">
+        <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+            <div class="relative">
+
+                <h1
+                    class="hero text-center text-5xl font-bold text-blue-900 dark:text-white sm:text-6xl lg:text-left lg:text-7xl">
+                    Building<br>
+                    <span class="relative">
+                        <span id="heros"
+                            class="relative bg-gradient-to-r from-primary to-secondaryLight bg-clip-text text-transparent dark:from-primaryLight dark:to-secondaryLight md:px-2 inline-block"></span>
+                    </span>
+                </h1>
+
+                <div class="relative items-center gap-12 lg:flex">
+                    <div
+                        class="text-center sm:mx-auto sm:w-11/12 md:mt-12 md:w-4/5 lg:mt-0 lg:mr-auto lg:w-6/12 lg:text-left">
+                        <p class="mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl">CUBO+ is the first
+                            educational program aimed
+                            at training the next generation of Salvadoran developers under the government of President
+                            Nayib Bukele, to contribute
+                            the Bitcoin adoption and the economic growth of El Salvador.</p>
+                        <form action="" class="mt-12">
+                            <div
+                                class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md focus-within:ring-2 dark:border-white/10 dark:bg-dark dark:text-white md:p-2 lg:pr-3">
+                                <div class="py-3 pl-4 lg:pl-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="m-auto h-6 w-6 fill-gray-500 dark:fill-gray-400" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                    </svg>
+                                </div>
+                                <input aria-label="your email" autocomplete="email" placeholder="Join the waitlist"
+                                    class="w-full rounded-full bg-transparent p-4 placeholder-gray-600 outline-none dark:placeholder-white"
+                                    type="email" />
+                                <div class="md:pr-1.5 lg:pr-0">
+                                    <button type="submit" title="Join the waitlist"
+                                        class="relative ml-auto h-12 w-16 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight sm:w-auto sm:px-6">
+                                        <span
+                                            class="relative hidden w-max font-semibold text-white dark:text-gray-900 md:block">
+                                            Get Started </span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="relative mx-auto h-6 w-6 text-white dark:text-gray-900 md:hidden">
+                                            <path
+                                                d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="mt-12 w-full rounded-lg overflow-hidden sm:mt-20 lg:-mt-8 lg:w-6/12">
+                        <div class="relative overflow-hidden bg-cover bg-no-repeat" style="
+                        background-position: 50%;
+                        background-image: url('img/bootcamp.jpeg');
+                        height: 400px;
+                      ">
+                            <div
+                                class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.30)] dark:bg-[hsla(0,0%,0%,0.50)]  bg-fixed">
+                                <div class="flex h-full items-center justify-center">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 border-y border-gray-100 py-8 text-center dark:border-gray-800 md:py-12 xl:mt-20">
+                    <a href="customers.html"
+                        class="text-sm font-semibold tracking-wider text-gray-800 dark:text-white uppercase">supported 
+                        by our strategic alliances
+                    </a>
+                    <div
+                        class="mt-8 flex flex-wrap justify-center gap-6 brightness-75 contrast-200 grayscale dark:brightness-200 dark:contrast-0 sm:justify-between lg:gap-24">
+                        <img class="h-8 w-auto lg:h-10 lg:w-auto" src="img/Satsback_RGB_logo_vertical_black.svg"
+                            loading="lazy" alt="airbnb" width="" height="" />
+                        <img class="h-8 w-auto lg:h-10 lg:w-auto" src="img/logo dark.svg" loading="lazy" alt="ge"
+                            width="100" height="100" />
+                        <img class="h-8 w-auto lg:h-10 lg:w-auto" src="img/Logo GOES.svg" loading="lazy" alt="lilly"
+                            width="" height="" />
+                        <img class="h-8 w-auto lg:h-10 lg:w-auto" src="img/udb.svg" loading="lazy" alt="bissell"
+                            width="" height="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-32">
+        <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-orange-400 dark:text-white md:text-4xl xl:text-5xl">For building
+                    the next dev generation</h2>
+                <p class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">We are committed to creating a diverse and inclusive 
+                    learning environment that promotes learning, growth and collaboration.</p>
+
+                <div role="tablist" aria-label="tabs"
+                    class="relative mx-auto mt-12 grid h-12 w-auto grid-cols-3 items-center gap-x-1 overflow-hidden rounded-full border border-gray-200 bg-gray-100 px-[3px] text-gray-600 dark:border-gray-700 dark:border-opacity-60 dark:bg-darker dark:text-gray-300 dark:shadow-none sm:w-max">
+                    <div class="tab-indicator absolute h-10 rounded-full bg-white shadow-md transition-[left] duration-500 dark:bg-gray-800"
+                        style="left: 4px"></div>
+                    <button role="tab" aria-selected="true" aria-controls="panel-0" tabindex="0" title="tab item"
+                        class="tab relative block rounded-full py-2.5 px-4 hover:text-primary dark:hover:text-primaryLight">
+                        <span class="m-auto block w-max text-sm font-medium tracking-wider">Apply</span>
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-1" tabindex="-1" title="tab item"
+                        class="tab relative block rounded-full py-2.5 px-4 hover:text-primary dark:hover:text-primaryLight">
+                        <span class="m-auto block w-max text-sm font-medium tracking-wider">Learn</span>
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1" title="tab item"
+                        class="tab relative block rounded-full py-2.5 px-4 hover:text-primary dark:hover:text-primaryLight">
+                        <span class="m-auto block w-max text-sm font-medium tracking-wider">Contribute</span>
+                    </button>
+                </div>
+            </div>
+            <div class="mt-20">
+                <div class="gap-6 space-y-12 md:flex md:space-y-0">
+                    <div class="relative md:w-1/2">
+                        <div class="panel visible inset-0 flex scale-100 flex-col justify-center opacity-100 transition duration-500 md:absolute"
+                            id="panel-0">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">Title </h3>
+                                <p class="mt-8 text-gray-600 dark:text-gray-300">Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque
+                                    autem! repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
+                                <div class="mt-12 space-y-6">
+                                    <div class="flex items-center gap-6">
+                                        <div
+                                            class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
+                                            <img class="m-auto h-8 w-auto"
+                                                src="https://cdn-icons-png.flaticon.com/512/4727/4727266.png"
+                                                alt="icon illustration" loading="lazy" width="512" height="512" />
+                                        </div>
+                                        <div class="w-[calc(100%-7.5rem)]">
+                                            <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Together as
+                                                one</h4>
+                                            <p class="mt-1 text-gray-600 dark:text-gray-400">Accusantium nemo
+                                                perspiciatis delectus atque autem!</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-6">
+                                        <div
+                                            class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
+                                            <img class="m-auto h-8 w-auto"
+                                                src="https://cdn-icons-png.flaticon.com/512/584/584796.png"
+                                                alt="icon illustration" loading="lazy" width="512" height="512" />
+                                        </div>
+                                        <div class="w-[calc(100%-7.5rem)]">
+                                            <h4 class="text-lg font-semibold text-gray-800 dark:text-white">New ideas
+                                            </h4>
+                                            <p class="mt-1 text-gray-600 dark:text-gray-400">Accusalectus atque autem
+                                                accusantium nemo perspiciatis delectus atque autem!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel invisible absolute inset-0 flex scale-90 flex-col justify-center opacity-0 transition duration-500"
+                            id="panel-1">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">Title</h3>
+                                <p class="mt-8 text-gray-600 dark:text-gray-300">Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque
+                                    autem! repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
+                                <div class="mt-12 space-y-6">
+                                    <div class="flex items-center gap-6">
+                                        <div
+                                            class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
+                                            <img class="m-auto h-8 w-auto"
+                                                src="https://cdn-icons-png.flaticon.com/512/6106/6106288.png"
+                                                alt="icon illustration" loading="lazy" width="512" height="512" />
+                                        </div>
+                                        <div class="w-[calc(100%-7.5rem)]">
+                                            <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Together as
+                                                one</h4>
+                                            <p class="mt-1 text-gray-600 dark:text-gray-400">Accusantium nemo
+                                                perspiciatis delectus atque autem!</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-6">
+                                        <div
+                                            class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
+                                            <img class="m-auto h-8 w-auto"
+                                                src="https://cdn-icons-png.flaticon.com/512/2313/2313906.png"
+                                                alt="icon illustration" loading="lazy" width="512" height="512" />
+                                        </div>
+                                        <div class="w-[calc(100%-7.5rem)]">
+                                            <h4 class="text-lg font-semibold text-gray-800 dark:text-white">New ideas
+                                            </h4>
+                                            <p class="mt-1 text-gray-600 dark:text-gray-400">Accusalectus atque autem
+                                                accusantium nemo perspiciatis delectus atque autem!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel invisible absolute inset-0 flex scale-90 flex-col justify-center opacity-0 transition duration-500"
+                            id="panel-2">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">Title</h3>
+                                <p class="mt-8 text-gray-600 dark:text-gray-300">Lorem ipsum dolor, sit amet consectetur
+                                    adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque
+                                    autem! repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
+                                <div class="mt-12 space-y-6">
+                                    <div class="flex items-center gap-6">
+                                        <div
+                                            class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
+                                            <img class="m-auto h-8 w-auto"
+                                                src="https://cdn-icons-png.flaticon.com/512/3340/3340200.png"
+                                                alt="icon illustration" loading="lazy" width="512" height="512" />
+                                        </div>
+                                        <div class="w-[calc(100%-7.5rem)]">
+                                            <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Together as
+                                                one</h4>
+                                            <p class="mt-1 text-gray-600 dark:text-gray-400">Accusantium nemo
+                                                perspiciatis delectus atque autem!</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-6">
+                                        <div
+                                            class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
+                                            <img class="m-auto h-8 w-auto"
+                                                src="https://cdn-icons-png.flaticon.com/512/5405/5405929.png"
+                                                alt="icon illustration" loading="lazy" width="512" height="512" />
+                                        </div>
+                                        <div class="w-[calc(100%-7.5rem)]">
+                                            <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Growth</h4>
+                                            <p class="mt-1 text-gray-600 dark:text-gray-400">Accusalectus atque autem
+                                                accusantium nemo perspiciatis delectus atque autem!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="-m-4 overflow-hidden p-4 sm:-mx-12 sm:px-12 md:mx-0 md:w-1/2 md:overflow-visible md:px-0">
+                        <div
+                            class="relative bg-gray-100 before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200 dark:bg-gray-800 dark:before:border-gray-700 dark:after:border-gray-700">
+                            <div class="relative h-96 overflow-clip py-10 sm:h-[32rem] lg:p-20">
+                                <div data-target="panel-0"
+                                    class="panel-preview absolute inset-0 z-10 flex translate-y-0 scale-100 items-end overflow-hidden px-6 opacity-100 transition duration-500 sm:px-10">
+                                    <img src="./images/screenshots/photo_5179669420572781573_y.jpg"
+                                        class="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]"
+                                        alt="tailus screenshot" loading="lazy" width="850" height="1780" />
+                                </div>
+                                <div data-target="panel-1"
+                                    class="panel-preview absolute inset-0 z-0 flex translate-y-[100%] scale-100 items-end overflow-hidden px-6 opacity-50 transition duration-500 sm:px-10">
+                                    <img src="./images/screenshots/photo_5179669420572781573_y.jpg"
+                                        class="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]"
+                                        alt="tailus screenshot dark-mode" loading="lazy" width="850" height="1780" />
+                                </div>
+                                <div data-target="panel-2"
+                                    class="panel-preview absolute inset-0 z-0 flex translate-y-[100%] scale-100 items-end overflow-hidden px-6 opacity-50 transition duration-500 sm:px-10">
+                                    <img src="./images/screenshots/photo_5179669420572781573_y.jpg"
+                                        class="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]"
+                                        alt="tailus contact screenshot" loading="lazy" width="850" height="1780" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-32">
+        <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+            <div class="space-y-6 md:flex lg:items-center lg:gap-6 lg:space-y-0">
+                <div class="sm:8/12 md:w-6/12 p-2">
+
+                    <video class="w-full h-auto max-w-full border border-gray-200 rounded-lg dark:border-gray-700" autoplay muted controls>
+                        <source src="./img/ssstwitter.com_1702624088673.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      
+                </div>
+                <div class="sm:4/12 md:w-6/12 p-2">
+                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">Video title</h2>
+                    <p class="mt-8 text-gray-600 dark:text-gray-300">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! repellat expedita
+                        consequatur! Officiis id consequatur atque doloremque!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--<section class="relative py-32">
+        <div aria-hidden="true" class="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
+            <div class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"></div>
+            <div class="h-40 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"></div>
+        </div>
+        <div class="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">A technology-first
+                    approach</h2>
+                <p class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">A growing team doesn't need
+                    to mean growing pains. Privacy, and the right tool for every step of your journey - Jira Software
+                    friction - company size.</p>
+            </div>
+            <div class="mt-16 grid gap-8 sm:mx-auto sm:w-2/3 md:w-full md:grid-cols-2 lg:grid-cols-3">
+                <div
+                    class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+                    <div class="space-y-12 text-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/584/584796.png" class="mx-auto h-14 w-auto"
+                            width="512" height="512" alt="burger illustration" />
+                        <div class="space-y-6">
+                            <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">First feature
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus
+                                asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!
+                            </p>
+                            <a aria-label="read more" href="#"
+                                class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="relative h-5 w-5 text-gray-600 transition duration-300 group-hover:translate-x-1 dark:text-white">
+                                    <path fill-rule="evenodd"
+                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+                    <div class="space-y-12 text-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6106/6106288.png" class="mx-auto h-14 w-auto"
+                            width="512" height="512" alt="burger illustration" />
+                        <div class="space-y-6">
+                            <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Second feature
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus
+                                asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!
+                            </p>
+                            <a aria-label="read more" href="#"
+                                class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="relative h-5 w-5 text-gray-600 transition duration-300 group-hover:translate-x-1 dark:text-white">
+                                    <path fill-rule="evenodd"
+                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="rounded-3xl border border-gray-100 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
+                    <div class="space-y-12 text-center">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4727/4727266.png" class="mx-auto h-14 w-auto"
+                            width="512" height="512" alt="burger illustration" />
+                        <div class="space-y-6">
+                            <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Third feature
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus
+                                asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!
+                            </p>
+                            <a aria-label="read more" href="#"
+                                class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="relative h-5 w-5 text-gray-600 transition duration-300 group-hover:translate-x-1 dark:text-white">
+                                    <path fill-rule="evenodd"
+                                        d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <section id="testimonies" class="py-20 mt-10 bg-orange-400 dark:bg-gray-900">
+        <div class="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
+
+
+            <div
+                class="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
+                <div class="mb-12 space-y-5 md:mb-16 md:text-center">
+                    <div
+                        class="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn  bg-orange-700 dark:bg-[#202147] bg-opacity-60 hover:cursor-pointer hover:bg-opacity-40">
+                        Words from Others
+                    </div>
+                    <h1 class="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
+                        It's not just us.
+                    </h1>
+                    <p class="text-xl text-gray-100 md:text-center md:text-2xl">
+                        Discover what others are sharing about us.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+                <ul class="space-y-8 ">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/cuboplus/status/1709985928842785074"
+                                class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="img/cubotw.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full"
+                                            alt="Cubo+">
+                                        <div>
+                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
+                                                    class="fa-brands fa-twitter"></i> CUBO+</h3>
+                                            <p class="text-gray-500 text-md">@cuboplus</p>
+                                            <p class="text-gray-500 text-md mt-2">Presidential Bitcoin Office</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal  text-gray-900 dark:text-gray-300 text-md">CUBO+ students have just arrived in Italy to participate in the Tuscany Lightning Bootcamp⚡️
+                                    </p>
+
+                                    <figure class="max-w-lg">
+                                        <img class="h-auto max-w-full rounded-lg" src="img/F7sXIkgWsAA5a9b.jpg"
+                                            alt="image description">
+                                    </figure>
+
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="space-y-8 ">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/stacyherbert/status/1713882443793702934"
+                                class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="img/jbExO_A2_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full"
+                                            alt="Kanye West">
+                                        <div>
+                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
+                                                    class="fa-brands fa-twitter"></i> Stacy Herbert 🇸🇻🚀</h3>
+                                            <p class="text-gray-500 text-md">@stacyherbert
+                                            </p>
+                                            <p class="text-gray-500 text-md mt-2">Presidential Bitcoin Office</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal  text-gray-900 dark:text-gray-300 text-md">CUBO+ students were super excited to meet Adam Back in Viareggio
+
+                                        @adam3us @cuboplus @FulgurVentures @olegmikh1
+                                    </p>
+
+                                    <figure class="max-w-lg">
+                                        <img class="h-auto max-w-full rounded-lg" src="img/F8ju_X9aQAAH5jv.jpg"
+                                            alt="image description">
+                                    </figure>
+
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="space-y-8 ">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/jimmysong/status/1681432350247247872"
+                                class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="img/9bpX_7fY_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full"
+                                            alt="Kanye West">
+                                        <div>
+                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
+                                                    class="fa-brands fa-twitter"></i> Jimmy Song (송재준)</h3>
+                                            <p class="text-gray-500 text-md">@jimmysong</p>
+                                            <p class="text-gray-500 text-md mt-2">Presidential Bitcoin Office</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal  text-gray-900 dark:text-gray-300 text-md">HTaught 12 students for CUBO+
+
+                                        Go El Salvador!
+                                    </p>
+
+                                    <figure class="max-w-lg">
+                                        <img class="h-auto max-w-full rounded-lg" src="img/F1Wlz9uWAAI7HHm.jpg"
+                                            alt="image description">
+                                    </figure>
+
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="space-y-8 ">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/forbes/status/1684239840890564615"
+                                class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="img/lgwajQTW_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full"
+                                            alt="Kanye West">
+                                        <div>
+                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
+                                                    class="fa-brands fa-twitter"></i> Forbes</h3>
+                                            <p class="text-gray-500 text-md">@Forbes</p>
+                                            <p class="text-gray-500 text-md mt-2">Presidential Bitcoin Office</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal  text-gray-900 dark:text-gray-300 text-md">How El Salvador Is Investing In Bitcoin Education https://trib.al/pDQILFt via 
+                                        @ForbesCrypto
+                                        
+                                    </p>
+
+                                    <figure class="max-w-lg">
+                                        <img class="h-auto max-w-full rounded-lg" src="img/F1-fNdbXsAUGjwB.jpg"
+                                            alt="image description">
+                                    </figure>
+
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="space-y-8 ">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/jimmysong/status/1681432350247247872"
+                                class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="img/21wQpOvO_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full"
+                                            alt="Kanye West">
+                                        <div>
+                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
+                                                    class="fa-brands fa-twitter"></i> Synonym</h3>
+                                            <p class="text-gray-500 text-md">@Synonym_to</p>
+                                            <p class="text-gray-500 text-md mt-2">Presidential Bitcoin Office</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal  text-gray-900 dark:text-gray-300 text-md">Today our team hosted a lecture about 
+                                        @slashtags_to
+                                         for 
+                                        @cuboplus
+                                         students. We're eager to see Salvadoran developers building P2P applications!
+                                    </p>
+
+                                    <figure class="max-w-lg">
+                                        <img class="h-auto max-w-full rounded-lg" src="img/FzUqQJnXsAIfIth.jpg"
+                                            alt="image description">
+                                    </figure>
+
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="space-y-8 ">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="https://twitter.com/bitcoinmagazine/status/1676265047608393728"
+                                class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="img/AzvXYXGr_400x400.jpg"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full"
+                                            alt="Kanye West">
+                                        <div>
+                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
+                                                    class="fa-brands fa-twitter"></i> Bitcoin Magazine</h3>
+                                            <p class="text-gray-500 text-md">@BitcoinMagazine</p>
+                                            <p class="text-gray-500 text-md mt-2">Presidential Bitcoin Office</p>
+                                        </div>
+                                    </div>
+                                    <p class="leading-normal  text-gray-900 dark:text-gray-300 text-md">Students in El Salvador attend the country’s first #Bitcoin development program
+
+                                        The future is bright for 🇸🇻
+                                    </p>
+
+                                    <figure class="max-w-lg">
+                                        <img class="h-auto max-w-full rounded-lg" src="img/F0NIqHlaAAASHJm.jpg"
+                                            alt="image description">
+                                    </figure>
+
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section
+        class="relative before:absolute before:inset-0 before:h-px before:w-96 before:bg-gradient-to-r before:from-yellow-300 before:via-pink-400 before:to-transparent after:absolute after:inset-0 after:ml-auto after:mt-auto after:h-px after:w-96 after:bg-gradient-to-l after:from-yellow-300 after:via-pink-400 after:to-transparent">
+        <div class="border-y border-gray-200 bg-gray-100 dark:border-gray-700 dark:bg-darker">
+            <div class="relative mx-auto px-6 md:max-w-full md:px-12 lg:max-w-6xl xl:px-0">
+                <div class="items-end justify-between md:flex">
+                    <div class="h-max py-16 md:w-6/12 xl:w-5/12">
+                        <div class="text-center md:text-left">
+                            <h2
+                                class="text-3xl font-bold text-gray-800 dark:text-white md:w-max md:text-4xl xl:text-5xl">
+                                One step to improve <br />
+                                your workflow
+                            </h2>
+                            <p class="mb-8 mt-6 text-gray-600 dark:text-gray-300">Praesentium, atque exercitationem
+                                dolorum, iste libero eaque animi illum magnam velit iusto quidem omnis quas! Ad expedita
+                                quaerat.</p>
+                            <form action="" class="mt-12">
+                                <div
+                                    class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md dark:border-white/10 dark:bg-dark md:p-2 lg:pr-3">
+                                    <div class="py-3 pl-4 lg:pl-5">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="m-auto h-6 w-6 fill-gray-500 dark:fill-gray-400" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path
+                                                d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                        </svg>
+                                    </div>
+                                    <input autocomplete="email" aria-label="your email" placeholder="Your mail address"
+                                        class="w-full rounded-full bg-transparent p-4 placeholder-gray-600 dark:placeholder-white"
+                                        type="email" />
+                                    <div class="md:pr-1.5 lg:pr-0">
+                                        <button type="button" title="Start buying"
+                                            class="relative ml-auto h-12 w-16 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight sm:w-auto sm:px-6">
+                                            <span
+                                                class="relative hidden w-max font-semibold text-white dark:text-gray-900 md:block">
+                                                Get Started </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor"
+                                                class="relative mx-auto h-6 w-6 text-white dark:text-gray-900 md:hidden">
+                                                <path
+                                                    d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="md:w-[42%] lg:w-1/2">
+                        <img src="./../images/cta-cards.webp" alt="tailus stat cards components" loading="lazy"
+                            width="1299" height="678" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="flex items-center">
+                        <!-- Logo blanco visible solo en modo oscuro -->
+                        <img src="img/cubo_logo_blanco.png" class="h-40 me-3 hidden dark:block"
+                            alt="Cubo Plus Logo Blanco" />
+                        <!-- Logo azul visible solo en modo claro -->
+                        <img src="img/cubo_logo_azul.png" class="h-40 me-3 block dark:hidden"
+                            alt="Cubo Plus Logo Azul" />
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">info@cuboplus.dev</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                        <div class="sm:flex sm:items-center sm:justify-between">
+                            <div class="flex mt-4 sm:justify-center sm:mt-0">
+                                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 20 14">
+                                        <path fill-rule="evenodd"
+                                            d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="sr-only">Youtube channel</span>
+                                </a>
+                                <a href="https://twitter.com/cuboplus"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 20 17">
+                                        <path fill-rule="evenodd"
+                                            d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="sr-only">Twitter page</span>
+                                </a>
+                                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                    <span class="sr-only">Instagram page</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Links</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">FAQ</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Resources</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="https://bitcoin.org/bitcoin.pdf" class="hover:underline">Bitcoin whitepaper</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
+                        href="https://cuboplus.dev/" class="hover:underline">cuboplus™</a>. All Rights Reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/typing.js"></script>
+</body>
+
+</html>
