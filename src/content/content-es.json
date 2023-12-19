@@ -1,0 +1,134 @@
+{
+  "secret": "es-cuboplus",
+  "layout": {
+    "navbar": ["Sobre nosotros", "Programa 2023", "Patrocinadores"],
+    "footer": [
+      "CONTÁCTANOS",
+      "SÍGUENOS",
+      "LINKS ÚTILES",
+      "© 2023 cuboplus™. Todos los derechos reservados."
+    ]
+  },
+  "index": {
+    "header": "Construyendo el futuro <br /><span>de El Salvador</span>",
+    "summary": [
+      "Aplicantes",
+      "Profesores",
+      "Horas de clases",
+      "Estudiantes",
+      "Graduados",
+      "Alianzas"
+    ],
+    "mission": [
+      "Nuestra misión",
+      "El programa educativo CUBO+ es una iniciativa diseñada por y para  Salvadoreños, orientado en capacitar a la siguiente generación de programadores Salvadoreños. Estos estudiantes fueron equipados con las habilidades y conocimientos necesarios para para darle forma a el futuro de la adopción de Bitcoin y así desarrollar soluciones innovadoras que contribuirán al crecimiento económico dentro de las comunidades locales.",
+      "Estamos descubriendo a las más brillantes y visionarias mentes que contribuirán al futuro tecnológico y económico de El Salvador."
+    ],
+    "testimonialssection": [
+      "Testimonios de otras personas",
+      "No estamos solos",
+      "Descubre lo que los demás comparten acerca de nosotros!"
+    ],
+    "testimonials": [
+      {
+        "img": "img/PjodJZ53_400x400 (1).jpg",
+        "href": "https://twitter.com/bitcoinofficesv/status/1716122785087660523",
+        "name": "The Bitcoin Office",
+        "handle": "@bitcoinofficesv",
+        "role": "Presidential Bitcoin Office",
+        "content": "Durante las pasadas dos semanas, algunos de los estudiantes sálvadoreños de Bitcoin y Lightning de @cuboplus tuvieron la oportunidad de viajar a italia para mayor conocimiento técnico y educación con @FulgurVentures <br /><br /> Y luego atendierón @LuganoPlanB en Suiza <br /><br /> 🇸🇻 🇮🇹 🇨🇭 <img src='./img/F9DkkUJa0AAfppZ.jpg'>"
+      },
+      {
+        "img": "img/jbExO_A2_400x400.jpg",
+        "href": "https://twitter.com/stacyherbert/status/1705761660806344859",
+        "name": "Stacy Herbert",
+        "handle": "@stacyherbert",
+        "role": "Jefa de la Oficina del Bitcoin",
+        "content": "Los estudiantes Sálvadoreños de @cuboplus responden al llamado del Presidente Bukele: <br /><br />\"Quiero hacer un llamado a todos los salvadoreños: debemos estar a la altura de este momento de nuestra historia... Ahora podemos estar en primera fila, o incluso dar la clase\". <br /><br /> Un alumno impartiendo clase 👇🇸🇻📙🚀 <br /><br /> <img src='./img/F6wUn_UXwAARkAw.jpg'>"
+      },
+      {
+        "img": "img/Invedmre_400x400.jpg",
+        "href": "https://twitter.com/DecouvreBitcoin/status/1681826059270909953",
+        "name": "Découvre Bitcoin",
+        "handle": "@DecouvreBitcoin",
+        "role": "Bitcoin Educational Company",
+        "content": "Adiós El Salvador 🇸🇻 <br /><br /> Gracias por este increíble viaje lleno de descubrimientos y gozo. Cada vez que vuelvo al país se mantiene en mejora: carretera, educación, seguridad, libertad. <br /><br /> Aquí todo es posible y la iniciativa @cuboplus es sólo el comienzo de algo másivo 🚀 <br /><br /> <img src='./img/F1cL417WAAYCkvv.jpg'>"
+      }
+    ],
+    "contact": [
+      "¡Envíanos un mensaje!",
+      "¿Tienes alguna pregunta o estás interesado en apoyar el programa? ¡Contáctanos y estaremos en comunicación!"
+    ]
+  },
+  "cubo2023": {
+    "header": "Cónoce el <br /><span class=\"text-6xl xl:text-7xl\">PRIMER BOOTCAMP DE CUBO+</span>",
+    "documentary": [
+      "MUY PRONTO",
+      "Una producción de la oficinca del Bitcoin en El Salvador",
+      "Todos los derechos reservados"
+    ],
+    "timeline": "Nuestro 2023",
+    "content": [
+      "Periodo de preparación",
+      "Un grupo de 54 personas fueron seleccionadas para entrar al programa educacional para profundizar sobre Bitcoin. Guiado por mentores de diferentes partes del mundo, meticulosámente seleccionados según su expertís educadores tales cómo Saifedean Ammous, Giacomo Zucco, Alekos Filini y Rikki. Cubriendo aspectos cruciales que contemplan las bases de Bitcoin, concepto de escaces, preferencia temporal y la dinamica de oferta y demanda.",
+      "Saifedean Ammous lecture",
+      "Durante la fase de preparación, tuvimos la oportunidad de atender una conferencia del distinguido autor de \"El Patrón Bitcoin\" en El Salvador. Este estimado economista y escritor sirvió una conferencia sobre su libro a los 54 estudiantes.",
+      "On-site bootcamp",
+      "Los méjores 21 estudiantes de cubo+ fueron seleccionados para una beca de dos semanas intensivas guiadad por variedad de mentores de diferentes partes del mundo. Esta fase educativa fué a su vez posible gracias al generoso apoyo de compañías en Bitcoin incluídas, Galoy, Bitfinex, Découvre Bitcoin, K1, Tiankii, entre otras entidades.",
+      "Hackathon winners!",
+      "Durante los días del bootcamp se desarrollo un hackathon interno para demostrar las habilidades de los participantes. Los ganadores fueron un grupo que desarrolló un inovador juego impulsado por un sistema de apuestas rapidas en lightning network, demostrando así la convergencia entre tecnología y creatividad. <br><br> Los ganadores fueron recompensados con <br> <p class=\"text-blue-900 text-3xl font-bold dark:text-slate-400\">1,000,000 SATS</p>",
+      "Jimmy song and lisa neigut's seminars",
+      "Los 10 mejores y más comprometidos estudiantes del bootcamp recibieron dos seminarios para profundizar en su conocimiento, guiados por Jimmy Song en \"Programando Blockchain\" y luego Lisa neigut en \"Ententiendo la Lightning Network\", así extendiendo sus limites sobre Bitcoin por los mejores mentores.",
+      "Tuscany Bootcamp",
+      "Los 6 estudiantes más comprometidos, tomarón una oportunidad única, para tomar aún mas capacitación tecnica en un viaje a Italia. Siguiendo con su entrenamiento intensivo, luego participarón en el Lugano Plan B en Suiza, donde pudieron aprender aún más y expandir sus horizontes."
+    ],
+    "end": "¿Que sigue?"
+  },
+  "sponsors": {
+    "titles": ["Nuestros patrocinadores", "Nuestras alianzas"],
+    "descriptions": [
+      "Por medio de su compromiso en educación e innovación, oficina del Bitcoin en El Salvador y Fulgur Ventures han forjado el camino para jóvenes salvadoreños talentosos quienes se volverán la siguiente generación de desarrolladores en tecnologías Bitcoin y Lightning Network.",
+      "El equipo de cubo+ agradece a nuestros aliados por haber formado parte de este proyecto y por permitir a nuestros estudiantes ganar experiencia en sus compañías."
+    ]
+  },
+  "cubo2024": {
+    "header": {
+      "title": "¿Cómo funciona?",
+      "steps": ["Áplica", "Aprende", "Gradúate", "Contribuye"],
+      "descriptions": [
+        "Las aplicaciones siguen un proceso de selección donde solo las personas que muestren mayor compromiso pueden seguir a la siguiente fase.",
+        "Cuboplus cree en prueba de trabajo, la prueba de trabajo provee escaces y valor ¡Pon el 100% de tu esfuerzo!",
+        "Oficialmente te has convertido en un #graduadoDeCuboplus ! Estás listo para contribuír y construír sobre el ecosistema Bitcoin para expandir sus límites.",
+        "Apenás comienza tu camino, crea soluciones, haz de El Salvador un mejor lugar y comienza a construír en tu primera pasantía."
+      ]
+    },
+    "subscribe": [
+      "SUSCRÍBETE A LA LISTA DE ESPERA",
+      "Cubo+ 2024 aún está en proceso de desarrollo, ¡Suscríbete a la lista de espera! así te notificáremos una vez las aplicaciones de la siguiente edición comienzen."
+    ]
+  },
+  "faq": {
+    "title": "PREGUNTAS FRECUENTES",
+    "description": "Algunás preguntas clave que puedas tener sobre cubo+, si hay alguna pregunta importante faltando puedes hacernoslo saber por medio del formulario de contacto en Sobre nosotros o por medio de correo electrónico a info@cuboplus.dev",
+    "questions": [
+      "¿Cómo me uno a cuboplus?",
+      "¿Tengo que hablar inglés perfecto para unirme a cuboplus?",
+      "¿En cuboplus se enseña sobre cómo hacer trading?",
+      "¿El curso de cuboplus tiene algún precio?",
+      "¿Nécesito un título o formación profesional para participar?",
+      "¿Tengo que tener al menos 18 años para aplicar a cuboplus?",
+      "¿Cómo puedo pasar al periodo presencial de cuboplus?",
+      "¿Nécesito saber de informática y programación para aplicar?"
+    ],
+    "answers": [
+      "La siguiente edición de cuboplus está aún en proceso de desarrollo ¡te animamos a seguir la cuenta oficial de @cuboplus en twitter para no perderte las siguientes aplicaciones!",
+      "Las clases durante cuboplus son impartidas por mentores extranjeros en inglés, por tanto el inglés no es un requisito pero te permite entender mejor las clases.",
+      "Cuboplus cree en la prueba de trabajo y dinero sólido, cuboplus enseña cómo construír soluciones de valor utilizando protocolos de Bitcoin y Lightning Network, en ningún momento se enseña sobre trading.",
+      "¡Cuboplus no tiene ningún precio de entrada! seleccionamos a los estudiantes más comprometidos y entusiasmados para recibir educación de alto nivel con mentores de alto nivel.",
+      "En cuboplus se escogen los participantes siguiendo un proceso de envtrevistas y pruebas, no se requiere ningúna acreditación para poder aplicar.",
+      "Cuboplus es un curso orientado al entendimiento de Bitcoin a nivel ecónomico y filosófico, por tanto para aplicar no hay restricción de edad.",
+      "Cubo+ 2024 constará en primera instancia de un periodo de preparación dónde se ensañarán las bases económicas de Bitcoin. Será necesario pasar las pruebas necesarias sobre informática y entendimiento de Bitcoin para pasar al periodo presencial.",
+      "Cubo+ 2024 tendrá un periodo de preparación donde tódos los interesados en aprender de Bitcoin pueden participar. Luego se pasará al periodo presencial \"Cubo++ 2024\" donde se enseñará la parte técnica de Bitcoin y cómo desarrollar aplicaciones integrando Bitcoin."
+    ]
+  }
+}

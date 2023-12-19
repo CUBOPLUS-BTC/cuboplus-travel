@@ -65,7 +65,7 @@
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
                     <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
-                        <a href="index.html" aria-label="logo" class="flex items-center space-x-2">
+                        <a href="../index.html" aria-label="logo" class="flex items-center space-x-2">
                             <img src="../img/logocuboplus.png" style="height: 64px;" alt="">
                         </a>
 
@@ -86,45 +86,95 @@
                         <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
                             <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
                                 <li>
-                                    <a class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
-                                        href='pages/solution.html'>
+                                    <a id="navbar-about-button" class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='../index.html'>
                                         <span>About us</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
-                                        href='pages/customers.html'>
+                                    <a id="navbar-program-button" class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='cubo2023.html'>
                                         <span>Program 2023</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
-                                        href='pages/pricing.html'>
+                                    <a id="navbar-sponsors-button" class='block md:px-4 text-orange-400 dark:text-primaryLight'
+                                        href='#'>
                                         <span>Sponsors</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
-                                        href='pages/blog.html'>
-                                        <span>Another link</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
-
                         <div
                             class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
-                            <a class='relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
+                            <button class='relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
                                 before:bg-blue-500 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 
                                 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-blue-400 sm:px-4 lg:before:border 
                                 lg:before:border-blue-200 lg:before:bg-blue-50 lg:dark:before:bg-gray-800'
-                                href='/pages/contact'>
+                                data-dropdown-toggle="dropdown-cubo+"
+                                data-dropdown-delay="50"
+                                >
                                 <span
-                                    class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white">Cubo+
-                                    2024
+                                    class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white flex items-center">Cubo+
+                                    2024<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                    </svg>
                                 </span>
-                            </a>
+                            </button>
                         </div>
+
+                        <div id="dropdown-cubo+" class="z-10 relative hidden rounded-full border-gray-100 lg:z-10 lg:absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                              <li>
+                                <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6 mr-2 text-orange-600 dark:text-orange-400">
+                                    <path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" />
+                                    <path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" />
+                                    <path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />
+                                  </svg>
+                                  Cubo+ 2024</a>
+                              </li>
+                              <li>
+                                <a href="#" class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6 mr-2 text-orange-600 dark:text-orange-400">
+                                        <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z" clip-rule="evenodd" />
+                                      </svg>
+                                      
+                                      
+                                      
+                                      
+                                  Cubo++ 2024</a>
+                              </li>
+                            </ul>
+                        </div>
+
+                        <button aria-label="switch language"
+                            class="group transistion mr-1 relative hidden h-9 w-9 rounded-full before:absolute text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-300 before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex"
+                            data-dropdown-toggle="dropdown-language"
+                            data-dropdown-trigger="hover"
+                            data-dropdown-delay="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-5 h-5 relative m-auto ">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+                            </svg>
+                        </button>
+
+                        <div id="dropdown-language" class="relative hidden rounded-full border-gray-100 lg:z-10 lg:absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                              <li>
+                                <a href="#" class="en-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                <img src="../img/united-kingdom.png" class="h-6 w-6 mr-2" alt="">
+                                  English</a>
+                              </li>
+                              <li>
+                                <a href="#" class="es-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                <img src="../img/spain.png" class="h-6 w-6 mr-2" alt="">
+                                  Español</a>
+                              </li>
+                            </ul>
+                        </div>
+
                         <button aria-label="switch theme"
                             class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -141,8 +191,31 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="fixed top-3 right-14 z-20 sm:right-24 lg:hidden">
-                        <button aria-label="switche theme"
+
+                    <div class="fixed flex top-3 right-14 z-20 sm:right-24 lg:hidden">
+                        <button aria-label="switch language"
+                            class="group mr-1 transistion relative flex h-9 w-9 text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-300 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800"
+                            data-dropdown-toggle="dropdown-language2"
+                            data-dropdown-delay="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-5 h-5 relative m-auto">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+                            </svg>
+                        </button>
+                        <div id="dropdown-language2" class="relative hidden rounded-full border-gray-100 lg:z-10 lg:absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                              <li>
+                                <a href="#" class="en-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                <img src="../img/united-kingdom.png" class="h-6 w-6 mr-2" alt="">
+                                  English</a>
+                              </li>
+                              <li>
+                                <a href="#" class="es-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                <img src="../img/spain.png" class="h-6 w-6 mr-2" alt="">
+                                  Español</a>
+                              </li>
+                            </ul>
+                        </div>
+                        <button aria-label="switch theme"
                             class="switcher group relative flex h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
@@ -552,7 +625,7 @@
 
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
+                        <h2 id="footer-contact" class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
                                 <a href="#" class="hover:underline">info@cuboplus.dev</a>
@@ -560,7 +633,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                        <h2 id="footer-follow" class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                         <div class="sm:flex sm:items-center sm:justify-between">
                             <div class="flex mt-4 sm:justify-center sm:mt-0">
                                 <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -594,16 +667,16 @@
                         </div>
                     </div>
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Links</h2>
+                        <h2 id="footer-links" class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Links</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
-                                <a href="#" class="hover:underline">FAQ</a>
+                                <a href="pages/faq.html" class="hover:underline">FAQ</a>
                             </li>
                             <li class="mb-4">
                                 <a href="#" class="hover:underline">Resources</a>
                             </li>
                             <li class="mb-4">
-                                <a href="https://bitcoin.org/bitcoin.pdf" class="hover:underline">Bitcoin whitepaper</a>
+                                <a target="_blank" href="https://bitcoin.org/bitcoin.pdf" class="hover:underline">Bitcoin whitepaper</a>
                             </li>
                         </ul>
                     </div>
@@ -611,14 +684,13 @@
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div class="sm:flex sm:items-center sm:justify-between">
-                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
-                        href="https://cuboplus.dev/" class="hover:underline">cuboplus™</a>. All Rights Reserved.
+                <span id="footer-copyright" class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 cuboplus. All Rights Reserved.
                 </span>
             </div>
         </div>
     </footer>
 
-
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 
 <!-- Mirrored from ampire.netlify.app/pages/customers by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Dec 2023 04:02:01 GMT -->
