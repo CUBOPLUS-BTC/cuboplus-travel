@@ -128,28 +128,32 @@
     ]
   },
   "cubo2023": {
-    "header": "Get to know the <br /><span class=\"text-6xl xl:text-7xl\">FIRST BOOTCAMP</span>",
+    "header": "<span class=\"relative\"> <span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Proof of work</span> </span> is freedom",
+    "legend": "Cubo+ shows to the world how proof of work leads to excellency and freedom fot El Salvador and its students",
     "documentary": [
-      "COMING SOON",
-      "A production of the Bitcoin Office SV",
-      "All right reserved"
+      "El Salvador is winnning",
+      "A production of The Presidential Bitcoin Office in El Salvador - © 2023 cuboplus. All rights reserved.",
+      "Bitcoin Office Head"
     ],
-    "timeline": "2023 Timeline",
+    "timeline": "We<span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Scaled !</span>",
+    "description": "A growing team doesn't need to mean growing pains. With best-of-breed features, security, privacy, and the right tool for every step of your journey - Cubo+ allows you to scale your Bitcoin and Lightnig Network knowledge.",
     "content": [
+      "2023 August",
       "Preparatory period",
-      "A group of fifty-four students embarked on an educational journey delving into the intricate foundations of Bitcoin. Guided by accomplished mentors from diverse corners of the globe, the curriculum, meticulously curated by esteemed educators Saifedean Ammous, Giacomo Zucco, Alekos Filini, and Rikki, spanned crucial aspects including the rudiments of Bitcoin, the concept of scarcity, and the dynamics of supply and demand.",
-      "Saifedean Ammous lecture",
-      "During the preparatory phase, we were privileged to host the distinguished author of \"The Bitcoin Standard\" in El Salvador. This esteemed individual delivered an enlightening lecture about his book to a captivated audience of 54 students.",
-      "On-site bootcamp",
-      "The elite cream of the crop, comprising the top 21 students, underwent a meticulously curated two-week course led by a diverse array of mentors hailing from different corners of the globe. This transformative educational journey was made possible through the generous backing of renowned companies, including Galoy, Bitfinex, Decouvre Bitcoin, K1, Tiankii, and other notable entities.",
-      "Hackathon winners!",
-      "In the culminating days of the boot camp, an exhilarating hackathon unfolded, showcasing the ingenuity of participants. The standout victors emerged as the developers of an innovative game fueled by a lightning-fast system of bets, demonstrating the convergence of technology and creativity. <br><br> The winners were compensated with <br> <p class=\"text-blue-900 text-3xl font-bold dark:text-slate-400\">1,000,000 SATS</p>",
-      "Jimmy song and lisa neigut's seminars",
-      "The top 10 students of the bootcamp embarked on an enriching journey, delving deeper into their knowledge through two additional seminars led by distinguished experts. Jimmy Song conducted an insightful workshop on \"Programming Blockchain,\" while Lisa Neigut provided valuable insights into \"Understanding the Lightning Network,\" further expanding their expertise in the realm of blockchain technology.",
+      "A group of fifty-four students embarked on an educational journey delving into the intricate foundations of Bitcoin. Guided by accomplished mentors from diverse corners of the globe, the curriculum, meticulously curated by esteemed educators Saifedean Ammous, Giacomo Zucco, Alekos Filini, and Rikki.",
+      "54 students taught!",
+      "2023 July",
+      "On-site Bootcamp",
+      "The elite cream of the crop, comprising the top 21 students, underwent a meticulously curated two-week course led by a diverse array of mentors hailing from different corners of the globe.",
+      "Worked with some strategic alliances",
+      "2023 July 3rd week",
+      "Jimmy Song and Lisa Neigut's seminars",
+      "The top 10 boot camp students delved deeper into their knowledge through two additional seminars led by experts. Jimmy Song covered \"Programming Blockchain,\" and Lisa Neigut shared insights on \"Understanding the Lightning Network\".",
+      "Facing on newspaper <a class='text-primary underline dark:text-primaryLight' target=\"_blank\" href='https://twitter.com/Forbes/status/1684239840890564615'>Forbes</a> !",
+      "2023 October",
       "Tuscany Bootcamp",
       "The distinguished top 6 students seized a unique opportunity to enhance their advanced technical training by embarking on a journey to Italy. Following their intensive training, they participated in the Lugano Plan B event in Switzerland, further enriching their knowledge and expanding their horizons in the field."
-    ],
-    "end": "What comes next?"
+    ]
   },
   "sponsors": {
     "titles": ["Our sponsors", "Our alliances"],
