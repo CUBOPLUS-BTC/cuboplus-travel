@@ -162,21 +162,19 @@
       "The cubo+ team thanks our allies for being part of this project and for allowing our students to gain experience in their companies"
     ]
   },
-  "cubo2024": {
-    "header": {
-      "title": "How does it work?",
-      "steps": ["Apply", "Learn hard", "Graduate", "Contribute"],
-      "descriptions": [
-        "Applications follow a filter process where only the most committed minds can follow to the next phases.",
-        "Cuboplus believes on proof of work, proof of work provides scarcity and value, put the 100% of you!",
-        "You're officially a #cuboplusGradute ! You're ready to rock it and contribute on building sovereignity.",
-        "Just the start of the journey, create solutions, make a better El Salvador and start building in your first internship."
-      ]
-    },
-    "subscribe": [
-      "SUBSCRIBE TO THE WAITLIST",
-      "Cubo+ 2024 is being developed yet, subscribe to the waitlist so we'll notify you once applications are open"
-    ]
+  "cubo+2024": {
+    "header": "Subscribe to the <span class=\"opacity-80\">Waitlist.</span>",
+    "legend": "We'll let youn know once the next edition of cubo+ is out, for now, keep learning and sutdying bitcoin!",
+    "form": "What are you waiting for!",
+    "description": "Cubo+ 2024 will aim for education in economy and Bitcoin space at a general level, where anyone with the enthusyasm to learn about the reasons of Bitcoin can apply!",
+    "alliances": "THANKS TO THE SUPPORT OF OUR ALLIANCES"
+  },
+  "cubo++2024": {
+    "header": "Subscribe to the <span class=\"opacity-80\">Waitlist.</span>",
+    "legend": "We'll let youn know once the next edition of cubo+ is out, for now, keep learning and sutdying bitcoin!",
+    "form": "What are you waiting for!",
+    "description": "Cubo++ 2024 will be focused on high tech level classes to uinderstand the Bitcoin and Lightning Network Protocol in order to succesfully be ready for your internship at a high level tech company in the Bitcoin industry.",
+    "alliances": "THANKS TO THE SUPPORT OF OUR ALLIANCES"
   },
   "faq": {
     "title": "FRQUENTLY ASKED QUESTIONS",
