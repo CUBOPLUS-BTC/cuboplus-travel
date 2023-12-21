@@ -52,7 +52,46 @@ const setTestimonials = (testimonials) => {
 }
 
 const setMentions = (mentions) => {
-    
+    html = "";
+
+    mentions.map((m) => {
+        html += `<ul class="space-y-8">
+                    <li class="text-sm leading-6">
+                        <div class="relative group">
+                            <div
+                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
+                            </div><a href="${m.href}"
+                                class="cursor-pointer">
+                                <div
+                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
+                                    <div class="flex items-center space-x-4"><img src="${m.img}"
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                        <div>
+                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
+                                                    class="fa-brands fa-twitter"></i> ${m.name}</h3>
+                                            <p class="text-gray-500 text-md">@jimmysong</p>
+                                            <p class="text-gray-500 text-md mt-2">${m.role}</p>
+                                        </div>
+                                    </div>
+                                    <p
+                                        class="leading-normal  text-gray-900 dark:text-gray-300 text-md h-16 overflow-hidden">
+                                        ${m.content}
+                                    </p>
+
+                                    <figure class="max-w-lg">
+                                        <img class="h-60 max-w-full rounded-lg overflow-hidden"
+                                            src="${m.picture}" alt="image description">
+                                    </figure>
+
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>`;
+    });
+
+    document.getElementById("mentions").innerHTML = html;
+
 }
 
 const setElements = async (content) => {
@@ -88,9 +127,15 @@ const setElements = async (content) => {
     document.getElementById("testimonials-title").innerHTML = content.students[0];
     document.getElementById("testimonials-legend").innerHTML = content.students[1];
     document.getElementById("mission-title").innerHTML = content.mission[0];
-    //document.getElementById("mission").innerHTML = content.mission[1];
+    document.getElementById("mission").innerHTML = content.mission[1];
+    document.getElementById("mentions-badge").innerHTML = content.mentionstitles[0];
+    document.getElementById("mentions-title").innerHTML = content.mentionstitles[1];
+    document.getElementById("mentions-legend").innerHTML = content.mentionstitles[2];
+    document.getElementById("contact-title").innerHTML = content.contact[0];
+    document.getElementById("contact-description").innerHTML = content.contact[1];
 
     setTestimonials(content.testimonials);
+    setMentions(content.mentions);
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {
