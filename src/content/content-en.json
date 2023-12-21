@@ -12,8 +12,10 @@
   "index": {
     "header": "Building",
     "typingList": ["The future", "El Salvador"],
+    "headerdes": "CUBO+ is the first educational program aimed at training the next generation of Bitcoin Salvadoran enthusiasts under the government of President Nayib Bukele, to contribute the Bitcoin adoption and the economic growth of El Salvador.",
     "thanks": "SUPPORTED BY OUR STRATEGIC ALLIANCES",
-    "process": "<h2 class=\"text-3xl font-bold text-orange-400 dark:text-blue-300 md:text-4xl xl:text-5xl\">For building the next <br> Decentralized Generation </h2> <p class=\"mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5\"> We are committed to creating a diverse and inclusive learning environment that promotes learning, growth and collaboration.</p>",
+    "process": "For building the next <br> Decentralized Generation",
+    "processdes": "We are committed to creating a diverse and inclusive learning environment that promotes learning, growth and collaboration.",
     "phases": ["Apply", "Learn", "Contribute"],
     "apply": [
       "Application process",
@@ -71,6 +73,7 @@
       "We are a program dedicated to teaching university students, from enthusiastic beginners to experienced developers. We believe that everyone should have the opportunity to understand and participate in the Bitcoin revolution in El Salvador, without barriers or technical limitations.",
       "At Cubo+, we build an inclusive and accessible community. Our mission is to teach Bitcoin, making it easy to understand and apply in everyday life. Join us and let's build the next generation of Bitcoin enthusiasts."
     ],
+    "mentionstitles": ["Words from others", "It's not just us", "Discover what others are sharing about us."],
     "mentions": [
       {
         "img": "img/cubotw.jpg",
