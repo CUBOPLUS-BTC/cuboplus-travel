@@ -12,9 +12,11 @@
   "index": {
     "header": "Contruyendo",
     "typingList": ["El futuro", "El Salvador"],
+    "headerdes": "CUBO+ es el primer programa educacional concentrado en entrenar la siguiente generación de entusiastas Salvadoreños de Bitcoin bajo el gobierno de El Presidente Nayib Bukele, para contribuír la adopción de Bitcoin y crecimiento económico de El Salvador.",
     "thanks": "APOYADO POR NUESTRAS ALIANZAS ESTRÁTEGICAS",
-    "process": "<h2 class=\"text-3xl font-bold text-orange-400 dark:text-blue-300 md:text-4xl xl:text-5xl\">Para construir la siguiente <br> Generación Descentralizada </h2> <p class=\"mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5\"> Estámos comprometidos en crear un ambiente de aprendizaje diverso e inclusivo que promueva el aprendizaje, crecimiento y colaboración</p>",
-    "phases": ["Aplcia", "Aprende", "Contribuye"],
+    "process": "Para construír la siguiente <br> Generación Descentralizada",
+    "processdes": "Estamos comprometidos en crear un espacio de aprendizaje inclusivo y diverso que promueva el aprendizaje, crecimiento y colaboración.",
+    "phases": ["Aplica", "Aprende", "Contribuye"],
     "apply": [
       "Proceso de aplicación",
       "Para ser parte de Cubo+ debes aplicar al proceso en el tiempo especifico. Puédes aplciar incluso si no eres un programador ya que el curso está enfocado en enseñar las bases fundamentales de Bitcoin (principios filosóficos y económicos).",
@@ -71,6 +73,7 @@
       "Sómos un programa dedicado en enseñar a universitarios desde principiantes hasta desarrolladores experimentados. Creémos que todos deberían tener la oportunidad de entender y participar la revolución del Bitcoin en El Salvador, sin barreras ni limitaciones técnicas.",
       "En Cubo+ construímos una inclusiva y accesible comunidad. Nuestra misión es enseñar Bitcoin, haciendolo fácil de entender y aplicar en el día a día. Únete y creemos la siguiente generación de entusiastas de Bitcoin."
     ],
+    "mentionstitles": ["Pálabras de otros", "No estámos solos", "Déscubre lo que otros comparten de nosotros."],
     "mentions": [
       {
         "img": "img/cubotw.jpg",
