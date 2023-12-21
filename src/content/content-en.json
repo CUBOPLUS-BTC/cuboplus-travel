@@ -6,12 +6,12 @@
       "CONTACT US",
       "FOLLOW US",
       "USEFUL LINKS",
-      "© 2023 cuboplus™. All Rights Reserved."
+      "© 2023 cuboplus. All Rights Reserved."
     ]
   },
   "index": {
     "header": "Building",
-    "typingList": ["The future, El Salvador"],
+    "typingList": ["The future", "El Salvador"],
     "thanks": "SUPPORTED BY OUR STRATEGIC ALLIANCES",
     "process": "<h2 class=\"text-3xl font-bold text-orange-400 dark:text-blue-300 md:text-4xl xl:text-5xl\">For building the next <br> Decentralized Generation </h2> <p class=\"mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5\"> We are committed to creating a diverse and inclusive learning environment that promotes learning, growth and collaboration.</p>",
     "phases": ["Apply", "Learn", "Contribute"],
@@ -66,6 +66,11 @@
         "content": "Cubo+ changed my perception about El Salvador, It was a challenge that I would repeat"
       }
     ],
+    "mission": [
+      "Who we are",
+      "We are a program dedicated to teaching university students, from enthusiastic beginners to experienced developers. We believe that everyone should have the opportunity to understand and participate in the Bitcoin revolution in El Salvador, without barriers or technical limitations.",
+      "At Cubo+, we build an inclusive and accessible community. Our mission is to teach Bitcoin, making it easy to understand and apply in everyday life. Join us and let's build the next generation of Bitcoin enthusiasts."
+    ],
     "mentions": [
       {
         "img": "img/cubotw.jpg",
@@ -73,7 +78,7 @@
         "name": "CUBO+",
         "handle": "@cuboplus",
         "role": "Official Cubo+ account",
-        "content": "CUBO+ students have just arrived in Italy to participate in the TuscanyLightning Bootcamp⚡️",
+        "content": "CUBO+ students have just arrived in Italy to participate in the Tuscany Lightning Bootcamp⚡️",
         "picture": "img/F7sXIkgWsAA5a9b.jpg"
       },
       {
@@ -117,7 +122,7 @@
         "href": "https://twitter.com/bitcoinmagazine/status/1676265047608393728",
         "name": "Bitcoin Magazine",
         "handle": "@BitcoinMagazine",
-        "role": "Office Bitcoin Magazine account",
+        "role": "Official Bitcoin Magazine account",
         "content": "Students in El Salvador attend the country's first #Bitcoin development program The future is bright for 🇸🇻",
         "picture": "img/F0NIqHlaAAASHJm.jpg"
       }
@@ -136,7 +141,7 @@
       "Bitcoin Office Head"
     ],
     "timeline": "We<span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Scaled !</span>",
-    "description": "A growing team doesn't need to mean growing pains. With best-of-breed features, security, privacy, and the right tool for every step of your journey - Cubo+ allows you to scale your Bitcoin and Lightnig Network knowledge.",
+    "description": "A growing team doesn't need to mean growing pains. With the best features, security, privacy, and the right tool for every step of your journey - Cubo+ allows you to scale your Bitcoin and Lightnig Network knowledge.",
     "content": [
       "2023 August",
       "Preparatory period",
@@ -158,7 +163,9 @@
   "sponsors": {
     "titles": ["Our sponsors", "Our alliances"],
     "descriptions": [
-      "Through their commitment to education and innovation, The Bitcoin Office and Fulgur Ventures have created the path for talented young people in El Salvador to become the next generation of developers in Bitcoin and Lightning technologies.",
+      "Through their commitment to education and innovation, The Bitcoin Office and Fulgur Ventures have created the path for talented young people in El Salvador to become the next generation of Bitcoiners.",
+      "The National Bitcoin Office of El Salvador under President Nayib Bukele",
+      "We invest in early stage startups focused on Bitcoin and the Lightning Network",
       "The cubo+ team thanks our allies for being part of this project and for allowing our students to gain experience in their companies"
     ]
   },
@@ -173,7 +180,7 @@
     "header": "Subscribe to the <span class=\"opacity-80\">Waitlist.</span>",
     "legend": "We'll let youn know once the next edition of cubo+ is out, for now, keep learning and sutdying bitcoin!",
     "form": "What are you waiting for!",
-    "description": "Cubo++ 2024 will be focused on high tech level classes to uinderstand the Bitcoin and Lightning Network Protocol in order to succesfully be ready for your internship at a high level tech company in the Bitcoin industry.",
+    "description": "Cubo++ 2024 will be focused on high tech level classes to understand the Bitcoin and Lightning Network Protocol in order to succesfully be ready for your internship at a high level tech company in the Bitcoin industry.",
     "alliances": "THANKS TO THE SUPPORT OF OUR ALLIANCES"
   },
   "faq": {

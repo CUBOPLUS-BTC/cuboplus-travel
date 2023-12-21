@@ -1,5 +1,5 @@
 const dynamicText = document.getElementById("heros");
-        const words = ["the future", "El Salvador"];
+        const words = ["The future", "El Salvador"];
 
         // Variables to track the position and deletion status of the word
         let wordIndex = 0;
