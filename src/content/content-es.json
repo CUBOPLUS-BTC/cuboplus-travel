@@ -135,14 +135,13 @@
     ]
   },
   "cubo2023": {
-    "header": "<span class=\"relative\"> <span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Prueba de trabajo</span> </span> es libertad",
+    "header": "<span class=\"relative\"> <span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Prueba de trabajo</span> </span> es libertad",
     "legend": "Cubo+ le muestra al mundo cómo prueba de trabajo conlleva a la excelencia y libertad para El Salvador y sus estudiantes.",
     "documentary": [
-      "El Salvador is winnning",
       "Una producción de la Oficina del Bitcoin - © 2023 cuboplus. Todos los derechos reservados.",
       "Líder de la Oficina del Bitcoin"
     ],
-    "timeline": "Nos<span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Expandimos !</span>",
+    "timeline": "Nos<span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Expandimos !</span>",
     "description": "Un equipo en crecimiento no necesariamente significa problemas en crecimiento. Con las mejores características, seguridad, privacidad y mejores herramientas para cada paso del viaje - Cubo+ te permite expandir tu conocimiento sobre Bitcoin y Lightning Network",
     "content": [
       "Agosto del 2023",
