@@ -19,7 +19,6 @@ async function changeLanguage(page, language, callback) {
   if (language !== "en" && language !== "es") language = "en";
   //sets language defined
   localStorage.setItem("language", language);
-  localStorage.removeItem(`content-${language}`);
   // Check if content exists in localStorage and has a valid 'secret' property
   const storedContent = localStorage.getItem(`content-${language}`);
 

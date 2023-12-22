@@ -1,5 +1,6 @@
 let intervalId;
 
+//function for typing effect
 const typeEffect = (words) => {
     let wordIndex = 0;
     let charIndex = 0;
@@ -21,7 +22,7 @@ const typeEffect = (words) => {
             dynamicText.classList.remove("stop-blinking");
             wordIndex = !isDeleting ? (wordIndex + 1) % words.length : wordIndex;
         }
-    }, 100);
+    }, 150);
 };
 
 const stopTypeEffect = () => {
@@ -95,7 +96,6 @@ const setMentions = (mentions) => {
 }
 
 const setElements = async (content) => {
-    console.log(content);
     stopTypeEffect();
     typeEffect(content.typingList);
     document.getElementById("header1").innerHTML = content.header;
