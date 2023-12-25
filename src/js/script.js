@@ -1,5 +1,6 @@
 var esButton = document.getElementsByClassName("es-button");
 var enButton = document.getElementsByClassName("en-button");
+const contentVersion = "1.0";
 
 function setElementsNavbarAndFooter(content) {
   document.getElementById("navbar-about-button").innerHTML = content.navbar[0];
@@ -24,6 +25,10 @@ async function changeLanguage(page, language, callback) {
 
   try {
     const content = JSON.parse(storedContent);
+    if (content.version != contentVersion) {
+      throw error;
+    }
+
     if (content && (content.secret == "es-cuboplus" || content.secret == "en-cuboplus")) {
       // Content is valid, proceed with the callback
       setElementsNavbarAndFooter(content.layout);
