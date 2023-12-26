@@ -210,6 +210,6 @@
     ]
   },
   "404": ["404 No Encontrado", "Oops! Esta página no existe."],
-  "403": ["403 Prohibido", "Lo siento! No tienes acceso a este recurso."],
+  "403": ["403 Acceso Restringido", "Lo siento! No tienes acceso a este recurso."],
   "maintenance": ["Bajo Construcción", "Estamos construyendo algo increíble! Esta página esta siendo construída, vuelve más tarde!"]
 }
