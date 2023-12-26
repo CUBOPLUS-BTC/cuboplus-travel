@@ -18,11 +18,11 @@
 
     <script type="module" crossorigin src="../assets/script.js"></script>
     <link rel="stylesheet" href="../assets/style.css">
-    <link rel="stylesheet" href="../dist/output.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../dist/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
     <script>
         tailwind.config = {
             content: ["./*.html"],
@@ -83,7 +83,7 @@
                             <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
                                 <li>
                                     <a id="navbar-about-button"
-                                        class='block md:px-4 text-orange-400 dark:text-primaryLight'
+                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
                                         href='../index.html'>
                                         <span>About us</span>
                                     </a>
@@ -221,13 +221,13 @@
                                 <li>
                                     <a href="#"
                                         class="en-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                        <img src="img/united-kingdom.png" class="h-6 w-6 mr-2" alt="">
+                                        <img src="../img/united-kingdom.png" class="h-6 w-6 mr-2" alt="">
                                         English</a>
                                 </li>
                                 <li>
                                     <a href="#"
                                         class="es-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                        <img src="img/spain.png" class="h-6 w-6 mr-2" alt="">
+                                        <img src="../img/spain.png" class="h-6 w-6 mr-2" alt="">
                                         Español</a>
                                 </li>
                             </ul>
@@ -253,16 +253,15 @@
         </nav>
     </header>
 
-    <section class="overflow-x-clip pt-32 sm:pt-40 md:pt-48 lg:pt-56">
+    <section class="overflow-x-clip pt-32 sm:pt-40 md:pt-48 lg:pt-56 mb-24">
         <div class="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
-            <h2 class="mb-12 text-center text-3xl font-bold text-gray-800 dark:text-white md:text-4xl">Frequently Asqued Questions</h2>
-            <h3 class="text-lg text-center text-gray-600 dark:text-gray-400">Further key questions you might have about cubo+, if there's any important question left you can reach us out through the contact form on index or via email to info@cuboplus.dev</h3>
+            <h2 id="faq-title" class="mb-12 text-center text-3xl font-bold text-gray-800 dark:text-white md:text-4xl">Frequently Asqued Questions</h2>
+            <h3 id="faq-legend" class="text-lg text-center text-gray-600 dark:text-gray-400">Further key questions you might have about cubo+, if there's any important question left you can reach us out through the contact form on index or via email to info@cuboplus.dev</h3>
             <div class="pt-12 w-96 mx-auto overflow-hidden sm:mt-20 lg:-mt-8 ">
-                <img class="w-full" src="../img/undraw_questions_re_1fy7.svg" class="w-full" alt="team illustration" height="600"
-                    width="800" />
+                <img class="w-4/5 h-auto justify-center mx-auto" src="../img/undraw_questions_re_1fy7.svg" alt="team illustration" />
             </div>
 
-            <div class="divide-y divide-gray-200 border-y border-gray-200 dark:divide-gray-800 dark:border-gray-800">
+            <div id="faq-questions" class="divide-y divide-gray-200 border-y border-gray-200 dark:divide-gray-800 dark:border-gray-800">
                 <div>
                     <dl class="faq mx-auto max-w-2xl">
                         <dt class="text-lg">
@@ -457,7 +456,8 @@
     </footer>
 
     <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/faq.js"></script>
 </body>
 
 </html>
