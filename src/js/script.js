@@ -1,6 +1,6 @@
 var esButton = document.getElementsByClassName("es-button");
 var enButton = document.getElementsByClassName("en-button");
-const contentVersion = "1.1";
+const contentVersion = "1.0";
 
 function setElementsNavbarAndFooter(content) {
   document.getElementById("navbar-about-button").innerHTML = content.navbar[0];
