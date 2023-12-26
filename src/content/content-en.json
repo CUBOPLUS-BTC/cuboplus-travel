@@ -210,5 +210,6 @@
     ]
   },
   "404": ["404 Not Found", "Whoops! That page doesn't exist."],
-  "403": ["403 Forbidden", "Sorry! You don't have access to this resource."]
+  "403": ["403 Forbidden", "Sorry! You don't have access to this resource."],
+  "maintenance": ["Under Construction", "We're building something cool! This page is currently under construction, come back soon to find out!"]
 }
