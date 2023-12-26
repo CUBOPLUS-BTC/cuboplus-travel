@@ -208,5 +208,7 @@
       "Cubo+ 2024 will count at first time with a preparatory period where the Bitcoin bases will be taught. It will be required to pass the tests and interviews about informatics and Bitcoin understanding to get to the on-site period.",
       "Cubo+ 2024 will count with a preparatory period where everyone interested on learning about Bitcoin can participate. Then we will pass to the on-site period \"Cubo++ 2024\" where the technologycal stack about Bitcoin and Lightning Network will be taught and its integration in apps as well."
     ]
-  }
+  },
+  "404": ["404 Not Found", "Whoops! That page doesn't exist."],
+  "403": ["403 Forbidden", "Sorry! You don't have access to this resource."]
 }

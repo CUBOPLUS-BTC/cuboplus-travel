@@ -208,5 +208,7 @@
       "Cubo+ 2024 constará en primera instancia de un periodo de preparación dónde se ensañarán las bases económicas de Bitcoin. Será necesario pasar las pruebas necesarias sobre informática y entendimiento de Bitcoin para pasar al periodo presencial.",
       "Cubo+ 2024 tendrá un periodo de preparación donde tódos los interesados en aprender de Bitcoin pueden participar. Luego se pasará al periodo presencial \"Cubo++ 2024\" donde se enseñará la parte técnica de Bitcoin y cómo desarrollar aplicaciones integrando Bitcoin."
     ]
-  }
+  },
+  "404": ["404 Not Found", "Whoops! That page doesn't exist."],
+  "403": ["403 Forbidden", "Sorry! You don't have access to this resource."]
 }
