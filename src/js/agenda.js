@@ -11,23 +11,81 @@ const events = [
     }
 ]
 
+const setElements = (content) => {
+  document.getElementById("text").innerHTML = content[0];
+  document.getElementById("org").innerHTML = content[1];
+  document.getElementById("event").innerHTML = content[2];
+  document.getElementById("class").innerHTML = content[3];
+  document.getElementById("meetup").innerHTML = content[4];
+
+}
+
+esButton[0].addEventListener("click", (e) => {
+  changeLanguage("agenda", "es", (content) => {
+    setElements(content);
+  });
+});
+
+esButton[1].addEventListener("click", (e) => {
+  changeLanguage("agenda", "es", (content) => {
+    setElements(content);
+  });
+});
+
+enButton[0].addEventListener("click", (e) => {
+  changeLanguage("agenda", "en", (content) => {
+    setElements(content);
+  });
+});
+
+enButton[1].addEventListener("click", (e) => {
+  changeLanguage("agenda", "en", (content) => {
+    setElements(content);
+  });
+});
 
 document.addEventListener('DOMContentLoaded', function() {
+    changeLanguage("agenda", localStorage.getItem("language") || "en", (content) => {
+      setElements(content);
+    })
+
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: window.innerWidth <= 640 ? "listMonth" : "dayGridMonth",
-        events: events,
+        events: function (info, successCallback, failureCallback) {
+          fetch(URL + "events")
+            .then(function (response) {
+              return response.json();
+            }).then(function (data) {
+              let events = data.data.map((event) => {
+                return {
+                  uuid: event.uuid,
+                  title: event.title,
+                  location: event.location,
+                  start: new Date (event.start),
+                  end: new Date (event.end),
+                  timeStart: event.timeStart,
+                  timeEnd: event.timeEnd,
+                  type: event.type
+                }
+              })
+              successCallback(events);
+              
+            }).catch(function (error) {
+              failureCallback(error);
+            }) ;
+        },
         eventContent: function (info) {
             const props = info.event._def.extendedProps;
             let color = "";
-            if (props.type === "Organization") color = "bg-blue-300 dark:bg-blue-700";
-            if (props.type === "Class") color = "bg-orange-300 dark:bg-orange-700";
-            console.log(window.innerWidth)
-            console.log(info);
+            if (props.type === "organization") color = "bg-sky-700 dark:bg-blue-700";
+            if (props.type === "class") color = "bg-amber-600 dark:bg-orange-700";
+            if (props.type === "meetup") color = "bg-red-600 dark:bg-red-700";
+            if (props.type === "event") color = "bg-cyan-600 dark:bg-cyan-700";
             return {
                 html: `
-                          <a href="${props.eventUrl}" target="_blank" class="block w-full rounded ${color}">
+                          <a href="eventinfo.html?uuid=${props.uuid}" class="block w-full rounded text-white ${color}">
                               <p class="mb-2">${info.event._def.title}</p>
                               <p class="mb-2 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                               <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
