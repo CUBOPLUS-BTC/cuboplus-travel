@@ -2,6 +2,7 @@ const params = new URLSearchParams(window.location.search);
 const uuid = params.get("uuid");
 
 const fillEvent = (data) => {
+  
     document.getElementById("meetup-title").innerText = data.title;
     document.getElementById("meetup-desc").innerText = data.description;
     document.getElementById("meetup-img").src = URL + "img/events/" + data.fileName;
@@ -9,6 +10,7 @@ const fillEvent = (data) => {
     document.getElementById("meetup-date").innerText = data.start === data.end ? data.start : data.start + " - " + data.end;
     document.getElementById("meetup-place").innerText = data.location;
     document.getElementById("meetup-type").innerText = data.type;
+    if (!data.eventUrl) document.getElementById("meetup-url").style.display = "none";
     document.getElementById("meetup-url").href = data.eventUrl;
 }
 
@@ -29,7 +31,8 @@ document.addEventListener("DOMContentLoaded", async (e) => {
       const result = await response.json();
       
       if (!result.status) {
-        console.error(result.error);
+        document.getElementById("event-info").innerHTML = `<p class="font-bold text-2xl dark:text-white">${result.error}</p>`;
+        
         return;
       }
 
