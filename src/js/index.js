@@ -33,20 +33,27 @@ const setTestimonials = (testimonials) => {
     let html = "";
 
     testimonials.map((u) => {
-        html += `<div
-        class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-        <p class="text-gray-600 dark:text-gray-300"><span class="font-serif">"</span>${u.content}
-                <span class="font-serif">"</span></p>
-        <div class="flex items-center gap-3 text-left">
-            <img class="h-16 w-16 rounded-full" src="${u.img}"
-                alt="user avatar" width="200" height="200" loading="lazy" />
-            <div>
-                <h3 class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">${u.name}
-                </h3>
-                <span class="text-sm text-gray-500 dark:text-gray-400">${u.role}</span>
-            </div>
-        </div>
-    </div>`
+        html += `<div class="swiper-slide">
+                    <div class="cart">
+                        <div
+                            class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
+                            <p class="text-gray-600 dark:text-gray-300"><span
+                                    class="font-serif wrap">"</span>${u.content}<span class="font-serif">"</span></p>
+                            <div class="flex items-center gap-3 text-left">
+                                <img class="h-16 w-16 rounded-full"
+                                    src="${u.img}" alt="user avatar"
+                                    width="200" height="200" loading="lazy" />
+                                <div>
+                                    <h3
+                                        class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">
+                                        ${u.name}
+                                    </h3>
+                                    <span class="text-sm text-gray-500 dark:text-gray-400">${u.role}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>`
     });
 
     document.getElementById("testimonials").innerHTML = html;
