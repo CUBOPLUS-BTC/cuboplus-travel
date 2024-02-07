@@ -54,19 +54,31 @@
         "img": "img/students/F1RRu0xWYAEYhDs.jpg",
         "name": "Rodrigo Aguilera",
         "role": "Frontend Developer",
-        "content": "Estoy muy agradecido de ser parte de Cubo+ y soy testigo de que buenos cambios están pasando en El Salvador"
+        "content": "Estoy muy agradecido de ser parte de Cubo+ y ser testigo de los buenos cambios que están pasando en El Salvador"
       },
       {
         "img": "img/students/jona.619f741cf7982e03b4aa.png",
         "name": "Jonathan Ramos",
         "role": "Frontend Developer",
-        "content": "Ser parte de Cubo+ me enseño lo mal que está el mundo, pero también me enseñó que puede ser solucionado con Bitcoin"
+        "content": "Ser parte de Cubo+ me enseñó lo mal que está el mundo, pero también me enseñó que puede ser solucionado con Bitcoin"
       },
       {
         "img": "img/students/photo_5057715902967032916_y.jpg",
         "name": "Rodrigo Bonilla",
         "role": "Frontend Developer",
         "content": "Cubo+ cambió mi percepción sobre El Salvador, fué un reto que repetiría"
+      },
+      {
+        "img": "img/students/me1.jpg",
+        "name": "Moises Iglesias",
+        "role": "Fullstack Developer",
+        "content": "Cubo+ ha sido una experiencia transformadora para mí, su compromiso por formar talento local es realmente inspirador."
+      },
+      {
+        "img": "img/students/Naomi-Iglesias.jpg",
+        "name": "Naomi Iglesias",
+        "role": "Frontend Developer",
+        "content": "Cubo+ no es sólo un programa; ¡Es una experiencia que cambia la vida! ¡Ha cambiado mi forma de ver la vida y el potencial infinito de desarrollo en El Salvador!"
       }
     ],
     "mission": [

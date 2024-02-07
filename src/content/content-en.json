@@ -67,6 +67,18 @@
         "name": "Rodrigo Bonilla",
         "role": "Frontend Developer",
         "content": "Cubo+ changed my perception about El Salvador, It was a challenge that I would repeat"
+      },
+      {
+        "img": "img/students/me1.jpg",
+        "name": "Moises Iglesias",
+        "role": "Fullstack Developer",
+        "content": "Cubo+ has been a transformative experience for me, their commitment on training local talent is truly inspiring."
+      },
+      {
+        "img": "img/students/Naomi-Iglesias.jpg",
+        "name": "Naomi Iglesias",
+        "role": "Frontend Developer",
+        "content": "Cubo+ is not just a program; it's a life-changing experience! It's reshaped how I view life and the endless potential for development in El Salvador!"
       }
     ],
     "mission": [
