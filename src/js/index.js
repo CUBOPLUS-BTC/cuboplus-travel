@@ -56,7 +56,7 @@ const setTestimonials = (testimonials) => {
                 </div>`
     });
 
-    document.getElementById("testimonials").innerHTML = html;
+    //document.getElementById("testimonials").innerHTML = html;
 }
 
 const setMentions = (mentions) => {
