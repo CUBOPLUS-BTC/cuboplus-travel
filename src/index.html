@@ -16,6 +16,13 @@
     <script type="module" crossorigin src="./assets/script.js"></script>
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="output.css">
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "kvmsar6iy8");
+    </script>
 
     <style>
         .swiper-container .cart {
@@ -80,6 +87,13 @@
                                         class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
                                         href='pages/cubo2023.html'>
                                         <span>Program 2023</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="navbar-program-button"
+                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='pages/agenda.html'>
+                                        <span>Agenda</span>
                                     </a>
                                 </li>
                                 <li>
@@ -239,6 +253,41 @@
             </div>
         </nav>
     </header>
+
+    <div data-modal-show="cookies-modal">
+
+    </div>
+
+    <!-- Main modal -->
+    <div id="cookies-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed bot-0 right-0 left-0 z-50 w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-md max-h-96">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Cookies
+                    </h3>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5 space-y-4">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        We use our own and third parties' cookies to improve our services
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button id="accept-cookies" data-modal-hide="cookies-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
+                    <button id="decline-cookies" data-modal-hide="cookies-modal" type="button" class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
 
     <section class="pt-32 sm:pt-40 md:pt-48">
         <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
@@ -1082,7 +1131,6 @@
             </div>
         </div>
     </section>
-
     <section
         class="relative before:absolute before:inset-0 before:h-px before:w-96 before:bg-gradient-to-r before:from-yellow-300 before:via-pink-400 before:to-transparent after:absolute after:inset-0 after:ml-auto after:mt-auto after:h-px after:w-96 after:bg-gradient-to-l after:from-yellow-300 after:via-pink-400 after:to-transparent">
         <div class="border-y border-gray-200 bg-gray-100 dark:border-slate-700 dark:bg-darker">
@@ -1209,9 +1257,10 @@
     </footer>
 
     <script src="js/lib/swiperjs/swiper-bundle.min.js"></script>
-    <script src="js/carousel.js"></script>
     <script src="js/lib/flowbite/dist/flowbite.min.js"></script>
     <script src="js/component.js"></script>
+    <script src="js/cookies.js"></script>
+    <script src="js/carousel.js"></script>
     <script src="js/index.js"></script>
 </body>
 
