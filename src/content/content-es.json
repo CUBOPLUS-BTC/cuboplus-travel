@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.2",
   "secret": "es-cuboplus",
   "layout": {
     "navbar": ["Sobre nosotros", "Pograma 2023", "Patrocinadores"],
