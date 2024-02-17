@@ -1,6 +1,6 @@
 var esButton = document.getElementsByClassName("es-button");
 var enButton = document.getElementsByClassName("en-button");
-const contentVersion = "1.0";
+const contentVersion = "1.2";
 const URL = "http://localhost:4000/"
 
 function setElementsNavbarAndFooter(content) {
