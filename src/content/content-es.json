@@ -15,6 +15,21 @@
     "typingList": ["El futuro", "El Salvador"],
     "headerdes": "CUBO+ es el primer programa educacional concentrado en entrenar la siguiente generación de entusiastas Salvadoreños de Bitcoin bajo el gobierno de El Presidente Nayib Bukele, para contribuír la adopción de Bitcoin y crecimiento económico de El Salvador.",
     "thanks": "APOYADO POR NUESTRAS ALIANZAS ESTRÁTEGICAS",
+    "testimonial": [
+      "\"Gracias a CUBO+, he tenido la oportunidad de aprender sobre un tema emocionante el cual ha transformado mi vida.\"",
+      "\"Estoy muy agradecido de ser parte de Cubo+ y ser testigo de los buenos cambios que están pasando en El Salvador.\"",
+      "\"Ser parte de Cubo+ me enseñó lo mal que está el mundo, pero también me enseñó que puede ser solucionado con Bitcoin.\"",
+      "\"CUBO+ cambió mi percepción sobre El Salvador, fue un reto que repetiría.\"",
+      "\"CUBO+ ha sido una experiencia transformadora para mí, su compromiso por formar talento local es realmente inspirador.\"",
+      "\"CUBO+ no es sólo un programa; ¡Es una experiencia que cambia la vida! ¡Ha cambiado mi forma de ver la vida y el potencial infinito de desarrollo en El Salvador!\""
+    ],
+    "testimonialMentor": [
+      "\"CUBO+ es una excelente iniciativa en El Salvador con un impacto en el ecosistema global de Bitcoin. ¡Definitivamente están formando a los líderes tecnológicos del futuro en Bitcoin!\"",
+      "\"El experimento de El Salvador con Bitcoin no es solo teoría. Reunirme y trabajar con los estudiantes en Cubo+ fue una gran experiencia, porque ver a jóvenes talentosos aprender a fondo sobre Bitcoin me hizo sentir que el experimento que está ocurriendo aquí está logrando resultados reales.\"",
+      "\"Aunque para la mayoría de nosotros, nuestro camino hacia el dominio de Bitcoin abarcó muchos años, presenciar cómo estos estudiantes lo comprenden todo en un período tan breve ha sido una experiencia verdaderamente humilde.\"",
+      "\"Compartir mi pasión con la juventud salvadoreña, ofreciéndoles educación y conocimientos valiosos para prepararlos para un futuro en la era digital: Una experiencia profundamente enriquecedora y memorable!\"",
+      "\"CUBO+ fue una experiencia increíble. Tuve la oportunidad de enseñar a estudiantes locales, siendo testigo y participante de su crecimiento, y también aprendí más sobre la situación de El Salvador y cómo está evolucionando. Me siento parte de esta increíble comunidad de estudiantes y profesores, ¡y no puedo esperar para volver a encontrarme con todos en algún lugar del mundo!\""
+    ],  
     "process": "Para construír la siguiente <br> Generación Descentralizada",
     "processdes": "Estamos comprometidos en crear un espacio de aprendizaje inclusivo y diverso que promueva el aprendizaje, crecimiento y colaboración.",
     "phases": ["Aplica", "Aprende", "Contribuye"],
@@ -43,44 +58,6 @@
       "Tóma ventaja de las herramientas adquiridas en el programa para crear soluciones a problemas reales en tu día a día."
     ],
     "students": ["Una generación que inspira", "En Cubo+ entrenamos agentes de cambio, forjando una cultura donde la inovación y colaboración definen el camino, dejando el legado de una generación que inspira y transforma."],
-    "testimonials": [
-      {
-        "img": "img/students/photo_5060249585779321798_y.jpg",
-        "name": "Fhernanda Elías",
-        "role": "Desarrollador Frontend",
-        "content": "Gracias a CUBO+, he tenido la oportunidad de aprender sobre un tema emocionante el cual a transformado mi vida"
-      },
-      {
-        "img": "img/students/F1RRu0xWYAEYhDs.jpg",
-        "name": "Rodrigo Aguilera",
-        "role": "Frontend Developer",
-        "content": "Estoy muy agradecido de ser parte de Cubo+ y ser testigo de los buenos cambios que están pasando en El Salvador"
-      },
-      {
-        "img": "img/students/jona.619f741cf7982e03b4aa.png",
-        "name": "Jonathan Ramos",
-        "role": "Frontend Developer",
-        "content": "Ser parte de Cubo+ me enseñó lo mal que está el mundo, pero también me enseñó que puede ser solucionado con Bitcoin"
-      },
-      {
-        "img": "img/students/photo_5057715902967032916_y.jpg",
-        "name": "Rodrigo Bonilla",
-        "role": "Frontend Developer",
-        "content": "Cubo+ cambió mi percepción sobre El Salvador, fué un reto que repetiría"
-      },
-      {
-        "img": "img/students/me1.jpg",
-        "name": "Moises Iglesias",
-        "role": "Fullstack Developer",
-        "content": "Cubo+ ha sido una experiencia transformadora para mí, su compromiso por formar talento local es realmente inspirador."
-      },
-      {
-        "img": "img/students/Naomi-Iglesias.jpg",
-        "name": "Naomi Iglesias",
-        "role": "Frontend Developer",
-        "content": "Cubo+ no es sólo un programa; ¡Es una experiencia que cambia la vida! ¡Ha cambiado mi forma de ver la vida y el potencial infinito de desarrollo en El Salvador!"
-      }
-    ],
     "mission": [
       "Quiénes somos",
       "Sómos un programa dedicado en enseñar a universitarios desde principiantes hasta desarrolladores experimentados. Creémos que todos deberían tener la oportunidad de entender y participar la revolución del Bitcoin en El Salvador, sin barreras ni limitaciones técnicas. <br> <br> En Cubo+ construímos una inclusiva y accesible comunidad. Nuestra misión es enseñar Bitcoin, haciendolo fácil de entender y aplicar en el día a día. Únete y creemos la siguiente generación de entusiastas de Bitcoin."
@@ -88,58 +65,58 @@
     "mentionstitles": ["Pálabras de otros", "No estámos solos", "Déscubre lo que otros comparten de nosotros."],
     "mentions": [
       {
-        "img": "img/cubotw.jpg",
+        "img": "img/tweets/cubotw.jpg",
         "href": "https://twitter.com/cuboplus/status/1709985928842785074",
         "name": "CUBO+",
         "handle": "@cuboplus",
         "role": "Cuenta oficial de Cubo+",
         "content": "Los estudiantes de CUBO+ recién llegarón a italia para participar en el Tuscany Lightning Boootcamp⚡️",
-        "picture": "img/F7sXIkgWsAA5a9b.jpg"
+        "picture": "img/bootcamp/tuscany-1.webp"
       },
       {
-        "img": "img/jbExO_A2_400x400.jpg",
+        "img": "img/tweets/stacy-herbert.jpg",
         "href": "https://twitter.com/stacyherbert/status/1713882443793702934",
         "name": "Stacy Herbert",
         "handle": "@stacyherbert",
         "role": "Líder de la Oficina del Bitcoin",
         "content": "Los estudiantes de CUBO+ estabán muy emocionados de conocer a Adam Back in Viareggio @adam3us @cuboplus @FulgurVentures @olegmikh1",
-        "picture": "img/F8ju_X9aQAAH5jv.jpg"
+        "picture": "img/bootcamp/tuscany-3.webp"
       },
       {
-        "img": "img/9bpX_7fY_400x400.jpg",
+        "img": "img/tweets/jimmy-song.jpg",
         "href": "https://twitter.com/jimmysong/status/1681432350247247872",
         "name": "Jimmy Song (송재준)",
         "handle": "@jimmysong",
         "role": "Mentor de Programming Blockchain",
         "content": "¡He enseñado a 12 estudiantes de CUBO+, vámos El Salvador!",
-        "picture": "img/F1Wlz9uWAAI7HHm.jpg"
+        "picture": "img/bootcamp/bootcamp-5.webp"
       },
       {
-        "img": "img/lgwajQTW_400x400.jpg",
+        "img": "img/tweets/forbes.jpg",
         "href": "https://twitter.com/forbes/status/1684239840890564615",
         "name": "Forbes",
         "handle": "@Forbes",
         "role": "Cuenta oficial de Forbes",
         "content": "Cómo El Salvador está invirtiendo en educación Bitcoin https://trib.al/pDQILFt por medio de @ForbesCrypto",
-        "picture": "img/F1-fNdbXsAUGjwB.jpg"
+        "picture": "img/bootcamp/bootcamp-4.webp"
       },
       {
-        "img": "img/21wQpOvO_400x400.jpg",
+        "img": "img/tweets/synonym.jpg",
         "href": "https://twitter.com/synonym_to/status/1672316976717262848",
         "name": "Synonym",
         "handle": "@Synonym_to",
         "role": "Cuenta oficila de Synonym",
         "content": "Hoy nuestro equipo dió una charla sobre @slashtags_to para los estudiantes de @cuboplus . Estámos ansiosos por ver desarrolladores Salvadoreños",
-        "picture": "img/FzUqQJnXsAIfIth.jpg"
+        "picture": "img/bootcamp/bootcamp-6.webp"
       },
       {
-        "img": "img/AzvXYXGr_400x400.jpg",
+        "img": "img/tweets/bitcoin-magazine.jpg",
         "href": "https://twitter.com/bitcoinmagazine/status/1676265047608393728",
         "name": "Bitcoin Magazine",
         "handle": "@BitcoinMagazine",
         "role": "Cuenta oficial de Bitcoin Magazine",
         "content": "Estudiantes Salvadoreños participan en el primer programa de desarrollo #Bitcoin de el país, El futuro es brillante para 🇸🇻",
-        "picture": "img/F0NIqHlaAAASHJm.jpg"
+        "picture": "img/bootcamp/bootcamp-2.webp"
       }
     ],
     "contact": [
