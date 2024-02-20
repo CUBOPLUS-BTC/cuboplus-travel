@@ -19,6 +19,7 @@
     <script type="module" crossorigin src="../assets/script.js"></script>
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../js/lib/photoswipe/dist/photoswipe.css">
 
     <script>
         if (
@@ -229,9 +230,8 @@
         <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
             <div class="space-y-6 lg:flex lg:items-center lg:gap-6 lg:space-y-0">
                 <div class="sm:8/12 lg:w-6/12 p-2">
-
-                    <img id="meetup-img" class=" w-full rounded-2xl object-cover" src="../img/unsorted/default-event.png" alt="meetup info" loading="lazy" />
-
+                    <div id="images" class="pswp-gallery pswp-gallery--single-row">
+                    </div>
                 </div>
                 <div class="sm:4/12 lg:w-6/12 p-2">
                     <h2 id="text" class="mb-4 text-4xl tracking-tight font-extrabold text-black dark:text-white">Information
@@ -386,6 +386,7 @@
     </footer>
 
     <script src="../js/lib/flowbite/dist/flowbite.min.js"></script>
+    <script type="module" src="../js/photoswipe.js"></script>
     <script src="../js/component.js"></script>
     <script src="../js/eventinfo.js"></script>
 </body>
