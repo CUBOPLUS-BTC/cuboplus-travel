@@ -1,3 +1,5 @@
+import PhotoSwipeLightbox from "../js/lib/photoswipe/dist/photoswipe-lightbox.esm.js";
+import PhotoSwipe from "../js/lib/photoswipe/dist/photoswipe.esm.js";
 const params = new URLSearchParams(window.location.search);
 const uuid = params.get("uuid");
 
@@ -19,22 +21,47 @@ const generateGallery = async (files) => {
 
   // Load all images and get their dimensions
   const imagesData = await Promise.all(files.map(file => loadImage(URL + "img/events/" + file)));
+  
+  html = `<div id="images" class="lg:grid grid-cols-${imagesData.length > 1 ? "2": "1"} container rounded-3xl shadow-2xl overflow-hidden pswp-gallery pswp-gallery--single-column">`;
 
   // Build HTML with images and their dimensions
   imagesData.forEach((data, index) => {
     const { url, width, height } = data;
-    const displayStyle = index === 0 ? '' : 'style="display:none;"'; // Show only the first image
+    if (index === 0 ) {
+      html += `<div class="col-span-1">
+                    <a href="${url}" 
+                        data-pswp-width="${width}" 
+                        data-pswp-height="${height}"
+                        target="_blank"
+                        >
+                        <img src="${url}" class="h-[32rem] w-full object-cover" alt="">
+                    </a>
+                </div>
+                <div class="grid grid-cols-${imagesData.length - 1} grid-rows-1 lg:grid-cols-2 lg:grid-rows-2">`;
+                return;
+    }
+
     html += `<a href="${url}"
-               ${displayStyle}
                data-pswp-width="${width}" 
-               data-pswp-height="${height}" 
-               target="_blank">
-               <img src="${url}" alt="" />
+               data-pswp-height="${height}"
+               target="_blank"
+               class="col-span-1 row-span-1">
+               <img src="${url}" class="h-full w-full object-cover" alt="" />
              </a>`;
+    
   });
 
+  html += "</div></div>";
+
   // Add the generated HTML to the images container
-  document.getElementById("images").innerHTML = html;
+  document.getElementById("root").innerHTML = html;
+  
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#images',
+    children: 'a',
+    pswpModule: () => PhotoSwipe
+  });
+  lightbox.init();
 }
 
 const fillEvent = (data) => {

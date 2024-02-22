@@ -1182,6 +1182,14 @@ input:checked + .toggle-bg {
   z-index: 1;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.row-span-1 {
+  grid-row: span 1 / span 1;
+}
+
 .-m-4 {
   margin: -1rem;
 }
@@ -1509,6 +1517,14 @@ input:checked + .toggle-bg {
   height: 24rem;
 }
 
+.h-\[10rem\] {
+  height: 10rem;
+}
+
+.h-\[32rem\] {
+  height: 32rem;
+}
+
 .h-\[calc\(100\%-1rem\)\] {
   height: calc(100% - 1rem);
 }
@@ -1530,6 +1546,10 @@ input:checked + .toggle-bg {
   height: 100vh;
 }
 
+.h-\[\] {
+  height: ;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
@@ -1540,6 +1560,15 @@ input:checked + .toggle-bg {
 
 .max-h-full {
   max-height: 100%;
+}
+
+.max-h-screen {
+  max-height: 100vh;
+}
+
+.max-h-min {
+  max-height: -moz-min-content;
+  max-height: min-content;
 }
 
 .min-h-screen {
@@ -1620,6 +1649,14 @@ input:checked + .toggle-bg {
 
 .w-96 {
   width: 24rem;
+}
+
+.w-\[10rem\] {
+  width: 10rem;
+}
+
+.w-\[48rem\] {
+  width: 48rem;
 }
 
 .w-\[calc\(100\%-7\.5rem\)\] {
@@ -1829,6 +1866,14 @@ input:checked + .toggle-bg {
 
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -2339,6 +2384,11 @@ input:checked + .toggle-bg {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .object-top {
@@ -4205,12 +4255,12 @@ input:checked + .toggle-bg {
     margin-top: -2rem;
   }
 
-  .lg\:mb-12 {
-    margin-bottom: 3rem;
-  }
-
   .lg\:mb-16 {
     margin-bottom: 4rem;
+  }
+
+  .lg\:mb-4 {
+    margin-bottom: 1rem;
   }
 
   .lg\:mb-6 {
@@ -4243,6 +4293,10 @@ input:checked + .toggle-bg {
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:grid {
+    display: grid;
   }
 
   .lg\:hidden {
@@ -4324,6 +4378,10 @@ input:checked + .toggle-bg {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
