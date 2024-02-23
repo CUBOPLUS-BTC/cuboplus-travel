@@ -2,7 +2,7 @@
   "version": "1.2",
   "secret": "es-cuboplus",
   "layout": {
-    "navbar": ["Sobre nosotros", "Pograma 2023", "Patrocinadores"],
+    "navbar": ["Sobre nosotros", "Pograma 2023", "Colaboradores"],
     "footer": [
       "CONTÁCTANOS",
       "SÍGUENOS",
