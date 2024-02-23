@@ -1671,6 +1671,10 @@ input:checked + .toggle-bg {
   max-width: 28rem;
 }
 
+.max-w-screen-lg {
+  max-width: 1024px;
+}
+
 .max-w-screen-md {
   max-width: 768px;
 }
@@ -1974,6 +1978,10 @@ input:checked + .toggle-bg {
   overflow: clip;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -1984,6 +1992,10 @@ input:checked + .toggle-bg {
 
 .overflow-x-clip {
   overflow-x: clip;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded {
@@ -2458,6 +2470,11 @@ input:checked + .toggle-bg {
   padding-bottom: 8rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -2571,6 +2588,11 @@ input:checked + .toggle-bg {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold {
@@ -3398,6 +3420,10 @@ input:checked + .toggle-bg {
   --tw-space-x-reverse: 1;
 }
 
+:is([dir="rtl"] .rtl\:text-right) {
+  text-align: right;
+}
+
 :is(.dark .dark\:block) {
   display: block;
 }
@@ -4223,6 +4249,10 @@ input:checked + .toggle-bg {
 
   .lg\:ml-2\.5 {
     margin-left: 0.625rem;
+  }
+
+  .lg\:ml-24 {
+    margin-left: 6rem;
   }
 
   .lg\:ml-\[7\.15rem\] {
