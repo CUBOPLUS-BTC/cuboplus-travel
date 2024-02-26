@@ -145,7 +145,7 @@
     ]
   },
   "contributors": {  
-    "titles": ["Our contributors", "Supported by Bitcoin leading companies"],
+    "titles": ["Our  <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>contributors</span></span>", "Supported by Bitcoin leading <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>companies</span></span>"],
     "descriptions": [
       "Through their commitment to education and innovation, The Bitcoin Office and Fulgur Ventures have created the path for talented young people in El Salvador to become the next generation of Bitcoiners.",
       "The National Bitcoin Office of El Salvador under President Nayib Bukele",
@@ -171,7 +171,18 @@
       "Some of our pages feature content provided by external sources. Below, you can find links to the terms of service and cookie policies of these third-party providers (over which we have no control).",
       "Regarding the use of cookies on this website described in the previous section, the user authorizes and consents to their use as follows: When the user accesses any page of the website, they will see a notice indicating that the CUBO+ website uses cookies, and the user can accept or reject their use through their browser settings. If the user does not configure their browser to deactivate cookies, by browsing the CUBO+ website and using its services, the user accepts the use of cookies.",
       "Users have the option to stop accepting the use of cookies at any time through their browser, being able to allow, block, or delete the cookies installed on their device by configuring the options of the browser they use on their device (computer, mobile, tablet)."
-    ]
+    ],
+    "tableEssen": ["Description", "Owner", "Expiration", "Type"],
+    "tableEssenData": [
+      "Management and administration of the page forms. Management of data sent by guests.",
+      "This cookie is set by HubSpot's CDN provider due to their rate limiting policies.",
+      "This cookie is set by HubSpot's CDN provider and is a necessary cookie for bot protection.",
+      "Provide spam protection.",
+      "Generate real-time reports on web traffic. Generate reports on general browsing patterns.",
+      "Connects multiple page views by a user into a single Clarity session recording.",
+      "Identifies the first-time Clarity saw this user on any site using Clarity."],
+    "tableEssenExp": ["6 months", "Session, deleted after browser closed", "30 minutes", "1 year"],
+    "tableEssenTyp": ["Functional", "Analytic"]
   },
   "cubo+2024": {
     "header": "Subscribe to the <span class=\"opacity-80\">Waitlist.</span>",

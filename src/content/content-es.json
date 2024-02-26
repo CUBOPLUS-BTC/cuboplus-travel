@@ -145,7 +145,7 @@
     ]
   },
   "contributors": {
-    "titles": ["Nuestros patrocinadores", "Apoyados por empresas líderes de Bitcoin"],
+    "titles": ["Nuestros <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>contribuidores</span></span>", "Apoyados por <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>empresas</span></span> líderes en Bitcoin"],
     "descriptions": [
       "Por medio de su compromiso en educación e inovación, la Oficina del Bitcoin en El Salvador y Fulgur Ventures han creado el camino para que los jóvenes Salvadoreños talentosos se conviertan en la siguiente generación de Bitcoiners.",
       "La Nacional Oficina del Bitcoin de El Salvador bajo el mandato de El Presidente Nayib Bukele",
@@ -172,7 +172,19 @@
       "Algunas de nuestras páginas presentan contenido proporcionado por fuentes externas. A continuación, puede encontrar enlaces a los términos de servicio y políticas de cookies de estos proveedores externos (sobre los cuales no tenemos control).",
       "Respecto al uso de cookies en este sitio web descrito en el apartado anterior, el usuario autoriza y consiente su uso de la siguiente manera: Cuando el usuario acceda a cualquier página del sitio web, verá un aviso indicando que el sitio web de CUBO+ utiliza cookies, y el El usuario puede aceptar o rechazar su uso a través de la configuración de su navegador. Si el usuario no configura su navegador para desactivar las cookies, al navegar por el sitio web de CUBO+ y utilizar sus servicios, el usuario acepta el uso de cookies.",
       "El usuario tiene la opción de dejar de aceptar el uso de cookies en cualquier momento a través de su navegador, pudiendo permitir, bloquear o eliminar las cookies instaladas en su dispositivo mediante la configuración de las opciones del navegador que utiliza en su dispositivo (ordenador, móvil, tableta)."
-    ]
+    ],
+    "tableEssen": ["Descripción", "Propietario", "Caducidad", "Tipo"],
+    "tableEssenData": [
+      "Gestión y administración de los formularios de la página. Gestión de datos enviados por los usuarios.",
+      "Esta cookie la establece el proveedor de CDN de HubSpot debido a sus políticas de limitación de tarifas.",
+      "Esta cookie la establece el proveedor de CDN de HubSpot y es una cookie necesaria para la protección contra bots.",
+      "Esta cookie proporciona protección contra spam.",
+      "Genera informes en tiempo real sobre el tráfico web. Generar informes sobre patrones generales de navegación.",
+      "Conecta varias páginas vistas por parte de un usuario en una única grabación de sesión de Clarity.",
+      "Identifica la primera vez que Clarity vio a este usuario en cualquier sitio usando Clarity."],
+    "tableEssenExp": ["6 meses", "Sesión, eliminada después de cerrar el navegador", "30 minutos", "1 año"],
+    "tableEssenTyp": ["Funcional", "Analítica"]
+  
   },
 
   "cubo+2024": {
