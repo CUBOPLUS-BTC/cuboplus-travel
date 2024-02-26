@@ -1369,10 +1369,6 @@ input:checked + .toggle-bg {
   margin-inline-start: 1.25rem;
 }
 
-.ms-6 {
-  margin-inline-start: 1.5rem;
-}
-
 .mt-0 {
   margin-top: 0px;
 }
@@ -4468,6 +4464,10 @@ input:checked + .toggle-bg {
     margin-top: -2rem;
   }
 
+  .lg\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .lg\:mb-16 {
     margin-bottom: 4rem;
   }
@@ -4506,6 +4506,10 @@ input:checked + .toggle-bg {
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mb-2 {
+    margin-bottom: 0.5rem;
   }
 
   .lg\:flex {

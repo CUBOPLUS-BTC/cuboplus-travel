@@ -23,13 +23,6 @@
       "\"Cubo+ has been a transformative experience for me, their commitment on training local talent is truly inspiring.\"",
       "\"Cubo+ is not just a program; it's a life-changing experience! It's reshaped how I view life and the endless potential for development in El Salvador!\""
     ],
-    "testimonialMentor": [
-      "\"CUBO+ is an excellent initiative in El Salvador with an impact on the global Bitcoin ecosystem, I think they are training the Bitcoin technological leaders of the future!\"",
-      "\"El Salvador's experiment with bitcoin is not just a theory. Meeting and working with the students in Cubo+ was a great experience, because seeing young, talented people learn about Bitcoin in depth let me feel that the experiment happening here is achieving real results.\"",
-      "\"While for most of us our journey to Bitcoin mastery spanned many years, witnessing these students grasp it all in such a brief period has been a truly humbling experience.\"",
-      "\"Sharing my passion with the Salvadorian youth, offering them education and valuable knowledge to prepare them for a future in the digital age: A thoroughly enriching and memorable experience!\"",
-      "\"Cubo+ was such an incredible experience. I've had the chance to teach local students, being both a witness and participant in their growth, and I got to learn more about El Salvador's situtaion and how it is evolving. I feel part of this incredible community of students and teachers, and I can't wait to meet them all again somewhere around the world!\""
-    ],     
     "process": "For building the next <br> Decentralized Generation",
     "processdes": "We are committed to creating a diverse and inclusive learning environment that promotes learning, growth and collaboration.",
     "phases": ["Apply", "Learn", "Contribute"],
@@ -151,13 +144,33 @@
       "The distinguished top 6 students seized a unique opportunity to enhance their advanced technical training by embarking on a journey to Italy. Following their intensive training, they participated in the Lugano Plan B event in Switzerland, further enriching their knowledge and expanding their horizons in the field."
     ]
   },
-  "sponsors": {
-    "titles": ["Our sponsors", "Our alliances"],
+  "contributors": {  
+    "titles": ["Our contributors", "Supported by Bitcoin leading companies"],
     "descriptions": [
       "Through their commitment to education and innovation, The Bitcoin Office and Fulgur Ventures have created the path for talented young people in El Salvador to become the next generation of Bitcoiners.",
       "The National Bitcoin Office of El Salvador under President Nayib Bukele",
       "We invest in early stage startups focused on Bitcoin and the Lightning Network",
       "The cubo+ team thanks our allies for being part of this project and for allowing our students to gain experience in their companies"
+    ],
+    "testimonialContributor": [
+      "\"CUBO+ is an excellent initiative in El Salvador with an impact on the global Bitcoin ecosystem, I think they are training the Bitcoin technological leaders of the future!\"",
+      "\"El Salvador's experiment with bitcoin is not just a theory. Meeting and working with the students in Cubo+ was a great experience, because seeing young, talented people learn about Bitcoin in depth let me feel that the experiment happening here is achieving real results.\"",
+      "\"While for most of us our journey to Bitcoin mastery spanned many years, witnessing these students grasp it all in such a brief period has been a truly humbling experience.\"",
+      "\"Sharing my passion with the Salvadorian youth, offering them education and valuable knowledge to prepare them for a future in the digital age: A thoroughly enriching and memorable experience!\"",
+      "\"Cubo+ was such an incredible experience. I've had the chance to teach local students, being both a witness and participant in their growth, and I got to learn more about El Salvador's situtaion and how it is evolving. I feel part of this incredible community of students and teachers, and I can't wait to meet them all again somewhere around the world!\"",
+      "\"Cubo+ is a revolutionary education program. Their knowledge went from zero to being able to build Bitcoin applications. I’m honored to have been a part of the program.\""
+    ]
+  },
+  "cookies": {
+    "titles": ["Cookies Policy", "Essential Cookies", "Optional Cookies", "Third Party Cookies", "Cookies Authorization", "Disable Cookies"],
+    "descriptions": [
+      "Cookies are small pieces of information that are stored directly on the computer/smartphone/tablet you are using. When you visit our website, we use essential cookies when necessary for the website to function or to provide you with a service you have requested.",
+      "Most browsers adhere to cookies as a standard, and regardless of them, they allow or prevent temporary or stored cookies in the security settings.",
+      "In the following table, you will find more details about the cookies necessary for the website to function or provide the service you have requested.",
+      "Learn more about the optional marketing and analytics cookies that help us learn from your visit and develop a better website experience for you.",
+      "Some of our pages feature content provided by external sources. Below, you can find links to the terms of service and cookie policies of these third-party providers (over which we have no control).",
+      "Regarding the use of cookies on this website described in the previous section, the user authorizes and consents to their use as follows: When the user accesses any page of the website, they will see a notice indicating that the CUBO+ website uses cookies, and the user can accept or reject their use through their browser settings. If the user does not configure their browser to deactivate cookies, by browsing the CUBO+ website and using its services, the user accepts the use of cookies.",
+      "Users have the option to stop accepting the use of cookies at any time through their browser, being able to allow, block, or delete the cookies installed on their device by configuring the options of the browser they use on their device (computer, mobile, tablet)."
     ]
   },
   "cubo+2024": {

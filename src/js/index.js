@@ -141,11 +141,6 @@ const setElements = async (content) => {
     document.getElementById("testimonials-student4").innerHTML = content.testimonial[3];
     document.getElementById("testimonials-student5").innerHTML = content.testimonial[4];
     document.getElementById("testimonials-student6").innerHTML = content.testimonial[5];
-    document.getElementById("testimonials-mentor1").innerHTML = content.testimonialMentor[0];
-    document.getElementById("testimonials-mentor2").innerHTML = content.testimonialMentor[1];
-    document.getElementById("testimonials-mentor3").innerHTML = content.testimonialMentor[2];
-    document.getElementById("testimonials-mentor4").innerHTML = content.testimonialMentor[3];
-    document.getElementById("testimonials-mentor5").innerHTML = content.testimonialMentor[4];
     document.getElementById("mission-title").innerHTML = content.mission[0];
     document.getElementById("mission").innerHTML = content.mission[1];
     document.getElementById("mentions-badge").innerHTML = content.mentionstitles[0];
