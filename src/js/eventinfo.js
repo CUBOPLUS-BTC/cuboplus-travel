@@ -3,6 +3,7 @@ import PhotoSwipe from "../js/lib/photoswipe/dist/photoswipe.esm.js";
 const params = new URLSearchParams(window.location.search);
 const uuid = params.get("uuid");
 
+console.log(uuid)
 // Function to generate the image gallery
 const generateGallery = async (files) => {
   let html = "";

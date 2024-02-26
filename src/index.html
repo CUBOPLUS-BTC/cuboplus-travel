@@ -57,7 +57,8 @@
                 <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
                     <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
                         <a href="#" aria-label="logo" class="flex items-center space-x-2">
-                            <img src="img/logos/logocuboplus.png" style="height: 64px;" alt="">
+                            <img src="img/logos/cubo-text-blue.svg" class="hidden dark:block" style="height: 64px;" alt="">
+                            <img src="img/logos/cubo-text-orange.svg" class="block dark:hidden" style="height: 64px;" alt="">
                         </a>
 
                         <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
@@ -272,7 +273,7 @@
                 <!-- Modal body -->
                 <div class="p-4 md:p-5 space-y-4">
                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        We use our own and third parties' cookies to improve our services
+                        We use third parties cookies to improve our services.
                     </p>
                     <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                         
@@ -280,8 +281,9 @@
                 </div>
                 <!-- Modal footer -->
                 <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                    <button id="accept-cookies" data-modal-hide="cookies-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
+                    <button id="accept-cookies" data-modal-hide="cookies-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Accept</button>
                     <button id="decline-cookies" data-modal-hide="cookies-modal" type="button" class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+                    <a class="ms-3 underline text-white" href="pages/legal/cookies.html" target="_blank">More information</a>
                 </div>
             </div>
         </div>
@@ -1061,10 +1063,10 @@
                 <div class="mb-6 md:mb-0">
                     <a href="index.html" class="flex items-center">
                         <!-- Logo blanco visible solo en modo oscuro -->
-                        <img src="img/logos/cubo_logo_blanco.png" class="h-40 me-3 hidden dark:block"
+                        <img src="img/logos/cubo-logo-blue.svg" class="h-40 me-3 hidden dark:block"
                             alt="Cubo Plus Logo Blanco" />
                         <!-- Logo azul visible solo en modo claro -->
-                        <img src="img/logos/cubo_logo_azul.png" class="h-40 me-3 block dark:hidden"
+                        <img src="img/logos/cubo-logo-orange.svg" class="h-40 me-3 block dark:hidden"
                             alt="Cubo Plus Logo Azul" />
                     </a>
                 </div>
@@ -1075,7 +1077,7 @@
                             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
-                                <a href="#" class="hover:underline">info@cuboplus.dev</a>
+                                <a href="#" class="hover:underline">info@cuboplus.academy</a>
                             </li>
                         </ul>
                     </div>
@@ -1127,6 +1129,9 @@
                             <li class="mb-4">
                                 <a target="_blank" href="https://bitcoin.org/bitcoin.pdf"
                                     class="hover:underline">Bitcoin whitepaper</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="pages/legal/cookies.html" class="hover:underline">Cookies Policy</a>
                             </li>
                         </ul>
                     </div>
