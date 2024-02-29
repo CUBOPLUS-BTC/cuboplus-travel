@@ -36,8 +36,9 @@
                 <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                     <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
                         <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
-                            <a href="../index.html" aria-label="logo" class="flex items-center space-x-2">
-                                <img src="../img/logos/logocuboplus.png" style="height: 64px;" alt="">
+                            <a href="../../index.html" aria-label="logo" class="flex items-center space-x-2">
+                                <img src="../../img/logos/cubo-text-blue.svg" class="hidden sm:block" style="height: 64px; width: 164px;" alt="cubo logo">
+                                <img src="../../img/logos/cubo-logo-azul1.svg" class="block sm:hidden" style="height: 48px; width: 124px;" alt="cubo logo">
                             </a>
 
                             <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
@@ -217,12 +218,13 @@
         <section class="pt-20 bg-white dark:bg-gray-900">
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:pt-16 lg:px-6 ">
                 <div class="lg:ml-24 max-w-screen-lg">
-                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-orange-500 dark:text-white">Cookies Policy
+                    <h2 id="cookies-title1" class="mb-4 text-4xl tracking-tight font-extrabold text-orange-500 dark:text-white">Cookies Policy
                     </h2>
-                    <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Cookies are small pieces of information that are stored directly 
+                    <p id="cookies-desc1" class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Cookies are small pieces of information that are stored directly 
                     on the computer/smartphone/tablet you are using. When you visit our website, we use essential cookies when necessary for the 
                     website to function or to provide you with a service you have requested.
-                    <br><br>
+                </p>
+                <p id="cookies-desc2" class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
                     Most browsers adhere to cookies as a standard, and regardless of them, 
                     they allow or prevent temporary or stored cookies in the security settings.
                 </p>
@@ -235,10 +237,10 @@
         <section class="bg-white dark:bg-gray-900">
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6 ">
                 <div class="lg:ml-24 max-w-screen-lg">
-                    <h3 class="mb-4 text-2xl tracking-tight font-extrabold text-orange-500 dark:text-white">Essential Cookies 
+                    <h3 id="cookies-title2" class="mb-4 text-2xl tracking-tight font-extrabold text-orange-500 dark:text-white">Essential Cookies 
                     </h3>
                 
-                    <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">In the following table, you will find more details
+                    <p id="cookies-desc3" class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">In the following table, you will find more details
                          about the cookies necessary for the website to function or provide the service you have requested.
                     </p>
                 <div class="relative overflow-x-auto">
@@ -248,16 +250,16 @@
                                 <th scope="col" class="px-6 py-3">
                                     Cookie
                                 </th>
-                                <th scope="col" class="px-6 py-3">
+                                <th id="table1" scope="col" class="px-6 py-3">
                                     Description
                                 </th>
-                                <th scope="col" class="px-6 py-3">
+                                <th id="table2" scope="col" class="px-6 py-3">
                                     Owner
                                 </th>
-                                <th scope="col" class="px-6 py-3">
+                                <th id="table3" scope="col" class="px-6 py-3">
                                     Expiration
                                 </th>
-                                <th scope="col" class="px-6 py-3">
+                                <th id="table4" scope="col" class="px-6 py-3">
                                     Type
                                 </th>
                                 
@@ -268,68 +270,85 @@
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     HubSpot
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info1" class="px-6 py-4">
                                     Management and administration of the page forms. Management of data sent by guests.
                                 </td>
                                 <td class="px-6 py-4">
                                     HubSpot
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp1" class="px-6 py-4">
                                     6 months
                                 </td>
-                                <td class="px-6 py-4">
-                                    Process 
+                                <td id="table-type1" class="px-6 py-4">
+                                    Functional 
                                 </td>
                             </tr>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     __cfruid
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info2" class="px-6 py-4">
                                     This cookie is set by HubSpot's CDN provider due to their rate limiting policies.
                                 </td>
                                 <td class="px-6 py-4">
                                     HubSpot
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp2" class="px-6 py-4">
                                     Session, deleted after browser closed
                                 </td>
-                                <td class="px-6 py-4">
-                                    Process
+                                <td id="table-type1" class="px-6 py-4">
+                                    Functional
                                 </td>
                             </tr>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     __cfuvid
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info9" class="px-6 py-4">
                                     This cookie is set by HubSpot's CDN provider due to their rate limiting policies.
                                 </td>
                                 <td class="px-6 py-4">
                                     HubSpot
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp0" class="px-6 py-4">
                                     Session, deleted after browser closed
                                 </td>
-                                <td class="px-6 py-4">
-                                    Process
+                                <td id="table-type2" class="px-6 py-4">
+                                    Functional
                                 </td>
                             </tr>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     __cf_bm
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info3" class="px-6 py-4">
                                     This cookie is set by HubSpot's CDN provider and is a necessary cookie for bot protection. 
                                 </td>
                                 <td class="px-6 py-4">
                                     HubSpot
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp3" class="px-6 py-4">
                                     30 minutes
                                 </td>
+                                <td id="table-type3" class="px-6 py-4">
+                                    Functional
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    _grecaptcha
+                                </th>
+                                <td id="table-info4" class="px-6 py-4">
+                                    Provide spam protection
+                                </td>
                                 <td class="px-6 py-4">
-                                    Process
+                                    Google reCAPTCHA
+                                </td>
+                                <td id="table-exp9" class="px-6 py-4">
+                                    6 months
+                                </td>
+                                <td id="table-type4" class="px-6 py-4">
+                                    Functional
                                 </td>
                             </tr>
                         </tbody>
@@ -341,10 +360,10 @@
 
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6 ">
                 <div class="lg:ml-24 max-w-screen-lg">
-                    <h3 class="mb-4 text-2xl tracking-tight font-extrabold text-orange-500 dark:text-white">Optional cookies
+                    <h3 id="cookies-title3" class="mb-4 text-2xl tracking-tight font-extrabold text-orange-500 dark:text-white">Optional cookies
                     </h3>
                 
-                    <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Learn more about the optional marketing and analytics
+                    <p id="cookies-desc4" class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">Learn more about the optional marketing and analytics
                          cookies that help us learn from your visit and develop a better website experience for you.</p>
                 <div class="relative overflow-x-auto">
                     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -372,32 +391,32 @@
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     Miscrosoft Clarity
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info5" class="px-6 py-4">
                                     Generate real-time reports on web traffic. Generate reports on general browsing patterns.
                                 </td>
                                 <td class="px-6 py-4">
                                     Microsoft
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp4" class="px-6 py-4">
                                     1 year
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-type5" class="px-6 py-4">
                                     Analytic
                                 </td>
                             </tr> <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     _clsk
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info6" class="px-6 py-4">
                                     Connects multiple page views by a user into a single Clarity session recording.	
                                 </td>
                                 <td class="px-6 py-4">
                                     Microsoft Clarity
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp5" class="px-6 py-4">
                                     1 year
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-type6" class="px-6 py-4">
                                     Analytic
                                 </td>
                             </tr>
@@ -405,16 +424,16 @@
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     CLID
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info7" class="px-6 py-4">
                                     Identifies the first-time Clarity saw this user on any site using Clarity.
                                 </td>
                                 <td class="px-6 py-4">
                                     Microsoft Clarity
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp6" class="px-6 py-4">
                                     1 year
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-type7" class="px-6 py-4">
                                     Analytic
                                 </td>
                             </tr>
@@ -427,13 +446,14 @@
 
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6 ">
                 <div class="lg:ml-24 max-w-screen-lg">
-                    <h3 class="mb-4 text-2xl tracking-tight font-extrabold text-orange-500 dark:text-white">Third Party Cookies 
+                    <h3 id="cookies-title4" class="mb-4 text-2xl tracking-tight font-extrabold text-orange-500 dark:text-white">Third Party Cookies 
 
                     </h3>
                 
-                    <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
+                    <p id="cookies-desc5" class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
                         Some of our pages feature content provided by external sources. Below, you can find links to the terms of service and cookie policies of these third-party providers (over which we have no control).
-                        <br>
+                    </p>
+                    <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
                         <a class="underline" href="https://www.youtube.com/t/terms" target="_blank">YouTube</a>
                         <br>
                         <a class="underline" href="https://learn.microsoft.com/en-us/clarity/setup-and-installation/cookie-list" target="_blank">Microsoft Clarity</a>
@@ -450,10 +470,10 @@
 
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6 ">
                 <div class="lg:ml-24 max-w-screen-lg">
-                    <h2 class="mb-4 text-2xl tracking-tight font-extrabold text-orange-500 dark:text-white">Auth Cookies
+                    <h2 id="cookies-title5" class="mb-4 text-2xl tracking-tight font-extrabold text-orange-500 dark:text-white">Auth Cookies
 
                     </h2>
-                    <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
+                    <p id="cookies-desc6" class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
                         Regarding the use of cookies on this website described in the previous section, the user authorizes and consents to their use as follows: 
                         When the user accesses any page of the website, they will see a notice indicating that the CUBO+ website 
                         uses cookies, and the user can accept or reject their use through their browser settings. If the user does not configure their browser 
@@ -463,17 +483,20 @@
             </div>
             <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6 ">
                 <div class="lg:ml-24 max-w-screen-lg">
-                    <h2 class="mb-4 text-2xl tracking-tight font-extrabold text-orange-500 dark:text-white">Disable cookies
+                    <h2 id="cookies-title6" class="mb-4 text-2xl tracking-tight font-extrabold text-orange-500 dark:text-white">Disable cookies
 
                     </h2>
-                    <p class="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
+                    <p id="cookies-desc7" class="font-light text-gray-500 lg:mb-2 sm:text-xl dark:text-gray-400">
                         Users have the option to stop accepting the use of cookies at any time through their browser, 
                         being able to allow, block, or delete the cookies installed on their device by configuring the
-                        options of the browser they use on their device (computer, mobile, tablet). <br>
-                        <br><br><span class="font-bold">Chrome:</span> <a class="underline" href="https://support.google.com/chrome/answer/95647" target="_blank">https://support.google.com/chrome/answer/95647</a>
-                        <br><br><span class="font-bold">Firefox: </span><a class="underline" href="https://support.mozilla.org/en-US/kb/third-party-cookies-firefox-tracking-protection" target="_blank">https://support.mozilla.org/en-US/kb/third-party-cookies-firefox-tracking-protection</a>
-                        <br><br><span class="font-bold">Safari: </span><a class="underline" href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank">https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac</a>
-                </p>
+                        options of the browser they use on their device (computer, mobile, tablet). </p>
+                        <p class="font-light text-gray-500 lg:mb-12 sm:text-xl dark:text-gray-400">
+                            <br><br><span class="font-bold">Chrome:</span> <a class="underline" href="https://support.google.com/chrome/answer/95647" target="_blank">https://support.google.com/chrome/answer/95647</a>
+                            <br><br><span class="font-bold">Firefox: </span><a class="underline" href="https://support.mozilla.org/en-US/kb/third-party-cookies-firefox-tracking-protection" target="_blank">https://support.mozilla.org/en-US/kb/third-party-cookies-firefox-tracking-protection</a>
+                            <br><br><span class="font-bold">Safari: </span><a class="underline" href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac" target="_blank">https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac</a>
+                        </p>
+                        
+                
                 </div>
             </div>
         </section>
@@ -483,12 +506,7 @@
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
                         <a href="../../index.html" class="flex items-center">
-                            <!-- Logo blanco visible solo en modo oscuro -->
-                            <img src="../../img/logos/cubo_logo_blanco.png" class="h-40 me-3 hidden dark:block"
-                                alt="Cubo Plus Logo Blanco" />
-                            <!-- Logo azul visible solo en modo claro -->
-                            <img src="../../img/logos/cubo_logo_azul.png" class="h-40 me-3 block dark:hidden"
-                                alt="Cubo Plus Logo Azul" />
+                            <img src="../../img/logos/cubo-logo-blue.svg" class="h-40 me-3" alt="Cubo Plus Logo Blanco" />
                         </a>
                     </div>
 
@@ -497,7 +515,7 @@
                             <h2 id="footer-contact" class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
                             <ul class="text-gray-500 dark:text-gray-400 font-medium">
                                 <li class="mb-4">
-                                    <a href="#" class="hover:underline">info@cuboplus.dev</a>
+                                    <a href="#" class="hover:underline">info@cuboplus.academy</a>
                                 </li>
                             </ul>
                         </div>
@@ -524,7 +542,7 @@
                                         </svg>
                                         <span class="sr-only">Twitter page</span>
                                     </a>
-                                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                     <a href="https://www.instagram.com/cubo_plus/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
                                             viewBox="0 0 24 24">
                                             <path
@@ -547,6 +565,9 @@
                                 <li class="mb-4">
                                     <a target="_blank" href="https://bitcoin.org/bitcoin.pdf" class="hover:underline">Bitcoin whitepaper</a>
                                 </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Cookies Policy</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -561,6 +582,6 @@
 
         <script src="../../js/lib/flowbite/dist/flowbite.min.js"></script>
         <script src="../../js/component.js"></script>
-        <script src="../../js/cubo++2024.js"></script>
+        <script src="../../js/cookiestrans.js"></script>
     </body>
 </html>

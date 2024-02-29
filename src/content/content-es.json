@@ -23,13 +23,6 @@
       "\"CUBO+ ha sido una experiencia transformadora para mí, su compromiso por formar talento local es realmente inspirador.\"",
       "\"CUBO+ no es sólo un programa; ¡Es una experiencia que cambia la vida! ¡Ha cambiado mi forma de ver la vida y el potencial infinito de desarrollo en El Salvador!\""
     ],
-    "testimonialMentor": [
-      "\"CUBO+ es una excelente iniciativa en El Salvador con un impacto en el ecosistema global de Bitcoin. ¡Definitivamente están formando a los líderes tecnológicos del futuro en Bitcoin!\"",
-      "\"El experimento de El Salvador con Bitcoin no es solo teoría. Reunirme y trabajar con los estudiantes en Cubo+ fue una gran experiencia, porque ver a jóvenes talentosos aprender a fondo sobre Bitcoin me hizo sentir que el experimento que está ocurriendo aquí está logrando resultados reales.\"",
-      "\"Aunque para la mayoría de nosotros, nuestro camino hacia el dominio de Bitcoin abarcó muchos años, presenciar cómo estos estudiantes lo comprenden todo en un período tan breve ha sido una experiencia verdaderamente humilde.\"",
-      "\"Compartir mi pasión con la juventud salvadoreña, ofreciéndoles educación y conocimientos valiosos para prepararlos para un futuro en la era digital: Una experiencia profundamente enriquecedora y memorable!\"",
-      "\"CUBO+ fue una experiencia increíble. Tuve la oportunidad de enseñar a estudiantes locales, siendo testigo y participante de su crecimiento, y también aprendí más sobre la situación de El Salvador y cómo está evolucionando. Me siento parte de esta increíble comunidad de estudiantes y profesores, ¡y no puedo esperar para volver a encontrarme con todos en algún lugar del mundo!\""
-    ],  
     "process": "Para construír la siguiente <br> Generación Descentralizada",
     "processdes": "Estamos comprometidos en crear un espacio de aprendizaje inclusivo y diverso que promueva el aprendizaje, crecimiento y colaboración.",
     "phases": ["Aplica", "Aprende", "Contribuye"],
@@ -151,15 +144,49 @@
       "Los 6 estudiantes distiguidos tomarón una oportunidad única para más entrenamiento técnico en un viaje a italia. Siguiendo con su capacitación intensiva, participarón en el evento de Lugano Plan B en Suiza, enriqueciendo su curriculum en la zona."
     ]
   },
-  "sponsors": {
-    "titles": ["Nuestros Patrocinadores", "Nuestras Alianzas"],
+  "contributors": {
+    "titles": ["Nuestros <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>contribuidores</span></span>", "Apoyados por <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>empresas</span></span> líderes en Bitcoin"],
     "descriptions": [
       "Por medio de su compromiso en educación e inovación, la Oficina del Bitcoin en El Salvador y Fulgur Ventures han creado el camino para que los jóvenes Salvadoreños talentosos se conviertan en la siguiente generación de Bitcoiners.",
       "La Nacional Oficina del Bitcoin de El Salvador bajo el mandato de El Presidente Nayib Bukele",
       "Invertimos en startups de fase temprana enfocados en Bitcoin y Lightning Network",
       "El equipo de Cubo+ agradece a nuestras alianzas por ser parte de este proyecto y por permitir a nuestros estudiantes ganar experiencia en sus compañías."
+    ],
+    "testimonialContributor": [
+      "\"CUBO+ es una excelente iniciativa en El Salvador con un impacto en el ecosistema global de Bitcoin. ¡Definitivamente están formando a los líderes tecnológicos del futuro en Bitcoin!\"",
+      "\"El experimento de El Salvador con Bitcoin no es solo teoría. Reunirme y trabajar con los estudiantes en Cubo+ fue una gran experiencia, porque ver a jóvenes talentosos aprender a fondo sobre Bitcoin me hizo sentir que el experimento que está ocurriendo aquí está logrando resultados reales.\"",
+      "\"Aunque para la mayoría de nosotros, nuestro camino hacia el dominio de Bitcoin abarcó muchos años, presenciar cómo estos estudiantes lo comprenden todo en un período tan breve ha sido una experiencia verdaderamente humilde.\"",
+      "\"Compartir mi pasión con la juventud salvadoreña, ofreciéndoles educación y conocimientos valiosos para prepararlos para un futuro en la era digital: Una experiencia profundamente enriquecedora y memorable!\"",
+      "\"CUBO+ fue una experiencia increíble. Tuve la oportunidad de enseñar a estudiantes locales, siendo testigo y participante de su crecimiento, y también aprendí más sobre la situación de El Salvador y cómo está evolucionando. Me siento parte de esta increíble comunidad de estudiantes y profesores, ¡y no puedo esperar para volver a encontrarme con todos en algún lugar del mundo!\"",
+      "\"Cubo+ es un programa educativo revolucionario. Su conocimiento pasó de cero a poder crear aplicaciones de Bitcoin. Me siento honrado de haber sido parte del programa.\""
     ]
   },
+
+  "cookies": {
+    "titles": ["Política de Cookies", "Cookies Esenciales", "Cookies Opcionales", "Cookies de Terceros", "Autorización de cookies", "Desactivar Cookies"],
+    "descriptions": [
+      "Las cookies son pequeños fragmentos de información que se almacenan directamente en el ordenador/teléfono inteligente/tableta que está utilizando. Cuando visita nuestro sitio web, utilizamos cookies esenciales cuando es necesario para que el sitio web funcione o para brindarle un servicio que haya solicitado.",
+      "La mayoría de navegadores adoptan como estándar las cookies y, independientemente de ellas, permiten o impiden en la configuración de seguridad las cookies temporales o memorizadas.",
+      "En la siguiente tabla encontrará más detalles sobre las cookies necesarias para que el sitio web funcione o preste el servicio que ha solicitado.",
+      "Obtenga más información sobre las cookies opcionales de marketing y análisis que nos ayudan a aprender de su visita y desarrollar una mejor experiencia en el sitio web para usted.",
+      "Algunas de nuestras páginas presentan contenido proporcionado por fuentes externas. A continuación, puede encontrar enlaces a los términos de servicio y políticas de cookies de estos proveedores externos (sobre los cuales no tenemos control).",
+      "Respecto al uso de cookies en este sitio web descrito en el apartado anterior, el usuario autoriza y consiente su uso de la siguiente manera: Cuando el usuario acceda a cualquier página del sitio web, verá un aviso indicando que el sitio web de CUBO+ utiliza cookies, y el El usuario puede aceptar o rechazar su uso a través de la configuración de su navegador. Si el usuario no configura su navegador para desactivar las cookies, al navegar por el sitio web de CUBO+ y utilizar sus servicios, el usuario acepta el uso de cookies.",
+      "El usuario tiene la opción de dejar de aceptar el uso de cookies en cualquier momento a través de su navegador, pudiendo permitir, bloquear o eliminar las cookies instaladas en su dispositivo mediante la configuración de las opciones del navegador que utiliza en su dispositivo (ordenador, móvil, tableta)."
+    ],
+    "tableEssen": ["Descripción", "Propietario", "Caducidad", "Tipo"],
+    "tableEssenData": [
+      "Gestión y administración de los formularios de la página. Gestión de datos enviados por los usuarios.",
+      "Esta cookie la establece el proveedor de CDN de HubSpot debido a sus políticas de limitación de tarifas.",
+      "Esta cookie la establece el proveedor de CDN de HubSpot y es una cookie necesaria para la protección contra bots.",
+      "Esta cookie proporciona protección contra spam.",
+      "Genera informes en tiempo real sobre el tráfico web. Generar informes sobre patrones generales de navegación.",
+      "Conecta varias páginas vistas por parte de un usuario en una única grabación de sesión de Clarity.",
+      "Identifica la primera vez que Clarity vio a este usuario en cualquier sitio usando Clarity."],
+    "tableEssenExp": ["6 meses", "Sesión, eliminada después de cerrar el navegador", "30 minutos", "1 año"],
+    "tableEssenTyp": ["Funcional", "Analítica"]
+  
+  },
+
   "cubo+2024": {
     "header": "Suscribete a la <span class=\"opacity-80\">Lista de espera.</span>",
     "legend": "Te haremos saber cuando la siguiente edición de Cubo+ esté lista, por el momento, mantente aprendiendo y estudiando Bitcoin!",
@@ -176,7 +203,7 @@
   },
   "faq": {
     "title": "PREGUNTAS FRECUENTES",
-    "description": "Algunas preguntas clave que puedas tener sobre cubo+, si hay alguna pregunta importante faltando puedes hacernoslo saber por medio del formulario de contacto en Sobre nosotros o por medio de correo electrónico a info@cuboplus.dev",
+    "description": "Algunas preguntas clave que puedas tener sobre cubo+, si hay alguna pregunta importante faltando puedes hacernoslo saber por medio del formulario de contacto en Sobre nosotros o por medio de correo electrónico a info@cuboplus.academy",
     "questions": [
       "¿Cómo me uno a cuboplus?",
       "¿Tengo que hablar inglés perfecto para unirme a cuboplus?",
