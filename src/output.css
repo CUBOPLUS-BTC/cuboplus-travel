@@ -1630,6 +1630,10 @@ input:checked + .toggle-bg {
   width: 6rem;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
 .w-4 {
   width: 1rem;
 }
@@ -1689,6 +1693,10 @@ input:checked + .toggle-bg {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-3 {
+  width: 0.75rem;
 }
 
 .max-w-2xl {
@@ -4472,6 +4480,10 @@ input:checked + .toggle-bg {
     margin-bottom: 4rem;
   }
 
+  .lg\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .lg\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -4506,10 +4518,6 @@ input:checked + .toggle-bg {
 
   .lg\:mt-0 {
     margin-top: 0px;
-  }
-
-  .lg\:mb-2 {
-    margin-bottom: 0.5rem;
   }
 
   .lg\:flex {
