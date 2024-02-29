@@ -37,8 +37,8 @@
                     <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
                         <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
                             <a href="../../index.html" aria-label="logo" class="flex items-center space-x-2">
-                                 <img src="../../img/logos/cubo-text-blue.svg" class="hidden dark:block" style="height: 64px; width: 164px;" alt="">
-                                <img src="../../img/logos/cubo-text-orange.svg" class="block dark:hidden" style="height: 64px; width: 164px;" alt="cubo logo">
+                                <img src="../../img/logos/cubo-text-blue.svg" class="hidden sm:block" style="height: 64px; width: 164px;" alt="cubo logo">
+                                <img src="../../img/logos/cubo-logo-azul1.svg" class="block sm:hidden" style="height: 48px; width: 124px;" alt="cubo logo">
                             </a>
 
                             <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
@@ -250,16 +250,16 @@
                                 <th scope="col" class="px-6 py-3">
                                     Cookie
                                 </th>
-                                <th scope="col" class="px-6 py-3">
+                                <th id="table1" scope="col" class="px-6 py-3">
                                     Description
                                 </th>
-                                <th scope="col" class="px-6 py-3">
+                                <th id="table2" scope="col" class="px-6 py-3">
                                     Owner
                                 </th>
-                                <th scope="col" class="px-6 py-3">
+                                <th id="table3" scope="col" class="px-6 py-3">
                                     Expiration
                                 </th>
-                                <th scope="col" class="px-6 py-3">
+                                <th id="table4" scope="col" class="px-6 py-3">
                                     Type
                                 </th>
                                 
@@ -270,68 +270,85 @@
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     HubSpot
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info1" class="px-6 py-4">
                                     Management and administration of the page forms. Management of data sent by guests.
                                 </td>
                                 <td class="px-6 py-4">
                                     HubSpot
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp1" class="px-6 py-4">
                                     6 months
                                 </td>
-                                <td class="px-6 py-4">
-                                    Process 
+                                <td id="table-type1" class="px-6 py-4">
+                                    Functional 
                                 </td>
                             </tr>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     __cfruid
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info2" class="px-6 py-4">
                                     This cookie is set by HubSpot's CDN provider due to their rate limiting policies.
                                 </td>
                                 <td class="px-6 py-4">
                                     HubSpot
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp2" class="px-6 py-4">
                                     Session, deleted after browser closed
                                 </td>
-                                <td class="px-6 py-4">
-                                    Process
+                                <td id="table-type1" class="px-6 py-4">
+                                    Functional
                                 </td>
                             </tr>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     __cfuvid
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info9" class="px-6 py-4">
                                     This cookie is set by HubSpot's CDN provider due to their rate limiting policies.
                                 </td>
                                 <td class="px-6 py-4">
                                     HubSpot
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp0" class="px-6 py-4">
                                     Session, deleted after browser closed
                                 </td>
-                                <td class="px-6 py-4">
-                                    Process
+                                <td id="table-type2" class="px-6 py-4">
+                                    Functional
                                 </td>
                             </tr>
                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     __cf_bm
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info3" class="px-6 py-4">
                                     This cookie is set by HubSpot's CDN provider and is a necessary cookie for bot protection. 
                                 </td>
                                 <td class="px-6 py-4">
                                     HubSpot
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp3" class="px-6 py-4">
                                     30 minutes
                                 </td>
+                                <td id="table-type3" class="px-6 py-4">
+                                    Functional
+                                </td>
+                            </tr>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    _grecaptcha
+                                </th>
+                                <td id="table-info4" class="px-6 py-4">
+                                    Provide spam protection
+                                </td>
                                 <td class="px-6 py-4">
-                                    Process
+                                    Google reCAPTCHA
+                                </td>
+                                <td id="table-exp9" class="px-6 py-4">
+                                    6 months
+                                </td>
+                                <td id="table-type4" class="px-6 py-4">
+                                    Functional
                                 </td>
                             </tr>
                         </tbody>
@@ -374,32 +391,32 @@
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     Miscrosoft Clarity
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info5" class="px-6 py-4">
                                     Generate real-time reports on web traffic. Generate reports on general browsing patterns.
                                 </td>
                                 <td class="px-6 py-4">
                                     Microsoft
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp4" class="px-6 py-4">
                                     1 year
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-type5" class="px-6 py-4">
                                     Analytic
                                 </td>
                             </tr> <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     _clsk
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info6" class="px-6 py-4">
                                     Connects multiple page views by a user into a single Clarity session recording.	
                                 </td>
                                 <td class="px-6 py-4">
                                     Microsoft Clarity
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp5" class="px-6 py-4">
                                     1 year
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-type6" class="px-6 py-4">
                                     Analytic
                                 </td>
                             </tr>
@@ -407,16 +424,16 @@
                                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     CLID
                                 </th>
-                                <td class="px-6 py-4">
+                                <td id="table-info7" class="px-6 py-4">
                                     Identifies the first-time Clarity saw this user on any site using Clarity.
                                 </td>
                                 <td class="px-6 py-4">
                                     Microsoft Clarity
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-exp6" class="px-6 py-4">
                                     1 year
                                 </td>
-                                <td class="px-6 py-4">
+                                <td id="table-type7" class="px-6 py-4">
                                     Analytic
                                 </td>
                             </tr>
@@ -489,12 +506,7 @@
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
                         <a href="../../index.html" class="flex items-center">
-                            <!-- Logo blanco visible solo en modo oscuro -->
-                            <img src="../../img/logos/cubo-logo-blue.svg" class="h-40 me-3 hidden dark:block"
-                                alt="Cubo Plus Logo Blanco" />
-                            <!-- Logo azul visible solo en modo claro -->
-                            <img src="../../img/logos/cubo-logo-orange.svg" class="h-40 me-3 block dark:hidden"
-                                alt="Cubo Plus Logo Azul" />
+                            <img src="../../img/logos/cubo-logo-blue.svg" class="h-40 me-3" alt="Cubo Plus Logo Blanco" />
                         </a>
                     </div>
 
@@ -530,7 +542,7 @@
                                         </svg>
                                         <span class="sr-only">Twitter page</span>
                                     </a>
-                                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                     <a href="https://www.instagram.com/cubo_plus/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
                                             viewBox="0 0 24 24">
                                             <path
