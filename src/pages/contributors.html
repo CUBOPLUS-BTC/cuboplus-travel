@@ -38,7 +38,8 @@
                 <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
                     <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
                         <a href="../index.html" aria-label="logo" class="flex items-center space-x-2">
-                            <img src="../img/logos/logocuboplus.png" style="height: 64px;" alt="">
+                  <img src="../img/logos/cubo-text-blue.svg" class="hidden sm:block" style="height: 64px; width: 164px;" alt="cubo logo">
+                            <img src="../img/logos/cubo-logo-azul1.svg" class="block sm:hidden" style="height: 48px; width: 124px;" alt="cubo logo">
                         </a>
 
                         <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
@@ -218,13 +219,11 @@
     <section class="pt-20 bg-white dark:bg-gray-900">
         <div class="py-4 px-4 mx-auto max-w-screen-xl lg:pt-16 lg:px-6 ">
             <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-                <h2 class="mb-8 text-4xl font-bold text-blue-900 dark:text-white md:text-5xl">
-                    Our
-                    <span class="relative">
-                        <span class="relative px-2 text-blue-800 dark:text-indigo-200">contributors</span>
-                    </span>
+                <h2 id="contributors-title" class="mb-8 text-4xl font-bold text-blue-900 dark:text-white md:text-5xl">
+                    Our contributors
                 </h2>
-                <p class="mt-6 text-gray-700 dark:text-gray-300">Through
+                
+                <p id="contributors-legend" class="mt-6 text-gray-700 dark:text-gray-300">Through
                     their commitment to
                     education and innovation, The Bitcoin Office and Fulgur Ventures have created the path for talented
                     young people in El Salvador to become the next generation of developers in Bitcoin and Lightning
@@ -254,7 +253,7 @@
                                 <div class="">
                                     <h2 class="text-xl font-semibold text-gray-800 dark:text-white">The Bitcoin Office
                                     </h2>
-                                    <p class="mt-2 text-gray-600 dark:text-gray-400">The National Bitcoin Office of El
+                                    <p id="contributors-office" class="mt-2 text-gray-600 dark:text-gray-400">The National Bitcoin Office of El
                                         Salvador under President Nayib Bukele.</p>
 
                                     <div
@@ -301,7 +300,7 @@
                             <div class="mt-6 space-y-6 sm:mt-0 sm:w-2/3 md:w-3/5 lg:w-2/3">
                                 <div class="">
                                     <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Fulgur Ventures</h2>
-                                    <p class="mt-2 text-gray-600 dark:text-gray-400">We invest in early stage startups
+                                    <p id="contributors-fulgur" class="mt-2 text-gray-600 dark:text-gray-400">We invest in early stage startups
                                         focused on Bitcoin and the Lightning Network.</p>
 
                                     <div
@@ -354,13 +353,13 @@
     <section class="overflow-x-hidden pt-16 sm:pt-16 md:pt-12 lg:pt-4">
         <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
             <div class="relative z-10 text-center md:mx-auto md:w-5/6 lg:w-4/6">
-                <h2 class="mb-8 text-4xl font-bold text-blue-900 dark:text-white md:text-5xl">
-                    Supported by Bitcion leading
+                <h2 id="alliances-title" class="mb-8 text-4xl font-bold text-blue-900 dark:text-white md:text-5xl">
+                    Supported by Bitcoin leading companies
                     <span class="relative">
                         <span class="relative px-2 text-blue-800 dark:text-indigo-200">companies</span>
                     </span>
                 </h2>
-                <p class="mt-6 text-gray-700 dark:text-gray-300">The Cubo+ team thanks our alliances for being part of
+                <p id="alliances-legend" class="mt-6 text-gray-700 dark:text-gray-300">The Cubo+ team thanks our alliances for being part of
                     this project and for allowing our students to gain experience in their companies.</p>
             </div>
         </div>
@@ -384,7 +383,7 @@
                                         src="../img/logos/tiankii.png" loading="lazy" alt="tiankii" width=""
                                         height="" />
                                 </div>
-                                <p class="mb-3 mt-6 text-gray-600 dark:text-gray-400">CUBO+ es una excelente iniciativa
+                                <p id="testimonials-contributor1" class="mb-3 mt-6 text-gray-600 dark:text-gray-400">CUBO+ es una excelente iniciativa
                                     en El Salvador y con impacto en el ecosistema Bitcoin global,
                                     pienso que estan formando a los lideres tecnologicos Bitcoin del futuro!</p>
                                 <div class="border-t border-gray-200 pt-4 dark:border-gray-700">
@@ -421,7 +420,7 @@
                                     <img class="mx-auto h-12 w-auto dark:contrast-100 dark:grayscale dark:invert"
                                         src="../img/logos/lipa.svg" loading="lazy" alt="lipa" width="" height="" />
                                 </div>
-                                <p class="mb-3 mt-6 text-gray-600 dark:text-gray-400">Sharing my passion with the
+                                <p id="testimonials-contributor4" class="mb-3 mt-6 text-gray-600 dark:text-gray-400">Sharing my passion with the
                                     Salvadorian youth,
                                     offering them education to prepare them
                                     for a future in the digital age: A thoroughly enriching and memorable experience!
@@ -476,7 +475,7 @@
                                         src="..//img/logos/decouvre.png" loading="lazy" alt="decouvre bitcoin" width=""
                                         height="" />
                                 </div>
-                                <p class="mb-3 mt-6 text-gray-600 dark:text-gray-400">While for most of us our journey
+                                <p id="testimonials-contributor3" class="mb-3 mt-6 text-gray-600 dark:text-gray-400">While for most of us our journey
                                     to Bitcoin mastery spanned many years, witnessing
                                     these students grasp it all in such a brief period has been a truly humbling
                                     experience.</p>
@@ -515,7 +514,7 @@
                                     <img class="mx-auto h-16 w-auto dark:contrast-100 dark:grayscale dark:invert"
                                         src="../img/logos/joinmarket.svg" loading="lazy" alt="joinmarket" width="" height="" />
                                 </div>
-                                <p class="mb-3 mt-6 text-gray-600 dark:text-gray-400">El Salvador's experiment with
+                                <p id="testimonials-contributor2" class="mb-3 mt-6 text-gray-600 dark:text-gray-400">El Salvador's experiment with
                                     Bitcoin is not just a theory. Meeting and working with the Cubo+ students
                                     was a great experience. They're achieving real results.
                                 </p>
@@ -545,7 +544,7 @@
                                     <img class="mx-auto h-4 w-auto dark:contrast-100 dark:grayscale dark:invert"
                                         src="..//img/logos/zebedee.svg" loading="lazy" alt="zebedee" width="" height="" />
                                 </div>
-                                <p class="mb-3 mt-6 text-gray-600 dark:text-gray-400">Cubo+ is a revolutionary education
+                                <p id="testimonials-contributor6" class="mb-3 mt-6 text-gray-600 dark:text-gray-400">Cubo+ is a revolutionary education
                                     program.
                                     Their knowledge went from zero to being able to build Bitcoin applications. I’m
                                     honored to have been a part of the program.</p>
@@ -586,7 +585,7 @@
                                     <img class="mx-auto h-12 w-auto dark:contrast-100 dark:grayscale dark:invert"
                                         src="../img/logos/spiral.svg" loading="lazy" alt="spiral" width="" height="" />
                                 </div>
-                                <p class="mb-3 mt-6 text-gray-600 dark:text-gray-400">Cubo+ was an incredible
+                                <p id="testimonials-contributor5" class="mb-3 mt-6 text-gray-600 dark:text-gray-400">Cubo+ was an incredible
                                     experience. I've had the chance to teach
                                     local students. I feel part of this incredible community of students and teachers. I
                                     can't wait to meet them all again!
@@ -633,7 +632,6 @@
                 </div>
                 <img class="relative m-auto h-auto w-20 text-blue-900 dark:text-white"
                     src="..//img/logos/cubo_logo_blanco-iso.png">
-
                 </img>
             </div>
             <div class="relative -mt-12">
@@ -648,17 +646,30 @@
         </div>
     </section>
 
+    <section class="my-32">
+        <div class="container m-auto px-6 md:px-12 lg:px-20">
+            <div class="max-w-2xl mx-auto dark:text-white">
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                <script>
+                hbspt.forms.create({
+                    region: "na1",
+                    portalId: "45121273",
+                    formId: "00c3ab6b-83da-424f-8cf4-3824f4f28fee"
+                });
+                </script>
+            </div>
+            
+        </div>
+        
+    </section>
+
     <footer class="bg-white dark:bg-gray-900">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="../index.html" class="flex items-center">
                         <!-- Logo blanco visible solo en modo oscuro -->
-                        <img src="../img/logos/cubo_logo_blanco.png" class="h-40 me-3 hidden dark:block"
-                            alt="Cubo Plus Logo Blanco" />
-                        <!-- Logo azul visible solo en modo claro -->
-                        <img src="../img/logos/cubo_logo_azul.png" class="h-40 me-3 block dark:hidden"
-                            alt="Cubo Plus Logo Azul" />
+                   <img src="../img/logos/cubo-logo-blue.svg" class="h-40 me-3" alt="Cuboplus Logo" />
                     </a>
                 </div>
 
@@ -667,7 +678,7 @@
                         <h2 id="footer-contact" class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
-                                <a href="#" class="hover:underline">info@cuboplus.dev</a>
+                                <a href="#" class="hover:underline">info@cuboplus.academy</a>
                             </li>
                         </ul>
                     </div>
@@ -694,7 +705,7 @@
                                     </svg>
                                     <span class="sr-only">Twitter page</span>
                                 </a>
-                                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                 <a href="https://www.instagram.com/cubo_plus/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
                                         viewBox="0 0 24 24">
                                         <path
@@ -716,6 +727,9 @@
                             </li>
                             <li class="mb-4">
                                 <a target="_blank" href="https://bitcoin.org/bitcoin.pdf" class="hover:underline">Bitcoin whitepaper</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="legal/cookies.html" class="hover:underline">Cookies Policy</a>
                             </li>
                         </ul>
                     </div>
