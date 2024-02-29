@@ -4024,6 +4024,14 @@ input:checked + .toggle-bg {
     right: 6rem;
   }
 
+  .sm\:left-2 {
+    left: 0.5rem;
+  }
+
+  .sm\:left-12 {
+    left: 3rem;
+  }
+
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -4067,8 +4075,16 @@ input:checked + .toggle-bg {
     margin-top: 5rem;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:h-16 {
