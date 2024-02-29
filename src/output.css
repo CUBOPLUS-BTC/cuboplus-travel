@@ -1630,10 +1630,6 @@ input:checked + .toggle-bg {
   width: 6rem;
 }
 
-.w-36 {
-  width: 9rem;
-}
-
 .w-4 {
   width: 1rem;
 }
@@ -1693,10 +1689,6 @@ input:checked + .toggle-bg {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-3 {
-  width: 0.75rem;
 }
 
 .max-w-2xl {
@@ -4022,14 +4014,6 @@ input:checked + .toggle-bg {
 @media (min-width: 640px) {
   .sm\:right-24 {
     right: 6rem;
-  }
-
-  .sm\:left-2 {
-    left: 0.5rem;
-  }
-
-  .sm\:left-12 {
-    left: 3rem;
   }
 
   .sm\:col-span-2 {
