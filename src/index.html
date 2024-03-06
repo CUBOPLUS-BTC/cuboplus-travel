@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./assets/icono.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="tailus ui html-vite and tailwindcss 3.1 boilerplate" />
+    <meta name="description" content="Cuboplus El Salvador 2024" />
     <link rel="stylesheet" href="swiper-bundle.min.css" />
     <title>Cubo+</title>
 
@@ -34,6 +34,28 @@
             justify-content: flex-start;
             align-items: center;
         }
+        .animate-pulse {
+    /*box-shadow: 0 0 0 20px rgba(229,62,62, 0.5);
+    transform: scale(0.8);*/
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        box-shadow: 0 0 0 0 rgb(165, 203, 246);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 35px rgba(229, 62, 62, 0);
+    }
+
+    100% {
+        transform: scale(0.8);
+    }
+}
+
     </style>
     
     <script>
@@ -108,18 +130,15 @@
                         </div>
                         <div
                             class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
-                            <button class='relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
+                            <button class='animate-pulse rounded-full relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
                                 before:bg-blue-500 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 
                                 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-blue-400 sm:px-4 lg:before:border 
                                 lg:before:border-blue-200 lg:before:bg-blue-50 lg:dark:before:bg-gray-800'
                                 data-dropdown-toggle="dropdown-cubo+" data-dropdown-delay="50">
                                 <span
-                                    class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white flex items-center">Cubo+
-                                    2024<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg>
+                                    class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white flex items-center">
+                                    <svg class=" relative w-5 h-5 mr-2 text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                    Apply Now
                                 </span>
                             </button>
                         </div>
@@ -160,6 +179,11 @@
                                 </li>
                             </ul>
                         </div>
+
+                        <span class="absolute flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-700 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-800"></span>
+                          </span>
 
                         <button aria-label="switch language"
                             class="group mr-1 relative hidden h-9 w-9 rounded-full before:absolute text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-300 before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex"
@@ -808,7 +832,7 @@
                         <div class="relative group">
                             <div
                                 class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/cuboplus/status/1709985928842785074"
+                            </div><a href="https://twitter.com/cuboplus/status/1709985928842785074" target="_blank"
                                 class="cursor-pointer">
                                 <div
                                     class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
@@ -818,7 +842,7 @@
                                             <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
                                                     class="fa-brands fa-twitter"></i> CUBO+</h3>
                                             <p class="text-gray-500 text-md">@cuboplus</p>
-                                            <p class="text-gray-500 text-md mt-2">Presidential Bitcoin Office</p>
+                                            <p class="text-gray-500 text-md mt-2">CUBO+ Team</p>
                                         </div>
                                     </div>
                                     <p
@@ -842,12 +866,12 @@
                         <div class="relative group">
                             <div
                                 class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/stacyherbert/status/1713882443793702934"
+                            </div><a href="https://twitter.com/stacyherbert/status/1713882443793702934" target="_blank"
                                 class="cursor-pointer">
                                 <div
                                     class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
                                     <div class="flex items-center space-x-4"><img src="img/tweets/stacy-herbert.jpg"
-                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Stacy Herbert">
                                         <div>
                                             <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
                                                     class="fa-brands fa-twitter"></i> Stacy Herbert 🇸🇻🚀</h3>
@@ -878,17 +902,17 @@
                         <div class="relative group">
                             <div
                                 class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/jimmysong/status/1681432350247247872"
+                            </div><a href="https://twitter.com/jimmysong/status/1681432350247247872" target="_blank"
                                 class="cursor-pointer">
                                 <div
                                     class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
                                     <div class="flex items-center space-x-4"><img src="img/tweets/jimmy-song.jpg"
-                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Jimmy Song">
                                         <div>
                                             <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
                                                     class="fa-brands fa-twitter"></i> Jimmy Song (송재준)</h3>
                                             <p class="text-gray-500 text-md">@jimmysong</p>
-                                            <p class="text-gray-500 text-md mt-2">Presidential Bitcoin Office</p>
+                                            <p class="text-gray-500 text-md mt-2">Jimmy Song</p>
                                         </div>
                                     </div>
                                     <p
@@ -913,17 +937,17 @@
                         <div class="relative group">
                             <div
                                 class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/forbes/status/1684239840890564615"
+                            </div><a href="https://twitter.com/forbes/status/1684239840890564615" target="_blank"
                                 class="cursor-pointer">
                                 <div
                                     class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
                                     <div class="flex items-center space-x-4"><img src="img/tweets/forbes.jpg"
-                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Forbes">
                                         <div>
                                             <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
                                                     class="fa-brands fa-twitter"></i> Forbes</h3>
                                             <p class="text-gray-500 text-md">@Forbes</p>
-                                            <p class="text-gray-500 text-md mt-2">Presidential Bitcoin Office</p>
+                                            <p class="text-gray-500 text-md mt-2">Forbes</p>
                                         </div>
                                     </div>
                                     <p
@@ -948,17 +972,17 @@
                         <div class="relative group">
                             <div
                                 class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/synonym_to/status/1672316976717262848"
+                            </div><a href="https://twitter.com/synonym_to/status/1672316976717262848" target="_blank"
                                 class="cursor-pointer">
                                 <div
                                     class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
                                     <div class="flex items-center space-x-4"><img src="img/tweets/synonym.jpg"
-                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Synonym">
                                         <div>
                                             <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
                                                     class="fa-brands fa-twitter"></i> Synonym</h3>
                                             <p class="text-gray-500 text-md">@Synonym_to</p>
-                                            <p class="text-gray-500 text-md mt-2">Presidential Bitcoin Office</p>
+                                            <p class="text-gray-500 text-md mt-2">Synonym</p>
                                         </div>
                                     </div>
                                     <p
@@ -985,17 +1009,17 @@
                         <div class="relative group">
                             <div
                                 class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/bitcoinmagazine/status/1676265047608393728"
+                            </div><a href="https://twitter.com/bitcoinmagazine/status/1676265047608393728" target="_blank"
                                 class="cursor-pointer">
                                 <div
                                     class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
                                     <div class="flex items-center space-x-4"><img src="img/tweets/bitcoin-magazine.jpg"
-                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Kanye West">
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="bitcoin magazine">
                                         <div>
                                             <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
                                                     class="fa-brands fa-twitter"></i> Bitcoin Magazine</h3>
                                             <p class="text-gray-500 text-md">@BitcoinMagazine</p>
-                                            <p class="text-gray-500 text-md mt-2">Presidential Bitcoin Office</p>
+                                            <p class="text-gray-500 text-md mt-2">Bitcoin Magazine</p>
                                         </div>
                                     </div>
                                     <p
