@@ -27,6 +27,29 @@
             document.documentElement.classList.remove("dark");
         }
     </script>
+    <style>
+        .animate-pulse {
+            /*box-shadow: 0 0 0 20px rgba(229,62,62, 0.5);
+    transform: scale(0.8);*/
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.8);
+                box-shadow: 0 0 0 0 rgb(63, 131, 248);
+            }
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 35px rgba(229, 62, 62, 0);
+            }
+
+            100% {
+                transform: scale(0.8);
+            }
+        }
+    </style>
 </head>
 
 <body class="font-[Poppins] min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
@@ -37,8 +60,10 @@
                 <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
                     <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
                         <a href="../index.html" aria-label="logo" class="flex items-center space-x-2">
-                  <img src="../img/logos/cubo-text-blue.svg" class="hidden sm:block" style="height: 64px; width: 164px;" alt="cubo logo">
-                            <img src="../img/logos/cubo-logo-azul1.svg" class="block sm:hidden" style="height: 48px; width: 124px;" alt="cubo logo">
+                            <img src="../img/logos/cubo-text-blue.svg" class="hidden sm:block"
+                                style="height: 64px; width: 164px;" alt="cubo logo">
+                            <img src="../img/logos/cubo-logo-azul1.svg" class="block sm:hidden"
+                                style="height: 48px; width: 124px;" alt="cubo logo">
                         </a>
 
                         <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
@@ -89,27 +114,29 @@
                         </div>
                         <div
                             class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
-                            <button class='relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
+                            <button class='animate-pulse rounded-full relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
                                 before:bg-blue-500 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 
                                 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-blue-400 sm:px-4 lg:before:border 
                                 lg:before:border-blue-200 lg:before:bg-blue-50 lg:dark:before:bg-gray-800'
                                 data-dropdown-toggle="dropdown-cubo+" data-dropdown-delay="50">
                                 <span
-                                    class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white flex items-center">Cubo+
-                                    2024<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white flex items-center">
+                                    <svg class=" relative w-5 h-5 mr-2 text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                                     </svg>
+                                    Apply Now
                                 </span>
                             </button>
                         </div>
 
                         <div id="dropdown-cubo+"
-                            class="z-10 relative hidden  border-gray-100 lg:z-10 lg:absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            class="z-10 relative hidden border-gray-100 lg:z-10 lg:absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                             <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
                                 <li>
-                                    <a href="../pages/cubo+2024.html"
+                                    <a href="pages/cubo+2024.html"
                                         class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -124,7 +151,7 @@
                                         Cubo+ 2024</a>
                                 </li>
                                 <li>
-                                    <a href="../pages/cubo++2024.html"
+                                    <a href="pages/cubo++2024.html"
                                         class="flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
 
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
@@ -238,13 +265,19 @@
 
     <section class="pt-32 bg-white dark:bg-gray-900 mb-24">
         <div class="py-8 px-4 mx-auto max-w-screen-md text-center lg:py-16 lg:px-12">
-            <svg class="mx-auto mb-4 w-10 h-10 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z"/></svg>
-            <h1 id="title" class="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">Under Construction</h1>
-            <p id="legend" class="font-light text-gray-500 md:text-lg xl:text-xl dark:text-gray-400">We're building something cool! This page is currently under construction, come back soon to find out!</p>
+            <svg class="mx-auto mb-4 w-10 h-10 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z" />
+            </svg>
+            <h1 id="title"
+                class="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">
+                Under Construction</h1>
+            <p id="legend" class="font-light text-gray-500 md:text-lg xl:text-xl dark:text-gray-400">We're building
+                something cool! This page is currently under construction, come back soon to find out!</p>
         </div>
         <div class="pt-12 w-96 mx-auto overflow-hidden sm:mt-20 lg:-mt-8 ">
-            <img class="w-full" src="../img/unsorted/undraw_under_construction_-46-pa.svg" class="w-full" alt="team illustration" height="600"
-                width="800" />
+            <img class="w-full" src="../img/unsorted/undraw_under_construction_-46-pa.svg" class="w-full"
+                alt="team illustration" height="600" width="800" />
         </div>
     </section>
 
@@ -254,7 +287,7 @@
                 <div class="mb-6 md:mb-0">
                     <a href="../index.html" class="flex items-center">
                         <!-- Logo blanco visible solo en modo oscuro -->
-                   <img src="../img/logos/cubo-logo-blue.svg" class="h-40 me-3" alt="Cuboplus Logo" />
+                        <img src="../img/logos/cubo-logo-blue.svg" class="h-40 me-3" alt="Cuboplus Logo" />
                     </a>
                 </div>
 
@@ -273,7 +306,8 @@
                             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                         <div class="sm:flex sm:items-center sm:justify-between">
                             <div class="flex mt-4 sm:justify-center sm:mt-0">
-                                <a target="_blank" href="https://www.youtube.com/@cuboplus" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <a target="_blank" href="https://www.youtube.com/@cuboplus"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="currentColor" viewBox="0 0 20 14">
                                         <path fill-rule="evenodd"
@@ -292,7 +326,8 @@
                                     </svg>
                                     <span class="sr-only">Twitter page</span>
                                 </a>
-                                 <a target="_blank" href="https://www.instagram.com/cubo_plus/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                <a target="_blank" href="https://www.instagram.com/cubo_plus/"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
                                         viewBox="0 0 24 24">
                                         <path

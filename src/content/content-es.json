@@ -188,8 +188,13 @@
   },
 
   "cubo+2024": {
-    "header": "Suscribete a la <span class=\"opacity-80\">Lista de espera.</span>",
-    "legend": "Te haremos saber cuando la siguiente edición de Cubo+ esté lista, por el momento, mantente aprendiendo y estudiando Bitcoin!",
+    "header": "Quieres vivir la <span class=\"opacity-80\">experiencia de CUBO+?</span>",
+    "legend": "Ganarás valioso conocimiento en una de las tecnologías mas disruptivas de todos los tiempos y tendrás la oportunidad de ganar un viaje a Suiza para mayor capacitación",
+    "features": [
+      "Maestros de todas<br> partes del mundo",
+      "Oportunidad de pasantías",
+      "Viajes a Suiza"
+    ],
     "form": "Que estás esperándo!",
     "description": "Cubo+ 2024 apuntará por educación a un nivel general en el espacio de Bitcoin y Economía, donde cualquiera con el entusiasmo de aprender sobre las rázones de Bitcoin puede aplicar!",
     "alliances": "GRACIAS A EL APOYO DE NUESTRAS ALIANZAS"
