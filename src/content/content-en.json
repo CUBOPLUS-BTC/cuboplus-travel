@@ -185,8 +185,13 @@
     "tableEssenTyp": ["Functional", "Analytic"]
   },
   "cubo+2024": {
-    "header": "Subscribe to the <span class=\"opacity-80\">Waitlist.</span>",
-    "legend": "We'll let youn know once the next edition of cubo+ is out, for now, keep learning and sutdying bitcoin!",
+    "header": "Want to live the <span class=\"opacity-80\">CUBO+ Xperience?</span>",
+    "legend": "You will gain valuable knowledge in one of the most disruptive technologies of all time and will have the opportunity to win a trip to Switzerland for further training.",
+    "features": [
+      "Teachers from all<br> over the world",
+      "Internship opportunities",
+      "Trip to Switzerland"
+    ],
     "form": "What are you waiting for!",
     "description": "Cubo+ 2024 will aim for education in economy and Bitcoin space at a general level, where anyone with the enthusyasm to learn about the reasons of Bitcoin can apply!",
     "alliances": "THANKS TO THE SUPPORT OF OUR ALLIANCES"

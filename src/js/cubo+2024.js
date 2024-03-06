@@ -1,6 +1,9 @@
 const setElements = (content) => {
     document.getElementById("title").innerHTML = content.header;
     document.getElementById("legend").innerHTML = content.legend;
+    document.getElementById("subtitle1").innerHTML = content.features[0];
+    document.getElementById("subtitle2").innerHTML = content.features[1];
+    document.getElementById("subtitle3").innerHTML = content.features[2];
     document.getElementById("ask").innerHTML = content.form;
     document.getElementById("description").innerHTML = content.description;
     document.getElementById("thanks").innerHTML = content.alliances;
