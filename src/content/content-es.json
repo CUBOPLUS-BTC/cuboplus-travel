@@ -61,13 +61,13 @@
     "mentionstitles": ["Pálabras de otros", "No estámos solos", "Déscubre lo que otros comparten de nosotros."],
     "mentions": [
       {
-        "img": "img/tweets/cubotw.jpg",
-        "href": "https://twitter.com/cuboplus/status/1709985928842785074",
-        "name": "CUBO+",
-        "handle": "@cuboplus",
-        "role": "Cuenta oficial de Cubo+",
-        "content": "Los estudiantes de CUBO+ recién llegarón a italia para participar en el Tuscany Lightning Boootcamp⚡️",
-        "picture": "img/bootcamp/tuscany-1.webp"
+        "img": "img/tweets/Darvin-Otero.jpg",
+        "href": "https://twitter.com/aveotero/status/1680381336773697542?s=46&t=4SwPYXGhxyhAFxD2nQse1A",
+        "name": "Darvin Otero+",
+        "handle": "@aveotero",
+        "role": "Tiankii CEO",
+        "content": "CUBO+ Hackathon #Awards ceremonia! El primer programa de entrenamiento en lightning de @cuboplus #Bitcoin. Un gran #exito!! gracias a todos los organizadores por hacerlo posible @bitcoinofficesv @FulgurVentures @stacyherbert @maiojose1 @FFarenga",
+        "picture": "img/bootcamp/bootcamp.webp"
       },
       {
         "img": "img/tweets/stacy-herbert.jpg",

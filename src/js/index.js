@@ -148,8 +148,6 @@ const setElements = async (content) => {
     document.getElementById("mentions-legend").innerHTML = content.mentionstitles[2];
     document.getElementById("contact-title").innerHTML = content.contact[0];
     document.getElementById("contact-description").innerHTML = content.contact[1];
-
-    setTestimonials(content.testimonials);
     setMentions(content.mentions);
 }
 
