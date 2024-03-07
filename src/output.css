@@ -1897,6 +1897,10 @@ input:checked + .toggle-bg {
   flex-wrap: wrap;
 }
 
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -1947,6 +1951,10 @@ input:checked + .toggle-bg {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-x-1 {
@@ -2197,11 +2205,6 @@ input:checked + .toggle-bg {
   border-color: rgb(17 24 39 / 0.2);
 }
 
-.border-orange-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 138 76 / var(--tw-border-opacity));
-}
-
 .border-purple-500\/20 {
   border-color: rgb(144 97 249 / 0.2);
 }
@@ -2209,11 +2212,6 @@ input:checked + .toggle-bg {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.border-gray-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-\[hsla\(0\2c 0\%\2c 0\%\2c 0\.30\)\] {
@@ -3681,6 +3679,11 @@ input:checked + .toggle-bg {
   border-color: rgb(31 41 55 / var(--tw-border-opacity));
 }
 
+:is(.dark .dark\:border-orange-300) {
+  --tw-border-opacity: 1;
+  border-color: rgb(253 186 140 / var(--tw-border-opacity));
+}
+
 :is(.dark .dark\:border-slate-700) {
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
@@ -3692,21 +3695,6 @@ input:checked + .toggle-bg {
 
 :is(.dark .dark\:border-white\/20) {
   border-color: rgb(255 255 255 / 0.2);
-}
-
-:is(.dark .dark\:border-orange-800) {
-  --tw-border-opacity: 1;
-  border-color: rgb(138 44 13 / var(--tw-border-opacity));
-}
-
-:is(.dark .dark\:border-orange-400) {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 138 76 / var(--tw-border-opacity));
-}
-
-:is(.dark .dark\:border-orange-300) {
-  --tw-border-opacity: 1;
-  border-color: rgb(253 186 140 / var(--tw-border-opacity));
 }
 
 :is(.dark .dark\:border-opacity-60) {
@@ -4390,12 +4378,32 @@ input:checked + .toggle-bg {
     max-width: 100%;
   }
 
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
 
   .md\:justify-between {
     justify-content: space-between;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
