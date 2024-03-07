@@ -5,6 +5,7 @@ const setElements = (content) => {
     document.getElementById("subtitle2").innerHTML = content.features[1];
     document.getElementById("subtitle3").innerHTML = content.features[2];
     document.getElementById("ask").innerHTML = content.form;
+    document.getElementById("waitlist-text").innerHTML = content.waitlist;
     document.getElementById("description").innerHTML = content.description;
     document.getElementById("thanks").innerHTML = content.alliances;
 }
