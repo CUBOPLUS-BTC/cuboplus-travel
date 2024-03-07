@@ -15,7 +15,6 @@ const instanceOptions = {
 const modal = new Modal(modalEl, options, instanceOptions);
 
 document.addEventListener("DOMContentLoaded", (e) => {
-    console.log(document.cookie);
     if ( localStorage.getItem("cookies-agreed") == undefined ) {
         modal.show();
         return;

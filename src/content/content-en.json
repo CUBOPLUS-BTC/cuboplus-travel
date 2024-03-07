@@ -61,13 +61,13 @@
     "mentionstitles": ["Words from others", "It's not just us", "Discover what others are sharing about us."],
     "mentions": [
       {
-        "img": "img/tweets/cubotw.jpg",
-        "href": "https://twitter.com/cuboplus/status/1709985928842785074",
-        "name": "CUBO+",
-        "handle": "@cuboplus",
-        "role": "Official Cubo+ account",
-        "content": "CUBO+ students have just arrived in Italy to participate in the Tuscany Lightning Bootcamp⚡️",
-        "picture": "img/bootcamp/tuscany-1.webp"
+        "img": "img/tweets/Darvin-Otero.jpg",
+        "href": "https://twitter.com/aveotero/status/1680381336773697542?s=46&t=4SwPYXGhxyhAFxD2nQse1A",
+        "name": "Darvin Otero+",
+        "handle": "@aveotero",
+        "role": "Tiankii CEO",
+        "content": "CUBO+ Hackathon #Awards ceremony! First ever @cuboplus #Bitcoin lightning training #program today graduating 21 salvadorean developers. A big #success!! thanks to all organizers for making it possible @bitcoinofficesv @FulgurVentures @stacyherbert @maiojose1 @FFarenga",
+        "picture": "img/bootcamp/bootcamp.webp"
       },
       {
         "img": "img/tweets/stacy-herbert.jpg",
