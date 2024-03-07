@@ -2,7 +2,10 @@
   "version": "1.2",
   "secret": "es-cuboplus",
   "layout": {
-    "navbar": ["Sobre nosotros", "Pograma 2023", "Colaboradores"],
+    "navbar": ["Sobre nosotros", 
+    "Pograma 2023", 
+    "Colaboradores", 
+    "<svg class='relative w-5 h-5 mr-2 text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M13 10V3L4 14h7v7l9-11h-7z'></path></svg>Aplica Ya"],
     "footer": [
       "CONTÁCTANOS",
       "SÍGUENOS",
@@ -188,11 +191,17 @@
   },
 
   "cubo+2024": {
-    "header": "Suscribete a la <span class=\"opacity-80\">Lista de espera.</span>",
-    "legend": "Te haremos saber cuando la siguiente edición de Cubo+ esté lista, por el momento, mantente aprendiendo y estudiando Bitcoin!",
-    "form": "Que estás esperándo!",
+    "header": "Quieres vivir la <span class=\"opacity-80\">experiencia de CUBO+?</span>",
+    "legend": "Ganarás valioso conocimiento en una de las tecnologías mas disruptivas de todos los tiempos y tendrás la oportunidad de ganar un viaje a Suiza para mayor capacitación",
+    "features": [
+      "Maestros de todas<br> partes del mundo",
+      "Oportunidad de pasantías",
+      "Viajes a Suiza"
+    ],
+    "form": "Proceso de aplicación",
     "description": "Cubo+ 2024 apuntará por educación a un nivel general en el espacio de Bitcoin y Economía, donde cualquiera con el entusiasmo de aprender sobre las rázones de Bitcoin puede aplicar!",
-    "alliances": "GRACIAS A EL APOYO DE NUESTRAS ALIANZAS"
+    "alliances": "GRACIAS A EL APOYO DE NUESTRAS ALIANZAS",
+    "waitlist": "Te gustaría mejorar tus habilidades técnicas? Suscríbete a la waitlist de CUBO+ Developer Edition, solo clickea <a class='text-orange-400' href='cubo++2024.html'>aquí</a>."
   },
   "cubo++2024": {
     "header": "Suscribete a la <span class=\"opacity-80\">Lista de espera.</span>",

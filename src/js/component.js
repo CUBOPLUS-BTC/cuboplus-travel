@@ -7,6 +7,7 @@ function setElementsNavbarAndFooter(content) {
   document.getElementById("navbar-about-button").innerHTML = content.navbar[0];
   document.getElementById("navbar-program-button").innerHTML = content.navbar[1];
   document.getElementById("navbar-sponsors-button").innerHTML = content.navbar[2];
+  document.getElementById("navbar-apply-button").innerHTML = content.navbar[3];
   document.getElementById("footer-contact").innerHTML = content.footer[0];
   document.getElementById("footer-follow").innerHTML = content.footer[1];
   document.getElementById("footer-links").innerHTML = content.footer[2];

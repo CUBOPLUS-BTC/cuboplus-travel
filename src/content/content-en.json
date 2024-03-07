@@ -2,7 +2,10 @@
   "version": "1.2",
   "secret": "en-cuboplus",
   "layout": {
-    "navbar": ["About us", "Program 2023", "Contributors"],
+    "navbar": ["About us", 
+    "Program 2023", 
+    "Contributors", 
+    "<svg class='relative w-5 h-5 mr-2 text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M13 10V3L4 14h7v7l9-11h-7z'></path></svg>Apply Now"],
     "footer": [
       "CONTACT US",
       "FOLLOW US",
@@ -185,11 +188,17 @@
     "tableEssenTyp": ["Functional", "Analytic"]
   },
   "cubo+2024": {
-    "header": "Subscribe to the <span class=\"opacity-80\">Waitlist.</span>",
-    "legend": "We'll let youn know once the next edition of cubo+ is out, for now, keep learning and sutdying bitcoin!",
-    "form": "What are you waiting for!",
+    "header": "Want to live the <span class=\"opacity-80\">CUBO+ Xperience?</span>",
+    "legend": "You will gain valuable knowledge in one of the most disruptive technologies of all time and will have the opportunity to win a trip to Switzerland for further training.",
+    "features": [
+      "Teachers from all<br> over the world",
+      "Internship opportunities",
+      "Trip to Switzerland"
+    ],
+    "form": "Application process",
     "description": "Cubo+ 2024 will aim for education in economy and Bitcoin space at a general level, where anyone with the enthusyasm to learn about the reasons of Bitcoin can apply!",
-    "alliances": "THANKS TO THE SUPPORT OF OUR ALLIANCES"
+    "alliances": "THANKS TO THE SUPPORT OF OUR ALLIANCES",
+    "waitlist": "Would you like to improve your technicals skills? Suscribe to the CUBO+ Developer Edition waitlist, just click <a class='text-orange-400' href='cubo++2024.html'>here</a>."
   },
   "cubo++2024": {
     "header": "Subscribe to the <span class=\"opacity-80\">Waitlist.</span>",
