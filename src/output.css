@@ -1570,6 +1570,10 @@ input:checked + .toggle-bg {
   height: 100vh;
 }
 
+.h-2 {
+  height: 0.5rem;
+}
+
 .max-h-0 {
   max-height: 0px;
 }
@@ -1673,6 +1677,10 @@ input:checked + .toggle-bg {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-2 {
+  width: 0.5rem;
 }
 
 .max-w-2xl {
@@ -1897,10 +1905,6 @@ input:checked + .toggle-bg {
   flex-wrap: wrap;
 }
 
-.flex-nowrap {
-  flex-wrap: nowrap;
-}
-
 .items-start {
   align-items: flex-start;
 }
@@ -1951,10 +1955,6 @@ input:checked + .toggle-bg {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-x-1 {
@@ -2627,6 +2627,10 @@ input:checked + .toggle-bg {
 
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-\[Poppins\] {
@@ -4388,18 +4392,6 @@ input:checked + .toggle-bg {
 
   .md\:justify-between {
     justify-content: space-between;
-  }
-
-  .md\:gap-6 {
-    gap: 1.5rem;
-  }
-
-  .md\:gap-8 {
-    gap: 2rem;
-  }
-
-  .md\:gap-2 {
-    gap: 0.5rem;
   }
 
   .md\:gap-16 {

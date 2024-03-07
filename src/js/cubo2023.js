@@ -20,6 +20,11 @@ const setElements = (content) => {
     document.getElementById("timeline13").innerHTML = content.content[12];
     document.getElementById("timeline14").innerHTML = content.content[13];
     document.getElementById("timeline15").innerHTML = content.content[14];
+    document.getElementById("timeline16").innerHTML = content.content[15];
+    document.getElementById("timeline17").innerHTML = content.content[16];
+    document.getElementById("timeline18").innerHTML = content.content[17];
+    document.getElementById("timeline19").innerHTML = content.content[18];
+    document.getElementById("timeline20").innerHTML = content.content[19];
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {
