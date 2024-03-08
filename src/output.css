@@ -1106,8 +1106,8 @@ input:checked + .toggle-bg {
   bottom: 0px;
 }
 
-.bottom-16 {
-  bottom: 4rem;
+.bottom-4 {
+  bottom: 1rem;
 }
 
 .bottom-\[60px\] {
@@ -1120,10 +1120,6 @@ input:checked + .toggle-bg {
 
 .left-0 {
   left: 0px;
-}
-
-.left-12 {
-  left: 3rem;
 }
 
 .right-0 {
@@ -1356,6 +1352,10 @@ input:checked + .toggle-bg {
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .ml-6 {
@@ -1647,6 +1647,10 @@ input:checked + .toggle-bg {
   width: 16rem;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-9 {
   width: 2.25rem;
 }
@@ -1830,17 +1834,6 @@ input:checked + .toggle-bg {
 
 .transform-none {
   transform: none;
-}
-
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping {
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 @keyframes pulse {
@@ -2636,6 +2629,10 @@ input:checked + .toggle-bg {
   text-align: center;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .font-\[Poppins\] {
   font-family: Poppins;
 }
@@ -2860,6 +2857,11 @@ input:checked + .toggle-bg {
 .text-yellow-700 {
   --tw-text-opacity: 1;
   color: rgb(142 75 16 / var(--tw-text-opacity));
+}
+
+.text-primary-blue {
+  --tw-text-opacity: 1;
+  color: rgb(35 95 169 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -4094,10 +4096,6 @@ input:checked + .toggle-bg {
     margin-top: 5rem;
   }
 
-  .sm\:mt-40 {
-    margin-top: 10rem;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -4108,10 +4106,6 @@ input:checked + .toggle-bg {
 
   .sm\:hidden {
     display: none;
-  }
-
-  .sm\:h-16 {
-    height: 4rem;
   }
 
   .sm\:h-\[28rem\] {
@@ -4276,6 +4270,14 @@ input:checked + .toggle-bg {
     bottom: 0px;
   }
 
+  .md\:bottom-16 {
+    bottom: 4rem;
+  }
+
+  .md\:left-12 {
+    left: 3rem;
+  }
+
   .md\:row-start-2 {
     grid-row-start: 2;
   }
@@ -4308,6 +4310,10 @@ input:checked + .toggle-bg {
     margin-bottom: 4rem;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:mt-12 {
     margin-top: 3rem;
   }
@@ -4318,6 +4324,14 @@ input:checked + .toggle-bg {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:h-8 {
+    height: 2rem;
   }
 
   .md\:h-80 {
@@ -4354,6 +4368,10 @@ input:checked + .toggle-bg {
 
   .md\:w-6\/12 {
     width: 50%;
+  }
+
+  .md\:w-8 {
+    width: 2rem;
   }
 
   .md\:w-\[42\%\] {
@@ -4975,10 +4993,6 @@ input:checked + .toggle-bg {
 
   .xl\:w-5\/12 {
     width: 41.666667%;
-  }
-
-  .xl\:max-w-4xl {
-    max-width: 56rem;
   }
 
   .xl\:max-w-5xl {
