@@ -16,7 +16,7 @@
   "index": {
     "header": "Building",
     "typingList": ["The future", "El Salvador"],
-    "headerdes": "CUBO+ is the first educational program aimed at training the next generation of Bitcoin Salvadoran enthusiasts under the government of President Nayib Bukele, to contribute the Bitcoin adoption and the economic growth of El Salvador.",
+    "headerdes": "CUBO+ marks the beginning of a pioneering educational initiative aimed at forming a community of Salvadoran professionals trained to meet the growing demand for employment by Bitcoin and Lightning Network companies, as well as to drive adoption and foster economic development in El Salvador.",
     "thanks": "SUPPORTED BY OUR STRATEGIC ALLIANCES",
     "testimonial": [
       "\"Thanks to CUBO+, I've had the opportunity to learn about an exciting field that has transformed my life.\"",
@@ -26,37 +26,37 @@
       "\"Cubo+ has been a transformative experience for me, their commitment on training local talent is truly inspiring.\"",
       "\"Cubo+ is not just a program; it's a life-changing experience! It's reshaped how I view life and the endless potential for development in El Salvador!\""
     ],
-    "process": "For building the next <br> Decentralized Generation",
-    "processdes": "We are committed to creating a diverse and inclusive learning environment that promotes learning, growth and collaboration.",
+    "process": "Empowering the future <br> talents of Bitcoin.",
+    "processdes": "We are committed to equipping students with the skills and knowledge necessary to join the Bitcoin industry and contribute to reshaping the financial system.",
     "phases": ["Apply", "Learn", "Contribute"],
     "apply": [
       "Application process",
-      "To be part of cubo+ you must apply to the process within the specific time. You can apply even if you're not a developer since the course is aimed at teaching the basic fundamentals of Bitcoin (Philosophical and economic principles).",
-      "Technical course",
-      "Focused on developers who wish to acquire skills in the Bitcoin and Lighning Network protocols",
-      "Non technical course",
-      "Open to university students interested in learning about the fundamentals of Bitcoin"
+      "To join CUBO+, it is necessary to complete our application form and pass the selection stages. Our program is structured into two different blocks: ",
+      "Cubo+ Econ Generation",
+      "The first cycle will focus on the economic and fundamental aspects of Bitcoin, training experts with a business and executive orientation, as well as future developers interested in understanding this aspect and enriching their profile.",
+      "Cubo+ Devs Generation",
+      "Designed to develop the future generation of Bitcoin and Lightning developers."
     ],
     "learn": [
       "Learning modules",
-      "The objective is to learn the role of Bitcoin and its impact on society. The course modules will depend on the type of application you have submitted.",
-      "Orange pill",
-      "For non-technical applications, you will delve into the social and economic aspects of Bitcoin as well as why it is needed for our society.",
-      "Technology stack",
-      "As a developer, you will learn the fundamentals of the Bitcoin and Lightning Network protocols and how to integrate these solutions in your personal projects."
+      "Our program aims to impart knowledge and skills in the following way:",
+      "Online and in-person classes",
+      "Our learning process adopts a hybrid modality. With the support of PlanB, we provide online sessions led by internationally renowned experts, complemented by in-person meetings in El Salvador, in order to create a more interactive environment.",
+      "On-site Bootcamps",
+      "The most motivated and skilled students will receive scholarships that will allow them to participate in in-person bootcamps at the end of each cycle, an opportunity that will elevate their abilities to a higher level."
     ],
     "contribute": [
-      "Help and contribute",
-      "As a cubo+ graduate, what we expect from you is to apply your knowledge and skills learned in the program to real-world projects and challenges in your environment.",
-      "Collaborate",
-      "At the end of the program you will have the opportunity to participate in the internship to gain experience with top Bitcoin companies.",
-      "Inspire new generations",
-      "Take advantage of the tools acquired in the program to create real solutions that solve real problems in everyday life."
+      "Join to the ecosystem",
+      "As a graduate student of CUBO+, what we expect from you is to apply the knowledge and skills acquired during CUBO+ in your life and to succeed in it.",
+      "Work in the ecosystem",
+      "Apply your skills by collaborating on open-source projects and with Bitcoin companies.",
+      "Create your own startup",
+      "Your knowledge and network of contacts with other professionals will provide you with the space necessary to unleash your creativity and found your own startup."
     ],
-    "students": ["A generation that inspires", "At Cubo+ we train agents of change, forging a future where innovation and collaboration define the path, leaving the legacy of a generation that inspires and transforms"],
+    "students": ["A generation that inspires", "At CUBO+, we train change-makers, fostering a culture where innovation and collaboration pave the way, creating a legacy for a generation that inspires and drives transformation."],
     "mission": [
       "Who we are",
-      "We are a program dedicated to teaching university students, from enthusiastic beginners to experienced developers. We believe that everyone should have the opportunity to understand and participate in the Bitcoin revolution in El Salvador, without barriers or technical limitations. <br> <br> At Cubo+, we build an inclusive and accessible community. Our mission is to teach Bitcoin, making it easy to understand and apply in everyday life. Join us and let's build the next generation of Bitcoin enthusiasts."
+      "We are a program committed to teaching young talented minds the fundamentals of Bitcoin at a dedicated and deep level, as well as the most advanced details. We advocate for the involvement of Salvadorans in the Bitcoin revolution in El Salvador, without barriers or limitations. <br> <br> We aim to build a thriving and free community of sovereign and independent individuals. Our mission is to create Bitcoin professionals who will build the country and the world we all want to live in!"
     ],
     "mentionstitles": ["Words from others", "It's not just us", "Discover what others are sharing about us."],
     "mentions": [
@@ -122,7 +122,7 @@
   },
   "cubo2023": {
     "header": "<span class=\"relative\"> <span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Proof of work</span> </span> is freedom",
-    "legend": "Cubo+ shows to the world how proof of work leads to excellency and freedom fot El Salvador and its students",
+    "legend": "Cubo+ shows to the world how proof of work leads to excellency and freedom for El Salvador and its people",
     "documentary": [
       "A production of The Presidential Bitcoin Office in El Salvador - © 2023 cuboplus. All rights reserved.",
       "Bitcoin Office Head"
