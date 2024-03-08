@@ -26,7 +26,7 @@
       "\"Cubo+ has been a transformative experience for me, their commitment on training local talent is truly inspiring.\"",
       "\"Cubo+ is not just a program; it's a life-changing experience! It's reshaped how I view life and the endless potential for development in El Salvador!\""
     ],
-    "cookiesmodal": ["We use cookies to ensure that we give you the best experience on our website.", "Accept", "Deny"],
+    "cookiesmodal": ["We use cookies to ensure that we give you the best experience on our website. <a href=\"/src/pages/legal/cookies.html\" class=\"text-blue-500 hover:underline\">Cookies Policy</a>. ", "Accept", "Deny"],
     "process": "Empowering the future <br> talents of Bitcoin.",
     "processdes": "We are committed to equipping students with the skills and knowledge necessary to join the Bitcoin industry and contribute to reshaping the financial system.",
     "phases": ["Apply", "Learn", "Contribute"],
