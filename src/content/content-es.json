@@ -14,51 +14,51 @@
     ]
   },
   "index": {
-    "header": "Contruyendo",
+    "header": "Construyendo",
     "typingList": ["El futuro", "El Salvador"],
-    "headerdes": "CUBO+ es el primer programa educacional concentrado en entrenar la siguiente generación de entusiastas Salvadoreños de Bitcoin bajo el gobierno de El Presidente Nayib Bukele, para contribuír la adopción de Bitcoin y crecimiento económico de El Salvador.",
+    "headerdes": "CUBO+ marca el inicio de una iniciativa educativa pionera, destinada a formar una comunidad de profesionales salvadoreños capacitados para satisfacer la creciente demanda de empleo por parte de las empresas Bitcoin y Lightning Network, así como para impulsar la adopción y fomentar el desarrollo económico de El Salvador.",
     "thanks": "APOYADO POR NUESTRAS ALIANZAS ESTRÁTEGICAS",
     "testimonial": [
       "\"Gracias a CUBO+, he tenido la oportunidad de aprender sobre un tema emocionante el cual ha transformado mi vida.\"",
-      "\"Estoy muy agradecido de ser parte de Cubo+ y ser testigo de los buenos cambios que están pasando en El Salvador.\"",
-      "\"Ser parte de Cubo+ me enseñó lo mal que está el mundo, pero también me enseñó que puede ser solucionado con Bitcoin.\"",
-      "\"CUBO+ cambió mi percepción sobre El Salvador, fue un reto que repetiría.\"",
+      "\"Estoy muy agradecido de ser parte de CUBO+ y ser testigo de los buenos cambios que están pasando en El Salvador.\"",
+      "\"Ser parte de CUBO+ me enseñó lo mal que está el mundo, pero también me enseñó que puede ser solucionado con Bitcoin.\"",
+      "\"CUBO+ cambió mi percepción sobre El Salvador, es un reto que repetiría.\"",
       "\"CUBO+ ha sido una experiencia transformadora para mí, su compromiso por formar talento local es realmente inspirador.\"",
       "\"CUBO+ no es sólo un programa; ¡Es una experiencia que cambia la vida! ¡Ha cambiado mi forma de ver la vida y el potencial infinito de desarrollo en El Salvador!\""
     ],
-    "process": "Para construír la siguiente <br> Generación Descentralizada",
-    "processdes": "Estamos comprometidos en crear un espacio de aprendizaje inclusivo y diverso que promueva el aprendizaje, crecimiento y colaboración.",
+    "process": "Empoderando a los futuros <br> talentos de Bitcoin",
+    "processdes": "Estamos comprometidos a equipar a los estudiantes con las habilidades y conocimientos necesarios para unirse a la industria de Bitcoin y contribuir a la remodelación del sistema financiero.",
     "phases": ["Aplica", "Aprende", "Contribuye"],
     "apply": [
       "Proceso de aplicación",
-      "Para ser parte de Cubo+ debes aplicar al proceso en el tiempo especifico. Puédes aplciar incluso si no eres un programador ya que el curso está enfocado en enseñar las bases fundamentales de Bitcoin (principios filosóficos y económicos).",
-      "Curso técnico",
-      "Orientado para desarrolladores quienes quieran adquirir las habilidades sobre los protocolos de Bitcoin y Lightning Network.",
-      "Curso no técnico",
-      "Abierto a universitarios interesados en aprender sobre los fundamentos de Bitcoin."
+      "Para unirte a CUBO+, es necesario completar nuestro formulario de aplicación y pasar las etapas de selección. Nuestro programa se estructura en dos bloques diferentes:",
+      "Cubo+ Econ Generation",
+      "El primer ciclo se centrará en los aspectos económicos y fundamentales de Bitcoin, formando expertos con orientación empresarial y ejecutiva, así como para futuros desarrolladores interesados en comprender este aspecto y enriquecer su perfil.",
+      "Cubo+ Devs Generation",
+      "Diseñado para desarrollar a la generación futura de Bitcoin y Lightning developers."
     ],
     "learn": [
       "Módulos de aprendizaje",
-      "El óbjetivo es de aprender a el ról de Bitcoin y su impacto en la sociedad. Los módulos del curso dependerán del tipo de aplicación que hayas enviado.",
-      "Orange pill",
-      "Para las aplicaciones no técnicas profundizarán sobre los aspectos sociales y económicos de Bitcoin asi cómo el por que es necesario para la sociedad.",
-      "Fáse técnica",
-      "Cómo un desarrollador, aprenderás los fundamentos de los protocolos Bitcoin y Lightning Network, también el cómo integrar estas soluciones en tus proyectos personales."
+      "Nuestro programa tiene como objetivo impartir conocimientos y habilidades de la siguiente manera:",
+      "Clases en línea y presenciales",
+      "Nuestro proceso de aprendizaje adopta una modalidad híbrida. Con el apoyo de PlanB, proporcionamos sesiones en línea impartidas por expertos de talla internacional, complementadas con reuniones presenciales en El Salvador, con el fin de generar un entorno más interactivo.",
+      "On-site Bootcamps",
+      "Los estudiantes más motivados y con mayores habilidades recibirán becas que les permitirán participar en bootcamps presenciales al concluir cada ciclo, una oportunidad que elevará sus capacidades a un nivel superior."
     ],
     "contribute": [
-      "Ayuda y contribuye",
-      "Cómo estudiante graduado de Cubo+ lo que esperamos de ti es aplicar tu conocimiento y habilidades adquiridas durante el curso soluciones, proyectos y retos de la vida real en tu entorno.",
-      "Colabora",
-      "Al final de el curso tendrás la oportunidad de participar en el programa de pasantías que te permitirán ganar experiencia con compañías de líderes en Bitcoin.",
-      "Inspira a las nuevas generaciones",
-      "Tóma ventaja de las herramientas adquiridas en el programa para crear soluciones a problemas reales en tu día a día."
+      "Únete al ecosistema",
+      "Cómo estudiante graduado de CUBO+ lo que esperamos de ti es que apliques tus conocimientos y habilidades adquiridas durante CUBO+ en tu vida y tengas éxito en ella.",
+      "Trabaja en el ecosistema",
+      "Aplica tus habilidades colaborando en proyectos de código abierto y con empresas de Bitcoin.",
+      "Crea tu propia startup",
+      "Tus conocimientos y la red de contactos con otros profesionales te brindarán el espacio necesario para desplegar tu creatividad y fundar tu propio negocio."
     ],
-    "students": ["Una generación que inspira", "En Cubo+ entrenamos agentes de cambio, forjando una cultura donde la inovación y colaboración definen el camino, dejando el legado de una generación que inspira y transforma."],
+    "students": ["Una generación que inspira", "En CUBO+ capacitamos a agentes de cambio, fomentando una cultura donde la innovación y la colaboración abren el camino, creando un legado para una generación que inspira e impulsa la transformación"],
     "mission": [
       "Quiénes somos",
-      "Sómos un programa dedicado en enseñar a universitarios desde principiantes hasta desarrolladores experimentados. Creémos que todos deberían tener la oportunidad de entender y participar la revolución del Bitcoin en El Salvador, sin barreras ni limitaciones técnicas. <br> <br> En Cubo+ construímos una inclusiva y accesible comunidad. Nuestra misión es enseñar Bitcoin, haciendolo fácil de entender y aplicar en el día a día. Únete y creemos la siguiente generación de entusiastas de Bitcoin."
+      "Somos un programa comprometido en enseñar a mentes jóvenes y talentosas los fundamentos de Bitcoin a un nivel dedicado y profundo, así como universitarios y profesionales tanto los fundamentos de Bitcoin a un nivel dedicado y profundo, así como los detalles más avanzados. Abogamos por la participación de los salvadoreños en la revolución de Bitcoin en El Salvador, sin barreras ni limitaciones. <br> <br> Nuestro objetivo es construir una comunidad próspera y libre, de individuos soberanos e independientes. Nuestra misión es crear profesionales de Bitcoin que construyan el país y el mundo en el que todos queremos vivir!"
     ],
-    "mentionstitles": ["Pálabras de otros", "No estámos solos", "Déscubre lo que otros comparten de nosotros."],
+    "mentionstitles": ["Palabras de otros", "No estamos solos", "Descubre lo que otros comparten de nosotros."],
     "mentions": [
       {
         "img": "img/tweets/Darvin-Otero.jpg",
@@ -117,12 +117,12 @@
     ],
     "contact": [
       "Envíanos un mensaje!",
-      "Tiénes alguna pregunta o quieres apoyar el programa? Contactanos y estaremos en comunicación!"
+      "Tienes alguna pregunta o quieres apoyar el programa? Contáctanos y estaremos en comunicación!"
     ]
   },
   "cubo2023": {
     "header": "<span class=\"relative\"> <span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Prueba de trabajo</span> </span> es libertad",
-    "legend": "Cubo+ le muestra al mundo cómo prueba de trabajo conlleva a la excelencia y libertad para El Salvador y sus estudiantes.",
+    "legend": "CUBO+ muestra al mundo como  la  \"prueba de trabajo\" conduce a la excelencia y la libertad para El Salvador y su gente",
     "documentary": [
       "Una producción de la Oficina del Bitcoin - © 2023 cuboplus. Todos los derechos reservados.",
       "Líder de la Oficina del Bitcoin"
@@ -155,7 +155,7 @@
   "contributors": {
     "titles": ["Nuestros <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>contribuidores</span></span>", "Apoyados por <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>empresas</span></span> líderes en Bitcoin"],
     "descriptions": [
-      "Por medio de su compromiso en educación e inovación, la Oficina del Bitcoin en El Salvador y Fulgur Ventures han creado el camino para que los jóvenes Salvadoreños talentosos se conviertan en la siguiente generación de Bitcoiners.",
+      "Por medio de su compromiso en educación e innovación, la Oficina del Bitcoin en El Salvador y Fulgur Ventures han creado el camino para que los jóvenes Salvadoreños talentosos se conviertan en la siguiente generación de Bitcoiners.",
       "La Nacional Oficina del Bitcoin de El Salvador bajo el mandato de El Presidente Nayib Bukele",
       "Invertimos en startups de fase temprana enfocados en Bitcoin y Lightning Network",
       "El equipo de Cubo+ agradece a nuestras alianzas por ser parte de este proyecto y por permitir a nuestros estudiantes ganar experiencia en sus compañías."
