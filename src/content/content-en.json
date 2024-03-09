@@ -226,11 +226,15 @@
     "waitlist": "Would you like to improve your technicals skills? Suscribe to the CUBO+ Developer Edition waitlist, just click <a class='text-orange-400' href='cubo++2024.html'>here</a>."
   },
   "cubo++2024": {
-    "header": "Subscribe to the <span class=\"opacity-80\">Waitlist.</span>",
-    "legend": "We'll let youn know once the next edition of cubo+ is out, for now, keep learning and sutdying bitcoin!",
-    "form": "What are you waiting for!",
-    "description": "Cubo++ 2024 will be focused on high tech level classes to understand the Bitcoin and Lightning Network Protocol in order to succesfully be ready for your internship at a high level tech company in the Bitcoin industry.",
-    "alliances": "THANKS TO THE SUPPORT OF OUR ALLIANCES"
+    "header": "The next generation of <span class=\"opacity-80\">Developers.</span>",
+    "legend": "The best Bitcoin and Lightning bootcamp for developers looking for opportunities. Subscribe to our waitlist to be notified once the applications for this period are open.",
+    "form": "Subscribe to our waitlist now!",
+    "questions": ["Are you a passionate developer for technology looking for opportunities?", 
+                  "Definitely CUBO+ Developers edition is for you! Where you can find:"],
+    "advantages": ["An advance level of understanding in the technical stack of Bitcoin.", 
+                    "Full paid scholarship with accomodation and nutrition.",
+                    "A guaranteed internship with a company ally of CUBO+."],
+    "callAction": ["Call to action", "Ever since a requirement for CUBO+ Developers edition is to know the basics of Bitcoin we encourage you to apply for the economics edition."]
   },
   "faq": {
     "title": "FRQUENTLY ASKED QUESTIONS",

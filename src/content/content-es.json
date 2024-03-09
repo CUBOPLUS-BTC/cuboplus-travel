@@ -230,11 +230,15 @@
     "waitlist": "Te gustaría mejorar tus habilidades técnicas? Suscríbete a la waitlist de CUBO+ Developer Edition, solo clickea <a class='text-orange-400' href='cubo++2024.html'>aquí</a>."
   },
   "cubo++2024": {
-    "header": "Suscribete a la <span class=\"opacity-80\">Lista de espera.</span>",
-    "legend": "Te haremos saber cuando la siguiente edición de Cubo+ esté lista, por el momento, mantente aprendiendo y estudiando Bitcoin!",
-    "form": "Que estás esperándo!",
-    "description": "Cubo++ 2024 estará enfocado en un conocimiento técnico avanzado de clases para entender los protocolos de Bitcoin y Red Lightning con el propósito de estar preparado de antemano para tu pasantía en un compañía ejemplar en la industria de Bitcoin.",
-    "alliances": "GRACIAS A EL APOYO DE NUESTRAS ALIANZAS"
+    "header": "La siguiente generación de  <span class=\"opacity-80\">Desarrolladores.</span>",
+    "legend": "El mejor bootcamp de Bitcoin y Lightning para desarrolladores en busca de oportunidades, suscríbete a la lista de espera para ser notificado cuando se abran las inscripciones.",
+    "form": "Suscribete ya!",
+    "questions": ["¿Eres un desarrollador apasionado por la técnología en busca de trabajo?", 
+                  "Definitivamente la edición para desarrolladores de CUBO+ es para ti! Donde encontrarás:"],
+    "advantages": ["Un avanzado nivel de entendimiento técnico sobre Bitcoin.", 
+                    "Beca completa con estadía y alimentación.",
+                    "Pasantía asegurada con una de las compañías aliadas de CUBO+."],
+    "callAction": ["Llamado a la acción", "Debido a que un requisito para participar la edición de desarrolladores de CUBO+ es saber las bases de Bitcoin, te animamos a aplicar en la edición económica."]
   },
   "faq": {
     "title": "PREGUNTAS FRECUENTES",
