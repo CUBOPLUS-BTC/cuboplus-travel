@@ -197,10 +197,28 @@
     "header": "Want to live the <span class=\"opacity-80\">CUBO+ Xperience?</span>",
     "legend": "You will gain valuable knowledge in one of the most disruptive technologies of all time and will have the opportunity to win a trip to Switzerland for further training.",
     "media": "../img/Cubo+ eng.mp4",
-    "features": [
-      "Teachers from all<br> over the world",
-      "Internship opportunities",
-      "Trip to Switzerland"
+    "titles":[
+      "What CUBO+ Economics Edition is about?", "Who can apply?", "As a CUBO+ student you will have access to", "Course structure",
+      "Online Classes", "Face to face classes", "Conferences from industry leaders", "Does the course have a cost?", "How can I recieve a scholarship to Lugano´s PlanB summer School(In Switzerland)?",
+      "Teachers from all<br> over the world", "Internship opportunities", "Trip to Switzerland"
+    ],
+    "descriptions":[
+      "CUBO+ econs edition will be designed to provide education about Bitcoin on an economic and philosophical level, to understand how it effect society and why it is important a world controlled by a poorly driven financial system.",
+      "<svg class='w-6 h-6 text-green-500 dark:text-green-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>University students or graduates.",
+      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-6 h-6  flex-shrink-0'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>Students of all technical and non-technical careers.",
+      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-6 h-6  flex-shrink-0'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>People willing to get passionate for the Bitcoin Revolution!",
+      "High level mentors<br> sharing their knowledge<br> to Salvadoran youth<br> and professionals.",
+      "All CUBO+ graduating<br> students will have the<br> opportunity to apply for<br> internships at the best<br> Bitcoin companies in the world!",
+      "The best and most<br> dedicated students will<br> receive a full scholarship<br> to <a class='text-orange-400' href='https://planb.lugano.ch/summer-school/'>PlanB's Summer School</a><br> in Lugano Switzerland",
+      "The course will last 3 months starting next March 16 and will consist of virtual and in-person classes, as well as conferences from industry leaders. For more details about the events, check our <a href='agenda.html' class='text-orange-400'>agenda.",
+      "Classes will be held virtually, two classes per week each lasting two hours where you can interact with your teachers.",
+      "To reinforce the knowledge you acquire during the week there will be in-person classes where you can put your knowledge into practice through challenges.",
+      "We will have the presence of world leaders in the Bitcoin industry giving conferences that you cannot miss.",
+      "The course has an approximate value of $2000 USD but Salvadoreño Nationals have the option to apply for a full scholarship to access all the resources and teaching materials that will help you throughout the course.",
+      "Those who show outstanding performance throughout the course will win a trip to Switzerland to participate in PlanB's Summer School in Lugano Switzerland to continue their Bitcoin education. Winners of this scholarship will be evaluated through class attendance, participation, and collaboration with their peers."
+    ],
+    "texts":[
+      "High level mentors<br> sharing their knowledge<br> to Salvadoran youth<br> and professionals."
     ],
     "form": "Application process",
     "description": "Cubo+ 2024 will aim for education in economy and Bitcoin space at a general level, where anyone with the enthusyasm to learn about the reasons of Bitcoin can apply!",
