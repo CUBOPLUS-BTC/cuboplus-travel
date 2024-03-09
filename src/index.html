@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="output.css">
     <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "kvmsar6iy8");
     </script>
 
@@ -34,30 +34,30 @@
             justify-content: flex-start;
             align-items: center;
         }
+
         .animate-pulse {
-    /*box-shadow: 0 0 0 20px rgba(229,62,62, 0.5);
+            /*box-shadow: 0 0 0 20px rgba(229,62,62, 0.5);
     transform: scale(0.8);*/
-    animation: pulse 2s infinite;
-}
+            animation: pulse 3s infinite;
+        }
 
-@keyframes pulse {
-    0% {
-        transform: scale(0.8);
-        box-shadow: 0 0 0 0 rgb(63,131,248);
-    }
+        @keyframes pulse {
+            0% {
+                transform: scale(0.8);
+                box-shadow: 0 0 0 0 rgb(63, 131, 248);
+            }
 
-    70% {
-        transform: scale(1);
-        box-shadow: 0 0 0 35px rgba(229, 62, 62, 0);
-    }
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 20px rgba(229, 62, 62, 0);
+            }
 
-    100% {
-        transform: scale(0.8);
-    }
-}
-
+            100% {
+                transform: scale(0.8);
+            }
+        }
     </style>
-    
+
     <script>
         if (
             localStorage.getItem("color-theme") === "dark" ||
@@ -79,8 +79,10 @@
                 <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
                     <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
                         <a href="#" aria-label="logo" class="flex items-center space-x-2">
-                            <img src="img/logos/cubo-text-blue.svg" class="hidden sm:block" style="height: 64px; width: 164px;" alt="cubo logo">
-                            <img src="img/logos/cubo-logo-azul1.svg" class="block sm:hidden" style="height: 48px; width: 124px;" alt="cubo logo">
+                            <img src="img/logos/cubo-text-blue.svg" class="hidden sm:block"
+                                style="height: 64px; width: 164px;" alt="cubo logo">
+                            <img src="img/logos/cubo-logo-azul1.svg" class="block sm:hidden"
+                                style="height: 48px; width: 124px;" alt="cubo logo">
                         </a>
 
                         <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
@@ -130,23 +132,70 @@
                         </div>
                         <div
                             class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
-                            <button class='animate-pulse rounded-full relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
-                                before:bg-blue-500 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 
-                                active:before:scale-95 dark:before:border-gray-700 dark:before:bg-blue-400 sm:px-4 lg:before:border 
-                                lg:before:border-blue-200 lg:before:bg-blue-50 lg:dark:before:bg-gray-800'
+                            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
+                                data-dropdown-trigger="hover" class='animate-pulse rounded-full relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
+                            before:bg-blue-500 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 
+                            active:before:scale-95 dark:before:border-gray-700 dark:before:bg-blue-400 sm:px-4 lg:before:border 
+                            lg:before:border-blue-200 lg:before:bg-blue-50 lg:dark:before:bg-gray-800'
                                 data-dropdown-toggle="dropdown-cubo+" data-dropdown-delay="50">
-                                <a  href="pages/cubo+2024.html"
-                                   id="navbar-apply-button"
+                                <a href="#" id="navbar-apply-button"
                                     class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white flex items-center">
-                                    <svg class=" relative w-5 h-5 mr-2 text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                    <svg class=" relative w-5 h-5 mr-2 text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
                                     Apply Now
-                    </a>
+                                </a>
                             </button>
                         </div>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownHover"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-64 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownHoverButton">
+                                <li>
+                                    <a href="pages/cubo+2024.html"
+                                        class="flex items-center px-4 py-2 hover:text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-primaryLight">
+                                        <div class="flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-4 ">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                                            </svg>
+                                        </div>
+                                        <div class="w-full ps-3">
+                                            <div>Econs Generation
+                                            </div>
+                                            <div class="text-xs text-blue-600 dark:text-blue-500">
+                                                Applications Open!
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
 
-                        
+                                <li>
+                                    <a href="pages/cubo++2024.html"
+                                        class="flex items-center px-4 py-2 hover:text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-primaryLight">
+                                        <div class="flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                                            </svg>
 
-                      
+                                        </div>
+                                        <div class="w-full ps-3">
+                                            <div>Devs Generation
+                                            </div>
+                                            <div class="text-xs text-blue-600 dark:text-blue-500">Aplications open soon!
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
                         <button aria-label="switch language"
                             class="group mr-1 relative hidden h-9 w-9 rounded-full before:absolute text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-300 before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex"
@@ -242,41 +291,33 @@
         </nav>
     </header>
 
-    <div data-modal-show="cookies-modal">
-
-    </div>
-
-    <!-- Main modal -->
-    <div id="cookies-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed bot-0 right-0 left-0 z-50 w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-        <div class="relative p-4 w-full max-w-md max-h-96">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                <!-- Modal header -->
-                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                        Cookies
-                    </h3>
-                </div>
-                <!-- Modal body -->
-                <div class="p-4 md:p-5 space-y-4">
-                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        We use third parties cookies to improve our services.
-                    </p>
-                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                        
-                    </p>
-                </div>
-                <!-- Modal footer -->
-                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                    <button id="accept-cookies" data-modal-hide="cookies-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Accept</button>
-                    <button id="decline-cookies" data-modal-hide="cookies-modal" type="button" class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
-                    <a class="ms-3 underline text-white" href="pages/legal/cookies.html" target="_blank">More information</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
     
+
+     
+    
+        <section id="cookies-modal" class="hidden z-30 fixed max-w-2xl p-4 mx-auto bg-white border border-gray-200 md:gap-x-4 left-12 bottom-16 dark:bg-gray-900 md:items-center dark:border-gray-700 rounded-2xl">
+            <div class="flex items-center gap-x-4">
+                <span class="inline-flex p-2 text-blue-500 rounded-lg shrink-0 dark:bg-gray-800 bg-blue-100/80">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.9803 8.5468C17.5123 8.69458 17.0197 8.7931 16.5271 8.7931C14.2118 8.76847 12.3399 6.89655 12.3153 4.58128C12.3153 4.13793 12.3892 3.69458 12.537 3.27586C11.9951 2.68473 11.6995 1.92118 11.6995 1.13301C11.6995 0.812808 11.7488 0.492611 11.8473 0.172414C11.2315 0.0738918 10.6158 0 10 0C4.48276 0 0 4.48276 0 10C0 15.5172 4.48276 20 10 20C15.5172 20 20 15.5172 20 10C20 9.77833 20 9.55665 19.9754 9.33498C19.2611 9.26108 18.5468 8.99015 17.9803 8.5468ZM4.58128 7.31527C6.30542 7.31527 6.30542 10.0246 4.58128 10.0246C2.85714 10.0246 2.61084 7.31527 4.58128 7.31527ZM6.05912 15.7635C4.08867 15.7635 4.08867 12.8079 6.05912 12.8079C8.02956 12.8079 8.02956 15.7635 6.05912 15.7635ZM9.01478 1.33005C10.7389 1.33005 10.7389 4.28571 9.01478 4.28571C7.29064 4.28571 7.04434 1.33005 9.01478 1.33005ZM10.2463 8.84237C11.7241 8.84237 11.7241 10.8128 10.2463 10.8128C8.76848 10.8128 9.01478 8.84237 10.2463 8.84237ZM11.9704 16.9458C10.4926 16.9458 10.4926 14.9754 11.9704 14.9754C13.4483 14.9754 13.202 16.9458 11.9704 16.9458ZM16.6503 13.1034C15.4187 13.1034 15.4187 11.133 16.6503 11.133C17.8818 11.133 17.8818 13.1034 16.6503 13.1034Z" fill="currentColor"/>
+                    </svg>
+                </span>
+        
+                <p id="cookies-text" class="text-sm text-gray-600 dark:text-gray-300">We use cookies to ensure that we give you the best experience on our website. <a href="/src/pages/legal/cookies.html" class="text-blue-500 hover:underline">Cookies Policy</a>. </p>
+            </div>
+            
+            <div class="flex items-center mt-6 gap-x-4 shrink-0 lg:mt-0">
+                <button id="accept-cookies" class="text-xs w-1/2 md:w-auto font-medium bg-gray-800 rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+                    Accept
+                </button>
+                <button id="decline-cookies" class="text-xs w-1/2 md:w-auto font-medium bg-gray-800 rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+                    Decline
+                </button>
+            </div>
+        </section>
+
+
+
 
     <section class="pt-32 sm:pt-40 md:pt-48">
         <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
@@ -296,9 +337,7 @@
                         <p id="header2" class="mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl">CUBO+ is the
                             first
                             educational program aimed
-                            at training the next generation of Bitcoin Salvadoran enthusiasts under the government of
-                            President
-                            Nayib Bukele, to contribute
+                            at training the next generation of Bitcoin Salvadoran enthusiasts to contribute
                             the Bitcoin adoption and the economic growth of El Salvador.</p>
                     </div>
                     <div class="mt-12 w-full rounded-lg overflow-hidden sm:mt-20 lg:-mt-8 lg:w-3/4">
@@ -316,21 +355,25 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-12 border-y border-gray-100 py-8 text-center dark:border-gray-800 md:py-12 xl:mt-20">
+                <div class="mt-12 border-y border-gray-100 py-8 text-center dark:border-orange-300 md:py-12 xl:mt-20">
                     <div id="thanks"
                         class="text-sm font-semibold tracking-wider text-gray-800 dark:text-white uppercase">supported
                         by our strategic alliances
                     </div>
                     <div
-                        class="mt-8 flex flex-wrap justify-center gap-6 brightness-75 contrast-200 grayscale dark:brightness-200 dark:contrast-0 sm:justify-between lg:gap-24">
-                        <img class="h-8 w-auto lg:h-8 lg:w-auto" src="img/logos/fulgur-symbol.svg" loading="lazy" alt="fulgur logo"
-                            width="" height="" />
-                        <img class="h-8 w-auto lg:h-12 lg:w-auto" src="img/logos/goes-logo.svg" loading="lazy" alt="goes logo"
-                            width="" height="" />
-                        <img class="h-8 w-auto lg:h-10 lg:w-auto" src="img/logos/planb-dark.svg" loading="lazy" alt="planb logo"
-                            width="100" height="100" />
-                        <img class="h-8 w-auto lg:h-12 lg:w-auto" src="img/logos/udb-logo.svg" loading="lazy" alt="udb logo"
-                            width="" height="" />
+                        class="mt-8 flex flex-wrap justify-center gap-6 contrast-125 dark:contrast-25  sm:justify-between lg:gap-24">
+                        <img class="h-10 w-auto lg:h-14 lg:w-auto dark:hidden" src="img/logos/fulgur-logo.svg"
+                            loading="lazy" alt="fulgur logo" width="" height="" />
+                        <img class="h-10 w-auto lg:h-20 lg:w-auto dark:hidden" src="img/logos/goes-logo.svg"
+                            loading="lazy" alt="goes logo" width="" height="" />
+                        <img class="h-10 w-auto lg:h-20 lg:w-auto dark:hidden" src="img/logos/planb-dark.svg"
+                            loading="lazy" alt="planb logo" width="100" height="100" />
+                        <img class="h-10 w-auto lg:h-14 lg:w-auto dark:block hidden"
+                            src="img/logos/fulgur-logo-light.svg" loading="lazy" alt="fulgur logo" width="" height="" />
+                        <img class="h-10 w-auto lg:h-20 lg:w-auto dark:block hidden" src="img/logos/goes-logo-light.svg"
+                            loading="lazy" alt="goes logo" width="" height="" />
+                        <img class="h-10 w-auto lg:h-20 lg:w-auto dark:block hidden" src="img/logos/planb-light.svg"
+                            loading="lazy" alt="planb logo" width="100" height="100" />
                     </div>
                 </div>
             </div>
@@ -388,9 +431,12 @@
                                 <div class="mt-12 space-y-6">
                                     <div class="flex items-center gap-6">
                                         <div
-                                            class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                            <img class="m-auto h-8 w-auto" src="img/icons/code.png" alt="icon illustration"
-                                                loading="lazy" width="512" height="512" />
+                                            class="flex h-20 w-20 rounded-3xl border dark:text-gray-50 border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="m-auto h-8 w-auto">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                                            </svg>
                                         </div>
                                         <div class="w-[calc(100%-7.5rem)]">
                                             <h4 id="phases-apply-subtitle1"
@@ -406,9 +452,12 @@
 
                                     <div class="flex items-center gap-6">
                                         <div
-                                            class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                            <img class="m-auto h-8 w-auto" src="img/icons/light-bulb.png"
-                                                alt="icon illustration" loading="lazy" width="512" height="512" />
+                                            class="flex h-20 w-20 rounded-3xl border dark:text-gray-50 border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="m-auto h-8 w-auto">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                                            </svg>
                                         </div>
                                         <div class="w-[calc(100%-7.5rem)]">
                                             <h4 id="phases-apply-subtitle2"
@@ -439,8 +488,8 @@
                                     <div class="flex items-center gap-6">
                                         <div
                                             class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                            <img class="m-auto h-8 w-auto" src="img/icons/bitcoin.png" alt="icon illustration"
-                                                loading="lazy" width="512" height="512" />
+                                            <img class="m-auto h-8 w-auto" src="img/icons/bitcoin.png"
+                                                alt="icon illustration" loading="lazy" width="512" height="512" />
                                         </div>
                                         <div class="w-[calc(100%-7.5rem)]">
                                             <h4 id="phases-learn-subtitle1"
@@ -586,16 +635,16 @@
                                             had the opportunity to learn about an exciting field that has transformed my
                                             life<span class="font-serif">"</span></p>
                                         <div class="flex items-center gap-3 text-left">
-                                            <img class="h-16 w-16 rounded-full"
-                                                src="img/students/Fhernanda-Elias.jpg" alt="student pic"
-                                                width="200" height="200" loading="lazy" />
+                                            <img class="h-16 w-16 rounded-full" src="img/students/Fhernanda-Elias.jpg"
+                                                alt="student pic" width="200" height="200" loading="lazy" />
                                             <div>
                                                 <h3
                                                     class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">
                                                     Fhernanda
                                                     Elías
                                                 </h3>
-                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+ Student</span>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+
+                                                    Student</span>
                                             </div>
                                         </div>
                                     </div>
@@ -605,7 +654,8 @@
                                 <div class="cart">
                                     <div
                                         class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                                        <p id="testimonials-student2" class="text-gray-600 dark:text-gray-300"><span class="font-serif">"</span>I'm
+                                        <p id="testimonials-student2" class="text-gray-600 dark:text-gray-300"><span
+                                                class="font-serif">"</span>I'm
                                             so grateful to be
                                             part of cubo+ and witness the good changes that are happening in El
                                             Salvador<span class="font-serif">"</span></p>
@@ -618,7 +668,8 @@
                                                     Rodrigo
                                                     Aguilera
                                                 </h3>
-                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+ Student</span>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+
+                                                    Student</span>
                                             </div>
                                         </div>
                                     </div>
@@ -629,20 +680,21 @@
                                     <div
                                         class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
                                         <p id="testimonials-student5" class="text-gray-600 dark:text-gray-300"><span
-                                                class="font-serif">"</span>Cubo+ has been a transformative experience for me, 
-                                                their commitment on training local talent is truly inspiring.
+                                                class="font-serif">"</span>Cubo+ has been a transformative experience
+                                            for me,
+                                            their commitment on training local talent is truly inspiring.
                                             <span class="font-serif">"</span>
                                         </p>
                                         <div class="flex items-center gap-3 text-left">
-                                            <img class="h-16 w-16 rounded-full"
-                                                src="img/students/Moises-Iglesias.jpg" alt="student pic"
-                                                width="200" height="200" loading="lazy" />
+                                            <img class="h-16 w-16 rounded-full" src="img/students/Moises-Iglesias.jpg"
+                                                alt="student pic" width="200" height="200" loading="lazy" />
                                             <div>
                                                 <h3
                                                     class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">
                                                     Moises Iglesias
                                                 </h3>
-                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+ Student</span>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+
+                                                    Student</span>
                                             </div>
                                         </div>
                                     </div>
@@ -658,16 +710,16 @@
                                             taught me how bad the world is, but it also taught me what can be fixed with
                                             Bitcoin<span class="font-serif">"</span></p>
                                         <div class="flex items-center gap-3 text-left">
-                                            <img class="h-16 w-16 rounded-full"
-                                                src="img/students/Jonathan-Ramos.jpg" alt="student pic"
-                                                width="200" height="200" loading="lazy" />
+                                            <img class="h-16 w-16 rounded-full" src="img/students/Jonathan-Ramos.jpg"
+                                                alt="student pic" width="200" height="200" loading="lazy" />
                                             <div>
                                                 <h3
                                                     class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">
                                                     Jonathan
                                                     Ramos
                                                 </h3>
-                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+ Student</span>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+
+                                                    Student</span>
                                             </div>
                                         </div>
                                     </div>
@@ -683,16 +735,16 @@
                                             <span class="font-serif">"</span>
                                         </p>
                                         <div class="flex items-center gap-3 text-left">
-                                            <img class="h-16 w-16 rounded-full"
-                                                src="img/students/Rodrigo-Bonilla.jpg" alt="student pic"
-                                                width="200" height="200" loading="lazy" />
+                                            <img class="h-16 w-16 rounded-full" src="img/students/Rodrigo-Bonilla.jpg"
+                                                alt="student pic" width="200" height="200" loading="lazy" />
                                             <div>
                                                 <h3
                                                     class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">
                                                     Rodrigo
                                                     Bonilla
                                                 </h3>
-                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+ Student</span>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+
+                                                    Student</span>
                                             </div>
                                         </div>
                                     </div>
@@ -703,20 +755,22 @@
                                     <div
                                         class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
                                         <p id="testimonials-student6" class="text-gray-600 dark:text-gray-300"><span
-                                                class="font-serif">"</span>Cubo+ is not just a program; it's a life-changing experience! 
-                                                It's reshaped how I view life and the endless potential for development in El Salvador!
+                                                class="font-serif">"</span>Cubo+ is not just a program; it's a
+                                            life-changing experience!
+                                            It's reshaped how I view life and the endless potential for development in
+                                            El Salvador!
                                             <span class="font-serif">"</span>
                                         </p>
                                         <div class="flex items-center gap-3 text-left">
-                                            <img class="h-16 w-16 rounded-full"
-                                                src="img/students/Naomi-Iglesias.jpg" alt="student pic"
-                                                width="200" height="200" loading="lazy" />
+                                            <img class="h-16 w-16 rounded-full" src="img/students/Naomi-Iglesias.jpg"
+                                                alt="student pic" width="200" height="200" loading="lazy" />
                                             <div>
                                                 <h3
                                                     class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">
                                                     Naomi Iglesias
                                                 </h3>
-                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+ Student</span>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+
+                                                    Student</span>
                                             </div>
                                         </div>
                                     </div>
@@ -834,7 +888,8 @@
                                 <div
                                     class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
                                     <div class="flex items-center space-x-4"><img src="img/tweets/stacy-herbert.jpg"
-                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Stacy Herbert">
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full"
+                                            alt="Stacy Herbert">
                                         <div>
                                             <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
                                                     class="fa-brands fa-twitter"></i> Stacy Herbert 🇸🇻🚀</h3>
@@ -881,7 +936,7 @@
                                     <p
                                         class="leading-normal  text-gray-900 dark:text-gray-300 text-md h-16 overflow-hidden">
                                         Taught 12 students for CUBO+
-                                        <br><br>    
+                                        <br><br>
                                         Go El Salvador!
                                     </p>
 
@@ -972,12 +1027,13 @@
                         <div class="relative group">
                             <div
                                 class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/bitcoinmagazine/status/1676265047608393728" target="_blank"
-                                class="cursor-pointer">
+                            </div><a href="https://twitter.com/bitcoinmagazine/status/1676265047608393728"
+                                target="_blank" class="cursor-pointer">
                                 <div
                                     class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
                                     <div class="flex items-center space-x-4"><img src="img/tweets/bitcoin-magazine.jpg"
-                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="bitcoin magazine">
+                                            class="w-12 h-12 bg-center bg-cover border rounded-full"
+                                            alt="bitcoin magazine">
                                         <div>
                                             <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
                                                     class="fa-brands fa-twitter"></i> Bitcoin Magazine</h3>
@@ -1045,7 +1101,7 @@
     </section>
 
     <footer class="bg-white dark:bg-gray-900">
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="relative mx-auto px-6 md:max-w-full my-6 md:px-12 lg:max-w-6xl xl:px-0">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="index.html" class="flex items-center">
@@ -1053,13 +1109,13 @@
                     </a>
                 </div>
 
-                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div class="grid grid-cols-2 gap-8 md:gap-16 md:grid-cols-3">
                     <div>
                         <h2 id="footer-contact"
                             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
-                                <a href="#" class="hover:underline">info@cuboplus.academy</a>
+                                <a href="#" class="hover:underline text-sm">info@cuboplus.academy</a>
                             </li>
                         </ul>
                     </div>
@@ -1068,7 +1124,8 @@
                             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
                         <div class="sm:flex sm:items-center sm:justify-between">
                             <div class="flex mt-4 sm:justify-center sm:mt-0">
-                                <a target="_blank" href="https://www.youtube.com/@cuboplus" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                <a target="_blank" href="https://www.youtube.com/@cuboplus"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="currentColor" viewBox="0 0 20 14">
                                         <path fill-rule="evenodd"
@@ -1087,7 +1144,8 @@
                                     </svg>
                                     <span class="sr-only">Twitter page</span>
                                 </a>
-                                 <a target="_blank" href="https://www.instagram.com/cubo_plus/" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                <a target="_blank" href="https://www.instagram.com/cubo_plus/"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
                                         viewBox="0 0 24 24">
                                         <path

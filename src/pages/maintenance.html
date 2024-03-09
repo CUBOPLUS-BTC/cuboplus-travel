@@ -31,7 +31,7 @@
         .animate-pulse {
             /*box-shadow: 0 0 0 20px rgba(229,62,62, 0.5);
     transform: scale(0.8);*/
-            animation: pulse 2s infinite;
+            animation: pulse 3s infinite;
         }
 
         @keyframes pulse {
@@ -42,7 +42,7 @@
 
             70% {
                 transform: scale(1);
-                box-shadow: 0 0 0 35px rgba(229, 62, 62, 0);
+                box-shadow: 0 0 0 20px rgba(229, 62, 62, 0);
             }
 
             100% {
@@ -59,11 +59,11 @@
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
                     <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
-                        <a href="../index.html" aria-label="logo" class="flex items-center space-x-2">
-                            <img src="../img/logos/cubo-text-blue.svg" class="hidden sm:block"
+                        <a href="../index.html" aria-label="logo" class="flex items-center">
+                            <img src="../img/logos/cubo-text-blue.svg" class="hidden md:block"
                                 style="height: 64px; width: 164px;" alt="cubo logo">
-                            <img src="../img/logos/cubo-logo-azul1.svg" class="block sm:hidden"
-                                style="height: 48px; width: 124px;" alt="cubo logo">
+                            <img src="../img/logos/cubo-logo-azul1.svg" class="block md:hidden ml-4"
+                                style="height: 48px; width: 48px;" alt="cubo logo">
                         </a>
 
                         <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
@@ -114,21 +114,72 @@
                         </div>
                         <div
                             class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
-                            <button class='animate-pulse rounded-full relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
-                                before:bg-blue-500 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 
-                                active:before:scale-95 dark:before:border-gray-700 dark:before:bg-blue-400 sm:px-4 lg:before:border 
-                                lg:before:border-blue-200 lg:before:bg-blue-50 lg:dark:before:bg-gray-800'
+                            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
+                                data-dropdown-trigger="hover" class='animate-pulse rounded-full relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
+                            before:bg-blue-500 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 
+                            active:before:scale-95 dark:before:border-gray-700 dark:before:bg-blue-400 sm:px-4 lg:before:border 
+                            lg:before:border-blue-200 lg:before:bg-blue-50 lg:dark:before:bg-gray-800'
                                 data-dropdown-toggle="dropdown-cubo+" data-dropdown-delay="50">
-                                         <a  href="cubo+2024.html"
-                                   id="navbar-apply-button"
+                                <a href="#" id="navbar-apply-button"
                                     class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white flex items-center">
-                                    <svg class=" relative w-5 h-5 mr-2 text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                    <svg class=" relative w-5 h-5 mr-2 text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
                                     Apply Now
-                    </a>
+                                </a>
                             </button>
                         </div>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownHover"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-64 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownHoverButton">
+                                <li>
+                                    <a href="cubo+2024.html"
+                                        class="flex items-center px-4 py-2 hover:text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-primaryLight">
+                                        <div class="flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-4 ">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                                            </svg>
+                                        </div>
+                                        <div class="w-full ps-3">
+                                            <div>Econs Generation
+                                            </div>
+                                            <div class="text-xs text-blue-600 dark:text-blue-500">
+                                                Applications Open!
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
 
-                      
+                                <li>
+                                    <a href="cubo++2024.html"
+                                        class="flex items-center px-4 py-2 hover:text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-primaryLight">
+                                        <div class="flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                                            </svg>
+
+                                        </div>
+                                        <div class="w-full ps-3">
+                                            <div>Devs Generation
+                                            </div>
+                                            <div class="text-xs text-blue-600 dark:text-blue-500">Aplications open soon!
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
 
                         <button aria-label="switch language"
                             class="group mr-1 relative hidden h-9 w-9 rounded-full before:absolute text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-300 before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex"
@@ -243,22 +294,21 @@
     </section>
 
     <footer class="bg-white dark:bg-gray-900">
-        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="relative mx-auto px-6 md:max-w-full my-6 md:px-12 lg:max-w-6xl xl:px-0">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="../index.html" class="flex items-center">
-                        <!-- Logo blanco visible solo en modo oscuro -->
                         <img src="../img/logos/cubo-logo-blue.svg" class="h-40 me-3" alt="Cuboplus Logo" />
                     </a>
                 </div>
 
-                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div class="grid grid-cols-2 gap-8 md:gap-16 md:grid-cols-3">
                     <div>
                         <h2 id="footer-contact"
                             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
-                                <a href="#" class="hover:underline">info@cuboplus.academy</a>
+                                <a href="#" class="hover:underline text-sm">info@cuboplus.academy</a>
                             </li>
                         </ul>
                     </div>
@@ -304,10 +354,10 @@
                             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Links</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
-                                <a href="../pages/faq.html" class="hover:underline">FAQ</a>
+                                <a href="faq.html" class="hover:underline">FAQ</a>
                             </li>
                             <li class="mb-4">
-                                <a href="../pages/maintenance.html" class="hover:underline">Resources</a>
+                                <a href="maintenance.html" class="hover:underline">Resources</a>
                             </li>
                             <li class="mb-4">
                                 <a target="_blank" href="https://bitcoin.org/bitcoin.pdf"
