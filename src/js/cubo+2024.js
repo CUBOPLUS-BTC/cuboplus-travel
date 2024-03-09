@@ -27,14 +27,6 @@ const setElements = (content) => {
     document.getElementById("description11").innerHTML = content.descriptions[10];
     document.getElementById("description12").innerHTML = content.descriptions[11];
     document.getElementById("description13").innerHTML = content.descriptions[12];
-    document.getElementById("text1").innerHTML = document.texts[0];
-    document.getElementById("subtitle1").innerHTML = content.features[0];
-    document.getElementById("subtitle2").innerHTML = content.features[1];
-    document.getElementById("subtitle3").innerHTML = content.features[2];
-    document.getElementById("ask").innerHTML = content.form;
-    document.getElementById("waitlist-text").innerHTML = content.waitlist;
-    document.getElementById("description").innerHTML = content.description;
-    document.getElementById("thanks").innerHTML = content.alliances;
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {

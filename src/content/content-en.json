@@ -1,5 +1,5 @@
 {
-  "version": "1.2",
+  "version": "1.3",
   "secret": "en-cuboplus",
   "layout": {
     "navbar": ["About us", 
@@ -98,7 +98,7 @@
         "picture": "img/bootcamp/bootcamp-4.webp"
       },
       {
-        "img": "img/tweets/synonym.jpg",
+        "img": "img/tweets/Synonym.jpg",
         "href": "https://twitter.com/synonym_to/status/1672316976717262848",
         "name": "Synonym",
         "handle": "@Synonym_to",
@@ -171,7 +171,7 @@
       "\"While for most of us our journey to Bitcoin mastery spanned many years, witnessing these students grasp it all in such a brief period has been a truly humbling experience.\"",
       "\"Sharing my passion with the Salvadorian youth, offering them education and valuable knowledge to prepare them for a future in the digital age: A thoroughly enriching and memorable experience!\"",
       "\"Cubo+ was such an incredible experience. I've had the chance to teach local students, being both a witness and participant in their growth, and I got to learn more about El Salvador's situtaion and how it is evolving. I feel part of this incredible community of students and teachers, and I can't wait to meet them all again somewhere around the world!\"",
-      "\"Cubo+ is a revolutionary education program. Their knowledge went from zero to being able to build Bitcoin applications. I’m honored to have been a part of the program.\""
+      "\"Cubo+ is a revolutionary education program. Their knowledge went from zero to being able to build Bitcoin applications. I'm honored to have been a part of the program.\""
     ]
   },
   "cookies": {
@@ -200,7 +200,7 @@
   "cubo+2024": {
     "header": "Want to live the <span class=\"opacity-80\">CUBO+ Xperience?</span>",
     "legend": "You will gain valuable knowledge in one of the most disruptive technologies of all time and will have the opportunity to win a trip to Switzerland for further training.",
-    "media": "../img/Cubo+ eng.mp4",
+    "media": "../img/Cubo+eng.mp4",
     "titles":[
       "What CUBO+ Economics Edition is about?", "Who can apply?", "As a CUBO+ student you will have access to", "Course structure",
       "Online Classes", "Face to face classes", "Conferences from industry leaders", "Does the course have a cost?", "How can I recieve a scholarship to Lugano´s PlanB summer School(In Switzerland)?",
