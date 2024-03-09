@@ -3,10 +3,13 @@ import PhotoSwipe from "../js/lib/photoswipe/dist/photoswipe.esm.js";
 const params = new URLSearchParams(window.location.search);
 const uuid = params.get("uuid");
 
-console.log(uuid)
 // Function to generate the image gallery
 const generateGallery = async (files) => {
   let html = "";
+
+  if (files.length === 0) {
+    return;
+  }
 
   // Function to load images asynchronously and get their dimensions
   const loadImage = (urlFile) => {
@@ -23,31 +26,29 @@ const generateGallery = async (files) => {
   // Load all images and get their dimensions
   const imagesData = await Promise.all(files.map(file => loadImage(URL + "img/events/" + file)));
   
-  html = `<div id="images" class="lg:grid grid-cols-${imagesData.length > 1 ? "2": "1"} container rounded-3xl shadow-2xl overflow-hidden pswp-gallery pswp-gallery--single-column">`;
+  html = `<div id="images"
+                class="overflow-hidden shadow-xl bg-slate-800 max-w-md mx-auto grid-rows-2 pswp-gallery pswp-gallery--single-column">`;
 
   // Build HTML with images and their dimensions
   imagesData.forEach((data, index) => {
     const { url, width, height } = data;
     if (index === 0 ) {
-      html += `<div class="col-span-1">
-                    <a href="${url}" 
-                        data-pswp-width="${width}" 
-                        data-pswp-height="${height}"
-                        target="_blank"
-                        >
-                        <img src="${url}" class="h-[32rem] w-full object-cover" alt="">
-                    </a>
-                </div>
-                <div class="grid grid-cols-${imagesData.length - 1} grid-rows-1 lg:grid-cols-2 lg:grid-rows-2">`;
+      html += `
+      <a href="${url}" 
+        data-pswp-width="${width}" 
+        data-pswp-height="${height}"
+        target="_blank">
+            <img src="${url}" alt="event" class="object-scale-down">
+      </a>
+      <div class="h-24 gap-0 grid grid-flow-col auto-cols-max">`;
                 return;
     }
 
     html += `<a href="${url}"
                data-pswp-width="${width}" 
                data-pswp-height="${height}"
-               target="_blank"
-               class="col-span-1 row-span-1">
-               <img src="${url}" class="h-full w-full object-cover" alt="" />
+               target="_blank">
+               <img src="${url}" class="h-24 w-24 object-cover" alt="" />
              </a>`;
     
   });
@@ -78,7 +79,6 @@ const fillEvent = (data) => {
 }
 
 const setElements = (content) => {
-    document.getElementById("text").innerHTML = content[0];
     document.getElementById("date").innerHTML = content[1];
     document.getElementById("hour").innerHTML = content[2];
     document.getElementById("location").innerHTML = content[3];
