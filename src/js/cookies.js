@@ -1,22 +1,16 @@
 const modalEl = document.getElementById("cookies-modal");
+modalEl.style.display = "none";
 
-const options = {
-    placement: 'bottom-left',
-    backdrop: 'static',
-    backdropClasses:
-        'bg-gray-900/50 dark:bg-gray-900/80 fixed inset-0 z-40',
-    closable: false
-};
+function closeModal() {
+    modalEl.style.display = "none";
+}
 
-const instanceOptions = {
-    id: 'cookies-modal',
-};
-
-const modal = new Modal(modalEl, options, instanceOptions);
 
 document.addEventListener("DOMContentLoaded", (e) => {
-    if ( localStorage.getItem("cookies-agreed") == undefined ) {
-        modal.show();
+
+    const cookiesAgreed = localStorage.getItem("cookies-agreed");
+    if (cookiesAgreed == null) {
+        modalEl.style.display = "flex";
         return;
     }
 });
@@ -24,9 +18,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
 document.getElementById("accept-cookies").addEventListener("click", (e) => {
     localStorage.setItem("cookies-agreed", true);
     window.clarity('consent');
+    closeModal();
 })
 
 document.getElementById("decline-cookies").addEventListener("click", (e) => {
     localStorage.setItem("cookies-agreed", false);
     window.clarity('consent', false);
+    closeModal();
 })
