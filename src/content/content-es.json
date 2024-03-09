@@ -14,60 +14,62 @@
     ]
   },
   "index": {
-    "header": "Contruyendo",
+    "header": "Construyendo",
     "typingList": ["El futuro", "El Salvador"],
-    "headerdes": "CUBO+ es el primer programa educacional concentrado en entrenar la siguiente generación de entusiastas Salvadoreños de Bitcoin bajo el gobierno de El Presidente Nayib Bukele, para contribuír la adopción de Bitcoin y crecimiento económico de El Salvador.",
+    "headerdes": "CUBO+ marca el inicio de una iniciativa educativa pionera, destinada a formar una comunidad de profesionales salvadoreños capacitados para satisfacer la creciente demanda de empleo por parte de las empresas Bitcoin y Lightning Network, así como para impulsar la adopción y fomentar el desarrollo económico de El Salvador.",
     "thanks": "APOYADO POR NUESTRAS ALIANZAS ESTRÁTEGICAS",
     "testimonial": [
       "\"Gracias a CUBO+, he tenido la oportunidad de aprender sobre un tema emocionante el cual ha transformado mi vida.\"",
-      "\"Estoy muy agradecido de ser parte de Cubo+ y ser testigo de los buenos cambios que están pasando en El Salvador.\"",
-      "\"Ser parte de Cubo+ me enseñó lo mal que está el mundo, pero también me enseñó que puede ser solucionado con Bitcoin.\"",
-      "\"CUBO+ cambió mi percepción sobre El Salvador, fue un reto que repetiría.\"",
+      "\"Estoy muy agradecido de ser parte de CUBO+ y ser testigo de los buenos cambios que están pasando en El Salvador.\"",
+      "\"Ser parte de CUBO+ me enseñó lo mal que está el mundo, pero también me enseñó que puede ser solucionado con Bitcoin.\"",
+      "\"CUBO+ cambió mi percepción sobre El Salvador, es un reto que repetiría.\"",
       "\"CUBO+ ha sido una experiencia transformadora para mí, su compromiso por formar talento local es realmente inspirador.\"",
       "\"CUBO+ no es sólo un programa; ¡Es una experiencia que cambia la vida! ¡Ha cambiado mi forma de ver la vida y el potencial infinito de desarrollo en El Salvador!\""
     ],
-    "process": "Para construír la siguiente <br> Generación Descentralizada",
-    "processdes": "Estamos comprometidos en crear un espacio de aprendizaje inclusivo y diverso que promueva el aprendizaje, crecimiento y colaboración.",
+    "cookiesmodal": ["Utilizamos cookies para mejorar tu experiencia y la recopilación de datos. <a href=\"/src/pages/legal/cookies.html\" class=\"text-blue-500 hover:underline\">Pólitica de cookies</a>. ", "Aceptar", "Rechazar"],
+    "process": "Empoderando a los futuros <br> talentos de Bitcoin",
+    "processdes": "Estamos comprometidos a equipar a los estudiantes con las habilidades y conocimientos necesarios para unirse a la industria de Bitcoin y contribuir a la remodelación del sistema financiero.",
     "phases": ["Aplica", "Aprende", "Contribuye"],
     "apply": [
       "Proceso de aplicación",
-      "Para ser parte de Cubo+ debes aplicar al proceso en el tiempo especifico. Puédes aplciar incluso si no eres un programador ya que el curso está enfocado en enseñar las bases fundamentales de Bitcoin (principios filosóficos y económicos).",
-      "Curso técnico",
-      "Orientado para desarrolladores quienes quieran adquirir las habilidades sobre los protocolos de Bitcoin y Lightning Network.",
-      "Curso no técnico",
-      "Abierto a universitarios interesados en aprender sobre los fundamentos de Bitcoin."
+      "Para unirte a CUBO+, es necesario completar nuestro formulario de aplicación y pasar las etapas de selección. Nuestro programa se estructura en dos bloques diferentes:",
+      "Cubo+ Econ Generation",
+      "El primer ciclo se centrará en los aspectos económicos y fundamentales de Bitcoin, formando expertos con orientación empresarial y ejecutiva, así como para futuros desarrolladores interesados en comprender este aspecto y enriquecer su perfil.",
+      "Cubo+ Devs Generation",
+      "Diseñado para desarrollar a la generación futura de Bitcoin y Lightning developers."
     ],
     "learn": [
       "Módulos de aprendizaje",
-      "El óbjetivo es de aprender a el ról de Bitcoin y su impacto en la sociedad. Los módulos del curso dependerán del tipo de aplicación que hayas enviado.",
-      "Orange pill",
-      "Para las aplicaciones no técnicas profundizarán sobre los aspectos sociales y económicos de Bitcoin asi cómo el por que es necesario para la sociedad.",
-      "Fáse técnica",
-      "Cómo un desarrollador, aprenderás los fundamentos de los protocolos Bitcoin y Lightning Network, también el cómo integrar estas soluciones en tus proyectos personales."
+      "Nuestro programa tiene como objetivo impartir conocimientos y habilidades de la siguiente manera:",
+      "Clases en línea y presenciales",
+      "Nuestro proceso de aprendizaje adopta una modalidad híbrida. Con el apoyo de PlanB, proporcionamos sesiones en línea impartidas por expertos de talla internacional, complementadas con reuniones presenciales en El Salvador, con el fin de generar un entorno más interactivo.",
+      "On-site Bootcamps",
+      "Los estudiantes más motivados y con mayores habilidades recibirán becas que les permitirán participar en bootcamps presenciales al concluir cada ciclo, una oportunidad que elevará sus capacidades a un nivel superior."
     ],
     "contribute": [
-      "Ayuda y contribuye",
-      "Cómo estudiante graduado de Cubo+ lo que esperamos de ti es aplicar tu conocimiento y habilidades adquiridas durante el curso soluciones, proyectos y retos de la vida real en tu entorno.",
-      "Colabora",
-      "Al final de el curso tendrás la oportunidad de participar en el programa de pasantías que te permitirán ganar experiencia con compañías de líderes en Bitcoin.",
-      "Inspira a las nuevas generaciones",
-      "Tóma ventaja de las herramientas adquiridas en el programa para crear soluciones a problemas reales en tu día a día."
+      "Únete al ecosistema",
+      "Cómo estudiante graduado de CUBO+ lo que esperamos de ti es que apliques tus conocimientos y habilidades adquiridas durante CUBO+ en tu vida y tengas éxito en ella.",
+      "Trabaja en el ecosistema",
+      "Aplica tus habilidades colaborando en proyectos de código abierto y con empresas de Bitcoin.",
+      "Crea tu propia startup",
+      "Tus conocimientos y la red de contactos con otros profesionales te brindarán el espacio necesario para desplegar tu creatividad y fundar tu propio negocio."
     ],
-    "students": ["Una generación que inspira", "En Cubo+ entrenamos agentes de cambio, forjando una cultura donde la inovación y colaboración definen el camino, dejando el legado de una generación que inspira y transforma."],
+    
+    "students": ["Una generación que inspira", "En CUBO+ capacitamos a agentes de cambio, fomentando una cultura donde la innovación y la colaboración abren el camino, creando un legado para una generación que inspira e impulsa la transformación"],
     "mission": [
       "Quiénes somos",
-      "Sómos un programa dedicado en enseñar a universitarios desde principiantes hasta desarrolladores experimentados. Creémos que todos deberían tener la oportunidad de entender y participar la revolución del Bitcoin en El Salvador, sin barreras ni limitaciones técnicas. <br> <br> En Cubo+ construímos una inclusiva y accesible comunidad. Nuestra misión es enseñar Bitcoin, haciendolo fácil de entender y aplicar en el día a día. Únete y creemos la siguiente generación de entusiastas de Bitcoin."
+      "Somos un programa comprometido en enseñar a mentes jóvenes y talentosas los fundamentos de Bitcoin a un nivel dedicado y profundo, así como universitarios y profesionales tanto los fundamentos de Bitcoin a un nivel dedicado y profundo, así como los detalles más avanzados. Abogamos por la participación de los salvadoreños en la revolución de Bitcoin en El Salvador, sin barreras ni limitaciones. <br> <br> Nuestro objetivo es construir una comunidad próspera y libre, de individuos soberanos e independientes. Nuestra misión es crear profesionales de Bitcoin que construyan el país y el mundo en el que todos queremos vivir!"
     ],
-    "mentionstitles": ["Pálabras de otros", "No estámos solos", "Déscubre lo que otros comparten de nosotros."],
+    "mentionstitles": ["Palabras de otros", "No estamos solos", "Descubre lo que otros comparten de nosotros."],
     "mentions": [
       {
-        "img": "img/tweets/cubotw.jpg",
-        "href": "https://twitter.com/cuboplus/status/1709985928842785074",
-        "name": "CUBO+",
-        "handle": "@cuboplus",
-        "role": "Cuenta oficial de Cubo+",
-        "content": "Los estudiantes de CUBO+ recién llegarón a italia para participar en el Tuscany Lightning Boootcamp⚡️",
-        "picture": "img/bootcamp/tuscany-1.webp"
+        "img": "img/tweets/Darvin-Otero.jpg",
+        "href": "https://twitter.com/aveotero/status/1680381336773697542?s=46&t=4SwPYXGhxyhAFxD2nQse1A",
+        "name": "Darvin Otero",
+        "handle": "@aveotero",
+        "role": "Tiankii CEO",
+        "content": "CUBO+ Hackathon #Awards ceremonia! El primer programa de entrenamiento en lightning de @cuboplus #Bitcoin. Un gran #exito!! gracias a todos los organizadores por hacerlo posible @bitcoinofficesv @FulgurVentures @stacyherbert @maiojose1 @FFarenga",
+        "picture": "img/bootcamp/bootcamp.webp"
       },
       {
         "img": "img/tweets/stacy-herbert.jpg",
@@ -117,12 +119,12 @@
     ],
     "contact": [
       "Envíanos un mensaje!",
-      "Tiénes alguna pregunta o quieres apoyar el programa? Contactanos y estaremos en comunicación!"
+      "Tienes alguna pregunta o quieres apoyar el programa? Contáctanos y estaremos en comunicación!"
     ]
   },
   "cubo2023": {
     "header": "<span class=\"relative\"> <span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Prueba de trabajo</span> </span> es libertad",
-    "legend": "Cubo+ le muestra al mundo cómo prueba de trabajo conlleva a la excelencia y libertad para El Salvador y sus estudiantes.",
+    "legend": "CUBO+ muestra al mundo como  la  \"prueba de trabajo\" conduce a la excelencia y la libertad para El Salvador y su gente",
     "documentary": [
       "Una producción de la Oficina del Bitcoin - © 2023 cuboplus. Todos los derechos reservados.",
       "Líder de la Oficina del Bitcoin"
@@ -130,27 +132,36 @@
     "timeline": "Nos<span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Expandimos !</span>",
     "description": "Un equipo en crecimiento no necesariamente significa problemas en crecimiento. Con las mejores características, seguridad, privacidad y mejores herramientas para cada paso del viaje - Cubo+ te permite expandir tu conocimiento sobre Bitcoin y Lightning Network",
     "content": [
-      "Agosto del 2023",
+      "Marzo 2023",
+      "Empiezan las aplicaciones",
+      "Más de 150 Salvadoreños aplicarón para unirse a la edición inaugural de CUBO+. De esas aplicaciones se seleccionarón individuos que demostrarón mayores niveles de motivación y skills para participar en esta aventura.",
+      "54 Estudiantes fuerón seleccionados, luego de un exaustivo proceso de selección.",
+      "Abril 2023 - Junio 2023",
       "Periodo preparativo",
-      "UN grupo de cincuenta y tres estudiantes se sumarón en un viaje educacional profundizando en las bases de Bitcoin. Guiado por mentores de diversas partes del mundo con un curriculum excelente, entre ellos Saifedean Ammous, Giacommo Zucco, Alekos Filini y Rikki.",
-      "54 estudiantes aprendidos!",
+      "Tres meses de clases tanto virtuales cómo presenciales, actividades, trabajo en equipo y asignaciones, introdujo a 54 estudiantes a las fundaciones de programación en Bitcoin y Lightning Network. Sentando las bases para su participación en el Bootcamp.",
+      "Se hace el proceso de selección en vista al curso presencial por medio de entrevistas.",
       "Julio del 2023",
       "Bootcamp presencial",
-      "Los 21 estudiantes más destacados del periodo preparativo pasarón a un curso de dós semanas guiado por varios mentores de diferentes partes del mundo.",
+      "Los 21 estudiantes más motivados y comprometidos del periodo preparativo fuerón becados para atender un curso de dos semanas presencial, donde tuvieron la oportunidad de aprender de expertos mundiales.",
       "Trabajamos con algunas alianzas estratégicas!",
       "Tercera semana de Julio de 2023",
       "Seminarios de Jimmy Song y Lisa Neigut",
       "Los 10 estudiantes más destacados del periodo presencial profundizarón en su conocimiento con dos seminarios adicionales guiados por expertos del area. Jimmy Song quien cubrió \"Programming Blockchain\" y Lisa Neigut compartiendo en \"Entendiendo la red Lightning de Bitcoin\"",
-      "Apareciendo en el periodico <a class='text-primary underline dark:text-primaryLight' target=\"_blank\" href='https://twitter.com/Forbes/status/1684239840890564615'>Forbes</a> !",
+      "Apareciendo en el periodico <a class='text-primary underline dark:text-primaryLight' target=\"_blank\" href='https://www.forbes.com/sites/digital-assets/2023/07/26/how-el-salvador-is-investing-in-bitcoin-education/?sh=292bea464854'>Forbes</a> !",
+      "Primera semana de Agosto",
+      "¡Empiezan las pasantías!",
+      "Los graduados de CUBO+ tuvieron la oportunidad de trabajar en compañías reconocidas en Bitcoin cómo Tiankii, Satsback, Zebedee, Alby y más.",
+      "¡Moises es el primero!",
       "Octubre 2023",
       "Bootcamp en la Toscana",
-      "Los 6 estudiantes distiguidos tomarón una oportunidad única para más entrenamiento técnico en un viaje a italia. Siguiendo con su capacitación intensiva, participarón en el evento de Lugano Plan B en Suiza, enriqueciendo su curriculum en la zona."
+      "Los 6 estudiantes distiguidos tomarón una oportunidad única para más entrenamiento técnico en un viaje a italia. Siguiendo con su capacitación intensiva, participarón en el evento de Lugano Plan B en Suiza, enriqueciendo su curriculum en la zona.",
+      "¿Que sigue?"
     ]
   },
   "contributors": {
     "titles": ["Nuestros <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>contribuidores</span></span>", "Apoyados por <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>empresas</span></span> líderes en Bitcoin"],
     "descriptions": [
-      "Por medio de su compromiso en educación e inovación, la Oficina del Bitcoin en El Salvador y Fulgur Ventures han creado el camino para que los jóvenes Salvadoreños talentosos se conviertan en la siguiente generación de Bitcoiners.",
+      "Por medio de su compromiso en educación e innovación, la Oficina del Bitcoin en El Salvador y Fulgur Ventures han creado el camino para que los jóvenes Salvadoreños talentosos se conviertan en la siguiente generación de Bitcoiners.",
       "La Nacional Oficina del Bitcoin de El Salvador bajo el mandato de El Presidente Nayib Bukele",
       "Invertimos en startups de fase temprana enfocados en Bitcoin y Lightning Network",
       "El equipo de Cubo+ agradece a nuestras alianzas por ser parte de este proyecto y por permitir a nuestros estudiantes ganar experiencia en sus compañías."
@@ -193,10 +204,29 @@
   "cubo+2024": {
     "header": "Quieres vivir la <span class=\"opacity-80\">experiencia de CUBO+?</span>",
     "legend": "Ganarás valioso conocimiento en una de las tecnologías mas disruptivas de todos los tiempos y tendrás la oportunidad de ganar un viaje a Suiza para mayor capacitación",
-    "features": [
-      "Maestros de todas<br> partes del mundo",
-      "Oportunidad de pasantías",
-      "Viajes a Suiza"
+    "media": "../img/Cubo+ (esp).mp4",
+    "titles":[
+      "¿Sobre qué trata CUBO+ Economics Edition?", "¿Quién puede aplicar?", "Como estudiante de CUBO+ tendrás acceso a", "Estructura del curso",
+      "Clases en línea", "Clases presenciales", "Conferencias de líderes en la industria", "¿El curso tiene costo?", "¿Cómo puedo recibir una beca para la escuela de verano Plan B de Lugano (en Suiza)?",
+      "Profesores de todas<br>parte del mundo.", "Oportunidades de pasantías", "Viajes a Suiza"
+    ],
+    "descriptions":[
+      "CUBO+ econs edition estará diseñada para brindar educación sobre Bitcoin a nivel económico y filosófico para comprender cómo afecta a la sociedad y por qué es importante en un mundo controlado por un sistema financiero mal impulsado.",
+      "<svg class='w-6 h-6 text-green-500 dark:text-green-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>Estudiantes universitarios o graduados.",
+      "<svg class='w-6 h-6 text-green-500 dark:text-green-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>Estudiantes de todas las carreras técnicas y no técnicas.",
+      "<svg class='w-6 h-6 text-green-500 dark:text-green-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>¡Gente dispuesta a apasionarse por la Revolución Bitcoin!",
+      "Mentores de alto nivel<br> compartiendo sus conocimientos<br> con jóvenes<br> y profesionales salvadoreños.",
+      "¡Todos los estudiantes que<br> se gradúen de CUBO+ tendrán la<br> oportunidad de aplicar a<br> pasantías en las mejores<br> empresas de Bitcoin del mundo!",
+      "Los mejores y más dedicados<br> estudiantes recibirán<br> una beca completa para<br> la <a class='text-orange-400' target=\"_blank\" href='https://planb.lugano.ch/summer-school/'>Escuela de verano de Plan B</a><br> en Lugado Suiza.",
+      "El curso tendrá una duración de 3 meses comenzando a partir del próximo 16 de marzo y constará de clases virtuales y presenciales, así como conferencias de líderes de la industria. Para más detalles sobre los eventos, consulta nuestra <a href='agenda.html' class='text-orange-400'>agenda.",
+      "Las clases se realizarán de manera virtual, dos clases por semana de dos horas cada una donde podrás interactuar con tus profesores.",
+      "Para reforzar los conocimientos que adquiere durante la semana habrá clases presenciales donde podrás poner tus conocimientos en práctica a través de desafíos.",
+      "Contaremos con la presencia de líderes mundiales en la industria de Bitcoin dando conferencias que no te puedes perder.",
+      "El curso tiene un valor aproximado de $2000 USD pero los salvadoreños tienen la opción de solicitar una beca completa para acceder a todos los recursos y materiales didácticos que te ayudarán a lo largo del curso.",
+      "Quienes demuestren un desempeño destacado a lo largo del curso ganarán un viaje a Suiza para participar en la Escuela de Verano de PlanB en Lugano Suiza, para continuar su educación sobre Bitcoin. Los ganadores de esta beca serán evaluados mediante su asistencia a clase, participación y colaboración con sus compañeros."
+    ],
+    "texts":[
+      "Mentores de alto nivel<br> compartiendo sus conocimientos<br> con jóvenes<br> y profesionales salvadoreños."
     ],
     "form": "Proceso de aplicación",
     "description": "Cubo+ 2024 apuntará por educación a un nivel general en el espacio de Bitcoin y Economía, donde cualquiera con el entusiasmo de aprender sobre las rázones de Bitcoin puede aplicar!",
@@ -204,11 +234,15 @@
     "waitlist": "Te gustaría mejorar tus habilidades técnicas? Suscríbete a la waitlist de CUBO+ Developer Edition, solo clickea <a class='text-orange-400' href='cubo++2024.html'>aquí</a>."
   },
   "cubo++2024": {
-    "header": "Suscribete a la <span class=\"opacity-80\">Lista de espera.</span>",
-    "legend": "Te haremos saber cuando la siguiente edición de Cubo+ esté lista, por el momento, mantente aprendiendo y estudiando Bitcoin!",
-    "form": "Que estás esperándo!",
-    "description": "Cubo++ 2024 estará enfocado en un conocimiento técnico avanzado de clases para entender los protocolos de Bitcoin y Red Lightning con el propósito de estar preparado de antemano para tu pasantía en un compañía ejemplar en la industria de Bitcoin.",
-    "alliances": "GRACIAS A EL APOYO DE NUESTRAS ALIANZAS"
+    "header": "La siguiente generación de  <span class=\"opacity-80\">Desarrolladores.</span>",
+    "legend": "El mejor bootcamp de Bitcoin y Lightning para desarrolladores en busca de oportunidades, suscríbete a la lista de espera para ser notificado cuando se abran las inscripciones.",
+    "form": "Suscribete ya!",
+    "questions": ["¿Eres un desarrollador apasionado por la técnología en busca de trabajo?", 
+                  "Definitivamente la edición para desarrolladores de CUBO+ es para ti! Donde encontrarás:"],
+    "advantages": ["Un avanzado nivel de entendimiento técnico sobre Bitcoin.", 
+                    "Beca completa con estadía y alimentación.",
+                    "Pasantía asegurada con una de las compañías aliadas de CUBO+."],
+    "callAction": ["Llamado a la acción", "Debido a que un requisito para participar la edición de desarrolladores de CUBO+ es saber las bases de Bitcoin, te animamos a aplicar en la edición económica."]
   },
   "faq": {
     "title": "PREGUNTAS FRECUENTES",
