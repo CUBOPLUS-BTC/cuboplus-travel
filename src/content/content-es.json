@@ -201,10 +201,28 @@
     "header": "Quieres vivir la <span class=\"opacity-80\">experiencia de CUBO+?</span>",
     "legend": "Ganarás valioso conocimiento en una de las tecnologías mas disruptivas de todos los tiempos y tendrás la oportunidad de ganar un viaje a Suiza para mayor capacitación",
     "media": "../img/Cubo+ (esp).mp4",
-    "features": [
-      "Maestros de todas<br> partes del mundo",
-      "Oportunidad de pasantías",
-      "Viajes a Suiza"
+    "titles":[
+      "¿Sobre qué trata CUBO+ Economics Edition?", "¿Quién puede aplicar?", "Como estudiante de CUBO+ tendrás acceso a", "Estructura del curso",
+      "Clases en línea", "Clases presenciales", "Conferencias de líderes en la industria", "¿El curso tiene costo?", "¿Cómo puedo recibir una beca para la escuela de verano Plan B de Lugano (en Suiza)?",
+      "Profesores de todas<br>parte del mundo.", "Oportunidades de pasantías", "Viajes a Suiza"
+    ],
+    "descriptions":[
+      "CUBO+ econs edition estará diseñada para brindar educación sobre Bitcoin a nivel económico y filosófico para comprender cómo afecta a la sociedad y por qué es importante en un mundo controlado por un sistema financiero mal impulsado.",
+      "<svg class='w-6 h-6 text-green-500 dark:text-green-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>Estudiantes universitarios o graduados.",
+      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-6 h-6  flex-shrink-0'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>Estudiantes de todas las carreras técnicas y no técnicas.",
+      "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-6 h-6  flex-shrink-0'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>¡Gente dispuesta a apasionarse por la Revolución Bitcoin!",
+      "Mentores de alto nivel<br> compartiendo sus conocimientos<br> con jóvenes<br> y profesionales salvadoreños.",
+      "¡Todos los estudiantes que<br> se gradúen de CUBO+ tendrán la<br> oportunidad de aplicar a<br> pasantías en las mejores<br> empresas de Bitcoin del mundo!",
+      "Los mejores y más dedicados<br> estudiantes recibirán<br> una beca completa para<br> la <a class='text-orange-400' href='https://planb.lugano.ch/summer-school/'>Escuela de verano de Plan B</a><br> en Lugado Suiza.",
+      "El curso tendrá una duración de 3 meses comenzando a partir del próximo 16 de marzo y constará de clases virtuales y presenciales, así como conferencias de líderes de la industria. Para más detalles sobre los eventos, consulta nuestra <a href='agenda.html' class= 'texto-naranja-400'>agenda.",
+      "Las clases se realizarán de manera virtual, dos clases por semana de dos horas cada una donde podrás interactuar con tus profesores.",
+      "Para reforzar los conocimientos que adquiere durante la semana habrá clases presenciales donde podrás poner tus conocimientos en práctica a través de desafíos.",
+      "Contaremos con la presencia de líderes mundiales en la industria de Bitcoin dando conferencias que no te puedes perder.",
+      "El curso tiene un valor aproximado de $2000 USD pero los salvadoreños tienen la opción de solicitar una beca completa para acceder a todos los recursos y materiales didácticos que te ayudarán a lo largo del curso.",
+      "Quienes demuestren un desempeño destacado a lo largo del curso ganarán un viaje a Suiza para participar en la Escuela de Verano de PlanB en Lugano Suiza, para continuar su educación sobre Bitcoin. Los ganadores de esta beca serán evaluados mediante su asistencia a clase, participación y colaboración con sus compañeros."
+    ],
+    "texts":[
+      "Mentores de alto nivel<br> compartiendo sus conocimientos<br> con jóvenes<br> y profesionales salvadoreños."
     ],
     "form": "Proceso de aplicación",
     "description": "Cubo+ 2024 apuntará por educación a un nivel general en el espacio de Bitcoin y Economía, donde cualquiera con el entusiasmo de aprender sobre las rázones de Bitcoin puede aplicar!",
