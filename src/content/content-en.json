@@ -64,7 +64,7 @@
       {
         "img": "img/tweets/Darvin-Otero.jpg",
         "href": "https://twitter.com/aveotero/status/1680381336773697542?s=46&t=4SwPYXGhxyhAFxD2nQse1A",
-        "name": "Darvin Otero+",
+        "name": "Darvin Otero",
         "handle": "@aveotero",
         "role": "Tiankii CEO",
         "content": "CUBO+ Hackathon #Awards ceremony! First ever @cuboplus #Bitcoin lightning training #program today graduating 21 salvadorean developers. A big #success!! thanks to all organizers for making it possible @bitcoinofficesv @FulgurVentures @stacyherbert @maiojose1 @FFarenga",
@@ -213,7 +213,7 @@
       "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' class='w-6 h-6  flex-shrink-0'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>People willing to get passionate for the Bitcoin Revolution!",
       "High level mentors<br> sharing their knowledge<br> to Salvadoran youth<br> and professionals.",
       "All CUBO+ graduating<br> students will have the<br> opportunity to apply for<br> internships at the best<br> Bitcoin companies in the world!",
-      "The best and most<br> dedicated students will<br> receive a full scholarship<br> to <a class='text-orange-400' href='https://planb.lugano.ch/summer-school/'>PlanB's Summer School</a><br> in Lugano Switzerland",
+      "The best and most<br> dedicated students will<br> receive a full scholarship<br> to <a class='text-orange-400' target=\"_blank\" href='https://planb.lugano.ch/summer-school/'>PlanB's Summer School</a><br> in Lugano Switzerland",
       "The course will last 3 months starting next March 16 and will consist of virtual and in-person classes, as well as conferences from industry leaders. For more details about the events, check our <a href='agenda.html' class='text-orange-400'>agenda.",
       "Classes will be held virtually, two classes per week each lasting two hours where you can interact with your teachers.",
       "To reinforce the knowledge you acquire during the week there will be in-person classes where you can put your knowledge into practice through challenges.",
