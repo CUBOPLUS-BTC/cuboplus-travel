@@ -45,10 +45,12 @@ async function changeLanguage(page, language, callback) {
   let res = "";
 
   // If content does not exist or does not have a valid 'secret', fetch and store it
-  if (page != "index") {
+  if (page !== "index" && page === "cookies") {
+      res = await fetch(`../../content/content-${language}.json`);
+  } else if (page !== "cookies" && page !== "index") {
       res = await fetch(`../content/content-${language}.json`);
   } else {
-      res = await fetch(`./content/content-${language}.json`);
+      res = await fetch(`content/content-${language}.json`);
   }
   const res1 = await res.json();
 
