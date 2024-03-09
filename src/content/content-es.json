@@ -26,6 +26,7 @@
       "\"CUBO+ ha sido una experiencia transformadora para mí, su compromiso por formar talento local es realmente inspirador.\"",
       "\"CUBO+ no es sólo un programa; ¡Es una experiencia que cambia la vida! ¡Ha cambiado mi forma de ver la vida y el potencial infinito de desarrollo en El Salvador!\""
     ],
+    "cookiesmodal": ["Utilizamos cookies para mejorar tu experiencia y la recopilación de datos. <a href=\"/src/pages/legal/cookies.html\" class=\"text-blue-500 hover:underline\">Pólitica de cookies</a>. ", "Aceptar", "Rechazar"],
     "process": "Empoderando a los futuros <br> talentos de Bitcoin",
     "processdes": "Estamos comprometidos a equipar a los estudiantes con las habilidades y conocimientos necesarios para unirse a la industria de Bitcoin y contribuir a la remodelación del sistema financiero.",
     "phases": ["Aplica", "Aprende", "Contribuye"],
@@ -53,6 +54,7 @@
       "Crea tu propia startup",
       "Tus conocimientos y la red de contactos con otros profesionales te brindarán el espacio necesario para desplegar tu creatividad y fundar tu propio negocio."
     ],
+    
     "students": ["Una generación que inspira", "En CUBO+ capacitamos a agentes de cambio, fomentando una cultura donde la innovación y la colaboración abren el camino, creando un legado para una generación que inspira e impulsa la transformación"],
     "mission": [
       "Quiénes somos",
