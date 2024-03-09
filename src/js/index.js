@@ -70,7 +70,7 @@ const setMentions = (mentions) => {
                         <div class="relative group">
                             <div
                                 class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="${m.href}"
+                            </div><a target="_blank" href="${m.href}"
                                 class="cursor-pointer">
                                 <div
                                     class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
