@@ -25,6 +25,10 @@ const setElements = (content) => {
     document.getElementById("timeline18").innerHTML = content.content[17];
     document.getElementById("timeline19").innerHTML = content.content[18];
     document.getElementById("timeline20").innerHTML = content.content[19];
+    document.getElementById("timeline21").innerHTML = content.content[20];
+    document.getElementById("timeline22").innerHTML = content.content[21];
+    document.getElementById("timeline23").innerHTML = content.content[22];
+    document.getElementById("timeline24").innerHTML = content.content[23];
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {
