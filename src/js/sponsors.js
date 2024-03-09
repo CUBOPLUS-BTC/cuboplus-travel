@@ -4,6 +4,7 @@ const setElements = (content) => {
     document.getElementById("contributors-legend").innerHTML = content.descriptions[0];
     document.getElementById("contributors-office").innerHTML = content.descriptions[1];
     document.getElementById("contributors-fulgur").innerHTML = content.descriptions[2];
+    document.getElementById("contributors-planb").innerHTML = content.descriptions[3];
     document.getElementById("alliances-title").innerHTML = content.titles[1];
     document.getElementById("alliances-legend").innerHTML = content.descriptions[3];
     document.getElementById("testimonials-contributor1").innerHTML = content.testimonialContributor[0];
