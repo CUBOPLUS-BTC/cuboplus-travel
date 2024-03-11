@@ -1,5 +1,5 @@
 {
-  "version": "1.4",
+  "version": "1.5",
   "secret": "en-cuboplus",
   "layout": {
     "navbar": ["About us", 
@@ -201,21 +201,21 @@
   "cubo+2024": {
     "header": "Want to live the <span class=\"opacity-80\">CUBO+ Xperience?</span>",
     "legend": "You will gain valuable knowledge in one of the most disruptive technologies of all time and will have the opportunity to win a trip to Switzerland for further training.",
-    "media": "../img/Cubo+eng.mp4",
+    "media": "https://www.youtube.com/embed/elcv6OK-kn8?si=_UfPfM4atZ19lYUe",
     "titles":[
       "What CUBO+ Economics Edition is about?", "Who can apply?", "As a CUBO+ student you will have access to", "Course structure",
       "Online Classes", "Face to face classes", "Conferences from industry leaders", "Does the course have a cost?", "How can I recieve a scholarship to Lugano´s PlanB summer School(In Switzerland)?",
       "Teachers from all<br> over the world", "Internship opportunities", "Trip to Switzerland"
     ],
     "descriptions":[
-      "CUBO+ econs edition will be designed to provide education about Bitcoin on an economic and philosophical level, to understand how it effect society and why it is important a world controlled by a poorly driven financial system.",
+      "CUBO+ econs generation is crafted to offer comprehensive education on Bitcoin, delving into its economic and philosophical aspects. It aims to highlight Bitcoin's impact on society and underscore its significance in a world beset by an unstable financial system.",
       "<svg class='w-6 h-6 text-green-500 dark:text-green-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>University students or graduates.",
       "<svg class='w-6 h-6 text-green-500 dark:text-green-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>Students of all technical and non-technical careers.",
-      "<svg class='w-6 h-6 text-green-500 dark:text-green-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>People willing to get passionate for the Bitcoin Revolution!",
-      "High level mentors<br> sharing their knowledge<br> to Salvadoran youth<br> and professionals.",
-      "All CUBO+ graduating<br> students will have the<br> opportunity to apply for<br> internships at the best<br> Bitcoin companies in the world!",
+      "<svg class='w-6 h-6 text-green-500 dark:text-green-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>Individuals eager to comprehend Bitcoin and delve into the rabbit hole.",
+      "World class educators <br> sharing their knowledge<br> with youth and <br>professionals in El Salvador.",
+      "Top-performing CUBO+ <br> students will have the<br> opportunity to apply for<br> internships at the best<br> Bitcoin companies in the world!",
       "The best and most<br> dedicated students will<br> receive a full scholarship<br> to <a class='text-orange-400' target=\"_blank\" href='https://planb.lugano.ch/summer-school/'>PlanB's Summer School</a><br> in Lugano Switzerland",
-      "The course will last 3 months starting next March 16 and will consist of virtual and in-person classes, as well as conferences from industry leaders. For more details about the events, check our <a href='agenda.html' class='text-orange-400'>agenda.",
+      "The course will last 3 months starting next March 16 and will consist of virtual and in-person classes, as well as events from industry leaders. For more details about the events, check our <a href='agenda.html' class='text-orange-400'>agenda.",
       "Classes will be held virtually, two classes per week each lasting two hours where you can interact with your teachers.",
       "To reinforce the knowledge you acquire during the week there will be in-person classes where you can put your knowledge into practice through challenges.",
       "We will have the presence of world leaders in the Bitcoin industry giving conferences that you cannot miss.",
@@ -232,37 +232,37 @@
   },
   "cubo++2024": {
     "header": "The next generation of <span class=\"opacity-80\">Developers.</span>",
-    "legend": "The best Bitcoin and Lightning bootcamp for developers looking for opportunities. Subscribe to our waitlist to be notified once the applications for this period are open.",
+    "legend": "Be part of the next generation of Bitcoin and Lightning developers by applying to the CUBO+ Devs Generation. Sign up for our waitlist to receive notifications when applications for this cycle open.",
     "form": "Subscribe to our waitlist now!",
     "questions": ["Are you a passionate developer for technology looking for opportunities?", 
                   "Definitely CUBO+ Developers edition is for you! Where you can find:"],
     "advantages": ["An advance level of understanding in the technical stack of Bitcoin.", 
                     "Full paid scholarship with accomodation and nutrition.",
                     "A guaranteed internship with a company ally of CUBO+."],
-    "callAction": ["Call to action", "Ever since a requirement for CUBO+ Developers edition is to know the basics of Bitcoin we encourage you to apply for the economics edition."]
+    "callAction": ["Call to action", "Ever since a requirement for CUBO+ Developers edition is to know the basics of Bitcoin we encourage you to apply to CUBO+ devs generation or econs generation."]
   },
   "faq": {
     "title": "FRQUENTLY ASKED QUESTIONS",
     "description": "Further key questions you might have about cubo+, if there's any important question left you can reach us out through the contact form on index or via email to info@cuboplus.academy",
     "questions": [
-      "How can I join cuboplus?",
-      "Do I need to speak perfect English to join cuboplus?",
-      "Does cuboplus teach about trading?",
-      "Does cuboplus have a cost for the course?",
-      "Do I need to have degree or professional formation to apply?",
+      "How can I join CUBO+?",
+      "Do I need to speak perfect English to join CUBO+?",
+      "What is CUBO+ about?",
+      "Does CUBO+ have any cost (participation fee)?",
+      "Do I need a degree or prior experience to apply?",
       "Do I need to be 18 years old to apply?",
-      "How can I advance to the on-site phase of cuboplus?",
-      "Do I have to know about informatics and programming to apply?"
+      "How can I advance to the on-site phase of CUBO+?",
+      "Do I need to know how to code to apply?"
     ],
     "answers": [
-      "The next edition of cuboplus is still in process, we encourage you to follow the account of @cuboplus on twitter to do not miss the next applications!",
-      "Cuboplus classes are given by foreign teachers in English so English is not a requirement but it permits you to understand better the topics given.",
-      "Cuboplus believes on proof of work and hard money, it teaches how to build solutions on top of Bitcoin and Lightning Protocols, at no time we teach about trading.",
-      "Cuboplus doesn't have a cost of participation! we select the most committed and enthusiasm students to receive elite education from elite mentors.",
-      "The cuboplus participants are selected based on a process of interviews and tests, there's not any degree or diploma needed.",
-      "Cuboplus is a course oriented to the Bitcoin understanding at an economical and filosofical level, so there're no age restrictions.",
-      "Cubo+ 2024 will count at first time with a preparatory period where the Bitcoin bases will be taught. It will be required to pass the tests and interviews about informatics and Bitcoin understanding to get to the on-site period.",
-      "Cubo+ 2024 will count with a preparatory period where everyone interested on learning about Bitcoin can participate. Then we will pass to the on-site period \"Cubo++ 2024\" where the technologycal stack about Bitcoin and Lightning Network will be taught and its integration in apps as well."
+      "You can fill up our application form <a class=\"text-orange-500 dark:text-orange-400 hover:underline\" href=\"cubo+2024.html\">here</a>",
+      "CUBO+ classes are taught mostly by foreign teachers mainly in English, your progress in CUBO+ is based on your understanding and assimilation of the content discussed in this classes. So even though we do not mandate an \"especific level of english\" to participate in the classes of CUBO+, we highly suggest everybody to improve english understanding prior and dureng the course.",
+      "CUBO+ is an educational program that aim to bring high-level contents related to Bitcoin and Lightnign Network from word class personalities.",
+      "CUBO+ has a cost of $2000, although Salvadoreans are selected based on their commitment with the course and performance to get a scholarship full paid.",
+      "CUBO+ participants are selected based on a process of interviews and tests, there's no specific academic background required other than being able to read and write.",
+      "No, there's no age requirements, just right motivation and commitment to become a Bitcoin expert.",
+      "On-site bootcamps offer scholarship to the most motivated students within the program. If you want to advance to the on-site bootcamp, you must participate in classes, activities, showcase talent, and above all, demostrate interest and motivation.",
+      "CUBO+ 2024 will reach a variety of academic fields, each specific one with its own particularities and dynamics. Technical/coding segment of CUBO+ will also be an option for participating."
     ]
   },
   "404": ["404 Not Found", "Whoops! That page doesn't exist."],
