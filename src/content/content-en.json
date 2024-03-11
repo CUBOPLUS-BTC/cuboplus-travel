@@ -123,7 +123,7 @@
   },
   "cubo2023": {
     "header": "<span class=\"relative\"> <span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Proof of work</span> </span> is freedom",
-    "legend": "Cubo+ shows to the world how proof of work leads to excellency and freedom for El Salvador and its people",
+    "legend": "Cubo+ shows to the world how proof of work leads to excellency and freedom for El Salvador and its people.",
     "documentary": [
       "A production of The Presidential Bitcoin Office in El Salvador - © 2023 cuboplus. All rights reserved.",
       "Bitcoin Office Head"
@@ -161,8 +161,8 @@
     "titles": ["Our  <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>contributors</span></span>", "Supported by Bitcoin leading <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>companies</span></span>"],
     "descriptions": [
       "Through their commitment to education and innovation, The Bitcoin Office and Fulgur Ventures have created the path for talented young people in El Salvador to become the next generation of Bitcoiners.",
-      "The National Bitcoin Office of El Salvador under President Nayib Bukele",
-      "We invest in early stage startups focused on Bitcoin and the Lightning Network",
+      "The National Bitcoin Office of El Salvador under President Nayib Bukele.",
+      "We invest in early stage startups focused on Bitcoin and the Lightning Network.",
       "Making Bitcoin education simple is our objective.",
       "The cubo+ team thanks our allies for being part of this project and for allowing our students to gain experience in their companies"
     ],

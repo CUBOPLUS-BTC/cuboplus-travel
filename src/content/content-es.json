@@ -55,7 +55,7 @@
       "Tus conocimientos y la red de contactos con otros profesionales te brindarán el espacio necesario para desplegar tu creatividad y fundar tu propio negocio."
     ],
     
-    "students": ["Una generación que inspira", "En CUBO+ capacitamos a agentes de cambio, fomentando una cultura donde la innovación y la colaboración abren el camino, creando un legado para una generación que inspira e impulsa la transformación"],
+    "students": ["Una generación que inspira", "En CUBO+ capacitamos a agentes de cambio, fomentando una cultura donde la innovación y la colaboración abren el camino, creando un legado para una generación que inspira e impulsa la transformación."],
     "mission": [
       "Quiénes somos",
       "Somos un programa comprometido en enseñar a mentes jóvenes y talentosas los fundamentos de Bitcoin a un nivel dedicado y profundo, así como universitarios y profesionales tanto los fundamentos de Bitcoin a un nivel dedicado y profundo, así como los detalles más avanzados. Abogamos por la participación de los salvadoreños en la revolución de Bitcoin en El Salvador, sin barreras ni limitaciones. <br> <br> Nuestro objetivo es construir una comunidad próspera y libre, de individuos soberanos e independientes. Nuestra misión es crear profesionales de Bitcoin que construyan el país y el mundo en el que todos queremos vivir!"
@@ -124,13 +124,13 @@
   },
   "cubo2023": {
     "header": "<span class=\"relative\"> <span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Prueba de trabajo</span> </span> es libertad",
-    "legend": "CUBO+ muestra al mundo como  la  \"prueba de trabajo\" conduce a la excelencia y la libertad para El Salvador y su gente",
+    "legend": "CUBO+ muestra al mundo como  la  \"prueba de trabajo\" conduce a la excelencia y la libertad para El Salvador y su gente.",
     "documentary": [
       "Una producción de la Oficina del Bitcoin - © 2023 cuboplus. Todos los derechos reservados.",
       "Líder de la Oficina del Bitcoin"
     ],
     "timeline": "Nos<span class=\"relative bg-gradient-to-r from-orange-500 to-yellow-400 bg-clip-text px-2 text-transparent dark:from-blue-500 dark:to-cyan-500\">Expandimos !</span>",
-    "description": "Un equipo en crecimiento no necesariamente significa problemas en crecimiento. Con las mejores características, seguridad, privacidad y mejores herramientas para cada paso del viaje - Cubo+ te permite expandir tu conocimiento sobre Bitcoin y Lightning Network",
+    "description": "Un equipo en crecimiento no necesariamente significa problemas en crecimiento. Con las mejores características, seguridad, privacidad y mejores herramientas para cada paso del viaje - Cubo+ te permite expandir tu conocimiento sobre Bitcoin y Lightning Network.",
     "content": [
       "Marzo 2023",
       "Empiezan las aplicaciones",
@@ -146,7 +146,7 @@
       "Trabajamos con algunas alianzas estratégicas!",
       "Tercera semana de Julio de 2023",
       "Seminarios de Jimmy Song y Lisa Neigut",
-      "Los 10 estudiantes más destacados del periodo presencial profundizarón en su conocimiento con dos seminarios adicionales guiados por expertos del area. Jimmy Song quien cubrió \"Programming Blockchain\" y Lisa Neigut compartiendo en \"Entendiendo la red Lightning de Bitcoin\"",
+      "Los 10 estudiantes más destacados del periodo presencial profundizarón en su conocimiento con dos seminarios adicionales guiados por expertos del area. Jimmy Song quien cubrió \"Programming Blockchain\" y Lisa Neigut compartiendo en \"Entendiendo la red Lightning de Bitcoin\".",
       "Apareciendo en el periodico <a class='text-primary underline dark:text-primaryLight' target=\"_blank\" href='https://www.forbes.com/sites/digital-assets/2023/07/26/how-el-salvador-is-investing-in-bitcoin-education/?sh=292bea464854'>Forbes</a> !",
       "Primera semana de Agosto",
       "¡Empiezan las pasantías!",
@@ -162,8 +162,8 @@
     "titles": ["Nuestros <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>contribuidores</span></span>", "Apoyados por <span class='relative'><span class='relative px-2 text-blue-800 dark:text-indigo-200'>empresas</span></span> líderes en Bitcoin"],
     "descriptions": [
       "Por medio de su compromiso en educación e innovación, la Oficina del Bitcoin en El Salvador y Fulgur Ventures han creado el camino para que los jóvenes Salvadoreños talentosos se conviertan en la siguiente generación de Bitcoiners.",
-      "La Oficina Nacional del Bitcoin de El Salvador bajo el mandato de El Presidente Nayib Bukele",
-      "Invertimos en startups de fase temprana enfocados en Bitcoin y Lightning Network",
+      "La Oficina Nacional del Bitcoin de El Salvador bajo el mandato de El Presidente Nayib Bukele.",
+      "Invertimos en startups de fase temprana enfocados en Bitcoin y Lightning Network.",
       "Nuestro objetivo es simplificar la educación en Bitcoin.",
       "El equipo de Cubo+ agradece a nuestras alianzas por ser parte de este proyecto y por permitir a nuestros estudiantes ganar experiencia en sus compañías."
     ],
