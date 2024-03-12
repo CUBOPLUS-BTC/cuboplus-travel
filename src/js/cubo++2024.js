@@ -12,32 +12,32 @@ const setElements = (content) => {
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {
-    changeLanguage("cubo++2024", localStorage.getItem("language") || "en", (content) => {
+    changeLanguage("cuboDevs2024", localStorage.getItem("language") || "en", (content) => {
         setElements(content);
     });
 });
 
 
 esButton[0].addEventListener("click", (e) => {
-    changeLanguage("cubo++2024", "es", (content) => {
+    changeLanguage("cuboDevs2024", "es", (content) => {
         setElements(content);
     });
 });
 
 esButton[1].addEventListener("click", (e) => {
-    changeLanguage("cubo++2024", "es", (content) => {
+    changeLanguage("cuboDevs2024", "es", (content) => {
         setElements(content);
     });
 });
 
 enButton[0].addEventListener("click", (e) => {
-    changeLanguage("cubo++2024", "en", (content) => {
+    changeLanguage("cuboDevs2024", "en", (content) => {
         setElements(content);
     });
 });
 
 enButton[1].addEventListener("click", (e) => {
-    changeLanguage("cubo++2024", "en", (content) => {
+    changeLanguage("cuboDevs2024", "en", (content) => {
         setElements(content);
     });
 });
