@@ -143,9 +143,6 @@ const setElements = async (content) => {
     document.getElementById("testimonials-student6").innerHTML = content.testimonial[5];
     document.getElementById("mission-title").innerHTML = content.mission[0];
     document.getElementById("mission").innerHTML = content.mission[1];
-    document.getElementById("cookies-text").innerHTML = content.cookiesmodal[0];
-    document.getElementById("accept-cookies").innerHTML = content.cookiesmodal[1];
-    document.getElementById("decline-cookies").innerHTML = content.cookiesmodal[2];
     document.getElementById("mentions-badge").innerHTML = content.mentionstitles[0];
     document.getElementById("mentions-title").innerHTML = content.mentionstitles[1];
     document.getElementById("mentions-legend").innerHTML = content.mentionstitles[2];
