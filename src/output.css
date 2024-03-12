@@ -1110,6 +1110,10 @@ input:checked + .toggle-bg {
   bottom: 4rem;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
 .bottom-\[60px\] {
   bottom: 60px;
 }
@@ -2698,6 +2702,10 @@ input:checked + .toggle-bg {
 
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-\[Poppins\] {
@@ -4346,6 +4354,14 @@ input:checked + .toggle-bg {
     bottom: 0px;
   }
 
+  .md\:bottom-16 {
+    bottom: 4rem;
+  }
+
+  .md\:left-12 {
+    left: 3rem;
+  }
+
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -4381,6 +4397,10 @@ input:checked + .toggle-bg {
     margin-bottom: 4rem;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:mt-12 {
     margin-top: 3rem;
   }
@@ -4403,6 +4423,10 @@ input:checked + .toggle-bg {
 
   .md\:h-16 {
     height: 4rem;
+  }
+
+  .md\:h-8 {
+    height: 2rem;
   }
 
   .md\:h-80 {
@@ -4439,6 +4463,10 @@ input:checked + .toggle-bg {
 
   .md\:w-6\/12 {
     width: 50%;
+  }
+
+  .md\:w-8 {
+    width: 2rem;
   }
 
   .md\:w-\[42\%\] {
