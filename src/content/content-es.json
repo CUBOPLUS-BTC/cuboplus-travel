@@ -1,5 +1,5 @@
 {
-  "version": "1.7",
+  "version": "1.8",
   "secret": "es-cuboplus",
   "layout": {
     "navbar": ["Sobre nosotros", 
@@ -10,7 +10,7 @@
       "CONTÁCTANOS",
       "SÍGUENOS",
       "LINKS ÚTILES",
-      "© 2023 cuboplus. Todos los derechos reservados."
+      "Todos los derechos reservados."
     ]
   },
   "index": {
@@ -202,7 +202,7 @@
   },
   "cookiesmodal": ["Utilizamos cookies para mejorar tu experiencia y la recopilación de datos. <a href=\"/pages/legal/cookies.html\" class=\"text-blue-500 hover:underline\">Política de cookies</a>. ", "Aceptar", "Rechazar"],
 
-  "cubo+2024": {
+  "cubo2024": {
     "header": "Quieres vivir la <span class=\"opacity-80\">experiencia de CUBO+?</span>",
     "legend": "Ganarás valioso conocimiento en una de las tecnologías mas disruptivas de todos los tiempos y tendrás la oportunidad de ganar un viaje a Suiza para mayor capacitación",
     "media": "https://www.youtube.com/embed/yolqI5TtPWE?si=xXeFOgTYvgdE96Vt",
@@ -232,9 +232,9 @@
     "form": "Proceso de aplicación",
     "description": "Cubo+ 2024 apuntará por educación a un nivel general en el espacio de Bitcoin y Economía, donde cualquiera con el entusiasmo de aprender sobre las rázones de Bitcoin puede aplicar!",
     "alliances": "GRACIAS A EL APOYO DE NUESTRAS ALIANZAS",
-    "waitlist": "Te gustaría mejorar tus habilidades técnicas? Suscríbete a la waitlist de CUBO+ Developer Edition, solo clickea <a class='text-orange-400' href='cubo++2024.html'>aquí</a>."
+    "waitlist": "Te gustaría mejorar tus habilidades técnicas? Suscríbete a la waitlist de CUBO+ Developer Edition, solo clickea <a class='text-orange-400' href='cuboDevs2024.html'>aquí</a>."
   },
-  "cubo++2024": {
+  "cuboDevs2024": {
     "header": "La siguiente generación de  <span class=\"opacity-80\">Desarrolladores.</span>",
     "legend": "Se parte de la siguiente generación de desarrolladores en Bitcoin y Lightning Network aplicando a CUBO+ Devs Generation. Suscríbete a la nuestra lista de espera para recibir notificación cuando las aplicaciones para este ciclo abran.",
     "form": "¡Suscribete ya!",
@@ -259,7 +259,7 @@
       "¿Necesito saber programar para aplicar?"
     ],
     "answers": [
-      "Puede llenar tu aplicacion <a class=\"text-orange-500 dark:text-orange-400 hover:underline\" href=\"cubo+2024.html\">aquí</a>",
+      "Puede llenar tu aplicacion <a class=\"text-orange-500 dark:text-orange-400 hover:underline\" href=\"cubo2024.html\">aquí</a>",
       "Las clases de CUBO+ son impartidas mayormente por profesores extranjeros principalmente en Inglés, tu progreso en CUBO+ es basado en tu entendimiento sobre el contenido discutido en clases. Por lo tanto aunque no se requiere un \"nivel especifico de Inglés\" para participar en las clases de CUBO+, recomendamos a todos mejorar su entendimiento de Inglés antes y durante el curso.",
       "CUBO+ es un programa educacional orientado a traer contenido de gran valor relacionado con Bitcoin y Lightning Network de personalidades mundiales.",
       "CUBO+ tiene un costo de $2000, aunque los Salvadoreños que muestren más motivación y compromiso con el programa son seleccionados para obtener una beca completamente pagada.",
