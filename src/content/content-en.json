@@ -1,5 +1,5 @@
 {
-  "version": "1.7",
+  "version": "1.8",
   "secret": "en-cuboplus",
   "layout": {
     "navbar": ["About us", 
@@ -10,7 +10,7 @@
       "CONTACT US",
       "FOLLOW US",
       "USEFUL LINKS",
-      "© 2023 cuboplus. All Rights Reserved."
+      "All Rights Reserved."
     ]
   },
   "index": {
@@ -198,7 +198,7 @@
     "tableEssenExp": ["6 months", "Session, deleted after browser closed", "30 minutes", "1 year"],
     "tableEssenTyp": ["Functional", "Analytic"]
   },
-  "cubo+2024": {
+  "cubo2024": {
     "header": "Want to live the <span class=\"opacity-80\">CUBO+ Xperience?</span>",
     "legend": "You will gain valuable knowledge in one of the most disruptive technologies of all time and will have the opportunity to win a trip to Switzerland for further training.",
     "media": "https://www.youtube.com/embed/elcv6OK-kn8?si=_UfPfM4atZ19lYUe",
@@ -228,9 +228,9 @@
     "form": "Application process",
     "description": "Cubo+ 2024 will aim for education in economy and Bitcoin space at a general level, where anyone with the enthusyasm to learn about the reasons of Bitcoin can apply!",
     "alliances": "THANKS TO THE SUPPORT OF OUR ALLIANCES",
-    "waitlist": "Would you like to improve your technicals skills? Suscribe to the CUBO+ Developer Edition waitlist, just click <a class='text-orange-400' href='cubo++2024.html'>here</a>."
+    "waitlist": "Would you like to improve your technicals skills? Suscribe to the CUBO+ Developer Edition waitlist, just click <a class='text-orange-400' href='cuboDevs2024.html'>here</a>."
   },
-  "cubo++2024": {
+  "cuboDevs2024": {
     "header": "The next generation of <span class=\"opacity-80\">Developers.</span>",
     "legend": "Be part of the next generation of Bitcoin and Lightning developers by applying to the CUBO+ Devs Generation. Sign up for our waitlist to receive notifications when applications for this cycle open.",
     "form": "Subscribe to our waitlist now!",
@@ -255,7 +255,7 @@
       "Do I need to know how to code to apply?"
     ],
     "answers": [
-      "You can fill up our application form <a class=\"text-orange-500 dark:text-orange-400 hover:underline\" href=\"cubo+2024.html\">here</a>",
+      "You can fill up our application form <a class=\"text-orange-500 dark:text-orange-400 hover:underline\" href=\"cubo2024.html\">here</a>",
       "CUBO+ classes are taught mostly by foreign teachers mainly in English, your progress in CUBO+ is based on your understanding and assimilation of the content discussed in this classes. So even though we do not mandate an \"especific level of english\" to participate in the classes of CUBO+, we highly suggest everybody to improve english understanding prior and dureng the course.",
       "CUBO+ is an educational program that aim to bring high-level contents related to Bitcoin and Lightnign Network from word class personalities.",
       "CUBO+ has a cost of $2000, although Salvadoreans are selected based on their commitment with the course and performance to get a scholarship full paid.",
