@@ -1,6 +1,6 @@
 var esButton = document.getElementsByClassName("es-button");
 var enButton = document.getElementsByClassName("en-button");
-const contentVersion = "1.7";
+const contentVersion = "1.8";
 const URL = "https://api-cuboplus.onrender.com/"
 
 function setElementsNavbarAndFooter(content) {
@@ -11,7 +11,7 @@ function setElementsNavbarAndFooter(content) {
   document.getElementById("footer-contact").innerHTML = content.footer[0];
   document.getElementById("footer-follow").innerHTML = content.footer[1];
   document.getElementById("footer-links").innerHTML = content.footer[2];
-  document.getElementById("footer-copyright").innerHTML = content.footer[3];
+  document.getElementById("footer-copyright").innerHTML = `© ${new Date().getFullYear()} CUBO+. `  + content.footer[3];
 }
 
 //function to set the language in page
