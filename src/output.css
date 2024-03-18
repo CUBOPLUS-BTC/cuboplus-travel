@@ -1106,10 +1106,6 @@ input:checked + .toggle-bg {
   bottom: 0px;
 }
 
-.bottom-16 {
-  bottom: 4rem;
-}
-
 .bottom-4 {
   bottom: 1rem;
 }
@@ -1124,10 +1120,6 @@ input:checked + .toggle-bg {
 
 .left-0 {
   left: 0px;
-}
-
-.left-12 {
-  left: 3rem;
 }
 
 .right-0 {
