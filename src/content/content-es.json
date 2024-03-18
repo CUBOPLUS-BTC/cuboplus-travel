@@ -1,5 +1,5 @@
 {
-  "version": "1.8",
+  "version": "1.9",
   "secret": "es-cuboplus",
   "layout": {
     "navbar": ["Sobre nosotros", 
@@ -207,15 +207,15 @@
     "legend": "Ganarás valioso conocimiento en una de las tecnologías mas disruptivas de todos los tiempos y tendrás la oportunidad de ganar un viaje a Suiza para mayor capacitación",
     "media": "https://www.youtube.com/embed/yolqI5TtPWE?si=xXeFOgTYvgdE96Vt",
     "titles":[
-      "¿Sobre qué trata CUBO+ Economics Edition?", "¿Quién puede aplicar?", "Como estudiante de CUBO+ tendrás acceso a", "Estructura del curso",
+      "¿Sobre qué trata CUBO+ Eccon Generation?", "¿Quién puede aplicar?", "Como estudiante de CUBO+ tendrás acceso a", "Estructura del curso",
       "Clases en línea", "Clases presenciales", "Conferencias de líderes en la industria", "¿El curso tiene costo?", "¿Cómo puedo recibir una beca para la escuela de verano Plan B de Lugano (en Suiza)?",
       "Profesores de todas<br>parte del mundo.", "Oportunidades de pasantías", "Viajes a Suiza"
     ],
     "descriptions":[
-      "CUBO+ Economics Edition está hecho para ofrecer educación en Bitcoin, profundizando en los aspectos económicos y filosóficos de Bitcoin. Apuntamos a demostrar el impacto de Bitcoin en la sociedad y subrayar su importancia en un mundo acosado por un sistema financiero inestable.",
-      "<svg class='w-6 h-6 text-green-500 dark:text-green-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>Estudiantes universitarios o graduados.",
-      "<svg class='w-6 h-6 text-green-500 dark:text-green-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>Estudiantes de todas las carreras técnicas y no técnicas.",
-      "<svg class='w-6 h-6 text-green-500 dark:text-green-400' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>Gente ansiosa por comprender Bitcoin y profundizar en su conocimiento.",
+      "CUBO+ Econ Generation está hecho para ofrecer educación en Bitcoin, profundizando en los aspectos económicos y filosóficos de Bitcoin. Apuntamos a demostrar el impacto de Bitcoin en la sociedad y subrayar su importancia en un mundo acosado por un sistema financiero inestable.",
+      "<svg class='w-6 h-6 text-green-500 dark:text-green-400 flex-shrink-0' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>Estudiantes universitarios o graduados.",
+      "<svg class='w-6 h-6 text-green-500 dark:text-green-400 flex-shrink-0' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>Estudiantes de todas las carreras técnicas y no técnicas.",
+      "<svg class='w-6 h-6 text-green-500 dark:text-green-400 flex-shrink-0' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'><path fill-rule='evenodd' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z' clip-rule='evenodd'/></svg>Gente ansiosa por comprender Bitcoin y profundizar en su conocimiento.",
       "Mentores de alto nivel<br> compartiendo sus conocimientos<br> con jóvenes<br> y profesionales salvadoreños.",
       "¡Todos los estudiantes que<br> se gradúen de CUBO+ tendrán la<br> oportunidad de aplicar a<br> pasantías en las mejores<br> empresas de Bitcoin del mundo!",
       "Los mejores y más dedicados<br> estudiantes recibirán<br> una beca completa para<br> la <a class='text-orange-400' target=\"_blank\" href='https://planb.lugano.ch/summer-school/'>Escuela de verano de Plan B</a><br> en Lugado Suiza.",
