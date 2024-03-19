@@ -2570,11 +2570,6 @@ input:checked + .toggle-bg {
   padding-bottom: 3rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2618,6 +2613,11 @@ input:checked + .toggle-bg {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pb-12 {
@@ -3237,6 +3237,11 @@ input:checked + .toggle-bg {
   width: 1px;
 }
 
+.before\:w-80::before {
+  content: var(--tw-content);
+  width: 20rem;
+}
+
 .before\:scale-x-110::before {
   content: var(--tw-content);
   --tw-scale-x: 1.1;
@@ -3460,6 +3465,11 @@ input:checked + .toggle-bg {
 .after\:w-px::after {
   content: var(--tw-content);
   width: 1px;
+}
+
+.after\:w-80::after {
+  content: var(--tw-content);
+  width: 20rem;
 }
 
 .after\:scale-y-110::after {
@@ -3769,17 +3779,17 @@ input:checked + .toggle-bg {
   border-color: rgb(253 186 140 / var(--tw-border-opacity));
 }
 
-:is(.dark .dark\:border-slate-700) {
-  --tw-border-opacity: 1;
-  border-color: rgb(51 65 85 / var(--tw-border-opacity));
-}
-
 :is(.dark .dark\:border-transparent) {
   border-color: transparent;
 }
 
 :is(.dark .dark\:border-white\/20) {
   border-color: rgb(255 255 255 / 0.2);
+}
+
+:is(.dark .dark\:border-slate-700) {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
 
 :is(.dark .dark\:border-opacity-60) {
@@ -4123,12 +4133,6 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media not all and (min-width: 640px) {
-  .max-sm\:mt-3 {
-    margin-top: 0.75rem;
-  }
-}
-
 @media (min-width: 640px) {
   .sm\:right-24 {
     right: 6rem;
@@ -4183,10 +4187,6 @@ input:checked + .toggle-bg {
 
   .sm\:mt-20 {
     margin-top: 5rem;
-  }
-
-  .sm\:mt-3 {
-    margin-top: 0.75rem;
   }
 
   .sm\:block {
@@ -4407,10 +4407,6 @@ input:checked + .toggle-bg {
     margin-top: 3rem;
   }
 
-  .md\:mt-3 {
-    margin-top: 0.75rem;
-  }
-
   .md\:block {
     display: block;
   }
@@ -4467,10 +4463,6 @@ input:checked + .toggle-bg {
     width: 83.333333%;
   }
 
-  .md\:w-6\/12 {
-    width: 50%;
-  }
-
   .md\:w-8 {
     width: 2rem;
   }
@@ -4486,6 +4478,10 @@ input:checked + .toggle-bg {
   .md\:w-max {
     width: -moz-max-content;
     width: max-content;
+  }
+
+  .md\:w-6\/12 {
+    width: 50%;
   }
 
   .md\:max-w-4xl {
