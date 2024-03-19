@@ -89,7 +89,7 @@ const setMentions = (mentions) => {
                                     </p>
 
                                     <figure class="max-w-lg">
-                                        <img class="h-60 max-w-full rounded-lg overflow-hidden"
+                                        <img class="h-60 max-w-full object-cover rounded-lg overflow-hidden"
                                             src="${m.picture}" alt="image description">
                                     </figure>
 
