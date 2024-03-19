@@ -4123,6 +4123,12 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media not all and (min-width: 640px) {
+  .max-sm\:mt-3 {
+    margin-top: 0.75rem;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:right-24 {
     right: 6rem;
@@ -4177,6 +4183,10 @@ input:checked + .toggle-bg {
 
   .sm\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .sm\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .sm\:block {
@@ -4395,6 +4405,10 @@ input:checked + .toggle-bg {
 
   .md\:mt-12 {
     margin-top: 3rem;
+  }
+
+  .md\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .md\:block {
