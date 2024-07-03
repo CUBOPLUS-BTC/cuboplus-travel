@@ -9,6 +9,13 @@ module.exports = {
         primary: {
           blue: '#235fa9',
           orange: '#f39323'
+        },
+        tourism: {
+          blue: '#233876',
+          orange: '#FF7A19',
+        },
+        light: {
+          blue: "#5576FF"
         }
       }
   }
