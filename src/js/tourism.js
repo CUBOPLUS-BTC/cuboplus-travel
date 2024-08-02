@@ -1,6 +1,6 @@
 const address = "32ixEdVJWo3kmvJGMTZq5jAQVZZeuwnqzo";
-const weekSeconds = 604800
-const monthSeconds = 2629746
+const weekSeconds = 604800;
+const monthSeconds = 2629746;
 const currentDateUnix = Math.floor(Date.now() / 1000);
 const lastMonth = currentDateUnix - monthSeconds;
 const lastWeek = currentDateUnix - weekSeconds;
@@ -16,7 +16,7 @@ const getBalance = async () => {
 }
 
 const getChanges = async () => {
-    const result = await fetch (`https://bitcoin.gob.sv/api/address/${address}/txs/summary`);
+    const result = await fetch(`https://bitcoin.gob.sv/api/address/${address}/txs/summary`);
     const response = await result.json();
 
     let valueLastWeek = 0;
@@ -32,11 +32,24 @@ const getChanges = async () => {
     return changes;
 }
 
+const animateValue = (element, start, end, duration, prefix = '') => {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        element.innerHTML = prefix + Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+}
+
 document.addEventListener("DOMContentLoaded", async (e) => {
     const balance = await getBalance();
     const changes = await getChanges();
 
-    balanceElement.innerHTML = balance;
-    changeWeekElement.innerHTML = `+${changes[0]}`;
-    changeMonthElement.innerHTML = `+${changes[1]}`;
+    animateValue(balanceElement, 0, balance, 1500);
+    animateValue(changeWeekElement, 0, changes[0], 1500, '+');
+    animateValue(changeMonthElement, 0, changes[1], 1500, '+');
 });
