@@ -2849,6 +2849,10 @@ input:checked + .toggle-bg {
   padding-top: 56.25%;
 }
 
+.pt-11 {
+  padding-top: 2.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -4670,6 +4674,14 @@ input:checked + .toggle-bg {
     width: max-content;
   }
 
+  .md\:w-1\/4 {
+    width: 25%;
+  }
+
+  .md\:w-\[45\%\] {
+    width: 45%;
+  }
+
   .md\:max-w-4xl {
     max-width: 56rem;
   }
@@ -4692,6 +4704,10 @@ input:checked + .toggle-bg {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .md\:items-center {
@@ -5073,6 +5089,22 @@ input:checked + .toggle-bg {
     width: 16.666667%;
   }
 
+  .lg\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .lg\:w-\[33\%\] {
+    width: 33%;
+  }
+
+  .lg\:w-\[32\%\] {
+    width: 32%;
+  }
+
+  .lg\:w-\[24\%\] {
+    width: 24%;
+  }
+
   .lg\:min-w-\[15\%\] {
     min-width: 15%;
   }
@@ -5170,6 +5202,10 @@ input:checked + .toggle-bg {
 
   .lg\:gap-8 {
     gap: 2rem;
+  }
+
+  .lg\:gap-1 {
+    gap: 0.25rem;
   }
 
   .lg\:gap-x-24 {
