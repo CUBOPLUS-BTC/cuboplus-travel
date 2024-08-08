@@ -2,7 +2,7 @@ const address = "32ixEdVJWo3kmvJGMTZq5jAQVZZeuwnqzo";
 const balanceElement = document.getElementById("balance-number");
 
 const getBalance = async () => {
-    const result = await fetch(`https://bitcoin.gob.sv/api/address/${address}`);
+    const result = await fetch(`https://mempool.space/api/address/${address}`);
     const response = await result.json();
     const balance = Math.floor(response.chain_stats.funded_txo_sum / 100000000);
     return balance;
