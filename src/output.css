@@ -1759,6 +1759,14 @@ input:checked + .toggle-bg {
   width: 100vw;
 }
 
+.w-\[48\%\] {
+  width: 48%;
+}
+
+.w-\[45\%\] {
+  width: 45%;
+}
+
 .min-w-\[30\%\] {
   min-width: 30%;
 }
@@ -5016,6 +5024,10 @@ input:checked + .toggle-bg {
     height: 457px;
   }
 
+  .lg\:h-16 {
+    height: 4rem;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -5059,6 +5071,10 @@ input:checked + .toggle-bg {
   .lg\:w-max {
     width: -moz-max-content;
     width: max-content;
+  }
+
+  .lg\:w-\[24\%\] {
+    width: 24%;
   }
 
   .lg\:min-w-\[15\%\] {
