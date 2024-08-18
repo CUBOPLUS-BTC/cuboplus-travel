@@ -10,14 +10,25 @@ const getBalance = async () => {
 
 const animateValue = (element, start, end, duration) => {
     let startTimestamp = null;
+
+    // Función de easing personalizada con potencia mayor para un ease-out más fuerte
+    const easeOutPower = (t) => 1 - Math.pow(1 - t, 5);
+
     const step = (timestamp) => {
         if (!startTimestamp) startTimestamp = timestamp;
-        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-        element.innerHTML = Math.floor(progress * (end - start) + start);
-        if (progress < 1) {
+        const elapsed = (timestamp - startTimestamp) / duration;
+        const progress = Math.min(easeOutPower(elapsed), 1);
+        const currentValue = Math.round(progress * (end - start) + start);
+
+        element.innerHTML = currentValue;
+
+        if (elapsed < 1) {
             window.requestAnimationFrame(step);
+        } else {
+            element.innerHTML = end;
         }
     };
+
     window.requestAnimationFrame(step);
 }
 
