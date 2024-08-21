@@ -1,4 +1,31 @@
 /* Ensure the card has a transition for smooth animation */
+#navbar-tourism {
+    opacity: 0;
+    visibility: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    border: none;
+}
+
+#navbar-tourism.scrolled {
+    opacity: 1;
+    visibility: 1;
+}
+
+#nav-tourism a {
+    transition: font-weigth 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+#backToTop {
+    opacity: 0;
+    visibility: 0;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+#backToTop.scrolled {
+    opacity: 1;
+    visibility: 1;
+}
+
 .card {
     transition: 0.3s ease-in-out;
 }
