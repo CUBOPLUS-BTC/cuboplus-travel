@@ -83,8 +83,8 @@
 
 <body class="font-[Poppins] min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
     <header>
-        <nav id="navbar"
-            class="shadow-lg fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
+        <nav id="navbar-tourism"
+            class="shadow-lg fixed inset-x-0 z-40 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
                     <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
@@ -301,6 +301,9 @@
         </nav>
     </header>
      
+    <button id="backToTop" class="fixed z-40 bottom-10 right-10 bg-blue-500 text-white p-3 rounded-full shadow-lg">
+        ↑ Top
+    </button>
     
     <section id="cookies-modal" class="hidden flex-col md:flex-row z-30 fixed max-w-2xl p-4 mx-4 md:mx-auto bottom-4 bg-white border border-gray-200 md:gap-x-4 md:left-12 md:bottom-16 dark:bg-gray-900 md:items-center dark:border-gray-700 rounded-2xl">
             <div class="flex md:items-center gap-x-4">
@@ -323,113 +326,108 @@
             </div>
     </section>
 
-    <section class="w-full relative">
-        <img class="relative w-full h-auto pt-16 md:pt-16 lg:pt-0" src="../img/tourism/portrait.webp" alt="tourism portrait">
-        <div class="absolute top-1/2 px-4 w-full">
-            <div class="z-20 font-semibold mx-auto max-w-6xl w-full">
-                <h1 id="main-title" class="text-white text-2xl md:text-4xl lg:text-6xl lg:leading-[86px]">Welcome to <br> #Bitcoin country</h1>
+    <section class="h-screen w-full relative">
+        <video class="absolute top-0 left-0 w-full h-full object-cover z-10" src="../img/output-tourism.mp4" alt="tourism portrait" autoplay muted loop></video>
+    
+        <div class="absolute top-0 left-0 z-20 w-full h-full flex items-center justify-center flex-col p-5 gap-6 lg:gap-20 lg:p-20">
+            <div class="bg-gray-300/70 backdrop-blur p-5 rounded-lg max-w-6xl w-full">
+                <div class="text-center block lg:p-5">
+                    <h1 class="text-3xl lg:text-6xl text-white font-semibold pb-4 lg:pb-10">Welcome to #Bitcoin country</h1>
+                    <a class="text-lg font-normal underline text-white" href="https://x.com/nayibbukele/status/1593113857261965312" target="_blank">"We are buying one #Bitcoin every day starting tommorrow"</a>
+                </div>
+                <div class="pt-5">
+                    <p>Nayib Bukele <br> President of El Salvador</p>
+                </div>
+            </div>
+
+            <div id="nav-tourism" class="bg-gray-300/70 backdrop-blur p-2 rounded-lg md:rounded-full max-w-6xl w-full gap-1 md:gap-8 flex-col md:flex-row flex items-center justify-center">
+                <p class="w-full md:w-auto px-4 py-1 text-lg font-semibold rounded-lg md:rounded-full bg-blue-400 text-white">Home</p>
+                <a href="tourist-destinations.html" class="w-full md:w-auto px-4 py-1 text-lg font-normal rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-400">Visit El Salvador</a>
+                <a href="" class="w-full md:w-auto px-4 py-1 text-lg font-normal rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-400">We plan your trip</a>
+                <a href="" class="w-full md:w-auto px-4 py-1 text-lg font-normal rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-400">Move to El Salvador</a>
             </div>
         </div>
     </section>
 
+    <section class="mx-auto max-w-6xl w-full pt-14">
+        <div class="flex items-center justify-center gap-8 md:gap-16">
+            <img src="../img/tourism/mistu.svg" class="h-14" alt="Ministry of tourism">
+            <img src="../img/tourism/onbtc.svg" class="h-14" alt="Bitcoin office">
+        </div>
+    </section>
     
-    <section class="relative w-full bg-contain bg-no-repeat xl:bg-cover">
-        <div class="w-full h-screen bg-contain xl:bg-cover bg-no-repeat absolute -z-10" style="background-image: url(../img/tourism/decoration.webp); mask-image: linear-gradient(black 80%, transparent);"></div>
-            <div class="max-w-6xl mx-auto text-center">
-                <div>
-                    <h4 id="treasury-title" class="text-md lg:text-2xl pt-6 font-medium text-tourism-blue dark:text-blue-300">El Salvador treasury holdings in BTC <a class="text-tourism-orange underline" target="_blank" href="https://bitcoin.gob.sv">Audit</a></h4>
-                </div>
-                <div class="pt-6">
-                    <div class="block md:flex items-center px-2 lg:px-0">
-                        <a href="https://x.com/nayibbukele/status/1593113857261965312" target="_blank" class="card flex items-center justify-center w-full gap-4 lg:gap-8 p-6 border border-gray-300 rounded-xl bg-white dark:bg-gray-800 shadow-lg">
-                            <div class="flex flex-col space-y-4 w-4/5">
-                                <div class="flex items-center gap-3">
-                                    <img src="../img/tourism/president.webp" alt="President image" class="rounded-full w-12 h-12">
-                                    <div class="text-start">
-                                        <p class="text-lg font-semibold text-gray-800 dark:text-gray-200">Nayib Bukele</p>
-                                        <p class="text-sm text-gray-500 dark:text-gray-400">@nayibbukele</p>
-                                    </div>
-                                </div>
-                                <h5 class="text-xl md:text-3xl text-tourism-blue font-medium text-start">We are buying one #Bitcoin every day starting tomorrow.</h5>
-                                <p class="text-sm text-gray-500 dark:text-gray-400 text-start">16 nov 2022</p>
-                            </div>
-                            <div class="flex flex-col items-center justify-center w-1/5 text-center">
-                                <h1 id="balance" class="text-lg font-normal text-gray-700 dark:text-gray-300">Counter</h1>
-                                <h4 id="balance-number" class="text-tourism-orange text-2xl lg:text-4xl font-bold">0</h4>
-                            </div>
-                        </a>
-                    </div>
+    <section class="md:mx-auto max-w-6xl w-full pt-48 px-2">
+        <h1 class="text-4xl dark:text-white text-center font-semibold leading-normal text-neutral-700">Explore El Salvador</h1>
+        <div class="flex flex-col gap-9 pt-11">
+            <div class="bg-white shadow-xl shadow-blue-500/40 dark:bg-slate-900 border-gray-300 border-2 rounded-xl dark:border-slate-700 p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+                <img src="../img/tourism/visit.jpg" class="rounded-2xl w-full md:w-1/2 h-full object-cover" alt="">
+                <div class="flex flex-col dark:text-white gap-8">
+                    <h2 class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
+                        Visit El Salvador
+                    </h2>
+                    <p class="text-xs md:text-sm">
+                        Embark on an unforgettable journey and discover the beauty of El Salvador, a country where natural and cultural richness intertwine to create unique experiences. 
+
+                        From Pacific beaches to towering volcanoes and charming colonial towns, every corner of El Salvador has a story waiting to be explored. 
+                    </p>
+                    <a href="tourist-destinations.html" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">Explore more</a>
                 </div>
             </div>
-
-            <div id="unlock-sv" class="max-w-6xl mx-2 lg:mx-auto text-center pt-11 lg:pt-28">
-                <h1 id="tourism-title" class="text-2xl lg:text-6xl font-semibold text-tourism-blue dark:text-blue-300">
-                    Unlock the country
-                </h1>
-                <p id="tourism-legend" class="pt-2 dark:text-white">Get to know the possibilities of El Salvador, in one single place</p>
-                <div class="block md:flex md:items-center md:justify-around space-y-2 gap-2 lg:gap-2 md:gap-6 xl:gap-12 pt-4 md:pt-12">
-                    <div class="card md:block flex rounded-xl shadow-xl md:w-1/3 border-2 border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900">
-                        <img src="../img/tourism/destinations/thumbnail.webp" alt="destinations thumbnail" class="w-1/3 md:w-full object-cover rounded-l-xl md:rounded-t-xl md:rounded-bl-none">
-                        <div class="p-4 block mx-auto self-center">
-                            <h2 id="tourist-card-title" class="lg:pt-2 dark:text-white text-sm lg:text-xl font-medium">El Salvador for tourists</h2>
-    
-                            <p id="tourist-card-legend" class=" lg:pt-4 pt-2 dark:text-white text-xs lg:text-md">Discover the best places to visit during your trip in El Salvador</p>
-
-                            <a href="tourist-destinations.html" class="view-more block bg-light-blue text-sm lg:text-lg text-center text-white rounded-sm lg:rounded-lg w-full mt-2 lg:mt-4">See more</a>
-                        </div>
-                    </div>
-                    <div class="card flex md:block rounded-xl shadow-xl md:w-1/3 border-2 border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900">
-                        <img src="../img/tourism/onboard/thumbnail.webp" alt="destinations thumbnail" class="w-1/3 md:w-full object-cover rounded-l-xl md:rounded-t-xl md:rounded-bl-none">
-                        <div class="p-4 block mx-auto self-center">
-                            <h2 id="onboard-card-title" class="lg:pt-2 dark:text-white text-sm lg:text-xl font-medium">Onboard El Salvador with BTC</h2>
-    
-                            <p id="onboard-card-legend" class="lg:pt-4 pt-2 dark:text-white text-xs lg:text-md">Easy guide to onboard El Salvador while living in the Bitcoin Standard</p>
-
-                            <a href="onboard-sv.html" class="view-more block bg-light-blue text-sm lg:text-lg text-center text-white rounded-sm lg:rounded-lg w-full mt-2 lg:mt-4">See more</a>
-                        </div>
-                    </div>
-                    <div class="card flex md:block rounded-xl shadow-xl md:w-1/3 border-2 border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900">
-                        <img src="../img/tourism/communities/thumbnail.webp" alt="destinations thumbnail" class="w-1/3 md:w-full object-cover rounded-l-xl md:rounded-t-xl md:rounded-bl-none">
-                        <div class="p-4 block mx-auto self-center">
-                            <h2 id="communities-card-title" class="lg:pt-2 dark:text-white text-sm lg:text-xl font-medium">Bitcoin Communities</h2>
-    
-                            <p id="communities-card-legend" class="lg:pt-4 pt-2 dark:text-white text-xs lg:text-md">Meet the featuring communities that have adopted Bitcoin</p>
-
-                            <a href="communities.html" class="view-more block bg-light-blue text-sm lg:text-lg text-center text-white rounded-sm lg:rounded-lg w-full mt-2 lg:mt-4">See more</a>
-                        </div>
-                    </div>
+            <div class="bg-white shadow-xl shadow-blue-500/40 dark:bg-slate-900 border-gray-300 border-2 rounded-xl dark:border-slate-700 p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+                <img src="../img/tourism/agency.jpg" class="rounded-2xl w-full md:w-1/2 h-full object-cover" alt="">
+                <div class="flex flex-col dark:text-white gap-8">
+                    <h2 class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
+                        We plan your trip
+                    </h2>
+                    <p class="text-xs md:text-sm">
+                        From Pacific beaches to towering volcanoes and charming colonial towns, every corner of El Salvador has a story waiting to be explored. 
+                    </p>
+                    <a href="" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">Explore more</a>
                 </div>
             </div>
-
-            <div class="max-w-6xl mx-2 lg:mx-auto text-center pt-28">
-                <h1 class="text-3xl font-semibold text-tourism-blue dark:text-light-blue">Salvadoran Bitcoin Companies</h1>
-                <div class="flex items-center flex-wrap justify-center gap-2 pt-12">
-                    <a href="https://tiankii.com" target="_blank" class="company shrink-0 border-slate-900 dark:border-slate-700 border-2 lg:w-[24%] w-[45%] mx-auto mt-2 shadow-lg p-4 flex justify-center">
-                        <img src="../img/tourism/companies/tiankii.webp" class="lg:h-10 h-8 w-auto" alt="Tiankii logo">
-                    </a>
-                    <a href="https://k1.sv" target="_blank" class="company border-slate-900 dark:border-slate-700 border-2 w-[45%] mx-auto mt-2  lg:w-[24%] shadow-lg p-4 flex justify-center">
-                        <img src="../img/tourism/companies/k1.webp" class="lg:h-10 h-8 w-auto" alt="K1 Technologies logo">
-                    </a>
-                    <a href="https://blink.sv" target="_blank" class="company border-slate-900 dark:border-slate-700 border-2 w-[45%] mx-auto mt-2 lg:w-[24%] shadow-lg p-4 flex justify-center">
-                        <img src="../img/tourism/companies/blink.webp" class="lg:h-10 h-8 w-auto dark:hidden" alt="Blink logo">
-                        <img src="../img/tourism/companies/blink-white.webp" class="lg:h-10 h-8 w-auto dark:block hidden" alt="Blink logo">
-                    </a>
-                    <a href="https://ditobanx.com" target="_blank" class="company border-slate-900 dark:border-slate-700 border-2 w-[45%] mx-auto mt-2 lg:w-[24%] shadow-lg p-4 flex justify-center">
-                        <img src="../img/tourism/companies/ditobanx.webp" class="lg:h-10 h-8 w-auto dark:hidden" alt="DitoBanx logo">
-                        <img src="../img/tourism/companies/ditobanx-white.webp" class="lg:h-10 h-8 w-auto dark:block hidden" alt="DitoBanx Logo">
-                    </a>
-                    <a href="https://athenabitcoin.com" target="_blank" class="company border-slate-900 dark:border-slate-700 border-2 w-[45%] mx-auto mt-2 lg:w-[24%] shadow-lg  p-4 flex justify-center">
-                        <img src="../img/tourism/companies/athena.webp" class="lg:h-10 h-8 w-auto dark:hidden" alt="Athena logo">
-                        <img src="../img/tourism/companies/athena-white.webp" class="lg:h-10 h-8 w-auto dark:block hidden" alt="Athena Logo">
-                    </a>
-                    <a href="https://x.com/CheritoCafe" target="_blank" class="company border-slate-900 dark:border-slate-700 border-2 w-[45%] mx-auto mt-2 lg:w-[24%] shadow-lg  p-4 flex justify-center">
-                        <img src="../img/tourism/companies/cherito.webp" class="lg:h-10 h-8 w-auto" alt="Cherito logo">
-                    </a>
-                    <a href="https://x.com/tbhs_sv" target="_blank" class="company border-slate-900 dark:border-slate-700 border-2 w-[45%] mx-auto mt-2 lg:w-[24%] shadow-lg  p-4 flex justify-center">
-                        <img src="../img/tourism/companies/tbhs.webp" class="lg:h-10 h-8 w-auto" alt="tbhs logo">
-                    </a>
+            <div class="bg-white shadow-xl shadow-blue-500/40 dark:bg-slate-900 border-gray-300 border-2 rounded-xl dark:border-slate-700 p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+                <img src="../img/tourism/relocation.jpg" class="rounded-2xl w-full md:w-1/2 h-full object-cover" alt="">
+                <div class="flex flex-col dark:text-white gap-8">
+                    <h2 class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
+                        Move to El Salvador
+                    </h2>
+                    <p class="text-xs md:text-sm">
+                        Discover a new home in El Salvador, a country full of opportunities. From paradisiacal beaches to picturesque cities, find the perfect place to start a new life in a warm and welcoming environment.
+                    </p>
+                    <a href="" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">Explore more</a>
                 </div>
             </div>
+        </div>
+    </section>
+    
+    <section class="max-w-6xl mx-2 lg:mx-auto text-center pt-28">
+        <h1 class="text-3xl font-semibold text-tourism-blue dark:text-light-blue">Salvadoran Bitcoin Companies</h1>
+        <div class="flex items-center flex-wrap justify-center gap-2 pt-12">
+            <a href="https://tiankii.com" target="_blank" class="company shrink-0 border-slate-900 dark:border-slate-700 border-2 lg:w-[24%] w-[45%] mx-auto mt-2 shadow-lg p-4 flex justify-center">
+                <img src="../img/tourism/companies/tiankii.webp" class="lg:h-10 h-8 w-auto" alt="Tiankii logo">
+            </a>
+            <a href="https://k1.sv" target="_blank" class="company border-slate-900 dark:border-slate-700 border-2 w-[45%] mx-auto mt-2  lg:w-[24%] shadow-lg p-4 flex justify-center">
+                <img src="../img/tourism/companies/k1.webp" class="lg:h-10 h-8 w-auto" alt="K1 Technologies logo">
+            </a>
+            <a href="https://blink.sv" target="_blank" class="company border-slate-900 dark:border-slate-700 border-2 w-[45%] mx-auto mt-2 lg:w-[24%] shadow-lg p-4 flex justify-center">
+                <img src="../img/tourism/companies/blink.webp" class="lg:h-10 h-8 w-auto dark:hidden" alt="Blink logo">
+                <img src="../img/tourism/companies/blink-white.webp" class="lg:h-10 h-8 w-auto dark:block hidden" alt="Blink logo">
+            </a>
+            <a href="https://ditobanx.com" target="_blank" class="company border-slate-900 dark:border-slate-700 border-2 w-[45%] mx-auto mt-2 lg:w-[24%] shadow-lg p-4 flex justify-center">
+                <img src="../img/tourism/companies/ditobanx.webp" class="lg:h-10 h-8 w-auto dark:hidden" alt="DitoBanx logo">
+                <img src="../img/tourism/companies/ditobanx-white.webp" class="lg:h-10 h-8 w-auto dark:block hidden" alt="DitoBanx Logo">
+            </a>
+            <a href="https://athenabitcoin.com" target="_blank" class="company border-slate-900 dark:border-slate-700 border-2 w-[45%] mx-auto mt-2 lg:w-[24%] shadow-lg  p-4 flex justify-center">
+                <img src="../img/tourism/companies/athena.webp" class="lg:h-10 h-8 w-auto dark:hidden" alt="Athena logo">
+                <img src="../img/tourism/companies/athena-white.webp" class="lg:h-10 h-8 w-auto dark:block hidden" alt="Athena Logo">
+            </a>
+            <a href="https://x.com/CheritoCafe" target="_blank" class="company border-slate-900 dark:border-slate-700 border-2 w-[45%] mx-auto mt-2 lg:w-[24%] shadow-lg  p-4 flex justify-center">
+                <img src="../img/tourism/companies/cherito.webp" class="lg:h-10 h-8 w-auto" alt="Cherito logo">
+            </a>
+            <a href="https://x.com/tbhs_sv" target="_blank" class="company border-slate-900 dark:border-slate-700 border-2 w-[45%] mx-auto mt-2 lg:w-[24%] shadow-lg  p-4 flex justify-center">
+                <img src="../img/tourism/companies/tbhs.webp" class="lg:h-10 h-8 w-auto" alt="tbhs logo">
+            </a>
+        </div>
     </section>
 
     <section class="max-w-6xl mx-2 lg:mx-auto pt-28 text-center">
@@ -590,6 +588,8 @@
     <script src="../js/component.js"></script>
     <script src="../js/cookies.js"></script>
     <script src="../js/tourism.js"></script>
+    <script src="../js/upButton.js"></script>
+    <script src="../js/touristScroll.js"></script>
 </body>
 
 </html>
