@@ -4,7 +4,7 @@ const balanceElement = document.getElementById("balance-number");
 const getBalance = async () => {
     const result = await fetch(`https://mempool.space/api/address/${address}`);
     const response = await result.json();
-    const balance = Math.floor(response.chain_stats.funded_txo_sum / 100000000);
+    const balance = response.chain_stats.funded_txo_sum / 100000000;
     return balance;
 }
 
@@ -18,14 +18,14 @@ const animateValue = (element, start, end, duration) => {
         if (!startTimestamp) startTimestamp = timestamp;
         const elapsed = (timestamp - startTimestamp) / duration;
         const progress = Math.min(easeOutPower(elapsed), 1);
-        const currentValue = Math.round(progress * (end - start) + start);
+        const currentValue = (progress * (end - start) + start).toFixed(2); // Keep two decimal places
 
         element.innerHTML = currentValue;
 
         if (elapsed < 1) {
             window.requestAnimationFrame(step);
         } else {
-            element.innerHTML = end;
+            element.innerHTML = end.toFixed(2); // Ensure final value has two decimal places
         }
     };
 
@@ -36,4 +36,34 @@ document.addEventListener("DOMContentLoaded", async (e) => {
     const balance = await getBalance();
 
     animateValue(balanceElement, 0, balance, 1500);
+});
+
+document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => {
+        const content = item.querySelector('.faq-content');
+        const icon = item.querySelector('.faq-icon svg');
+        const iconContainer = item.querySelector('.faq-icon');
+
+        if (content.style.maxHeight) {
+            // Close the current item
+            content.style.maxHeight = null;
+            icon.style.transform = 'rotate(0deg)';
+            icon.style.color = '#1e3a8a'; // Reset color to original
+            iconContainer.style.backgroundColor = '#ffffff'; // Reset background to original
+        } else {
+            // Close all other items
+            document.querySelectorAll('.faq-content').forEach(el => el.style.maxHeight = null);
+            document.querySelectorAll('.faq-icon svg').forEach(el => {
+                el.style.transform = 'rotate(0deg)';
+                el.style.color = '#1e3a8a'; // Reset color to original
+            });
+            document.querySelectorAll('.faq-icon').forEach(el => el.style.backgroundColor = '#ffffff'); // Reset background to original
+
+            // Open the clicked item
+            content.style.maxHeight = content.scrollHeight + 'px';
+            icon.style.transform = 'rotate(90deg)';
+            icon.style.color = '#ffffff'; // Change color to white
+            iconContainer.style.backgroundColor = '#1e3a8a'; // Change background to blue
+        }
+    });
 });
