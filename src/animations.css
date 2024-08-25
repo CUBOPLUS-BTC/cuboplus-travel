@@ -2,7 +2,11 @@
 :root {
     --company-border-color: black;
   }
-  
+
+#slider {
+    scroll-behavior: smooth;
+}
+
 .dark {
     --company-border-color: white;
 }
