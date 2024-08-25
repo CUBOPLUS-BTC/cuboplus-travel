@@ -12,7 +12,7 @@
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script type="module" crossorigin src="../assets/script.js"></script>
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="stylesheet" href="../animations.css">
@@ -327,27 +327,28 @@
 
     
 
-    <section class="max-w-6xl md:mx-auto dark:text-white py-12 mx-2 relative ">
-        <a href="#" class="hidden md:inline-flex items-center space-x-2 absolute top-24 left-0 mt-4 ml-4 bg-white text-blue-600 font-medium py-2 px-4 rounded-lg shadow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24"><path d="M15.7 19.7a1 1 0 0 1-1.4-1.4L17.6 15H6a1 1 0 0 1 0-2h11.6l-3.3-3.3a1 1 0 0 1 1.4-1.4l5 5a1 1 0 0 1 0 1.4l-5 5z"></path></svg>
+    <section class="max-w-6xl md:mx-auto dark:text-white py-12 mx-2 relative">
+        <a href="tourist-destinations.html" class="hidden md:inline-flex items-center space-x-2 absolute top-24 left-0 mt-4 ml-4 bg-white text-blue-600 font-medium py-2 px-4 rounded-lg shadow">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M15.7 19.7a1 1 0 0 1-1.4-1.4L17.6 15H6a1 1 0 0 1 0-2h11.6l-3.3-3.3a1 1 0 0 1 1.4-1.4l5 5a1 1 0 0 1 0 1.4l-5 5z"></path>
+            </svg>
             <span>Back</span>
         </a>
     </section>
 
         
-
-      <section class="max-w-6xl md:mx-auto dark:text-white pt-32 pb-12 mx-2">
+    <div id="page-content">
+        <section class="max-w-6xl md:mx-auto dark:text-white pt-12 md:pt-32 pb-12 mx-2">
         <h1 class="text-center text-3xl font-bold mb-8">DESTINATIONS</h1>
     
         <div class="block md:flex md:items-center md:gap-8">
-            <div class="md:w-1/2">
-                <img src="../img/tourism/communities/bitcoinbeach/thumbnail.webp" class="w-full h-auto rounded-xl object-cover" alt="Descripción de la imagen">
+            <div class="md:w-1/2" id="hero-image">
+                
             </div>
             <div class="md:w-1/2 mt-8 md:mt-0 flex items-center">
                 <div>
-                    <h2 class="text-2xl text-center font-semibold mb-4">Welcome to $DESTINATION</h2>
-                    <p class="text-justify text-gray-700 dark:text-gray-300">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus purus, scelerisque iaculis luctus varius, condimentum a lacus. Proin nisi quam, maximus id erat eget, auctor pellentesque arcu. Morbi viverra id urna mattis pulvinar. Vivamus ac magna viverra, lobortis massa nec, faucibus nunc. Maecenas vehicula nunc vel consectetur dictum. Sed quis nisl ut felis fringilla ullamcorper ac non nisl. Donec vel posuere dolor. In iaculis interdum risus ac venenatis.
+                    <h2 class="text-2xl text-center font-semibold mb-4" id="destinationname"></h2>
+                    <p class="text-justify text-gray-700 dark:text-gray-300" id="description">
                     </p>
                 </div>
             </div>
@@ -355,71 +356,72 @@
     </section>
 
     <section class="text-center max-w-6xl mx-auto my-8">
-        <div class="relative w-full h-[36rem]">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.6150356811963!2d-89.4422404809662!3d13.497802915129242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7d2b00a48b9f39%3A0xf1bc8bfa589f5ec4!2sEl%20Zonte!5e0!3m2!1ses-419!2ssv!4v1723771926865!5m2!1ses-419!2ssv" 
-            width="100%" 
-            height="100%" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy"
-            class="absolute inset-0"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="relative w-full h-[36rem]" id="destination-map">
+        
         </div>
       </section>
-
-      <section class="w-full bg-orange-200 dark:text-white py-12 px-4 sm:px-8 md:px-24">
-
+  
+       <section class="w-full dark:text-white py-12 px-4 sm:px-8 md:px-24" style="background-color: rgba(161, 134, 113, 0.35);">
         <div class="max-w-6xl md:mx-auto">
-            <h1 class="text-center text-3xl font-bold mb-8">Discover the community</h1>
+            <h1 class="text-center text-3xl font-bold mb-4">Discover the community</h1>
+            <div class="flex justify-end mb-8">
+                <div class="text-right">
+                    <p class="text-sm font-medium">Social Media</p>
+                    <div class="flex space-x-2 justify-end">
+                        <a href="#"><svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 14">
+                            <path fill-rule="evenodd"
+                                d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z"
+                                clip-rule="evenodd" />
+                        </svg></a>
+                        <a href="#"><svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 14">
+                            <path fill-rule="evenodd"
+                                d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z"
+                                clip-rule="evenodd" />
+                        </svg></a>
+                        <a href="#"><svg class="w-8 h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" viewBox="0 0 20 14">
+                            <path fill-rule="evenodd"
+                                d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z"
+                                clip-rule="evenodd" />
+                        </svg></a>
+                    </div>
+                </div>
+            </div>
     
             <div class="block md:flex md:items-center md:gap-8 mb-12">
-                <div class="md:w-1/2">
-                    <img src="../img/tourism/communities/bitcoinbeach/thumbnail.webp" class="w-full h-auto rounded-xl object-cover max-w-full" alt="Descripción de la imagen">
+                <div class="md:w-1/2" id="community-image">
+                   
                 </div>
                 <div class="md:w-1/2 mt-8 md:mt-0">
                     <div class="px-4">
-                        <h2 class="text-2xl text-center font-semibold mb-4">$community.name</h2>
-                        <p class="text-justify text-gray-700 dark:text-gray-300">
-                            $community.desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus purus, scelerisque iaculis luctus varius, condimentum a lacus. Proin nisi quam, maximus id erat eget, auctor pellentesque arcu.
+                        <h2 class="text-2xl text-center font-semibold mb-4" id="communityname"></h2>
+                        <p class="text-justify text-gray-700 dark:text-gray-300" id="communitydesc">
                         </p>
                     </div>
                 </div>
             </div>
-        
+            <div class="flex flex-col md:w-2/3 md:mx-auto md:flex-row justify-center items-center mb-8">
+                <p class="text-base text-gray-700 dark:text-gray-300 md:text-left text-center md:mr-6 mb-4 md:mb-0 leading-relaxed" id="community-slogan"></p>
+                <div id="image-container" class="w-32 h-32 md:w-48 md:h-48 object-cover"></div>
+            </div>
+            
+    
             <div class="text-center">
                 <h2 class="text-2xl font-bold mb-8">Leaders</h2>
-                <div class="flex flex-col md:flex-row md:justify-center md:gap-8">
-                    <div class="mb-8 md:mb-0">
-                        <img src="../img/tourism/destinations/zonte/leader-test.jpg" class="mx-auto rounded-xl w-64 h-64 object-cover max-w-full mb-4" alt="Descripción de la imagen 1">
-                        <h3 class="text-xl font-semibold">$Leader</h3>
-                        <p class="text-gray-700 dark:text-gray-300">Founder</p>
-                    </div>
-                    <div>
-                        <img src="../img/tourism/destinations/zonte/leader-test.jpg" class="mx-auto rounded-xl w-64 h-64 object-cover max-w-full mb-4" alt="Descripción de la imagen 2">
-                        <h3 class="text-xl font-semibold">$Leader</h3>
-                        <p class="text-gray-700 dark:text-gray-300">Co-Founder</p>
-                    </div>
+                <div id="leadersContainer" class="flex flex-col md:flex-row md:justify-center md:gap-8">
+
                 </div>
             </div>
         </div>
     </section>
-
-
-    <!-- TODO
-     Weather
-     Transport
-     Carousel 
-    -->
+    <section id="main-slider-container" class="w-full max-w-6xl mx-auto py-8">
+        <!-- Sliders Here -->
+    </section>
+      
+    </div>
     
-
-    
-    
-    
-
-
-
     <footer class="bg-white dark:bg-gray-900">
         <div class="relative mx-auto px-6 md:max-w-full my-6 md:px-12 lg:max-w-6xl xl:px-0">
             <div class="md:flex md:justify-between">
@@ -510,6 +512,7 @@
     <script src="../js/lib/flowbite/dist/flowbite.min.js"></script>
     <script src="../js/component.js"></script>
     <script src="../js/cookies.js"></script>
+    <script src="../js/destination.js"></script>
     <script src="../js/carousel.js"></script>
     <script src="../js/scroll.js"></script>
 </body>
