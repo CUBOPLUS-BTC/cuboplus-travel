@@ -1,4 +1,33 @@
 /* Ensure the card has a transition for smooth animation */
+:root {
+    --company-border-color: black;
+  }
+
+#slider {
+    scroll-behavior: smooth;
+}
+
+.dark {
+    --company-border-color: white;
+}
+
+#map-container svg path {
+    transition: color 0.2s ease;
+}
+
+img {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+}
+
+img.fade-out {
+    opacity: 0;
+}
+
+.fc-toolbar-title {
+    color: var(--company-border-color);
+}
+
 #navbar-tourism {
     opacity: 0;
     visibility: 0;
@@ -37,10 +66,11 @@
 
 .company {
     transition: 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
 }
 
 .company:hover {
-    border-bottom: 2px solid black;
+    border-bottom-color: var(--company-border-color);
 }
 
 .hide-scrollbar {
