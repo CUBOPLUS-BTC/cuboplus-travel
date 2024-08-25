@@ -2,6 +2,8 @@ var esButton = document.getElementsByClassName("es-button");
 var enButton = document.getElementsByClassName("en-button");
 const contentVersion = "1.9";
 const URL = "https://api-cuboplus.onrender.com/"
+const TOURISM_DATA_URL = "https://raw.githubusercontent.com/CUBOPLUS-BTC/tourism-portal-data/main/";
+const TOURISM_ASSETS = TOURISM_DATA_URL + "assets/";
 
 function setElementsNavbarAndFooter(content) {
   document.getElementById("navbar-about-button").innerHTML = content.navbar[0];
