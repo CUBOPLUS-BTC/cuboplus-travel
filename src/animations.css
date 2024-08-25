@@ -7,6 +7,23 @@
     --company-border-color: white;
 }
 
+#map-container svg path {
+    transition: color 0.2s ease;
+}
+
+img {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+}
+
+img.fade-out {
+    opacity: 0;
+}
+
+.fc-toolbar-title {
+    color: var(--company-border-color);
+}
+
 #navbar-tourism {
     opacity: 0;
     visibility: 0;
