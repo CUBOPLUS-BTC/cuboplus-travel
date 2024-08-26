@@ -1671,6 +1671,10 @@ input:checked + .toggle-bg {
   min-height: 100vh;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1719,10 +1723,6 @@ input:checked + .toggle-bg {
   width: 11rem;
 }
 
-.w-48 {
-  width: 12rem;
-}
-
 .w-5 {
   width: 1.25rem;
 }
@@ -1751,16 +1751,16 @@ input:checked + .toggle-bg {
   width: 24rem;
 }
 
-.w-\[44\%\] {
-  width: 44%;
-}
-
 .w-\[45\%\] {
   width: 45%;
 }
 
 .w-\[47\%\] {
   width: 47%;
+}
+
+.w-\[48\%\] {
+  width: 48%;
 }
 
 .w-\[calc\(100\%-7\.5rem\)\] {
@@ -1782,13 +1782,6 @@ input:checked + .toggle-bg {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-1 {
-  width: 0.25rem;
-}
-.w-\[48\%\] {
-  width: 48%;
 }
 
 .min-w-\[calc\(100\%\/3\)\] {
@@ -2493,10 +2486,6 @@ input:checked + .toggle-bg {
   background-color: rgb(0 0 0 / 0.6);
 }
 
-.bg-blue-100\/50 {
-  background-color: rgb(225 239 254 / 0.5);
-}
-
 .bg-blue-100\/80 {
   background-color: rgb(225 239 254 / 0.8);
 }
@@ -2561,15 +2550,6 @@ input:checked + .toggle-bg {
 
 .bg-gray-900\/50 {
   background-color: rgb(17 24 39 / 0.5);
-}
-
-.bg-green-100\/50 {
-  background-color: rgb(222 247 236 / 0.5);
-}
-
-.bg-light-blue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(85 118 255 / var(--tw-bg-opacity));
 }
 
 .bg-orange-400 {
@@ -3920,12 +3900,6 @@ input:checked + .toggle-bg {
   z-index: 1;
 }
 
-.hover\:scale-105:hover {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -4025,12 +3999,6 @@ input:checked + .toggle-bg {
 .hover\:shadow-2xl:hover {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.hover\:shadow-lg:hover {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -4988,10 +4956,6 @@ input:checked + .toggle-bg {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:grid-cols-5 {
