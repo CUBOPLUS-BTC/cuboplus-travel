@@ -133,8 +133,8 @@ const renderOnboard = (onboard) => {
                     </div>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 flex flex-wrap items-center gap-2 lg:gap-6">
                         ${section.places.map((place) => {
-                            return `<a href="${place.url}" target="_blank" class="w-[44%] h-[44%] md:w-[30%] md:h-[30%] lg:w-[20%] lg:h-[20%] aspect-square flex flex-col rounded-xl border-4 border-transparent hover:border-gray-300"><img src="${TOURISM_ASSETS + `categories/${section.id}/${place.id}.webp`}" class="w-full h-full object-cover rounded-lg" alt="Logo"><p class="text-sm">${place.title}</p></a>`;
-                        })}
+                            return `<a href="${place.url}" target="_blank" class="w-[48%] h-64 md:w-[30%] md:h-[30%] lg:w-[20%] lg:h-[20%] aspect-square flex flex-col rounded-xl border-4 border-transparent hover:border-gray-300"><img src="${TOURISM_ASSETS + `categories/${section.id}/${place.id}.webp`}" class="w-full h-48 object-cover rounded-lg" alt="Logo"><p class="text-sm h-14">${place.title}</p></a>`;
+                        }).join('')}
                     </div>
                 </div>
         `;
