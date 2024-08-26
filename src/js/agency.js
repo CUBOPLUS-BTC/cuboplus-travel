@@ -6,6 +6,7 @@ function loadAgencyForm() { //Agency form
         formId: "440e25d2-02cc-43e7-8251-67583663f0c6",
         target: '#hubspotForm'
     });
+    document.getElementById("form-text").textContent = "Plan your trip here!";
 
     updateContainerStyle('rgba(161, 134, 113, 0.35)');
     // Show/Hide Agency text
@@ -26,6 +27,7 @@ function loadConciergeForm() { //Concierge Form
         formId: "5f3ccc83-0eb3-4814-89ea-6bd8fd12cb05",
         target: '#hubspotForm'
     });
+    document.getElementById("form-text").textContent = "Hire our tailored and exclusive concierge services";
 
     updateContainerStyle('rgba(57, 167, 255, 0.35)');
     // Show/Hide Agency text
