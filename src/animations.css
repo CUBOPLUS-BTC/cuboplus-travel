@@ -28,14 +28,14 @@ img.fade-out {
     color: var(--company-border-color);
 }
 
-#navbar-tourism {
+.navbar-tourism {
     opacity: 0;
     visibility: 0;
     transition: opacity 0.5s ease, visibility 0.5s ease;
     border: none;
 }
 
-#navbar-tourism.scrolled {
+.navbar-tourism.scrolled {
     opacity: 1;
     visibility: 1;
 }
