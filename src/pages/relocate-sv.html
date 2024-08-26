@@ -12,8 +12,13 @@
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
-
     <script type="module" crossorigin src="../assets/script.js"></script>
+    <script src='../js/lib/fullcalendar-6.1.10/dist/index.global.min.js'></script>
+        <!-- rrule lib -->
+    <script src='../js/lib/rrule/rrule.min.js'></script>
+
+    <!-- the rrule-to-fullcalendar connector. must go AFTER the rrule lib -->
+    <script src='../js/lib/rrule/index.global.min.js'></script>
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="stylesheet" href="../animations.css">
     <link rel="stylesheet" href="../output.css">
@@ -84,7 +89,7 @@
 <body class="font-[Poppins] min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
     <header>
         <nav id="navbar"
-            class="shadow-lg fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
+            class="navbar-tourism shadow-lg fixed inset-x-0 z-40 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
                     <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
@@ -269,13 +274,13 @@
                                 <li>
                                     <a href="#"
                                         class="en-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                        <img src="img/icons/united-kingdom.png" class="h-6 w-6 mr-2" alt="">
+                                        <img src="../img/icons/united-kingdom.png" class="h-6 w-6 mr-2" alt="">
                                         English</a>
                                 </li>
                                 <li>
                                     <a href="#"
                                         class="es-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                        <img src="img/icons/spain.png" class="h-6 w-6 mr-2" alt="">
+                                        <img src="../img/icons/spain.png" class="h-6 w-6 mr-2" alt="">
                                         Español</a>
                                 </li>
                             </ul>
@@ -300,6 +305,10 @@
             </div>
         </nav>
     </header>
+
+    <button id="backToTop" class="fixed z-40 bottom-10 right-10 bg-blue-500 text-white p-3 rounded-full shadow-lg">
+        ↑ Top
+    </button>
      
     
     <section id="cookies-modal" class="hidden flex-col md:flex-row z-30 fixed max-w-2xl p-4 mx-4 md:mx-auto bottom-4 bg-white border border-gray-200 md:gap-x-4 md:left-12 md:bottom-16 dark:bg-gray-900 md:items-center dark:border-gray-700 rounded-2xl">
@@ -323,103 +332,120 @@
             </div>
     </section>
 
-    <section class="relative w-full mx-auto pt-12 lg:pt-28 max-w-6xl">
-        <div class="pt-6 lg:pt-4">
-            <a href="tourism-sv.html#unlock-sv"><img src="../img/tourism/icons/left.webp" class="dark:hidden" alt="Arrow back"></a>
-            <a href="tourism-sv.html#unlock-sv"><img src="../img/tourism/icons/left-white.webp" class="dark:block hidden" alt="Arrow back"></a>
-        </div>
-        <div class="block md:flex md:items-center md:justify-center gap-3 pt-4">
-            <a href="tourist-destinations.html" class="company border-slate-900 dark:border-slate-700 border-2 lg:w-1/4 w-full md:w-1/2 mx-auto mt-2 shadow-lg p-4 flex items-center justify-center">
-                <img src="../img/tourism/icons/plane.webp" class="h-6 lg:h-[22px] w-auto pr-2 dark:hidden" alt="plane icon">
-                <img src="../img/tourism/icons/plane-white.webp" class="h-6 lg:h-[22px] w-auto pr-2 hidden dark:block" alt="plane icon">
-                <p class="font-medium text-gray-600 dark:text-white">SV Destinations</p>
-            </a>
-            <div class="bg-gray-100 dark:bg-gray-800 lg:w-1/4 w-full md:w-1/2 mx-auto mt-2 p-4 flex items-center justify-center">
-                <img src="../img/tourism/icons/change.webp" class="h-6 lg:h-[22px] w-auto pr-2 dark:hidden" alt="change icon">
-                <img src="../img/tourism/icons/change-white.webp" class="h-6 lg:h-[22px] w-auto pr-2 hidden dark:block" alt="change icon">
-                <p class="font-medium text-gray-600 dark:text-white">Onboard SV</p>
+    <section class="h-screen w-full relative">
+        <video class="absolute top-0 left-0 w-full h-full object-cover z-10" src="../img/output-tourism.mp4" alt="tourism portrait" autoplay muted loop></video>
+    
+        <div class="absolute top-0 left-0 z-20 w-full h-full flex items-center justify-center flex-col p-5 gap-6 lg:gap-20 lg:p-20">
+            <div class="bg-gray-300/70 backdrop-blur p-5 rounded-lg max-w-6xl w-full h-72">
+                <div class="text-center flex items-center justify-center lg:p-5 h-72">
+                    <h1 class="text-4xl lg:text-6xl text-white font-semibold pb-4 lg:pb-10">Move to El Salvador</h1>
+                </div>
             </div>
-            <a href="communities.html" class="company border-slate-900 dark:border-slate-700 border-2 lg:w-1/4 w-full md:w-1/2 mx-auto mt-2 shadow-lg p-4 flex items-center justify-center">
-                <img src="../img/tourism/icons/network.webp" class="h-6 lg:h-[22px] w-auto pr-2 dark:hidden" alt="change icon">
-                <img src="../img/tourism/icons/network-white.webp" class="h-6 lg:h-[22px] w-auto pr-2 hidden dark:block" alt="change icon">
-                <p class="font-medium text-gray-600 dark:text-white">SV Communities</p>
-            </a>
-        </div>
-    </section>
 
-    <section class="max-w-6xl mx-auto relative pt-12 text-center">
-        <h1 class="text-2xl font-medium text-center dark:text-white">
-            Do you want to live in <span class="text-primary-orange">Bitcoin</span> country in the <span class="text-primary-orange">Bitcoin</span> Standard?
-        </h1>
-        <p class="text-sm font-light dark:text-white lg:px-72 pt-2">
-            You can find in this section all the resources needed to live in the Bitcoin standard in Bitcoin country
-        </p>
-    </section>
-
-    <section class="max-w-6xl mx-auto relative pt-12 dark:text-white">
-        <h1 class="text-2xl font-medium">
-            Bitcoin ATMs Services
-        </h1>
-        <div class="block md:flex md:items-center gap-4 pt-8">
-            <div class="flex gap-2">
-                <img src="../img/tourism/wallets/chivo.webp" alt="Chivo logo">
-                <div class="block justify-between">
-                    <p class="text-sm md:text-md">Chivo wallet is the Bitcoin wallet built by the government of El Salvador, it provides ATMs infraestructure to withdrawal Bitcoin for dollars and deposit dollars for Bitcoin via on-chain.</p>
-                    <a target="_blank" href="https://www.chivowallet.com/index.html#ubicacion" class="view-more block bg-light-blue text-xs lg:text-lg text-center text-white rounded-sm lg:rounded-lg w-full lg:mt-12 mt-6">See locations</a>
-                </div>      
-            </div>
-            <div class="flex gap-2">
-                <img src="../img/tourism/companies/athena-square.webp" class="dark:hidden" alt="Athena logo">
-                <img src="../img/tourism/companies/athena-square-white.webp" class="dark:block hidden" alt="Athena logo">
-                <div class="block ">
-                    <p class="text-sm md:text-md">Athena Bitcoin is a Salvadorian Bitcoin company, it provides ATMs infraestructure to withdrawal Bitcoin for dollars and deposit dollars for Bitcoin via on-chain and Lightning Network.</p>
-                    <a target="_blank" href="https://athenabitcoin.com/es/atm-locations-es/" class="view-more block bg-light-blue text-xs lg:text-lg text-center text-white rounded-sm lg:rounded-lg w-full lg:mt-12 mt-6">See locations</a>
-                </div>      
+            <div id="nav-tourism" class="bg-gray-300/70 backdrop-blur p-2 rounded-lg md:rounded-full max-w-6xl w-full gap-1 md:gap-8 flex-col md:flex-row flex items-center justify-center">
+                <a href="tourism-sv.html" class="w-full md:w-auto px-4 py-1 text-lg font-normal rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-400">Home</a>
+                <a href="tourist-destinations.html" class="w-full md:w-auto px-4 py-1 text-lg font-normal rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-400">Visit El Salvador</a>
+                <a href="agency.html" class="w-full md:w-auto px-4 py-1 text-lg font-normal rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-400">We plan your trip</a>
+                <p class="w-full md:w-auto px-4 py-1 text-lg font-semibold rounded-lg md:rounded-full bg-blue-400 text-white">Move to El Salvador</p>
             </div>
         </div>
     </section>
 
-    <section class="max-w-6xl mx-2 md:mx-auto relative pt-12 dark:text-white">
-        <h1 class="text-2xl font-medium">
-            Rent a vehicle with BTC
-        </h1>
-        <div class="flex items-center pt-6 gap-4 lg:gap-14 flex-wrap">
-            <a href="https://blink.sv" target="_blank" class="card w-48 h-auto flex flex-col justify-between items-center border-2 border-black dark:border-slate-700 overflow-hidden">
-                <div class="flex flex-grow items-center justify-center w-full h-full p-2">
-                    <img src="../img/tourism/drivers/bitdriver.webp" class="object-contain w-full h-full" alt="Blink wallet logo">
+    <section class="mx-auto max-w-6xl w-full pt-24 px-2 lg:px-0 flex flex-col gap-14 items-center text-center">
+            <h1 class="text-4xl dark:text-white font-semibold leading-normal text-neutral-700">Visionary Freedom Program</h1>
+            <p class="w-full md:w-3/4 dark:text-white">El Salvador extends an exclusive invitation of citizenship to 1000 individuals who aspire to make a difference in the world. Successful applicants are eligible for a fast-track Salvadoran passport, becoming an integral part of this transformative journey. El Salvador is experiencing a renaissance driven by bold leadership, economic liberty, and a commitment to financial freedom. We are actively seeking the brightest minds globally to join us in building this vision of a better tomorrow. Limited to 1000 participants per year, this Freedom Passport program is not just an investment; it's a commitment to building the country of the future.</p>
+            <div class="w-full bg-white shadow-xl shadow-blue-500/40 dark:bg-slate-900 border-gray-300 border-2 rounded-xl h-full dark:border-slate-700 p-4 md:p-8 flex flex-col items-stretch md:flex-row gap-7 md:gap-12 lg:gap-14">
+                <div class="w-full md:w-1/2">
+                    <img src="../img/tourism/president.webp" class="rounded-2xl h-full w-full object-cover object-center" alt="president">
                 </div>
-                <div class="w-full p-2">
-                    <p class="text-xs">www.bit-driver.com</p>
+                <div class="flex flex-col dark:text-white gap-6 w-full">
+                    <h2 class="text-2xl text-neutral-700 dark:text-white text-start font-semibold">
+                        Nayib Bukele
+                    </h2>
+                    <p class="text-xs md:text-sm text-start">
+                        We're offering 5,000 free passports (equivalent to $5 billion in our passport program) to highly skilled scientists, engineers, doctors, artists, and philosophers from abroad.
+                        <br><br>
+                        This represents less than 0.1% of our population, so granting them full citizen status, including voting rights, poses no issue.
+                        <br><br>
+                        Despite the small number, their contributions will have a huge impact on our society and the future of our country.
+                        <br><br>
+                        Plus, we will facilitate their relocation by ensuring 0% taxes and tariffs on moving families and assets. This includes commercial value items like equipment, software, and intellectual property.
+                        <br><br>
+                        Stay tuned for more details 🇸🇻
+                    </p>
+                    <a target="_blank" href="https://x.com/nayibbukele/status/1776733270186545406" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">Tweet</a>
                 </div>
-                <div class="w-full p-2 flex justify-end">
-                    <img src="../img/tourism/icons/arrow-click.webp" class="dark:hidden" alt="Arrow click">
-                    <img src="../img/tourism/icons/arrow-click-white.webp" class="hidden dark:block" alt="Arrow click">
+            </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl w-full pt-24 px-2 lg:px-0 flex flex-col gap-14 items-center text-center">
+            <h1 class="text-4xl dark:text-white font-semibold leading-normal text-neutral-700">Program benefits</h1>
+            <div class="flex items-center justify-center gap-4 md:gap-7 flex-wrap w-full">
+                <div class="block bg-blue-300 dark:bg-blue-900 rounded-lg shadow-xl w-[47%] md:w-[30%] flex-shrink-0">
+                    <div class="w-full h-28 md:h-56 rounded-t-lg">
+                        <img src="../img/tourism/relocation/family.webp" class="object-cover w-auto h-full rounded-t-lg" alt="">
+                    </div>
+                    <div class="flex items-center justify-center h-28 p-4 break-words">
+                        <p class="text-xl dark:text-white font-semibold text-center">Come with your family</p>
+                    </div>
                 </div>
-            </a>
+                <div class="block bg-blue-300 dark:bg-blue-900 rounded-lg shadow-xl w-[47%] md:w-[30%] flex-shrink-0">
+                    <div class="w-full h-28 md:h-56 rounded-t-lg">
+                        <img src="../img/tourism/relocation/future.webp" class="object-cover w-auto h-full rounded-t-lg" alt="">
+                    </div>
+                    <div class="flex items-center justify-center h-28 p-4 break-words">
+                        <p class="text-xl dark:text-white font-semibold">Build a better future</p>
+                    </div>
+                </div>
+                <div class="block bg-blue-300 dark:bg-blue-900 rounded-lg shadow-xl w-[47%] md:w-[30%] flex-shrink-0">
+                    <div class="w-full h-28 md:h-56 rounded-t-lg">
+                        <img src="../img/tourism/relocation/freedomark.webp" class="object-cover w-auto h-full rounded-t-lg" alt="">
+                    </div>
+                    <div class="flex items-center justify-center h-28 p-4 break-words">
+                        <p class="text-xl dark:text-white font-semibold">A freedom ark in central america</p>
+                    </div>
+                </div>
+                <div class="block bg-blue-300 dark:bg-blue-900 rounded-lg shadow-xl w-[47%] md:w-[30%] flex-shrink-0">
+                    <div class="w-full h-28 md:h-56 rounded-t-lg">
+                        <img src="../img/tourism/relocation/volcanic.webp" class="object-cover w-auto h-full rounded-t-lg" alt="">
+                    </div>
+                    <div class="flex items-center justify-center h-28 p-4 break-words">
+                        <p class="text-xl dark:text-white font-semibold">volcanic empowerment</p>
+                    </div>
+                </div>
+                <div class="block bg-blue-300 dark:bg-blue-900 rounded-lg shadow-xl w-[47%] md:w-[30%] flex-shrink-0">
+                    <div class="w-full h-28 md:h-56 rounded-t-lg">
+                        <img src="../img/tourism/relocation/nature.webp" class="object-cover w-auto h-full rounded-t-lg" alt="">
+                    </div>
+                    <div class="flex items-center justify-center h-28 p-4 break-words">
+                        <p class="text-xl dark:text-white font-semibold">Explore Natural Abundance</p>
+                    </div>
+                </div>
+                <div class="block bg-blue-300 dark:bg-blue-900 rounded-lg shadow-xl w-[47%] md:w-[30%] flex-shrink-0">
+                    <div class="w-full h-28 md:h-56 rounded-t-lg">
+                        <img src="../img/tourism/relocation/globalhub.webp" class="object-cover w-auto h-full rounded-t-lg" alt="">
+                    </div>
+                    <div class="flex items-center justify-center h-28 p-4 break-words">
+                        <p class="text-xl dark:text-white font-semibold">A Rising Global Hub</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="relative mt-24 px-2 md:px-0">
+        <img src="../img/tourism/relocation/background.webp" class="w-full md:h-screen lg:h-auto object-cover h-screen" alt="background">
+        <div class="absolute h-full w-full z-20 bg-black/25 top-0">
+
+        </div>
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl z-30 flex flex-col gap-10 md:gap-14 items-center text-center bg-gray-300/70 backdrop-blur p-10 md:p-10 lg:p-20 w-3/4 lg:w-1/3">
+            <h1 class="text-3xl md:text-4xl text-white font-semibold w-full">Do you need more information?</h1>
+            <img src="../img/tourism/relocation/adoptinges.webp" alt="adoptingES logo" class="w-full">
+            <a target="_blank" href="https://world.adoptingelsalvador.gob.sv/" class="rounded-lg font-semibold text-white w-full lg:w-3/4 bg-blue-500 p-4 text-center">Visit website</a>
         </div>
     </section>
 
-    <section class="max-w-6xl mx-2 md:mx-auto relative pt-12 dark:text-white">
-        <h1 class="text-2xl font-medium">
-            Uber drivers that accept Bitcoin
-        </h1>
-        <div class="flex items-center pt-6 gap-4 lg:gap-14 flex-wrap">
-            <a href="https://bit-driver.com" target="_blank" class="card w-48 h-auto flex flex-col justify-between items-center border-2 border-black dark:border-slate-700 overflow-hidden">
-                <div class="flex flex-grow items-center justify-center w-full h-full p-2">
-                    <img src="../img/tourism/drivers/bitdriver.webp" class="object-contain w-full h-full" alt="Bitdriver logo">
-                </div>
-                <div class="w-full p-2">
-                    <p class="text-xs">www.bit-driver.com</p>
-                </div>
-                <div class="w-full p-2 flex justify-end">
-                    <img src="../img/tourism/icons/arrow-click.webp" class="dark:hidden" alt="Arrow click">
-                    <img src="../img/tourism/icons/arrow-click-white.webp" class="hidden dark:block" alt="Arrow click">
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <footer class="bg-white dark:bg-gray-900 mt-12">
+    <footer class="bg-white dark:bg-gray-900">
         <div class="relative mx-auto px-6 md:max-w-full my-6 md:px-12 lg:max-w-6xl xl:px-0">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
@@ -509,7 +535,9 @@
     <script src="../js/lib/flowbite/dist/flowbite.min.js"></script>
     <script src="../js/component.js"></script>
     <script src="../js/cookies.js"></script>
-    <script src="../js/carousel.js"></script>
+    <script src="../js/destinations.js"></script>
+    <script src="../js/touristScroll.js"></script>
+    <script src="../js/upButton.js"></script>
 </body>
 
 </html>
