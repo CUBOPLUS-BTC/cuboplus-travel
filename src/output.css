@@ -1784,6 +1784,14 @@ input:checked + .toggle-bg {
   width: 100vw;
 }
 
+.w-\[25\%\] {
+  width: 25%;
+}
+
+.w-\[15\%\] {
+  width: 15%;
+}
+
 .min-w-\[calc\(100\%\/3\)\] {
   min-width: calc(100% / 3);
 }
@@ -2142,6 +2150,10 @@ input:checked + .toggle-bg {
 
 .gap-9 {
   gap: 2.25rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-1 {
@@ -4909,16 +4921,16 @@ input:checked + .toggle-bg {
     width: 24rem;
   }
 
+  .md\:w-\[25\%\] {
+    width: 25%;
+  }
+
   .md\:w-\[30\%\] {
     width: 30%;
   }
 
   .md\:w-\[33\%\] {
     width: 33%;
-  }
-
-  .md\:w-\[40\%\] {
-    width: 40%;
   }
 
   .md\:w-\[42\%\] {
@@ -4968,6 +4980,10 @@ input:checked + .toggle-bg {
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:justify-normal {
+    justify-content: normal;
   }
 
   .md\:justify-center {
@@ -5583,6 +5599,11 @@ input:checked + .toggle-bg {
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-blue-600 {
