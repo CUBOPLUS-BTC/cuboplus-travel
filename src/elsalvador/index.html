@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../assets/icono.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cuboplus El Salvador 2024" />
+    <link rel="stylesheet" href="../swiper-bundle.min.css" />
+    <title>Discover El Salvador</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script type="module" crossorigin src="../assets/script.js"></script>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../animations.css">
+    <link rel="stylesheet" href="../output.css">
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "lc3stbh5wt");
+    </script>
+
+    <style>
+        .swiper-container .cart {
+            position: relative;
+            border-radius: 20px;
+            padding: 20px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .animate-pulse {    
+            animation: pulse 9s infinite; 
+             }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.87);
+                box-shadow: 0 0 0 0 rgb(63, 131, 248);
+            }
+
+            20% {
+                transform: scale(1);
+                box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
+            }
+            50% {
+                transform: scale(1);
+                box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
+            }
+            60% {
+                transform: scale(1);
+                box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
+            }
+
+            100% {
+                transform: scale(0.87);
+                box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
+            }
+
+        }
+
+    </style>
+
+    <script>
+        if (
+            localStorage.getItem("color-theme") === "dark" ||
+            (!("color-theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    </script>
+</head>
+
+<body class="font-[Poppins] min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
+    <header>
+        <nav id="navbar"
+            class="navbar-tourism shadow-lg fixed inset-x-0 z-40 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
+            <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+                <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
+                    <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+                        <a href="../index.html" aria-label="logo" class="flex items-center space-x-2">
+                            <img src="../img/logos/cubo-text-blue.svg" class="hidden sm:block"
+                                style="height: 64px; width: 164px;" alt="cubo logo">
+                            <img src="../img/logos/cubo-logo-azul1.svg" class="block sm:hidden"
+                                style="height: 48px; width: 48px;" alt="cubo logo">
+                        </a>
+
+                        <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
+                            <div aria-hidden="true"
+                                class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300">
+                            </div>
+                            <div aria-hidden="true"
+                                class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300">
+                            </div>
+                        </button>
+                    </div>
+                    <div id="layer" aria-hidden="true"
+                        class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-gray-900/70 lg:hidden">
+                    </div>
+                    <div id="navlinks"
+                        class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0 dark:lg:bg-transparent">
+                        <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
+                            <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
+                                <li>
+                                    <a id="navbar-home-button"
+                                        class='block md:px-4 text-orange-400 dark:text-primaryLight'>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="navbar-travel-button"
+                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='travel.html'>
+                                        <span>Travel with Bitcoin</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="navbar-relocate-button"
+                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='relocate.html'>
+                                        <span>Relocate to El Salvador</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
+                            <a href="agency.html" id="navbar-apply-button" class="z-10 animate-pulse rounded-full ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-blue-500 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-blue-400 sm:px-4 lg:before:border lg:before:border-blue-200 lg:before:bg-blue-50 lg:dark:before:bg-gray-800">
+                                <svg class="relative w-5 h-5 mr-2 text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg><p class="relative z-10 text-white lg:text-blue-600 font-semibold">Travel with us</p>
+                            </a>
+                        </div>
+                        
+                        <button aria-label="switch language"
+                            class="group mr-1 relative hidden h-9 w-9 rounded-full before:absolute text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-300 before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex"
+                            data-dropdown-toggle="dropdown-language" data-dropdown-trigger="hover"
+                            data-dropdown-delay="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" data-slot="icon" class="w-5 h-5 relative m-auto ">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+                            </svg>
+                        </button>
+
+                        <div id="dropdown-language"
+                            class="relative hidden border-gray-100 lg:z-10 lg:absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                <li>
+                                    <a href="#"
+                                        class="en-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <img src="../img/icons/united-kingdom.png" class="h-6 w-6 mr-2" alt="">
+                                        English</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="es-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <img src="../img/icons/spain.png" class="h-6 w-6 mr-2" alt="">
+                                        Español</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button aria-label="switch theme"
+                            class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="fixed flex top-3 right-14 z-20 sm:right-24 lg:hidden">
+                        <button aria-label="switch language"
+                            class="group mr-1 relative flex h-9 w-9 text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-300 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800"
+                            data-dropdown-toggle="dropdown-language2" data-dropdown-delay="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" data-slot="icon" class="w-5 h-5 relative m-auto">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+                            </svg>
+                        </button>
+                        <div id="dropdown-language2"
+                            class="relative hidden border-gray-100 lg:z-10 lg:absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                <li>
+                                    <a href="#"
+                                        class="en-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <img src="img/icons/united-kingdom.png" class="h-6 w-6 mr-2" alt="">
+                                        English</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="es-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <img src="img/icons/spain.png" class="h-6 w-6 mr-2" alt="">
+                                        Español</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button aria-label="switch theme"
+                            class="switcher group relative flex h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+     
+    <button id="backToTop" class="fixed z-40 bottom-10 right-10 bg-blue-500 text-white p-3 rounded-full shadow-lg">
+        ↑ Top
+    </button>
+    
+    <section id="cookies-modal" class="hidden flex-col md:flex-row z-30 fixed max-w-2xl p-4 mx-4 md:mx-auto bottom-4 bg-white border border-gray-200 md:gap-x-4 md:left-12 md:bottom-16 dark:bg-gray-900 md:items-center dark:border-gray-700 rounded-2xl">
+            <div class="flex md:items-center gap-x-4">
+                <span class="inline-flex p-2 text-blue-500 rounded-lg shrink-0 dark:bg-gray-800 bg-blue-100/80">
+                    <svg class="w-8 md:w-8 md:h-8" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.9803 8.5468C17.5123 8.69458 17.0197 8.7931 16.5271 8.7931C14.2118 8.76847 12.3399 6.89655 12.3153 4.58128C12.3153 4.13793 12.3892 3.69458 12.537 3.27586C11.9951 2.68473 11.6995 1.92118 11.6995 1.13301C11.6995 0.812808 11.7488 0.492611 11.8473 0.172414C11.2315 0.0738918 10.6158 0 10 0C4.48276 0 0 4.48276 0 10C0 15.5172 4.48276 20 10 20C15.5172 20 20 15.5172 20 10C20 9.77833 20 9.55665 19.9754 9.33498C19.2611 9.26108 18.5468 8.99015 17.9803 8.5468ZM4.58128 7.31527C6.30542 7.31527 6.30542 10.0246 4.58128 10.0246C2.85714 10.0246 2.61084 7.31527 4.58128 7.31527ZM6.05912 15.7635C4.08867 15.7635 4.08867 12.8079 6.05912 12.8079C8.02956 12.8079 8.02956 15.7635 6.05912 15.7635ZM9.01478 1.33005C10.7389 1.33005 10.7389 4.28571 9.01478 4.28571C7.29064 4.28571 7.04434 1.33005 9.01478 1.33005ZM10.2463 8.84237C11.7241 8.84237 11.7241 10.8128 10.2463 10.8128C8.76848 10.8128 9.01478 8.84237 10.2463 8.84237ZM11.9704 16.9458C10.4926 16.9458 10.4926 14.9754 11.9704 14.9754C13.4483 14.9754 13.202 16.9458 11.9704 16.9458ZM16.6503 13.1034C15.4187 13.1034 15.4187 11.133 16.6503 11.133C17.8818 11.133 17.8818 13.1034 16.6503 13.1034Z" fill="currentColor"/>
+                    </svg>
+                </span>
+        
+                <p id="cookies-text" class="text-sm text-gray-600 dark:text-gray-300">We use cookies to ensure that we give you the best experience on our website. <a href="/pages/legal/cookies.html" class="text-blue-500 hover:underline">Cookies Policy</a>. </p>
+            </div>
+            
+            <div class="block md:flex align-middle md:items-center gap-x-4 shrink-0 mt-6 md:mt-0 lg:mt-0">
+                <button id="accept-cookies" class="text-xs w-1/2 md:w-auto font-medium bg-gray-800 rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+                    Accept
+                </button>
+                <button id="decline-cookies" class="text-xs w-1/2 md:w-auto font-medium bg-gray-800 rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none mt-3 md:mt-0">
+                    Decline
+                </button>
+            </div>
+    </section>
+
+    <section class="h-screen w-full relative">
+        <video class="absolute top-0 left-0 w-full h-full object-cover z-10" autoplay muted loop playsinline preload="auto">
+            <source src="../img/output-tourism.mp4" type="video/mp4">
+            <source src="../img/output-tourism.webm" type="video/webm">
+            Your browser does not support the video tag.
+         </video>
+         
+    
+        <div class="absolute top-0 left-0 z-20 w-full h-full flex items-center justify-center flex-col p-5 gap-6 lg:gap-20 lg:p-20">
+            <div class="bg-gray-300/70 backdrop-blur p-5 rounded-lg max-w-6xl w-full h-72">
+                <div class="text-center flex items-center justify-center lg:p-5 h-72">
+                    <h1 class="text-4xl lg:text-6xl text-white font-semibold pb-4 lg:pb-10">Welcome to #Bitcoin country</h1>
+                </div>
+            </div>
+
+                <div id="nav-tourism" class="bg-gray-300/70 backdrop-blur p-2 rounded-lg md:rounded-full max-w-6xl w-full gap-1 md:gap-8 flex-col md:flex-row flex items-center justify-center">
+                    <p class="w-full md:w-auto px-4 py-1 text-lg font-semibold rounded-lg md:rounded-full bg-blue-400 text-white">Home</p>
+                    <a href="travel.html" class="w-full md:w-auto px-4 py-1 text-lg font-normal rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-400">Travel with Bitcoin</a>
+                    <a href="agency.html" class="w-full md:w-auto px-4 py-1 text-lg font-normal rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-400">Travel with us</a>
+                    <a href="relocate.html" class="w-full md:w-auto px-4 py-1 text-lg font-normal rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-400">Relocate to El Salvador</a>
+                </div>
+        </div>
+    </section>
+
+    <section class="mx-auto max-w-6xl w-full pt-14 px-2 lg:px-0">
+        <div class="flex items-center justify-center gap-8 md:gap-16">
+            <img src="../img/tourism/mistu.svg" class="h-16 dark:invert dark:brightness-0 dark:contrast-100" alt="Ministry of tourism">
+            <img src="../img/tourism/onbtc.svg" class="h-14 dark:invert dark:brightness-0 dark:contrast-100" alt="Bitcoin office">
+        </div>
+    </section>
+    
+    <section class="md:mx-auto max-w-6xl w-full pt-48 px-2 lg:px-0">
+        <h1 class="text-4xl dark:text-white text-center font-semibold leading-normal text-neutral-700">Explore El Salvador</h1>
+        <div class="flex flex-col gap-9 pt-11">
+            <div class="bg-white shadow-xl shadow-blue-500/40 dark:bg-slate-900 border-gray-300 border-2 rounded-xl dark:border-slate-700 p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+                <img src="../img/tourism/visit.jpg" class="rounded-2xl w-full md:w-1/2 h-full object-cover" alt="">
+                <div class="flex flex-col dark:text-white gap-8">
+                    <h2 class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
+                        Travel with Bitcoin
+                    </h2>
+                    <p class="text-xs md:text-sm">
+                        Experience financial freedom while immersing yourself in the natural and cultural richness of El Salvador, where Bitcoin is a way of life. 
+                        <br><br>
+                        Here, every experience is unique, every SAT makes you meet friends, and every step connects you to the future. Your Bitcoin adventure begins now.
+                    </p>
+                    <a href="travel.html" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">Explore more</a>
+                </div>
+            </div>
+            <div class="bg-white shadow-xl shadow-blue-500/40 dark:bg-slate-900 border-gray-300 border-2 rounded-xl dark:border-slate-700 p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+                <img src="../img/tourism/agency.jpg" class="rounded-2xl w-full md:w-1/2 h-full object-cover" alt="">
+                <div class="flex flex-col dark:text-white gap-8">
+                    <h2 class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
+                        Travel with us
+                    </h2>
+                    <p class="text-xs md:text-sm">
+                        From Pacific beaches to towering volcanoes and charming colonial towns, every corner of El Salvador has a story waiting to be explored. 
+                    </p>
+                    <a href="agency.html" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">Explore more</a>
+                </div>
+            </div>
+            <div class="bg-white shadow-xl shadow-blue-500/40 dark:bg-slate-900 border-gray-300 border-2 rounded-xl dark:border-slate-700 p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+                <img src="../img/tourism/relocation.jpg" class="rounded-2xl w-full md:w-1/2 h-full object-cover" alt="">
+                <div class="flex flex-col dark:text-white gap-8">
+                    <h2 class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
+                        Relocate to El Salvador
+                    </h2>
+                    <p class="text-xs md:text-sm">
+                        Find your new home in El Salvador, a country that embraces the future with Bitcoin. From paradisiacal beaches to picturesque towns, explore the ideal place to start a new life in a warm and welcoming environment, where the Bitcoin revolution is at your fingertips.
+                    </p>
+                    <a href="relocate.html" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">Explore more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto pt-48 px-2 lg:px-0">
+        <h1 class="text-center text-4xl dark:text-white text-neutral-700 font-semibold">Bitcoin Balance</h1>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-9 pt-11">
+            <div class="text-center flex flex-col gap-10 w-full md:w-[50%]">
+                <h2 class="text-neutral-700 text-3xl font-semibold tracking-widest dark:text-white">EL SALVADOR BTC</h2>
+                <p class="text-5xl text-tourism-orange font-medium" id="balance-number">0</p>
+                <p class="text-xs dark:text-white">Do you want to check El Salvador treasury holdings live?</p>
+                <a href="https://bitcoin.gob.sv" target="_blank" class="rounded-lg font-semibold text-white w-3/4 self-center bg-blue-500 p-4 text-center">Check the mempool →</a>
+            </div>
+            <div class="flex flex-col gap-4 items-center justify-center w-full md:w-[50%] shadow-xl rounded-xl p-4 border-2 border-gray-300">
+                <div class="flex items-center justify-center md:justify-normal gap-6">
+                    <img src="../img/tourism/president.webp" alt="president img" class="rounded-xl object-cover w-[15%]">
+                    <p class="dark:text-white">Nayib Bukele <br> President of El Salvador</p>
+                </div>
+                <a href="https://x.com/nayibbukele/status/1593113857261965312" target="_blank" class="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-700 dark:text-gray-300 text-center md:text-start underline">"We are buying one #Bitcoin every day starting tomorrow"</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="max-w-6xl mx-2 lg:mx-auto text-center pt-28 px-2 lg:px-0">
+        <h1 class="text-3xl font-semibold text-tourism-blue dark:text-light-blue  pb-14">Salvadoran Bitcoin Companies</h1>
+        <div class="flex items-center flex-wrap justify-center gap-2 pt-12 shadow-xl py-12 rounded-xl border-gray-300 border-2 dark:border-slate-700">
+            <a href="https://tiankii.com" target="_blank" class="company shrink-0 lg:w-[32%] w-[45%] mx-auto mt-2 p-4 flex justify-center">
+                <img src="../img/tourism/companies/tiankii.webp" class="lg:h-10 h-8 w-auto" alt="Tiankii logo">
+            </a>
+            <a href="https://k1.sv" target="_blank" class="company w-[45%] mx-auto mt-2  lg:w-[32%] p-4 flex justify-center">
+                <img src="../img/tourism/companies/k1.webp" class="lg:h-10 h-8 w-auto" alt="K1 Technologies logo">
+            </a>
+            <a href="https://blink.sv" target="_blank" class="company w-[45%] mx-auto mt-2 lg:w-[32%] p-4 flex justify-center">
+                <img src="../img/tourism/companies/blink.webp" class="lg:h-10 h-8 w-auto dark:hidden" alt="Blink logo">
+                <img src="../img/tourism/companies/blink-white.webp" class="lg:h-10 h-8 w-auto dark:block hidden" alt="Blink logo">
+            </a>
+            <a href="https://ditobanx.com" target="_blank" class="company w-[45%] mx-auto mt-2 lg:w-[32%] p-4 flex justify-center">
+                <img src="../img/tourism/companies/ditobanx.webp" class="lg:h-10 h-8 w-auto dark:hidden" alt="DitoBanx logo">
+                <img src="../img/tourism/companies/ditobanx-white.webp" class="lg:h-10 h-8 w-auto dark:block hidden" alt="DitoBanx Logo">
+            </a>
+            <a href="https://athenabitcoin.com" target="_blank" class="company w-[45%] mx-auto mt-2 lg:w-[32%]  p-4 flex justify-center">
+                <img src="../img/tourism/companies/athena.webp" class="lg:h-10 h-8 w-auto dark:hidden" alt="Athena logo">
+                <img src="../img/tourism/companies/athena-white.webp" class="lg:h-10 h-8 w-auto dark:block hidden" alt="Athena Logo">
+            </a>
+            <a href="https://x.com/CheritoCafe" target="_blank" class="company w-[45%] mx-auto mt-2 lg:w-[32%]  p-4 flex justify-center">
+                <img src="../img/tourism/companies/cherito.webp" class="lg:h-10 h-8 w-auto" alt="Cherito logo">
+            </a>
+            <a href="https://x.com/tbhs_sv" target="_blank" class="company w-[45%] mx-auto mt-2 lg:w-[32%]  p-4 flex justify-center">
+                <img src="../img/tourism/companies/tbhs.webp" class="lg:h-10 h-8 w-auto" alt="tbhs logo">
+            </a>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto w-full pt-28 px-2 lg:px-0">
+        <h1 class="text-3xl font-semibold text-tourism-blue dark:text-light-blue pb-14 text-center">Benefits for Bitcoin companies in El Salvador</h1>
+        <div class="flex flex-row flex-wrap gap-4 md:gap-8 text-center justify-center ">
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="../img/tourism/icons/capitalgains.svg" alt="capital gains" class="h-52">
+                <h3 class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Capital gains tax exemption</h3>
+            </div>
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="../img/tourism/icons/legaltender.svg" alt="capital gains" class="h-52">
+                <h3 class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Bitcoin as legal tender</h3>
+            </div>
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="../img/tourism/icons/legal.svg" alt="capital gains" class="h-52">
+                <h3 class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Legal certainty</h3>
+            </div>
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="../img/tourism/icons/entrepeneurs.svg" alt="capital gains" class="h-52">
+                <h3 class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Favorable climate entrepeneurs</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-2 lg:mx-auto pt-28 text-center px-2 lg:px-0">
+        <h1 id="education-initiatives-title" class="text-3xl font-semibold text-tourism-blue dark:text-light-blue pb-14">Bitcoin education initiatives in El Salvador</h1>
+        <div class="flex items-center justify-center flex-wrap gap-2 pt-12 shadow-xl py-12 rounded-xl border-gray-300 border-2 dark:border-slate-700">
+            <a href="https://planb.network" target="_blank" class="company lg:w-[32%] w-[45%] mx-auto mt-2 p-4 flex justify-center">
+                <img src="../img/tourism/education/planb.webp" class="h-8 lg:h-10 w-auto dark:hidden" alt="PlanB Network logo">
+                <img src="../img/tourism/education/planb-white.webp" class="h-8 lg:h-10 w-auto dark:block hidden" alt="PlanB Network logo">
+            </a>
+            <div class="company lg:w-[32%] w-[45%] mx-auto mt-2  p-4 flex justify-center">
+                <img src="../img/logos/cubo-text-blue.svg" class="h-8 lg:h-10 w-auto" alt="CUBO+ logo">
+            </div>
+            <a href="https://x.com/NodeNationSV" target="_blank" class="company lg:w-[32%] w-[45%] mx-auto mt-2  p-4  flex justify-center">
+                <img src="../img/tourism/education/node-nation.webp" class="h-8 lg:h-10 w-auto dark:hidden" alt="Node Nation Logo">
+                <img src="../img/tourism/education/node-nation-white.webp" class="h-8 lg:h-10 w-auto dark:block hidden" alt="Node Nation Logo">
+            </a>
+            <a href="https://es.myfirstbitcoin.io" target="_blank" class="company lg:w-[32%] w-[45%] mx-auto mt-2 p-4 flex justify-center">
+                <img src="../img/tourism/education/mpb.webp" class="h-8 lg:h-10 w-auto dark:hidden" alt="Mi primer Bitcoin logo">
+                <img src="../img/tourism/education/mpb-white.webp" class="h-8 lg:h-10 w-auto dark:block hidden" alt="Mi primer Bitcoin logo">
+            </a>
+            <a href="https://torogoz.dev" target="_blank" class="company lg:w-[32%] w-[45%] mx-auto mt-2 p-4  flex justify-center">
+                <img src="../img/tourism/education/torogoz.webp" class="h-8 lg:h-10 w-auto" alt="Torogoz Devs Logo">
+            </a>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto w-full pt-28 px-2 lg:px-0 flex flex-col">
+        <h1 class="text-3xl font-semibold text-tourism-blue dark:text-light-blue text-center">Discover the impact of the Bitcoin Law in El Salvador</h1>
+        <p class="text-md font-normal text-neutral-700 dark:text-white py-14 text-center">These are the benefits of the Bitcoin Law</p>
+        <div class="flex flex-row flex-wrap gap-4 md:gap-8 text-center justify-center">
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="../img/tourism/icons/freedom.svg" alt="capital gains" class="h-52">
+                <h3 class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Financial freedom</h3>
+            </div>
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="../img/tourism/icons/fasttx.svg" alt="capital gains" class="h-52">
+                <h3 class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Faster transfers</h3>
+            </div>
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="../img/tourism/icons/security.svg" alt="capital gains" class="h-52">
+                <h3 class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Securirty and transparency</h3>
+            </div>
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="../img/tourism/icons/investment.svg" alt="capital gains" class="h-52">
+                <h3 class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Investment attraction</h3>
+            </div>
+        </div>
+        <p class="text-md font-normal text-neutral-700 dark:text-white py-14 text-center">Download the Bitcoin Law of El Salvador and learn more details about its benefits</p>
+        <a href="../files/Ley-Bitcoin.pdf" target="_blank" class="rounded-lg font-semibold text-white w-1/2 md:w-1/3 self-center bg-blue-500 p-4 text-center">Download the Bitcoin Law</a>
+    </section>
+
+    <section class="w-full bg-amber-900/30 dark:bg-blue-950 mt-32 px-2 lg:px-0">
+        <div class="max-w-6xl mx-auto w-full py-16">
+            <h1 class="text-neutral-700 text-4xl dark:text-white text-center font-semibold">Frequently asked questions</h1>
+            <div class="flex flex-col justify-center items-center py-10 gap-8">
+                <div class="faq-item bg-white shadow-xl rounded-xl flex flex-col p-8 w-full gap-4 cursor-pointer">
+                    <div class="flex items-center justify-between w-full">
+                        <p class="text-xl text-neutral-700 font-semibold">Question 1</p>
+                        <div class="faq-icon rounded-full p-4 bg-white shadow-xl text-center transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out" viewBox="0 0 11 20" fill="none">
+                                <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                        <p class="text-lg text-neutral-600 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa expedita quos, ea perspiciatis exercitationem ab, similique harum incidunt nihil corrupti voluptatum quo facere facilis accusamus illum, quam quas tempora?</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white shadow-xl rounded-xl flex flex-col p-8 w-full gap-4 cursor-pointer">
+                    <div class="flex items-center justify-between w-full">
+                        <p class="text-xl text-neutral-700 font-semibold">Question 2</p>
+                        <div class="faq-icon rounded-full p-4 bg-white shadow-xl text-center transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out" viewBox="0 0 11 20" fill="none">
+                                <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                        <p class="text-lg text-neutral-600 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa expedita quos, ea perspiciatis exercitationem ab, similique harum incidunt nihil corrupti voluptatum quo facere facilis accusamus illum, quam quas tempora?</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white shadow-xl rounded-xl flex flex-col p-8 w-full gap-4 cursor-pointer">
+                    <div class="flex items-center justify-between w-full">
+                        <p class="text-xl text-neutral-700 font-semibold">Question 3</p>
+                        <div class="faq-icon rounded-full p-4 bg-white shadow-xl text-center transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out" viewBox="0 0 11 20" fill="none">
+                                <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                        <p class="text-lg text-neutral-600 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa expedita quos, ea perspiciatis exercitationem ab, similique harum incidunt nihil corrupti voluptatum quo facere facilis accusamus illum, quam quas tempora?</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white shadow-xl rounded-xl flex flex-col p-8 w-full gap-4 cursor-pointer">
+                    <div class="flex items-center justify-between w-full">
+                        <p class="text-xl text-neutral-700 font-semibold">Question 4</p>
+                        <div class="faq-icon rounded-full p-4 bg-white shadow-xl text-center transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out" viewBox="0 0 11 20" fill="none">
+                                <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                        <p class="text-lg text-neutral-600 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa expedita quos, ea perspiciatis exercitationem ab, similique harum incidunt nihil corrupti voluptatum quo facere facilis accusamus illum, quam quas tempora?</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white shadow-xl rounded-xl flex flex-col p-8 w-full gap-4 cursor-pointer">
+                    <div class="flex items-center justify-between w-full">
+                        <p class="text-xl text-neutral-700 font-semibold">Question 5</p>
+                        <div class="faq-icon rounded-full p-4 bg-white shadow-xl text-center transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out" viewBox="0 0 11 20" fill="none">
+                                <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                        <p class="text-lg text-neutral-600 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa expedita quos, ea perspiciatis exercitationem ab, similique harum incidunt nihil corrupti voluptatum quo facere facilis accusamus illum, quam quas tempora?</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white shadow-xl rounded-xl flex flex-col p-8 w-full gap-4 cursor-pointer">
+                    <div class="flex items-center justify-between w-full">
+                        <p class="text-xl text-neutral-700 font-semibold">Question 6</p>
+                        <div class="faq-icon rounded-full p-4 bg-white shadow-xl text-center transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out" viewBox="0 0 11 20" fill="none">
+                                <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                        <p class="text-lg text-neutral-600 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa expedita quos, ea perspiciatis exercitationem ab, similique harum incidunt nihil corrupti voluptatum quo facere facilis accusamus illum, quam quas tempora?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white dark:bg-gray-900">
+        <div class="relative mx-auto px-6 md:max-w-full my-6 md:px-12 lg:max-w-6xl xl:px-0">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="../index.html" class="flex items-center">
+                        <img src="../img/logos/cubo-logo-blue.svg" class="h-40 me-3" alt="Cuboplus Logo" />
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 md:gap-16 md:grid-cols-3">
+                    <div>
+                        <h2 id="footer-contact"
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline text-sm">info@cuboplus.academy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 id="footer-follow"
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                        <div class="sm:flex sm:items-center sm:justify-between">
+                            <div class="flex mt-4 sm:justify-center sm:mt-0">
+                                <a target="_blank" href="https://www.youtube.com/@cuboplus"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 20 14">
+                                        <path fill-rule="evenodd"
+                                            d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="sr-only">Youtube channel</span>
+                                </a>
+                                <a target="_blank" href="https://twitter.com/cuboplus"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 20 17">
+                                        <path fill-rule="evenodd"
+                                            d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="sr-only">Twitter page</span>
+                                </a>
+                                <a target="_blank" href="https://www.instagram.com/cubo_plus/"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                    <span class="sr-only">Instagram page</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 id="footer-links"
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Links</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="faq.html" class="hover:underline">FAQ</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="maintenance.html" class="hover:underline">Resources</a>
+                            </li>
+                            <li class="mb-4">
+                                <a target="_blank" href="https://bitcoin.org/bitcoin.pdf"
+                                    class="hover:underline">Bitcoin whitepaper</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="legal/cookies.html" class="hover:underline">Cookies Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span id="footer-copyright" class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023
+                    cuboplus. All Rights Reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/lib/swiperjs/swiper-bundle.min.js"></script>
+    <script src="../js/lib/flowbite/dist/flowbite.min.js"></script>
+    <script src="js/component.js"></script>
+    <script src="../js/cookies.js"></script>
+    <script src="../js/tourism.js"></script>
+    <script src="../js/upButton.js"></script>
+    <script src="../js/touristScroll.js"></script>
+</body>
+
+</html>
