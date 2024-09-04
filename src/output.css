@@ -1751,6 +1751,10 @@ input:checked + .toggle-bg {
   width: 24rem;
 }
 
+.w-\[15\%\] {
+  width: 15%;
+}
+
 .w-\[45\%\] {
   width: 45%;
 }
@@ -1782,14 +1786,6 @@ input:checked + .toggle-bg {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[25\%\] {
-  width: 25%;
-}
-
-.w-\[15\%\] {
-  width: 15%;
 }
 
 .min-w-\[calc\(100\%\/3\)\] {
@@ -2150,10 +2146,6 @@ input:checked + .toggle-bg {
 
 .gap-9 {
   gap: 2.25rem;
-}
-
-.gap-5 {
-  gap: 1.25rem;
 }
 
 .gap-x-1 {
@@ -2985,10 +2977,6 @@ input:checked + .toggle-bg {
 
 .pt-48 {
   padding-top: 12rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
 }
 
 .pt-8 {
@@ -4921,10 +4909,6 @@ input:checked + .toggle-bg {
     width: 24rem;
   }
 
-  .md\:w-\[25\%\] {
-    width: 25%;
-  }
-
   .md\:w-\[30\%\] {
     width: 30%;
   }
@@ -5586,6 +5570,11 @@ input:checked + .toggle-bg {
     text-align: left;
   }
 
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -5599,11 +5588,6 @@ input:checked + .toggle-bg {
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .lg\:text-blue-600 {
