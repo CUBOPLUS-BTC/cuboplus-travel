@@ -1751,6 +1751,10 @@ input:checked + .toggle-bg {
   width: 24rem;
 }
 
+.w-\[15\%\] {
+  width: 15%;
+}
+
 .w-\[45\%\] {
   width: 45%;
 }
@@ -2973,10 +2977,6 @@ input:checked + .toggle-bg {
 
 .pt-48 {
   padding-top: 12rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
 }
 
 .pt-8 {
@@ -4917,10 +4917,6 @@ input:checked + .toggle-bg {
     width: 33%;
   }
 
-  .md\:w-\[40\%\] {
-    width: 40%;
-  }
-
   .md\:w-\[42\%\] {
     width: 42%;
   }
@@ -4968,6 +4964,10 @@ input:checked + .toggle-bg {
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:justify-normal {
+    justify-content: normal;
   }
 
   .md\:justify-center {
@@ -5568,6 +5568,11 @@ input:checked + .toggle-bg {
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-6xl {
