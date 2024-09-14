@@ -265,11 +265,11 @@
     </section>
 
     <section class="h-screen w-full relative">
-        <video class="absolute top-0 left-0 w-full h-full object-cover z-10" autoplay muted loop playsinline preload="auto">
+        <video class="absolute top-0 left-0 w-full h-full object-cover z-10" autoplay muted loop playsinline preload="metadata">
             <source src="../img/output-tourism.mp4" type="video/mp4">
             <source src="../img/output-tourism.webm" type="video/webm">
             Your browser does not support the video tag.
-         </video>
+         </video>         
          
     
         <div class="absolute top-0 left-0 z-20 w-full h-full flex items-center justify-center flex-col p-5 gap-6 lg:gap-20 lg:p-20">
@@ -290,7 +290,7 @@
 
     <section class="mx-auto max-w-6xl w-full pt-14 px-2 lg:px-0">
         <div class="flex items-center justify-center gap-8 md:gap-16">
-            <img src="../img/tourism/mistu.svg" class="h-16 dark:invert dark:brightness-0 dark:contrast-100" alt="Ministry of tourism">
+            <img src="../img/tourism/mistu.svg" class="h-16 dark:invert dark:brightness-0 dark:contrast-100 hidden" alt="Ministry of tourism">
             <img src="../img/tourism/onbtc.svg" class="h-14 dark:invert dark:brightness-0 dark:contrast-100" alt="Bitcoin office">
         </div>
     </section>
@@ -348,13 +348,25 @@
                 <p class="text-xs dark:text-white">Do you want to check El Salvador treasury holdings live?</p>
                 <a href="https://bitcoin.gob.sv" target="_blank" class="rounded-lg font-semibold text-white w-3/4 self-center bg-blue-500 p-4 text-center">Check the mempool →</a>
             </div>
-            <div class="flex flex-col gap-4 items-center justify-center w-full md:w-[50%] shadow-xl rounded-xl p-4 border-2 border-gray-300">
-                <div class="flex items-center justify-center md:justify-normal gap-6">
-                    <img src="../img/tourism/president.webp" alt="president img" class="rounded-xl object-cover w-[15%]">
-                    <p class="dark:text-white">Nayib Bukele <br> President of El Salvador</p>
-                </div>
-                <a href="https://x.com/nayibbukele/status/1593113857261965312" target="_blank" class="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-700 dark:text-gray-300 text-center md:text-start underline">"We are buying one #Bitcoin every day starting tomorrow"</a>
-            </div>
+            <a target="_blank" href="https://x.com/nayibbukele/status/1593113857261965312"
+                                class="cursor-pointer tweet relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5 border-2 border-slate-300 dark:border-slate-700">
+                                
+                                    <div class="flex items-center space-x-4"><img src="../img/tourism/president.webp"
+                                            class="w-12 h-12 bg-center bg-cover border dark:border-slate-700 rounded-full" alt="president">
+                                        <div>
+                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white flex items-center"><i
+                                                    class="fa-brands fa-twitter">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" fill="currentColor" width="18" height="18" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                                                </i> Nayib Bukele</h3>
+                                            <p class="text-gray-500 text-md">@nayibbukele</p>
+                                            <p class="text-gray-500 text-md mt-2">President of El Salvador</p>
+                                        </div>
+                                    </div>
+                                    <p
+                                        class="leading-normal  text-gray-900 dark:text-gray-300 text-md overflow-hidden">
+                                        We are buying one #Bitcoin every day starting tomorrow.
+                                    </p>
+                            </a>
         </div>
     </section>
     
@@ -434,7 +446,7 @@
         </div>
     </section>
 
-    <section class="max-w-6xl mx-auto w-full pt-28 px-2 lg:px-0 flex flex-col">
+    <section class="max-w-6xl mx-auto w-full pt-28 px-2 lg:px-0 flex flex-col pb-32">
         <h1 class="text-3xl font-semibold text-tourism-blue dark:text-light-blue text-center">Discover the impact of the Bitcoin Law in El Salvador</h1>
         <p class="text-md font-normal text-neutral-700 dark:text-white py-14 text-center">These are the benefits of the Bitcoin Law</p>
         <div class="flex flex-row flex-wrap gap-4 md:gap-8 text-center justify-center">
@@ -459,7 +471,7 @@
         <a href="../files/Ley-Bitcoin.pdf" target="_blank" class="rounded-lg font-semibold text-white w-1/2 md:w-1/3 self-center bg-blue-500 p-4 text-center">Download the Bitcoin Law</a>
     </section>
 
-    <section class="w-full bg-amber-900/30 dark:bg-blue-950 mt-32 px-2 lg:px-0">
+    <section class="w-full bg-amber-900/30 dark:bg-blue-950 mt-32 px-2 lg:px-0 hidden">
         <div class="max-w-6xl mx-auto w-full py-16">
             <h1 class="text-neutral-700 text-4xl dark:text-white text-center font-semibold">Frequently asked questions</h1>
             <div class="flex flex-col justify-center items-center py-10 gap-8">

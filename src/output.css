@@ -1751,10 +1751,6 @@ input:checked + .toggle-bg {
   width: 24rem;
 }
 
-.w-\[15\%\] {
-  width: 15%;
-}
-
 .w-\[45\%\] {
   width: 45%;
 }
@@ -2074,10 +2070,6 @@ input:checked + .toggle-bg {
 
 .items-center {
   align-items: center;
-}
-
-.items-stretch {
-  align-items: stretch;
 }
 
 .justify-start {
@@ -2441,6 +2433,11 @@ input:checked + .toggle-bg {
   border-color: rgb(144 97 249 / 0.2);
 }
 
+.border-slate-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
 .border-slate-700 {
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
@@ -2737,11 +2734,6 @@ input:checked + .toggle-bg {
      object-fit: scale-down;
 }
 
-.object-center {
-  -o-object-position: center;
-     object-position: center;
-}
-
 .object-top {
   -o-object-position: top;
      object-position: top;
@@ -2897,6 +2889,10 @@ input:checked + .toggle-bg {
 
 .pb-14 {
   padding-bottom: 3.5rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .pb-4 {
@@ -4966,10 +4962,6 @@ input:checked + .toggle-bg {
     align-items: center;
   }
 
-  .md\:justify-normal {
-    justify-content: normal;
-  }
-
   .md\:justify-center {
     justify-content: center;
   }
@@ -5568,11 +5560,6 @@ input:checked + .toggle-bg {
 
   .lg\:text-left {
     text-align: left;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .lg\:text-6xl {
