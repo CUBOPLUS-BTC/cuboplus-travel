@@ -3,7 +3,7 @@
     "layout": {
         "navbar": {
             "home": "Home",
-            "travel": "Travel with Bitcoin",
+            "travel": "Visit Bitcoin Country",
             "agency": "Travel with us",
             "relocate": "Relocate to El Salvador"
         },
@@ -16,7 +16,7 @@
     "index": {
         "page-title": "Welcome to #Bitcoin country",
         "section1": "Explore El Salvador",
-        "section1-travel-title": "Travel with Bitcoin",
+        "section1-travel-title": "Visit Bitcoin Country",
         "section1-travel-legend": "Experience financial freedom while immersing yourself in the natural and cultural richness of El Salvador, where Bitcoin is a way of life. </br> </br>Here, every experience is unique, every SAT brings new friends, and every step connects you to the future. Your Bitcoin adventure begins now.",
         "section1-travel-button": "Explore More",
         "section1-agency-title": "Travel with us",
@@ -48,7 +48,7 @@
         "section8": "Frequently asked questions"
     },
     "travel": {
-        "page-title": "Travel with Bitcoin",
+        "page-title": "Visit Bitcoin Country",
         "section1": "Your Bitcoin adventure begins here",
         "section1-legend": "Use our interactive map to discover destinations, see photos, and get all the info you need in a country where Bitcoin enhances the experience.",
         "section2": "Bitcoin events in El Salvador",
