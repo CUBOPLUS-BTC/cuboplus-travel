@@ -1,49 +1,51 @@
-var esButton = document.getElementsByClassName("es-button");
-var enButton = document.getElementsByClassName("en-button");
+const jpButton = document.getElementsByClassName("jp-button");
+const enButton = document.getElementsByClassName("en-button");
+const contentVersion = "1.0"
 const TOURISM_DATA_URL = "https://raw.githubusercontent.com/CUBOPLUS-BTC/tourism-portal-data/main/";
 const TOURISM_ASSETS = TOURISM_DATA_URL + "assets/";
 
-async function changeLanguage(page, language, callback) {
-    //validates localStorage is not already settled before with a language non-declarated
-    //language == "en" || "es"
-    //if NOT language = "en"
-    if (language !== "en" && language !== "es") language = "en";
+const setLayout = (content) => {
+  document.getElementById("navbar-home-button").innerHTML = content.navbar.home;
+  document.getElementById("navbar-travel-button").innerHTML = content.navbar.travel;
+  document.getElementById("navbar-agency-button").innerHTML = content.navbar.agency;
+  document.getElementById("navbar-relocate-button").innerHTML = content.navbar.relocate;
+  document.getElementById("footer-contact").innerHTML = content.footer.contact;
+  document.getElementById("footer-follow").innerHTML = content.footer.follow;
+  document.getElementById("footer-links").innerHTML = content.footer.links;
+  try {
+    document.getElementById("header-home-button").innerHTML = content.navbar.home;
+    document.getElementById("header-travel-button").innerHTML = content.navbar.travel;
+    document.getElementById("header-agency-button").innerHTML = content.navbar.agency;
+    document.getElementById("header-relocate-button").innerHTML = content.navbar.relocate;
+  } catch (e) {
+    
+  }
+}
+
+async function changeLanguage(page, language = "en", callback) {
     //sets language defined
-    localStorage.setItem("language", language);
+    localStorage.setItem("language-tourism", language);
     // Check if content exists in localStorage and has a valid 'secret' property
-    const storedContent = localStorage.getItem(`content-${language}`);
-  
+  const storedContent = localStorage.getItem(`content-tourism-${language}`);
+
     try {
       const content = JSON.parse(storedContent);
       if (content.version != contentVersion) {
         throw error;
       }
   
-      if (content && (content.secret == "es-cuboplus" || content.secret == "en-cuboplus")) {
-        // Content is valid, proceed with the callback
-        setElementsNavbarAndFooter(content.layout);
-        callback(content[page]);
-        return;
-      }
+      setLayout(content.layout);
+      callback(content[page]);
+      return;
     } catch (error) {
       // Handle the error, e.g., clear localStorage and fetch content again
-      localStorage.removeItem(`content-${language}`);
+      localStorage.removeItem(`content-tourism-${language}`);
     }
   
-    let res = "";
-  
-    // If content does not exist or does not have a valid 'secret', fetch and store it
-    if (page !== "index" && page === "cookies") {
-        res = await fetch(`../../content/content-${language}.json`);
-    } else if (page !== "cookies" && page !== "index") {
-        res = await fetch(`../content/content-${language}.json`);
-    } else {
-        res = await fetch(`content/content-${language}.json`);
-    }
+    let res = await fetch(`content/${language}.json`);;
     const res1 = await res.json();
   
-    localStorage.setItem(`content-${language}`, JSON.stringify(res1));
-  /* 
-    setElementsNavbarAndFooter(res1.layout); */
+    localStorage.setItem(`content-tourism-${language}`, JSON.stringify(res1));
+    setLayout(res1.layout);
     callback(res1[page]);
 }
