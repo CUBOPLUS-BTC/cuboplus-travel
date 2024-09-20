@@ -1566,10 +1566,6 @@ input:checked + .toggle-bg {
   height: 6rem;
 }
 
-.h-28 {
-  height: 7rem;
-}
-
 .h-32 {
   height: 8rem;
 }
@@ -1810,10 +1806,6 @@ input:checked + .toggle-bg {
 
 .max-w-4xl {
   max-width: 56rem;
-}
-
-.max-w-5xl {
-  max-width: 64rem;
 }
 
 .max-w-6xl {
@@ -2084,10 +2076,6 @@ input:checked + .toggle-bg {
   align-items: center;
 }
 
-.justify-normal {
-  justify-content: normal;
-}
-
 .justify-start {
   justify-content: flex-start;
 }
@@ -2280,10 +2268,6 @@ input:checked + .toggle-bg {
   white-space: nowrap;
 }
 
-.break-words {
-  overflow-wrap: break-word;
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
@@ -2340,11 +2324,6 @@ input:checked + .toggle-bg {
 .rounded-t-3xl {
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
-}
-
-.rounded-t-lg {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
 }
 
 .rounded-bl-full {
@@ -2867,11 +2846,6 @@ input:checked + .toggle-bg {
   padding-bottom: 3rem;
 }
 
-.py-14 {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
-}
-
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -2928,10 +2902,6 @@ input:checked + .toggle-bg {
 
 .pb-14 {
   padding-bottom: 3.5rem;
-}
-
-.pb-32 {
-  padding-bottom: 8rem;
 }
 
 .pb-4 {
@@ -3170,10 +3140,6 @@ input:checked + .toggle-bg {
 
 .tracking-wider {
   letter-spacing: 0.05em;
-}
-
-.tracking-widest {
-  letter-spacing: 0.1em;
 }
 
 .text-black {
@@ -4873,10 +4839,6 @@ input:checked + .toggle-bg {
     height: 4rem;
   }
 
-  .md\:h-56 {
-    height: 14rem;
-  }
-
   .md\:h-8 {
     height: 2rem;
   }
@@ -4899,6 +4861,14 @@ input:checked + .toggle-bg {
 
   .md\:h-screen {
     height: 100vh;
+  }
+
+  .md\:h-12 {
+    height: 3rem;
+  }
+
+  .md\:h-24 {
+    height: 6rem;
   }
 
   .md\:w-1\/2 {
@@ -5032,10 +5002,6 @@ input:checked + .toggle-bg {
 
   .md\:gap-4 {
     gap: 1rem;
-  }
-
-  .md\:gap-7 {
-    gap: 1.75rem;
   }
 
   .md\:gap-8 {
@@ -5311,6 +5277,10 @@ input:checked + .toggle-bg {
 
   .lg\:h-10 {
     height: 2.5rem;
+  }
+
+  .lg\:h-12 {
+    height: 3rem;
   }
 
   .lg\:h-14 {
