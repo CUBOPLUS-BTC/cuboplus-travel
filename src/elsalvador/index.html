@@ -14,6 +14,7 @@
         rel="stylesheet">
 
     <script type="module" crossorigin src="../assets/script.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="stylesheet" href="../animations.css">
     <link rel="stylesheet" href="../output.css">
@@ -24,6 +25,18 @@
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "lc3stbh5wt");
     </script>
+
+<script>
+    if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+        document.documentElement.classList.add("dark");
+    } else {
+        document.documentElement.classList.remove("dark");
+    }
+</script>
 
     <style>
         .swiper-container .cart {
@@ -65,20 +78,27 @@
             }
 
         }
+        .testimonial-wrapper {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    .carousel-container {
+      overflow: hidden;
+    }
+
+    #slider {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .suggestions-img {
+            filter: invert(1) brightness(1.7) hue-rotate(180deg); 
+        }
+    }
+
+
 
     </style>
-
-    <script>
-        if (
-            localStorage.getItem("color-theme") === "dark" ||
-            (!("color-theme" in localStorage) &&
-                window.matchMedia("(prefers-color-scheme: dark)").matches)
-        ) {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
-    </script>
 </head>
 
 <body class="font-[Poppins] min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
@@ -471,6 +491,29 @@
         <a href="../files/Ley-Bitcoin.pdf" target="_blank" class="rounded-lg font-semibold text-white w-1/2 md:w-1/3 self-center bg-blue-500 p-4 text-center">Download the Bitcoin Law</a>
     </section>
 
+    <section class="max-w-5xl mx-auto p-8 my-16 bg-[#a1867159] rounded-xl shadow-md flex flex-col md:flex-row justify-between items-center">
+        <div class="w-full md:w-1/2 flex flex-col items-center md:items-start">
+            <div class="mb-6">
+                <img src="../img/tourism/suggestion.svg" alt="suggestions" class="w-[25rem] h-80 object-contain suggestions-img">
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 p-8">
+            <h2 class="text-xl font-semibold mb-6 text-gray-700 dark:text-white text-center">Do you have a suggestion?</h2>
+            <div id="hubspotForm">
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                <script>
+                hbspt.forms.create({
+                    region: "na1",
+                    portalId: "45121273",
+                    formId: "cc251cc5-e214-497f-bba3-088249882759"
+                });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    
+
     <section class="w-full bg-amber-900/30 dark:bg-blue-950 mt-32 px-2 lg:px-0 hidden">
         <div class="max-w-6xl mx-auto w-full py-16">
             <h1 class="text-neutral-700 text-4xl dark:text-white text-center font-semibold">Frequently asked questions</h1>
@@ -556,6 +599,102 @@
             </div>
         </div>
     </section>
+
+     <!-- Feedbacks -->
+     <section class="w-full max-w-6xl mx-auto pt-12 md:pt-24">
+        <h2 class="text-2xl font-semibold mb-4 text-center dark:text-white ">Community Feedback</h2>
+        
+        <div class="relative carousel-container overflow-hidden">
+          <div id="slider" class="flex gap-4 transition-transform duration-300 ease-in-out">
+            <div class="relative w-full md:w-[33%] flex-shrink-0 p-4">   
+              <div class="bg-white dark:bg-blue-900 rounded-lg shadow-lg p-6 flex flex-col justify-between h-full">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h3 class="text-lg font-semibold dark:text-gray-300">Jacob Jones</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Marketing Coordinator</p>
+                  </div>
+                  <div class="flex items-center">
+                    <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-1 rounded-lg">Testimonial</span>
+                  </div>
+                </div>
+                <p class="mt-4 text-gray-700 dark:text-gray-200">I would recommend Notion for anyone trying to get the word out about their business. It has saved me so much time!</p>
+              </div>
+            </div>
+
+            <div class="relative w-full md:w-[33%] flex-shrink-0 p-4">   
+                <div class="bg-white dark:bg-blue-900  rounded-lg shadow-lg p-6 flex flex-col justify-between h-full">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h3 class="text-lg font-semibold dark:text-gray-300">Jacob Jones</h3>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">Marketing Coordinator</p>
+                    </div>
+                    <div class="flex items-center">
+                      <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-1 rounded-lg">Testimonial</span>
+                    </div>
+                  </div>
+                  <p class="mt-4 text-gray-700 dark:text-gray-200">I would recommend Notion for anyone trying to get the word out about their business. It has saved me so much time!</p>
+                </div>
+              </div>
+
+              <div class="relative w-full md:w-[33%] flex-shrink-0 p-4">   
+                <div class="bg-white dark:bg-blue-900  rounded-lg shadow-lg p-6 flex flex-col justify-between h-full">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h3 class="text-lg font-semibold dark:text-gray-300">Jacob Jones</h3>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">Marketing Coordinator</p>
+                    </div>
+                    <div class="flex items-center">
+                      <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-1 rounded-lg">Testimonial</span>
+                    </div>
+                  </div>
+                  <p class="mt-4 text-gray-700 dark:text-gray-200">I would recommend Notion for anyone trying to get the word out about their business. It has saved me so much time!</p>
+                </div>
+              </div>
+
+              <div class="relative w-full md:w-[33%] flex-shrink-0 p-4">   
+                <div class=" bg-white dark:bg-blue-900 rounded-lg shadow-lg p-6 flex flex-col justify-between h-full">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h3 class="text-lg font-semibold dark:text-gray-300">Jacob Jones</h3>
+                      <p class="text-sm dark:text-gray-400 text-gray-500">Marketing Coordinator</p>
+                    </div>
+                    <div class="flex items-center">
+                      <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-1 rounded-lg">Testimonial</span>
+                    </div>
+                  </div>
+                  <p class="mt-4 text-gray-700 dark:text-gray-200">I would recommend Notion for anyone trying to get the word out about their business. It has saved me so much time!</p>
+                </div>
+              </div>
+
+              
+
+              <div class="relative w-full md:w-[33%] flex-shrink-0 p-4">   
+                <div class="bg-white dark:bg-blue-900 rounded-lg shadow-lg p-6 flex flex-col justify-between h-full">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h3 class="text-lg dark:text-gray-300 font-semibold">Jacob Jones</h3>
+                      <p class="text-sm dark:text-gray-400 text-gray-500">Marketing Coordinator</p>
+                    </div>
+                    <div class="flex items-center">
+                      <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-1 rounded-lg">Testimonial</span>
+                    </div>
+                  </div>
+                  <p class="mt-4 text-gray-700 dark:text-gray-200">I would recommend Notion for anyone trying to get the word out about their business. It has saved me so much time!</p>
+                </div>
+              </div>
+          </div>
+
+          <button id="prev" class="absolute z-30 top-1/2 left-0 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full shadow-md hover:bg-blue-700">
+            &#10094;
+          </button>
+          <button id="next" class="absolute z-30 top-1/2 right-0 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full shadow-md hover:bg-blue-700">
+            &#10095;
+          </button>
+
+        </div>
+    </section>
+      
+
 
     <footer class="bg-white dark:bg-gray-900">
         <div class="relative mx-auto px-6 md:max-w-full my-6 md:px-12 lg:max-w-6xl xl:px-0">

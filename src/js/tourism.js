@@ -67,3 +67,47 @@ document.querySelectorAll('.faq-item').forEach(item => {
         }
     });
 });
+
+
+//Reviews slider
+
+const slider = document.getElementById('slider');
+        const nextButton = document.getElementById('next');
+        const prevButton = document.getElementById('prev');
+      
+        let currentIndex = 0;
+        
+        function getCardWidth() {
+          return slider.children[0].offsetWidth + 16; 
+        }
+      
+        function getVisibleCards() { //Responsive
+          if (window.innerWidth < 768) {
+            return 1; // 1 card on mobile
+          } else if (window.innerWidth < 1024) {
+            return 2; // 2 cards on mediun screen
+          } else {
+            return 3; // 3 card on normal screen
+          }
+        }
+      
+        function updateSlider() {
+          const cardWidth = getCardWidth();
+          slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+        }
+      
+        nextButton.addEventListener('click', () => {
+          if (currentIndex < slider.children.length - getVisibleCards()) {
+            currentIndex++;
+            updateSlider();
+          }
+        });
+      
+        prevButton.addEventListener('click', () => {
+          if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+          }
+        });
+      
+        window.addEventListener('resize', updateSlider);
