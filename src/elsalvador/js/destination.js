@@ -15,6 +15,8 @@ async function loadDestination(data) {
             `;
     return;
   }
+  
+document.getElementById("tab-title").innerHTML = data.title;
   document.getElementById("destinationname").textContent =
     "Welcome to " + data.title;
   document.getElementById("description").textContent = data.legend;
@@ -39,7 +41,6 @@ async function loadDestination(data) {
 }
 
 const renderCommunity = (community) => {
-    console.log(community)
   document.getElementById("communityname").textContent = community.title;
   document.getElementById("communitydesc").textContent = community.legend;
   document.getElementById("community-slogan").textContent = community.slogan;
@@ -221,4 +222,31 @@ document.addEventListener("DOMContentLoaded", async (e) => {
       }
     });
   });
+});
+
+const setElements = (content) => {
+  Object.keys(content).forEach(id => {
+      const element = document.getElementById(id);
+      element.innerHTML = content[id];
+  })
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  changeLanguage("destination", localStorage.getItem("language-tourism"), setElements);
+});
+
+jpButton[0].addEventListener("click", () => {
+  changeLanguage("destination", "jp", setElements);
+});
+
+jpButton[1].addEventListener("click", () => {
+  changeLanguage("destination", "jp", setElements);
+});
+
+enButton[0].addEventListener("click", () => {
+  changeLanguage("destination", "en", setElements);
+});
+
+enButton[1].addEventListener("click", () => {
+  changeLanguage("destination", "en", setElements);
 });

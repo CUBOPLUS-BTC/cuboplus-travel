@@ -249,3 +249,31 @@ departments.forEach((pathDept) => {
     changeDept(pathDept);
   });
 });
+
+const setElements = (content) => {
+  
+  Object.keys(content).forEach(id => {
+      const element = document.getElementById(id);
+      element.innerHTML = content[id];
+  })
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  changeLanguage("travel", localStorage.getItem("language-tourism"), setElements);
+});
+
+jpButton[0].addEventListener("click", () => {
+  changeLanguage("travel", "jp", setElements);
+});
+
+jpButton[1].addEventListener("click", () => {
+  changeLanguage("travel", "jp", setElements);
+});
+
+enButton[0].addEventListener("click", () => {
+  changeLanguage("travel", "en", setElements);
+});
+
+enButton[1].addEventListener("click", () => {
+  changeLanguage("travel", "en", setElements);
+});

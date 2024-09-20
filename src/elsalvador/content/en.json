@@ -1,4 +1,5 @@
 {
+    "version": "1.0",
     "layout": {
         "navbar": {
             "home": "Home",
@@ -7,19 +8,19 @@
             "relocate": "Relocate to El Salvador"
         },
         "footer": {
-            "footer-contact": "Contact Us",
-            "footer-follow": "Follow Us",
-            "footer-links": "Useful Links"
+            "contact": "Contact Us",
+            "follow": "Follow Us",
+            "links": "Useful Links"
         }
     },
-    "home": {
+    "index": {
         "page-title": "Welcome to #Bitcoin country",
         "section1": "Explore El Salvador",
         "section1-travel-title": "Travel with Bitcoin",
         "section1-travel-legend": "Experience financial freedom while immersing yourself in the natural and cultural richness of El Salvador, where Bitcoin is a way of life. </br> </br>Here, every experience is unique, every SAT brings new friends, and every step connects you to the future. Your Bitcoin adventure begins now.",
         "section1-travel-button": "Explore More",
         "section1-agency-title": "Travel with us",
-        "section1-agency-legend": "From Pacific beaches to towering volcanoes and charming colonial towns, every corner of El Salvador has a story waiting for you.",
+        "section1-agency-legend": "Book your El Salvador adventure effortlessly with our Bitcoin booking service. From accommodation and transportation to exciting local activities, everything is payable with Bitcoin and just a click away. <br><br>Experience a seamless journey in Bitcoin Country. Our personalized service tailors your itinerary, letting you enjoy the rich culture and stunning landscapes of El Salvador without currency hassle.",
         "section1-agency-button": "Explore More",
         "section1-relocate-title": "Relocate to El Salvador",
         "section1-relocate-legend": "Find your new home in El Salvador, a country that embraces the future with Bitcoin. From paradisiacal beaches to picturesque towns, explore the ideal place to start a new life in a warm and welcoming environment, where the Bitcoin revolution is at your fingertips.",
@@ -41,7 +42,7 @@
         "section6-benefit2": "Faster Payments",
         "section6-benefit3": "Security and transparency",
         "section6-benefit4": "Investment opportunities",
-        "section6-button": "Download",
+        "section6-button": "Bitcoin Law",
         "section7": "Community feedback",
         "section7-question": "Do you have any suggestion?",
         "section8": "Frequently asked questions"
@@ -57,8 +58,7 @@
         "section4": "Bitcoin touris places",
         "section4-legend": "Explore Bitcoin-friendly travel destinations",
         "section5": "El Salvador Travel",
-        "section5-legend1": "Do you prefer exploring alternative destinations?",
-        "section5-legend2": "Discover more options in El Salvador's official tourism website",
+        "section5-legend": "Do you prefer exploring alternative destinations? <br> <br> Discover more options in El Salvador's official tourism website",
         "section5-cta": "Travel with El Salvador Travel",
         "section6": "Bitcoin ATM Services",
         "section6-legend": "Easily find Bitcoin ATMs in El Salvador. Withdraw or add Bitcoin quickly and securely while exploring the country, with strategic locations for your convenience.",
@@ -75,6 +75,13 @@
         "section7-place3": "Transportation",
         "section7-place4": "Activities",
         "section8": "Select an option"
+    },
+    "destination": {
+        "title": "Destination",
+        "back": "Back",
+        "community": "Discover the commmunity",
+        "media": "Social Media",
+        "leaders": "Leaders"
     },
     "agency": {
         "page-title": "Travel with us",
