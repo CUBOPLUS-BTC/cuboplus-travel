@@ -1,7 +1,11 @@
 const setElements = (content) => {
     Object.keys(content).forEach(id => {
         const element = document.getElementById(id);
-        element.innerHTML = content[id];
+        try {
+            element.innerHTML = content[id];
+        } catch (e) {
+
+        }
     })
 }
 
