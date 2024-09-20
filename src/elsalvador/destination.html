@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Cuboplus El Salvador 2024" />
     <link rel="stylesheet" href="../swiper-bundle.min.css" />
-    <title>Discover El Salvador</title>
+    <title id="tab-title">Destination</title>
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
@@ -127,7 +127,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a id="navbar-relocate-button"
+                                    <a id="navbar-agency-button"
                                         class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
                                         href='agency.html'>
                                         <span>Travel with us</span>
@@ -166,9 +166,9 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="es-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                        <img src="../img/icons/spain.png" class="h-6 w-6 mr-2" alt="">
-                                        Español</a>
+                                        class="jp-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <img src="../img/icons/japan.png" class="h-6 w-6 mr-2" alt="">
+                                        日本語</a>
                                 </li>
                             </ul>
                         </div>
@@ -211,9 +211,9 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="es-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                        <img src="img/icons/spain.png" class="h-6 w-6 mr-2" alt="">
-                                        Español</a>
+                                        class="jp-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <img src="../img/icons/japan.png" class="h-6 w-6 mr-2" alt="">
+                                        日本語</a>
                                 </li>
                             </ul>
                         </div>
@@ -274,19 +274,19 @@
     <section class="max-w-6xl md:mx-auto dark:text-white py-12 mx-2 relative">
         <a href="travel.html"
             class="hidden md:inline-flex items-center space-x-2 absolute top-24 left-0 mt-4 ml-4 bg-white text-blue-600 font-medium py-2 px-4 rounded-lg shadow">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5" viewBox="0 0 24 24">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 rotate-180" viewBox="0 0 24 24">
                 <path
                     d="M15.7 19.7a1 1 0 0 1-1.4-1.4L17.6 15H6a1 1 0 0 1 0-2h11.6l-3.3-3.3a1 1 0 0 1 1.4-1.4l5 5a1 1 0 0 1 0 1.4l-5 5z">
                 </path>
             </svg>
-            <span>Back</span>
+            <span id="back">Back</span>
         </a>
     </section>
 
 
     <div id="page-content">
         <section class="max-w-6xl md:mx-auto dark:text-white pt-12 md:pt-32 pb-12 mx-2">
-            <h1 class="text-center text-3xl font-bold mb-8">DESTINATIONS</h1>
+            <h1 id="title" class="text-center text-3xl font-bold mb-8">DESTINATIONS</h1>
 
             <div class="block md:flex md:items-center md:gap-8">
                 <div class="md:w-1/2" id="hero-image">
@@ -311,10 +311,10 @@
         <section id="community-section" class="w-full dark:text-white py-12 px-4 sm:px-8 md:px-24"
             style="background-color: rgba(161, 134, 113, 0.35);">
             <div class="max-w-6xl md:mx-auto">
-                <h1 class="text-center text-3xl font-bold mb-4">Discover the community</h1>
+                <h1 id="community" class="text-center text-3xl font-bold mb-4">Discover the community</h1>
                 <div class="flex justify-end mb-8">
                     <div class="text-right">
-                        <p class="text-sm font-medium">Social Media</p>
+                        <p id="media" class="text-sm font-medium">Social Media</p>
                         <div id="social-media" class="flex space-x-2 justify-end">
                             
                         </div>
@@ -342,7 +342,7 @@
 
 
                 <div class="text-center">
-                    <h2 class="text-2xl font-bold mb-8">Leaders</h2>
+                    <h2 id="leaders" class="text-2xl font-bold mb-8">Leaders</h2>
                     <div id="leadersContainer" class="flex flex-col md:flex-row md:justify-center md:gap-8">
 
                     </div>
@@ -447,8 +447,8 @@
         <script src="../js/lib/swiperjs/swiper-bundle.min.js"></script>
         <script src="../js/lib/flowbite/dist/flowbite.min.js"></script>
         <script src="js/component.js"></script>
-        <script src="../js/cookies.js"></script>
-        <script src="../js/destination.js"></script>
+        <script src="js/cookies.js"></script>
+        <script src="js/destination.js"></script>
         <script src="../js/carousel.js"></script>
 </body>
 
