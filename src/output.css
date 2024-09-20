@@ -1675,10 +1675,6 @@ input:checked + .toggle-bg {
   min-height: 100vh;
 }
 
-.w-1 {
-  width: 0.25rem;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -1763,6 +1759,10 @@ input:checked + .toggle-bg {
   width: 24rem;
 }
 
+.w-\[25rem\] {
+  width: 25rem;
+}
+
 .w-\[45\%\] {
   width: 45%;
 }
@@ -1810,6 +1810,10 @@ input:checked + .toggle-bg {
 
 .max-w-4xl {
   max-width: 56rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .max-w-6xl {
@@ -2078,6 +2082,10 @@ input:checked + .toggle-bg {
 
 .items-center {
   align-items: center;
+}
+
+.justify-normal {
+  justify-content: normal;
 }
 
 .justify-start {
@@ -2511,6 +2519,11 @@ input:checked + .toggle-bg {
 
 .bg-black\/60 {
   background-color: rgb(0 0 0 / 0.6);
+}
+
+.bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 239 254 / var(--tw-bg-opacity));
 }
 
 .bg-blue-100\/80 {
@@ -3176,6 +3189,11 @@ input:checked + .toggle-bg {
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(28 100 242 / var(--tw-text-opacity));
+}
+
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(26 86 219 / var(--tw-text-opacity));
 }
 
 .text-blue-800 {
@@ -4978,6 +4996,10 @@ input:checked + .toggle-bg {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
   }
 
   .md\:items-center {
