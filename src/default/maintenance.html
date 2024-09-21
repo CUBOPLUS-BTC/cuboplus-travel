@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../assets/icono.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cuboplus El Salvador 2024" />
+    <title>Cubo+</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script type="module" crossorigin src="../assets/script.js"></script>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../output.css">
+    
+
+    <script>
+        if (
+            localStorage.getItem("color-theme") === "dark" ||
+            (!("color-theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
+    </script>
+    <style>
+        .animate-pulse {    
+            animation: pulse 9s infinite; 
+             }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.87);
+                box-shadow: 0 0 0 0 rgb(63, 131, 248);
+            }
+
+            20% {
+                transform: scale(1);
+                box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
+            }
+            50% {
+                transform: scale(1);
+                box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
+            }
+            60% {
+                transform: scale(1);
+                box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
+            }
+
+            100% {
+                transform: scale(0.87);
+                box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
+            }
+
+        }
+    </style>
+</head>
+
+<body class="font-[Poppins] min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
+    <header>
+        <nav id="navbar"
+            class="shadow-lg fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
+            <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+                <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
+                    <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+                        <a href="../index.html" aria-label="logo" class="flex items-center">
+                            <img src="../img/logos/cubo-text-blue.svg" class="hidden md:block"
+                                style="height: 64px; width: 164px;" alt="cubo logo">
+                            <img src="../img/logos/cubo-logo-azul1.svg" class="block md:hidden ml-4"
+                                style="height: 48px; width: 48px;" alt="cubo logo">
+                        </a>
+
+                        <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
+                            <div aria-hidden="true"
+                                class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300">
+                            </div>
+                            <div aria-hidden="true"
+                                class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300">
+                            </div>
+                        </button>
+                    </div>
+                    <div id="layer" aria-hidden="true"
+                        class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-gray-900/70 lg:hidden">
+                    </div>
+                    <div id="navlinks"
+                        class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0 dark:lg:bg-transparent">
+                        <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
+                            <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
+                                <li>
+                                    <a id="navbar-about-button"
+                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='../index.html'>
+                                        <span>About us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="navbar-program-button"
+                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='../pages/cubo2023.html'>
+                                        <span>Program 2023</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="navbar-program-button"
+                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='agenda.html'>
+                                        <span>Agenda</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a id="navbar-sponsors-button"
+                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='../pages/contributors.html'>
+                                        <span>Contributors</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
+                            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
+                                data-dropdown-trigger="hover" class='animate-pulse rounded-full relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
+                            before:bg-blue-500 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 
+                            active:before:scale-95 dark:before:border-gray-700 dark:before:bg-blue-400 sm:px-4 lg:before:border 
+                            lg:before:border-blue-200 lg:before:bg-blue-50 lg:dark:before:bg-gray-800'
+                                data-dropdown-toggle="dropdown-cubo+" data-dropdown-delay="50">
+                                <a href="#" id="navbar-apply-button"
+                                    class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white flex items-center">
+                                    <svg class=" relative w-5 h-5 mr-2 text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                    Apply Now
+                                </a>
+                            </button>
+                        </div>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownHover"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-64 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownHoverButton">
+                                <li>
+                                    <a href="cubo2024.html"
+                                        class="flex items-center px-4 py-2 hover:text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-primaryLight">
+                                        <div class="flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-4 ">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                                            </svg>
+                                        </div>
+                                        <div class="w-full ps-3">
+                                            <div>Econ Generation
+                                            </div>
+                                            <div class="text-xs text-blue-600 dark:text-blue-500">
+                                                Applications Open!
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="cuboDevs2024.html"
+                                        class="flex items-center px-4 py-2 hover:text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-primaryLight">
+                                        <div class="flex-shrink-0">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-4">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                                            </svg>
+
+                                        </div>
+                                        <div class="w-full ps-3">
+                                            <div>Devs Generation
+                                            </div>
+                                            <div class="text-xs text-blue-600 dark:text-blue-500">Aplications open soon!
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                        <button aria-label="switch language"
+                            class="group mr-1 relative hidden h-9 w-9 rounded-full before:absolute text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-300 before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex"
+                            data-dropdown-toggle="dropdown-language" data-dropdown-trigger="hover"
+                            data-dropdown-delay="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" data-slot="icon" class="w-5 h-5 relative m-auto ">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+                            </svg>
+                        </button>
+
+                        <div id="dropdown-language"
+                            class="relative hidden border-gray-100 lg:z-10 lg:absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                <li>
+                                    <a href="#"
+                                        class="en-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <img src="../img/icons/united-kingdom.png" class="h-6 w-6 mr-2" alt="">
+                                        English</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="es-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <img src="../img/icons/spain.png" class="h-6 w-6 mr-2" alt="">
+                                        Español</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button aria-label="switch theme"
+                            class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="fixed flex top-3 right-14 z-20 sm:right-24 lg:hidden">
+                        <button aria-label="switch language"
+                            class="group mr-1 relative flex h-9 w-9 text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-300 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800"
+                            data-dropdown-toggle="dropdown-language2" data-dropdown-delay="50">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" data-slot="icon" class="w-5 h-5 relative m-auto">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
+                            </svg>
+                        </button>
+                        <div id="dropdown-language2"
+                            class="relative hidden border-gray-100 lg:z-10 lg:absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
+                                <li>
+                                    <a href="#"
+                                        class="en-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <img src="../img/icons/united-kingdom.png" class="h-6 w-6 mr-2" alt="">
+                                        English</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="es-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <img src="../img/icons/spain.png" class="h-6 w-6 mr-2" alt="">
+                                        Español</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button aria-label="switch theme"
+                            class="switcher group relative flex h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    
+    <section id="cookies-modal" class="hidden flex-col md:flex-row z-30 fixed max-w-2xl p-4 mx-4 md:mx-auto bottom-4 bg-white border border-gray-200 md:gap-x-4 md:left-12 md:bottom-16 dark:bg-gray-900 md:items-center dark:border-gray-700 rounded-2xl">
+        <div class="flex md:items-center gap-x-4">
+            <span class="inline-flex p-2 text-blue-500 rounded-lg shrink-0 dark:bg-gray-800 bg-blue-100/80">
+                <svg class="w-8 md:w-8 md:h-8" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.9803 8.5468C17.5123 8.69458 17.0197 8.7931 16.5271 8.7931C14.2118 8.76847 12.3399 6.89655 12.3153 4.58128C12.3153 4.13793 12.3892 3.69458 12.537 3.27586C11.9951 2.68473 11.6995 1.92118 11.6995 1.13301C11.6995 0.812808 11.7488 0.492611 11.8473 0.172414C11.2315 0.0738918 10.6158 0 10 0C4.48276 0 0 4.48276 0 10C0 15.5172 4.48276 20 10 20C15.5172 20 20 15.5172 20 10C20 9.77833 20 9.55665 19.9754 9.33498C19.2611 9.26108 18.5468 8.99015 17.9803 8.5468ZM4.58128 7.31527C6.30542 7.31527 6.30542 10.0246 4.58128 10.0246C2.85714 10.0246 2.61084 7.31527 4.58128 7.31527ZM6.05912 15.7635C4.08867 15.7635 4.08867 12.8079 6.05912 12.8079C8.02956 12.8079 8.02956 15.7635 6.05912 15.7635ZM9.01478 1.33005C10.7389 1.33005 10.7389 4.28571 9.01478 4.28571C7.29064 4.28571 7.04434 1.33005 9.01478 1.33005ZM10.2463 8.84237C11.7241 8.84237 11.7241 10.8128 10.2463 10.8128C8.76848 10.8128 9.01478 8.84237 10.2463 8.84237ZM11.9704 16.9458C10.4926 16.9458 10.4926 14.9754 11.9704 14.9754C13.4483 14.9754 13.202 16.9458 11.9704 16.9458ZM16.6503 13.1034C15.4187 13.1034 15.4187 11.133 16.6503 11.133C17.8818 11.133 17.8818 13.1034 16.6503 13.1034Z" fill="currentColor"/>
+                </svg>
+            </span>
+    
+            <p id="cookies-text" class="text-sm text-gray-600 dark:text-gray-300">We use cookies to ensure that we give you the best experience on our website. <a href="/src/pages/legal/cookies.html" class="text-blue-500 hover:underline">Cookies Policy</a>. </p>
+        </div>
+        
+        <div class="block md:flex align-middle md:items-center gap-x-4 shrink-0 mt-6 md:mt-0 lg:mt-0">
+            <button id="accept-cookies" class="text-xs w-1/2 md:w-auto font-medium bg-gray-800 rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+                Accept
+            </button>
+            <button id="decline-cookies" class="text-xs w-1/2 md:w-auto font-medium bg-gray-800 rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none mt-3 md:mt-0">
+                Decline
+            </button>
+        </div>
+    </section>
+
+
+
+
+    <section class="pt-32 bg-white dark:bg-gray-900 mb-24">
+        <div class="py-8 px-4 mx-auto max-w-screen-md text-center lg:py-16 lg:px-12">
+            <svg class="mx-auto mb-4 w-10 h-10 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path fill="currentColor"
+                    d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z" />
+            </svg>
+            <h1 id="title"
+                class="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">
+                Under Construction</h1>
+            <p id="legend" class="font-light text-gray-500 md:text-lg xl:text-xl dark:text-gray-400">We're building
+                something cool! This page is currently under construction, come back soon to find out!</p>
+        </div>
+        <div class="pt-12 w-96 mx-auto overflow-hidden sm:mt-20 lg:-mt-8 ">
+            <img class="w-full" src="../img/unsorted/undraw_under_construction_-46-pa.svg" class="w-full"
+                alt="team illustration" height="600" width="800" />
+        </div>
+    </section>
+
+    <footer class="bg-white dark:bg-gray-900">
+        <div class="relative mx-auto px-6 md:max-w-full my-6 md:px-12 lg:max-w-6xl xl:px-0">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="../index.html" class="flex items-center">
+                        <img src="../img/logos/cubo-logo-blue.svg" class="h-40 me-3" alt="Cuboplus Logo" />
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 md:gap-16 md:grid-cols-3">
+                    <div>
+                        <h2 id="footer-contact"
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline text-sm">info@cuboplus.academy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 id="footer-follow"
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                        <div class="sm:flex sm:items-center sm:justify-between">
+                            <div class="flex mt-4 sm:justify-center sm:mt-0">
+                                <a target="_blank" href="https://www.youtube.com/@cuboplus"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 20 14">
+                                        <path fill-rule="evenodd"
+                                            d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="sr-only">Youtube channel</span>
+                                </a>
+                                <a target="_blank" href="https://twitter.com/cuboplus"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="currentColor" viewBox="0 0 20 17">
+                                        <path fill-rule="evenodd"
+                                            d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span class="sr-only">Twitter page</span>
+                                </a>
+                                <a target="_blank" href="https://www.instagram.com/cubo_plus/"
+                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    </svg>
+                                    <span class="sr-only">Instagram page</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 id="footer-links"
+                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Links</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            
+                            <li class="mb-4">
+                                <a target="_blank" href="https://bitcoin.org/bitcoin.pdf"
+                                    class="hover:underline">Bitcoin whitepaper</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="legal/cookies.html" class="hover:underline">Cookies Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span id="footer-copyright" class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023
+                    cuboplus. All Rights Reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/lib/flowbite/dist/flowbite.min.js"></script>
+    <script src="../js/component.js"></script>
+    <script src="../js/cookies/cookies.js"></script>
+    <script src="../js/maintenance.js"></script>
+</body>
+
+</html>
