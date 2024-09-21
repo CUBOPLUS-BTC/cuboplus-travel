@@ -3,26 +3,32 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./assets/icono.svg" />
+    <link rel="icon" type="image/svg+xml" href="assets/icono.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Cuboplus El Salvador 2024" />
     <link rel="stylesheet" href="swiper-bundle.min.css" />
-    <title>Cubo+</title>
+    <title>Discover El Salvador</title>
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <script type="module" crossorigin src="./assets/script.js"></script>
-    <link rel="stylesheet" href="./assets/style.css">
+    <script type="module" crossorigin src="assets/script.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="output.css">
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "lc3stbh5wt");
-    </script>
+
+<script>
+    if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+        document.documentElement.classList.add("dark");
+    } else {
+        document.documentElement.classList.remove("dark");
+    }
+</script>
 
     <style>
         .swiper-container .cart {
@@ -64,30 +70,37 @@
             }
 
         }
+        .testimonial-wrapper {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    .carousel-container {
+      overflow: hidden;
+    }
+
+    #slider {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .suggestions-img {
+            filter: invert(1) brightness(1.7) hue-rotate(180deg); 
+        }
+    }
+
+
 
     </style>
-
-    <script>
-        if (
-            localStorage.getItem("color-theme") === "dark" ||
-            (!("color-theme" in localStorage) &&
-                window.matchMedia("(prefers-color-scheme: dark)").matches)
-        ) {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
-    </script>
 </head>
 
 <body class="font-[Poppins] min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
     <header>
         <nav id="navbar"
-            class="shadow-lg fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
+            class="navbar-tourism shadow-lg fixed inset-x-0 z-40 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
                     <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
-                        <a href="#" aria-label="logo" class="flex items-center space-x-2">
+                        <a href="index.html" aria-label="logo" class="flex items-center space-x-2">
                             <img src="img/logos/cubo-text-blue.svg" class="hidden sm:block"
                                 style="height: 64px; width: 164px;" alt="cubo logo">
                             <img src="img/logos/cubo-logo-azul1.svg" class="block sm:hidden"
@@ -111,101 +124,36 @@
                         <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
                             <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
                                 <li>
-                                    <a id="navbar-about-button"
-                                        class='block md:px-4 text-orange-400 dark:text-primaryLight' href='#'>
-                                        <span>About us</span>
+                                    <a id="navbar-home-button"
+                                        class='block md:px-4 text-orange-400 dark:text-primaryLight'>
+                                        <span>Home</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a id="navbar-program-button"
+                                    <a id="navbar-travel-button"
                                         class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
-                                        href='pages/cubo2023.html'>
-                                        <span>Program 2023</span>
+                                        href='travel.html'>
+                                        <span>Visit Bitcoin Country</span>
+                                    </a>
+                                </li>
+                                </li>
+                                <li>
+                                    <a id="navbar-agency-button"
+                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='agency.html'>
+                                        <span>Travel with us</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a id="navbar-program-button"
+                                    <a id="navbar-relocate-button"
                                         class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
-                                        href='pages/agenda.html'>
-                                        <span>Agenda</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a id="navbar-sponsors-button"
-                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
-                                        href='pages/contributors.html'>
-                                        <span>Contributors</span>
+                                        href='relocate.html'>
+                                        <span>Relocate to El Salvador</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <div
-                            class="mt-12 -ml-1 flex w-full flex-col space-y-2 border-primary/10 dark:border-gray-700 sm:flex-row md:w-max lg:mt-0 lg:mr-6 lg:space-y-0 lg:border-l lg:pl-6">
-                            <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
-                                data-dropdown-trigger="hover" class='animate-pulse rounded-full relative ml-auto flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full 
-                            before:bg-blue-500 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 
-                            active:before:scale-95 dark:before:border-gray-700 dark:before:bg-blue-400 sm:px-4 lg:before:border 
-                            lg:before:border-blue-200 lg:before:bg-blue-50 lg:dark:before:bg-gray-800'
-                                data-dropdown-toggle="dropdown-cubo+" data-dropdown-delay="50">
-                                <a href="#" id="navbar-apply-button"
-                                    class="relative text-sm font-semibold text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white flex items-center">
-                                    <svg class=" relative w-5 h-5 mr-2 text-white dark:text-gray-900 lg:text-blue-600 lg:dark:text-white"
-                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                                    </svg>
-                                    Apply Now
-                                </a>
-                            </button>
-                        </div>
-                        <!-- Dropdown menu -->
-                        <div id="dropdownHover"
-                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-64 dark:bg-gray-700">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                                aria-labelledby="dropdownHoverButton">
-                                <li>
-                                    <a href="pages/cubo2024.html"
-                                        class="flex items-center px-4 py-2 hover:text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-primaryLight">
-                                        <div class="flex-shrink-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-4 ">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
-                                            </svg>
-                                        </div>
-                                        <div class="w-full ps-3">
-                                            <div>Econ Generation
-                                            </div>
-                                            <div class="text-xs text-blue-600 dark:text-blue-500">
-                                                Applications Open!
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="pages/cuboDevs2024.html"
-                                        class="flex items-center px-4 py-2 hover:text-orange-400 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-primaryLight">
-                                        <div class="flex-shrink-0">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mx-4">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-                                            </svg>
-
-                                        </div>
-                                        <div class="w-full ps-3">
-                                            <div>Devs Generation
-                                            </div>
-                                            <div class="text-xs text-blue-600 dark:text-blue-500">Aplications open soon!
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
+                        
                         <button aria-label="switch language"
                             class="group mr-1 relative hidden h-9 w-9 rounded-full before:absolute text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-300 before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex"
                             data-dropdown-toggle="dropdown-language" data-dropdown-trigger="hover"
@@ -228,9 +176,9 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="es-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                        <img src="img/icons/spain.png" class="h-6 w-6 mr-2" alt="">
-                                        Español</a>
+                                        class="jp-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <img src="img/icons/japan.png" class="h-6 w-6 mr-2" alt="">
+                                        日本語</a>
                                 </li>
                             </ul>
                         </div>
@@ -273,9 +221,9 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="es-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                        <img src="img/icons/spain.png" class="h-6 w-6 mr-2" alt="">
-                                        Español</a>
+                                        class="jp-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                        <img src="img/icons/japan.png" class="h-6 w-6 mr-2" alt="">
+                                        日本語</a>
                                 </li>
                             </ul>
                         </div>
@@ -299,10 +247,10 @@
             </div>
         </nav>
     </header>
-
-    
-
      
+    <button id="backToTop" class="fixed z-40 bottom-10 right-10 bg-blue-500 text-white p-3 rounded-full shadow-lg">
+        ↑ Top
+    </button>
     
     <section id="cookies-modal" class="hidden flex-col md:flex-row z-30 fixed max-w-2xl p-4 mx-4 md:mx-auto bottom-4 bg-white border border-gray-200 md:gap-x-4 md:left-12 md:bottom-16 dark:bg-gray-900 md:items-center dark:border-gray-700 rounded-2xl">
             <div class="flex md:items-center gap-x-4">
@@ -312,7 +260,7 @@
                     </svg>
                 </span>
         
-                <p id="cookies-text" class="text-sm text-gray-600 dark:text-gray-300">We use cookies to ensure that we give you the best experience on our website. <a href="/src/pages/legal/cookies.html" class="text-blue-500 hover:underline">Cookies Policy</a>. </p>
+                <p id="cookies-text" class="text-sm text-gray-600 dark:text-gray-300">We use cookies to ensure that we give you the best experience on our website. <a href="/pages/legal/cookies.html" class="text-blue-500 hover:underline">Cookies Policy</a>. </p>
             </div>
             
             <div class="block md:flex align-middle md:items-center gap-x-4 shrink-0 mt-6 md:mt-0 lg:mt-0">
@@ -325,797 +273,416 @@
             </div>
     </section>
 
-
-
-
-    <section class="pt-32 sm:pt-40 md:pt-48">
-        <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-            <div class="relative">
-
-                <div class="relative gap-12 lg:flex">
-                    <div
-                        class="text-center sm:mx-auto sm:w-11/12 md:mt-12 md:w-4/5 lg:mt-0 lg:mr-auto lg:w-6/12 lg:text-left">
-                        <h1
-                            class="hero text-center text-5xl font-bold text-blue-900 dark:text-white sm:text-6xl lg:text-left lg:text-7xl">
-                            <p id="header1" class="m-0 p-0">Building</p>
-                            <span class="relative">
-                                <span id="heros"
-                                    class="relative bg-gradient-to-r from-primary to-secondaryLight bg-clip-text text-transparent dark:from-primaryLight dark:to-secondaryLight md:px-2 inline-block"></span>
-                            </span>
-                        </h1>
-                        <p id="header2" class="mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl">CUBO+ is the
-                            first
-                            educational program aimed
-                            at training the next generation of Bitcoin Salvadoran enthusiasts to contribute
-                            the Bitcoin adoption and the economic growth of El Salvador.</p>
-                    </div>
-                    <div class="mt-12 w-full rounded-lg overflow-hidden sm:mt-20 lg:-mt-8 lg:w-3/4">
-                        <div class="relative overflow-hidden bg-cover bg-no-repeat" style="
-                        background-position: 50%;
-                        background-image: url('img/bootcamp/bootcamp.webp');
-                        height: 450px;
-                      ">
-                            <div
-                                class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.30)] dark:bg-[hsla(0,0%,0%,0.50)]  bg-fixed">
-                                <div class="flex h-full items-center justify-center">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-12 border-y border-gray-100 py-8 text-center dark:border-orange-300 md:py-12 xl:mt-20">
-                    <div id="thanks"
-                        class="text-sm font-semibold tracking-wider text-gray-800 dark:text-white uppercase">supported
-                        by our strategic alliances
-                    </div>
-                    <div
-                        class="mt-8 flex flex-wrap justify-center gap-6 contrast-125 dark:contrast-25  sm:justify-between lg:gap-24">
-                        <img class="h-10 w-auto lg:h-14 lg:w-auto dark:hidden" src="img/logos/fulgur-logo.svg"
-                            loading="lazy" alt="fulgur logo" width="" height="" />
-                        <img class="h-10 w-auto lg:h-20 lg:w-auto dark:hidden" src="img/logos/goes-logo.svg"
-                            loading="lazy" alt="goes logo" width="" height="" />
-                        <img class="h-10 w-auto lg:h-20 lg:w-auto dark:hidden" src="img/logos/planb-dark.svg"
-                            loading="lazy" alt="planb logo" width="100" height="100" />
-                        <img class="h-10 w-auto lg:h-14 lg:w-auto dark:block hidden"
-                            src="img/logos/fulgur-logo-light.svg" loading="lazy" alt="fulgur logo" width="" height="" />
-                        <img class="h-10 w-auto lg:h-20 lg:w-auto dark:block hidden" src="img/logos/goes-logo-light.svg"
-                            loading="lazy" alt="goes logo" width="" height="" />
-                        <img class="h-10 w-auto lg:h-20 lg:w-auto dark:block hidden" src="img/logos/planb-light.svg"
-                            loading="lazy" alt="planb logo" width="100" height="100" />
-                    </div>
+    <section class="h-screen w-full relative">
+        <video class="absolute top-0 left-0 w-full h-full object-cover z-10" autoplay muted loop playsinline preload="metadata">
+            <source src="img/output-tourism.mp4" type="video/mp4">
+            <source src="img/output-tourism.webm" type="video/webm">
+            Your browser does not support the video tag.
+         </video>         
+         
+    
+        <div class="absolute top-0 left-0 z-20 w-full h-full flex items-center justify-center flex-col p-5 gap-6 lg:gap-20 lg:p-20">
+            <div class="bg-gray-300/70 backdrop-blur p-5 rounded-lg max-w-6xl w-full h-72">
+                <div class="text-center flex items-center justify-center lg:p-5 h-72">
+                    <h1 id="page-title" class="text-4xl lg:text-6xl text-white font-semibold pb-4 lg:pb-10">Welcome to #Bitcoin country</h1>
                 </div>
             </div>
+
+                <div id="nav-tourism" class="bg-gray-300/70 backdrop-blur p-2 rounded-lg md:rounded-full max-w-6xl w-full gap-1 md:gap-8 flex-col md:flex-row flex items-center justify-center">
+                    <p id="header-home-button" class="w-full md:w-auto px-4 py-1 text-lg font-semibold rounded-lg md:rounded-full bg-blue-400 text-white">Home</p>
+                    <a id="header-travel-button" href="travel.html" class="w-full md:w-auto px-4 py-1 text-lg font-normal rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-400">Visit Bitcoin Country</a>
+                    <a id="header-agency-button" href="agency.html" class="w-full md:w-auto px-4 py-1 text-lg font-normal rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-400">Travel with us</a>
+                    <a id="header-relocate-button" href="relocate.html" class="w-full md:w-auto px-4 py-1 text-lg font-normal rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-400">Relocate to El Salvador</a>
+                </div>
         </div>
     </section>
 
-    <section class="mt-32">
-        <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-            <div class="text-center">
-                <h2 id="phases-header"
-                    class="text-3xl font-bold text-orange-400 dark:text-blue-300 md:text-4xl xl:text-5xl">For building
-                    the next<br> Decentralized Generation</h2>
-                <p id="phases-description" class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">We
-                    are committed to creating
-                    a diverse and inclusive
-                    learning environment that promotes learning, growth and collaboration.</p>
-
-                <div role="tablist" aria-label="tabs"
-                    class="relative mx-auto mt-12 grid h-12 w-auto grid-cols-3 items-center gap-x-1 overflow-hidden rounded-full border border-gray-200 bg-gray-100 px-[3px] text-gray-600 dark:border-gray-700 dark:border-opacity-60 dark:bg-darker dark:text-gray-300 dark:shadow-none sm:w-max">
-                    <div class="tab-indicator absolute h-10 rounded-full bg-white shadow-md transition-[left] duration-500 dark:bg-gray-800"
-                        style="left: 4px"></div>
-                    <button role="tab" aria-selected="true" aria-controls="panel-0" tabindex="0" title="tab item"
-                        class="tab relative block rounded-full py-2.5 px-4 hover:text-primary dark:hover:text-primaryLight">
-                        <span id="phases-button-apply"
-                            class="m-auto block w-max text-sm font-medium tracking-wider">Apply</span>
-                    </button>
-                    <button role="tab" aria-selected="false" aria-controls="panel-1" tabindex="-1" title="tab item"
-                        class="tab relative block rounded-full py-2.5 px-4 hover:text-primary dark:hover:text-primaryLight">
-                        <span id="phases-button-learn"
-                            class="m-auto block w-max text-sm font-medium tracking-wider">Learn</span>
-                    </button>
-                    <button role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1" title="tab item"
-                        class="tab relative block rounded-full py-2.5 px-4 hover:text-primary dark:hover:text-primaryLight">
-                        <span id="phases-button-contribute"
-                            class="m-auto block w-max text-sm font-medium tracking-wider">Contribute</span>
-                    </button>
-                </div>
-            </div>
-            <div class="mt-20">
-                <div class="gap-6 space-y-12 lg:flex lg:space-y-0">
-                    <div class="relative lg:w-1/2">
-                        <div class="panel visible inset-0 flex scale-100 flex-col justify-center opacity-100 transition duration-500 lg:absolute"
-                            id="panel-0">
-                            <div>
-                                <h3 id="phases-apply-title"
-                                    class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">Application
-                                    process </h3>
-                                <p id="phases-apply-description" class="mt-8 text-gray-600 dark:text-gray-300">To be
-                                    part of cubo+ you must apply to
-                                    the process
-                                    within the specific time. You can apply even if you're not a developer since the
-                                    course
-                                    is aimed at teaching the basic fundamentals of Bitcoin (philosophical and economic
-                                    principles).</p>
-                                <div class="mt-12 space-y-6">
-                                    <div class="flex items-center gap-6">
-                                        <div
-                                            class="flex h-20 w-20 rounded-3xl border dark:text-gray-50 border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke-width="1.5" stroke="currentColor" class="m-auto h-8 w-auto">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
-                                            </svg>
-                                        </div>
-                                        <div class="w-[calc(100%-7.5rem)]">
-                                            <h4 id="phases-apply-subtitle1"
-                                                class="text-lg font-semibold text-gray-800 dark:text-white">Technical
-                                                course
-                                            </h4>
-                                            <p id="phases-apply-description1"
-                                                class="mt-1 text-gray-600 dark:text-gray-400">Focused on developers who
-                                                wish to acquire skills in the Bitcoin and Lightning Network protocols.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-center gap-6">
-                                        <div
-                                            class="flex h-20 w-20 rounded-3xl border dark:text-gray-50 border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                stroke-width="1.5" stroke="currentColor" class="m-auto h-8 w-auto">
-                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                    d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-                                            </svg>
-                                        </div>
-                                        <div class="w-[calc(100%-7.5rem)]">
-                                            <h4 id="phases-apply-subtitle2"
-                                                class="text-lg font-semibold text-gray-800 dark:text-white">Non
-                                                technical course
-                                            </h4>
-                                            <p id="phases-apply-description2"
-                                                class="mt-1 text-gray-600 dark:text-gray-400">Open to university
-                                                students
-                                                interested in learning about the fundamentals of Bitcoin.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel invisible absolute inset-0 flex scale-90 flex-col justify-center opacity-0 transition duration-500"
-                            id="panel-1">
-                            <div>
-                                <h3 id="phases-learn-title"
-                                    class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">Learning
-                                    modules</h3>
-                                <p id="phases-learn-description" class="mt-8 text-gray-600 dark:text-gray-300">The
-                                    objective is to learn the role of
-                                    Bitcoin and
-                                    its impact on society. The course modules will depend on the type of application you
-                                    have submitted.</p>
-                                <div class="mt-12 space-y-6">
-                                    <div class="flex items-center gap-6">
-                                        <div
-                                            class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" class="m-auto h-8 w-auto dark:text-white">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
-                                              </svg>
-                                                                                             
-                                        </div>
-                                        <div class="w-[calc(100%-7.5rem)]">
-                                            <h4 id="phases-learn-subtitle1"
-                                                class="text-lg font-semibold text-gray-800 dark:text-white">Orange Pill
-                                            </h4>
-                                            <p id="phases-learn-description1"
-                                                class="mt-1 text-gray-600 dark:text-gray-400">For non-technical
-                                                applications, you will delve into the social and economic
-                                                aspects of Bitcoin as well as why it is necessary for our society.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-center gap-6">
-                                        <div
-                                            class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="m-auto h-8 w-auto dark:text-white">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
-                                              </svg>
-                                              
-                                        </div>
-                                        <div class="w-[calc(100%-7.5rem)]">
-                                            <h4 id="phases-learn-subtitle2"
-                                                class="text-lg font-semibold text-gray-800 dark:text-white">Technology
-                                                stack
-                                            </h4>
-                                            <p id="phases-learn-description2"
-                                                class="mt-1 text-gray-600 dark:text-gray-400">As a developer, you will
-                                                learn the fundamentals of the Bitcoin and Lightning
-                                                Network protocols and how to integrate these solutions into your
-                                                personal projects.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel invisible absolute inset-0 flex scale-90 flex-col justify-center opacity-0 transition duration-500"
-                            id="panel-2">
-                            <div>
-                                <h3 id="phases-contribute-title"
-                                    class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">Help and
-                                    contribute</h3>
-                                <p id="phases-contribute-description" class="mt-8 text-gray-600 dark:text-gray-300">As a
-                                    cubo+ graduate, what we expect
-                                    from you is that you apply the
-                                    knowledge and skills learned in the program to real-world projects and
-                                    challenges in your environment.</p>
-                                <div class="mt-12 space-y-6">
-                                    <div class="flex items-center gap-6">
-                                        <div
-                                            class="flex h-20 w-20 rounded-3xl border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="m-auto h-8 w-auto dark:text-white">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
-                                              </svg>
-                                              
-                                        </div>
-                                        <div class="w-[calc(100%-7.5rem)]">
-                                            <h4 id="phases-contribute-subtitle1"
-                                                class="text-lg font-semibold text-gray-800 dark:text-white">Collaborate
-                                            </h4>
-                                            <p id="phases-contribute-description1"
-                                                class="mt-1 text-gray-600 dark:text-gray-400">At the end of the program
-                                                you will have the opportunity to participate
-                                                in the internship program to gain experience with the top Bitcoin
-                                                companies.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-center gap-6">
-                                        <div
-                                            class="flex h-20 w-20 rounded-3xl dark:text-white border border-gray-200 bg-white p-4 dark:border-gray-600/60 dark:bg-gray-900/40">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="m-auto h-8 w-auto">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"></path>
-                                              </svg>
-                                        </div>
-                                        <div class="w-[calc(100%-7.5rem)]">
-                                            <h4 id="phases-contribute-subtitle2"
-                                                class="text-lg font-semibold text-gray-800 dark:text-white">Inspire new
-                                                generations</h4>
-                                            <p id="phases-contribute-description2"
-                                                class="mt-1 text-gray-600 dark:text-gray-400">Take advantage of the
-                                                tools
-                                                acquired in the program to create real solutions
-                                                that solve real problems in everyday life.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="-m-4 overflow-hidden p-4 sm:-mx-12 sm:px-12 lg:mx-0 lg:w-1/2 lg:overflow-visible lg:px-0">
-                        <div
-                            class="relative bg-gray-100 before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200 dark:bg-gray-800 dark:before:border-gray-700 dark:after:border-gray-700">
-                            <div class="relative h-96 overflow-clip py-10 sm:h-[32rem] lg:p-20">
-                                <div data-target="panel-0"
-                                    class="panel-preview absolute inset-0 z-10 flex translate-y-0 scale-100 items-end overflow-hidden px-6 opacity-100 transition duration-500 sm:px-10">
-                                    <img src="./img/prep-period.webp"
-                                        class="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]"
-                                        alt="prep period" loading="lazy" width="850" height="1780" />
-                                </div>
-                                <div data-target="panel-1"
-                                    class="panel-preview absolute inset-0 z-0 flex translate-y-[100%] scale-100 items-end overflow-hidden px-6 opacity-50 transition duration-500 sm:px-10">
-                                    <img src="./img/bootcamp/bootcamp-1.webp"
-                                        class="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]"
-                                        alt="bootcamp" loading="lazy" width="850" height="1780" />
-                                </div>
-                                <div data-target="panel-2"
-                                    class="panel-preview absolute inset-0 z-0 flex translate-y-[100%] scale-100 items-end overflow-hidden px-6 opacity-50 transition duration-500 sm:px-10">
-                                    <img src="./img/bootcamp/event-1.webp"
-                                        class="mx-auto h-80 w-96 rounded-t-3xl border object-cover object-top shadow-2xl dark:border-transparent sm:h-[28rem]"
-                                        alt="event" loading="lazy" width="850" height="1780" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="mx-auto max-w-6xl w-full pt-14 px-2 lg:px-0">
+        <div class="flex items-center justify-center gap-8 md:gap-16">
+            <img src="img/tourism/mistu.svg" class="h-16 dark:invert dark:brightness-0 dark:contrast-100 hidden" alt="Ministry of tourism">
+            <img src="img/tourism/onbtc.svg" class="h-14 dark:invert dark:brightness-0 dark:contrast-100" alt="Bitcoin office">
         </div>
     </section>
-
-    <!--segundo testimonial-->
-    <section class="relative py-24">
-        <div aria-hidden="true" class="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
-            <div class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"></div>
-            <div class="h-40 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"></div>
-        </div>
-        <div class="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-            <div class="text-center">
-                <h2 id="testimonials-title"
-                    class="text-3xl font-bold text-gray-800 dark:text-blue-300 md:text-4xl xl:text-5xl">A Generation Who
-                    Inspire</h2>
-                <p id="testimonials-legend" class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">At
-                    Cubo+ we train agents of change, forging a future where innovation and collaboration
-                    define the path, leaving the legacy of a generation that inspires and transforms.</p>
-            </div>
-            <div class="grid grid-cols-1 gap-8 mx-auto mt-8 lg:grid-cols-1 xl:mt-10 max-w-3xl">
-                <!-- start slider section -->
-                <div class="swiper-container">
-                    <div class="swiper mySwiper">
-                        <div id="" class="swiper-wrapper ">
-                            <div class="swiper-slide">
-                                <div class="cart">
-                                    <div
-                                        class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                                        <p id="testimonials-student1" class="text-gray-600 dark:text-gray-300"><span
-                                                class="font-serif">"</span>Thanks
-                                            to CUBO+, I've
-                                            had the opportunity to learn about an exciting field that has transformed my
-                                            life<span class="font-serif">"</span></p>
-                                        <div class="flex items-center gap-3 text-left">
-                                            <img class="h-16 w-16 rounded-full" src="img/students/Fhernanda-Elias.jpg"
-                                                alt="student pic" width="200" height="200" loading="lazy" />
-                                            <div>
-                                                <h3
-                                                    class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">
-                                                    Fhernanda
-                                                    Elías
-                                                </h3>
-                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+
-                                                    Student</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="cart">
-                                    <div
-                                        class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                                        <p id="testimonials-student2" class="text-gray-600 dark:text-gray-300"><span
-                                                class="font-serif">"</span>I'm
-                                            so grateful to be
-                                            part of cubo+ and witness the good changes that are happening in El
-                                            Salvador<span class="font-serif">"</span></p>
-                                        <div class="flex items-center gap-3 text-left">
-                                            <img class="h-16 w-16 rounded-full" src="img/students/Rodrigo-Aguilera.jpg"
-                                                alt="user avatar" width="200" height="200" loading="lazy" />
-                                            <div>
-                                                <h3
-                                                    class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">
-                                                    Rodrigo
-                                                    Aguilera
-                                                </h3>
-                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+
-                                                    Student</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="cart">
-                                    <div
-                                        class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                                        <p id="testimonials-student5" class="text-gray-600 dark:text-gray-300"><span
-                                                class="font-serif">"</span>Cubo+ has been a transformative experience
-                                            for me,
-                                            their commitment on training local talent is truly inspiring.
-                                            <span class="font-serif">"</span>
-                                        </p>
-                                        <div class="flex items-center gap-3 text-left">
-                                            <img class="h-16 w-16 rounded-full" src="img/students/Moises-Iglesias.jpg"
-                                                alt="student pic" width="200" height="200" loading="lazy" />
-                                            <div>
-                                                <h3
-                                                    class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">
-                                                    Moises Iglesias
-                                                </h3>
-                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+
-                                                    Student</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="cart">
-                                    <div
-                                        class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                                        <p id="testimonials-student3" class="text-gray-600 dark:text-gray-300"><span
-                                                class="font-serif">"</span>Being
-                                            part of Cubo+
-                                            taught me how bad the world is, but it also taught me what can be fixed with
-                                            Bitcoin<span class="font-serif">"</span></p>
-                                        <div class="flex items-center gap-3 text-left">
-                                            <img class="h-16 w-16 rounded-full" src="img/students/Jonathan-Ramos.jpg"
-                                                alt="student pic" width="200" height="200" loading="lazy" />
-                                            <div>
-                                                <h3
-                                                    class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">
-                                                    Jonathan
-                                                    Ramos
-                                                </h3>
-                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+
-                                                    Student</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="cart">
-                                    <div
-                                        class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                                        <p id="testimonials-student4" class="text-gray-600 dark:text-gray-300"><span
-                                                class="font-serif">"</span>Cubo+ changed my
-                                            perception about El Salvador, It was a challenge that I would repeat
-                                            <span class="font-serif">"</span>
-                                        </p>
-                                        <div class="flex items-center gap-3 text-left">
-                                            <img class="h-16 w-16 rounded-full" src="img/students/Rodrigo-Bonilla.jpg"
-                                                alt="student pic" width="200" height="200" loading="lazy" />
-                                            <div>
-                                                <h3
-                                                    class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">
-                                                    Rodrigo
-                                                    Bonilla
-                                                </h3>
-                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+
-                                                    Student</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="cart">
-                                    <div
-                                        class="space-y-6 rounded-3xl border border-gray-100 bg-white p-8 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none">
-                                        <p id="testimonials-student6" class="text-gray-600 dark:text-gray-300"><span
-                                                class="font-serif">"</span>Cubo+ is not just a program; it's a
-                                            life-changing experience!
-                                            It's reshaped how I view life and the endless potential for development in
-                                            El Salvador!
-                                            <span class="font-serif">"</span>
-                                        </p>
-                                        <div class="flex items-center gap-3 text-left">
-                                            <img class="h-16 w-16 rounded-full" src="img/students/Naomi-Iglesias.jpg"
-                                                alt="student pic" width="200" height="200" loading="lazy" />
-                                            <div>
-                                                <h3
-                                                    class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">
-                                                    Naomi Iglesias
-                                                </h3>
-                                                <span class="text-sm text-gray-500 dark:text-gray-400">CUBO+
-                                                    Student</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="mt-16">
-        <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-            <div class="space-y-6 lg:flex lg:items-center lg:gap-6 lg:space-y-0">
-                <div class="sm:8/12 lg:w-6/12 p-2">
-
-                    <video class="w-full h-auto max-w-full border border-gray-200 rounded-lg dark:border-gray-700"
-                        autoplay muted controls>
-                        <source src="./img/ssstwitter.com_1702918649877.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-
-                </div>
-                <div class="sm:4/12 lg:w-6/12 p-2">
-                    <h2 id="mission-title"
-                        class="text-3xl font-bold text-orange-400 dark:text-blue-300 md:text-4xl xl:text-5xl">Who we
-                        are.
+    
+    <section class="md:mx-auto max-w-6xl w-full pt-24 px-2 lg:px-0">
+        <h1 id="section1" class="text-4xl dark:text-white text-center font-semibold leading-normal text-neutral-700">Explore El Salvador</h1>
+        <div class="flex flex-col gap-9 pt-11">
+            <div class="bg-white shadow-xl shadow-blue-500/40 dark:bg-slate-900 border-gray-300 border-2 rounded-xl dark:border-slate-700 p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+                <img src="img/tourism/visit.jpg" class="rounded-2xl w-full md:w-1/2 h-full object-cover" alt="tourism">
+                <div class="flex flex-col dark:text-white gap-8">
+                    <h2 id="section1-travel-title" class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
+                        Visit Bitcoin Country
                     </h2>
-                    <p id="mission" class="mt-8 text-gray-600 dark:text-gray-300">We are a program dedicated to teaching
-                        university
-                        students,
-                        from enthusiastic beginners to experienced developers. We believe that everyone should have the
-                        opportunity to
-                        understand and participate in the Bitcoin revolution in El Salvador, without barriers or
-                        technical limitations.
-
-                        <br><br>At Cubo+, we build an inclusive and accessible community. Our mission is to teach
-                        Bitcoin, making it easy to understand
-                        and apply in everyday life. Join us and let's build the next generation of Bitcoin enthusiasts.
+                    <p id="section1-travel-legend" class="text-xs md:text-sm">
+                        Experience financial freedom while immersing yourself in the natural and cultural richness of El Salvador, where Bitcoin is a way of life. 
+                        <br><br>
+                        Here, every experience is unique, every SAT makes you meet friends, and every step connects you to the future. Your Bitcoin adventure begins now.
                     </p>
+                    <a href="travel.html" id="section1-travel-button" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">Explore more</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="testimonies" class="py-20 mt-10 bg-orange-400 dark:bg-gray-900">
-        <div class="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
-
-
-            <div
-                class="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
-                <div class="mb-12 space-y-5 md:mb-16 md:text-center">
-                    <div id="mentions-badge"
-                        class="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn  bg-orange-700 dark:bg-[#202147] bg-opacity-60 hover:cursor-pointer hover:bg-opacity-40">
-                        Words from Others
-                    </div>
-                    <h1 id="mentions-title"
-                        class="mb-5 text-3xl font-semibold text-white dark:text-blue-300 md:text-center md:text-5xl">
-                        It's not just us.
-                    </h1>
-                    <p id="mentions-legend" class="text-xl text-gray-100 md:text-center md:text-2xl">
-                        Discover what others are sharing about us.
+            <div class="bg-white shadow-xl shadow-blue-500/40 dark:bg-slate-900 border-gray-300 border-2 rounded-xl dark:border-slate-700 p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+                <img src="img/tourism/agency.jpg" class="rounded-2xl w-full md:w-1/2 h-full object-cover" alt="agency">
+                <div class="flex flex-col dark:text-white gap-8">
+                    <h2 id="section1-agency-title" class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
+                        Travel with us
+                    </h2>
+                    <p id="section1-agency-legend" class="text-xs md:text-sm">
+                        From Pacific beaches to towering volcanoes and charming colonial towns, every corner of El Salvador has a story waiting to be explored. 
                     </p>
+                    <a href="agency.html" id="section1-agency-button" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">Explore more</a>
                 </div>
             </div>
-
-
-            <div id="mentions" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-                <ul class="space-y-8 ">
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div
-                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/cuboplus/status/1709985928842785074" target="_blank"
-                                class="cursor-pointer">
-                                <div
-                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="img/tweets/Darvin-Otero.jpg"
-                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Cubo+">
-                                        <div>
-                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
-                                                    class="fa-brands fa-twitter"></i>Darvin Otero</h3>
-                                            <p class="text-gray-500 text-md">@aveotero</p>
-                                            <p class="text-gray-500 text-md mt-2">Tiankii CEO</p>
-                                        </div>
-                                    </div>
-                                    <p
-                                        class="leading-normal  text-gray-900 dark:text-gray-300 text-md h-16 overflow-hidden">
-                                        CUBO+ Hackathon #Awards ceremony! First ever @cuboplus #Bitcoin lightning training #program today graduating 21 salvadorean developers. A big #success!! thanks to all organizers for making it possible @bitcoinofficesv @FulgurVentures @stacyherbert @maiojose1 @FFarenga
-                                    </p>
-
-                                    <figure class="max-w-lg">
-                                        <img class="h-60 max-w-full rounded-lg overflow-hidden"
-                                            src="img/bootcamp/tuscany-1.webp" alt="image description">
-                                    </figure>
-
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="space-y-8 ">
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div
-                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/stacyherbert/status/1713882443793702934" target="_blank"
-                                class="cursor-pointer">
-                                <div
-                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="img/tweets/stacy-herbert.jpg"
-                                            class="w-12 h-12 bg-center bg-cover border rounded-full"
-                                            alt="Stacy Herbert">
-                                        <div>
-                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
-                                                    class="fa-brands fa-twitter"></i> Stacy Herbert 🇸🇻🚀</h3>
-                                            <p class="text-gray-500 text-md">@stacyherbert
-                                            </p>
-                                            <p class="text-gray-500 text-md mt-2">Presidential Bitcoin Office</p>
-                                        </div>
-                                    </div>
-                                    <p
-                                        class="leading-normal  text-gray-900 dark:text-gray-300 text-md h-16 overflow-hidden">
-                                        CUBO+ students were super excited to meet Adam Back in Viareggio
-
-                                        @adam3us @cuboplus @FulgurVentures @olegmikh1
-                                    </p>
-
-                                    <figure class="max-w-lg">
-                                        <img class="h-60 max-w-full rounded-lg overflow-hidden"
-                                            src="img/bootcamp/tuscany-3.webp" alt="image description">
-                                    </figure>
-
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="space-y-8">
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div
-                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/jimmysong/status/1681432350247247872" target="_blank"
-                                class="cursor-pointer">
-                                <div
-                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="img/tweets/jimmy-song.jpg"
-                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Jimmy Song">
-                                        <div>
-                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
-                                                    class="fa-brands fa-twitter"></i> Jimmy Song (송재준)</h3>
-                                            <p class="text-gray-500 text-md">@jimmysong</p>
-                                            <p class="text-gray-500 text-md mt-2">Jimmy Song</p>
-                                        </div>
-                                    </div>
-                                    <p
-                                        class="leading-normal  text-gray-900 dark:text-gray-300 text-md h-16 overflow-hidden">
-                                        Taught 12 students for CUBO+
-                                        <br><br>
-                                        Go El Salvador!
-                                    </p>
-
-                                    <figure class="max-w-lg">
-                                        <img class="h-60 max-w-full rounded-lg overflow-hidden"
-                                            src="img/bootcamp/bootcamp-5.webp" alt="image description">
-                                    </figure>
-
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="space-y-8 ">
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div
-                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/forbes/status/1684239840890564615" target="_blank"
-                                class="cursor-pointer">
-                                <div
-                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="img/tweets/forbes.jpg"
-                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Forbes">
-                                        <div>
-                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
-                                                    class="fa-brands fa-twitter"></i> Forbes</h3>
-                                            <p class="text-gray-500 text-md">@Forbes</p>
-                                            <p class="text-gray-500 text-md mt-2">Forbes</p>
-                                        </div>
-                                    </div>
-                                    <p
-                                        class="leading-normal  text-gray-900 dark:text-gray-300 text-md h-16 overflow-hidden">
-                                        How El Salvador Is Investing In Bitcoin Education https://trib.al/pDQILFt via
-                                        @ForbesCrypto
-
-                                    </p>
-
-                                    <figure class="max-w-lg">
-                                        <img class="h-48 max-w-full rounded-lg overflow-hidden"
-                                            src="img/bootcamp/bootcamp-4.webp" alt="image description">
-                                    </figure>
-
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="space-y-8 ">
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div
-                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/synonym_to/status/1672316976717262848" target="_blank"
-                                class="cursor-pointer">
-                                <div
-                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="img/tweets/Synonym.jpg"
-                                            class="w-12 h-12 bg-center bg-cover border rounded-full" alt="Synonym">
-                                        <div>
-                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
-                                                    class="fa-brands fa-twitter"></i> Synonym</h3>
-                                            <p class="text-gray-500 text-md">@Synonym_to</p>
-                                            <p class="text-gray-500 text-md mt-2">Synonym</p>
-                                        </div>
-                                    </div>
-                                    <p
-                                        class="leading-normal  text-gray-900 dark:text-gray-300 text-md h-16 overflow-hidden">
-                                        Today our team hosted a lecture about
-                                        @slashtags_to
-                                        for
-                                        @cuboplus
-                                        students. We're eager to see Salvadoran developers building P2P applications!
-                                    </p>
-
-                                    <figure class="max-w-lg">
-                                        <img class="h-48 max-w-full rounded-lg overflow-hidden"
-                                            src="img/bootcamp/bootcamp-6.webp" alt="image description">
-                                    </figure>
-
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="space-y-8 ">
-                    <li class="text-sm leading-6">
-                        <div class="relative group">
-                            <div
-                                class="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-orange-700 to-orange-600 dark:from-blue-600 dark:to-cyan-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200">
-                            </div><a href="https://twitter.com/bitcoinmagazine/status/1676265047608393728"
-                                target="_blank" class="cursor-pointer">
-                                <div
-                                    class="relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5">
-                                    <div class="flex items-center space-x-4"><img src="img/tweets/bitcoin-magazine.jpg"
-                                            class="w-12 h-12 bg-center bg-cover border rounded-full"
-                                            alt="bitcoin magazine">
-                                        <div>
-                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white"><i
-                                                    class="fa-brands fa-twitter"></i> Bitcoin Magazine</h3>
-                                            <p class="text-gray-500 text-md">@BitcoinMagazine</p>
-                                            <p class="text-gray-500 text-md mt-2">Bitcoin Magazine</p>
-                                        </div>
-                                    </div>
-                                    <p
-                                        class="leading-normal  text-gray-900 dark:text-gray-300 text-md h-16 overflow-hidden">
-                                        Students in El Salvador attend the country’s first #Bitcoin development program
-
-                                        The future is bright for 🇸🇻
-                                    </p>
-
-                                    <figure class="max-w-lg">
-                                        <img class="h-48 max-w-full rounded-lg overflow-hidden"
-                                            src="img/bootcamp/bootcamp-2.webp" alt="image description">
-                                    </figure>
-
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+            <div class="bg-white shadow-xl shadow-blue-500/40 dark:bg-slate-900 border-gray-300 border-2 rounded-xl dark:border-slate-700 p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+                <img src="img/tourism/relocation.jpg" class="rounded-2xl w-full md:w-1/2 h-full object-cover" alt="relocate">
+                <div class="flex flex-col dark:text-white gap-8">
+                    <h2 id="section1-relocate-title" class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
+                        Relocate to El Salvador
+                    </h2>
+                    <p id="section1-relocate-legend" class="text-xs md:text-sm">
+                        Find your new home in El Salvador, a country that embraces the future with Bitcoin. From paradisiacal beaches to picturesque towns, explore the ideal place to start a new life in a warm and welcoming environment, where the Bitcoin revolution is at your fingertips.
+                    </p>
+                    <a href="relocate.html" id="section1-relocate-button" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">Explore more</a>
+                </div>
             </div>
         </div>
     </section>
-    <section
-        class="relative before:absolute before:inset-0 before:h-px before:w-90 before:bg-gradient-to-r before:from-yellow-300 before:via-pink-400 before:to-transparent after:absolute after:inset-0 after:ml-auto after:mt-auto after:h-px after:w-90 after:bg-gradient-to-l after:from-yellow-300 after:via-pink-400 after:to-transparent">
-        <div class="border-y border-gray-200 bg-gray-100 dark:border-slate-700 dark:bg-darker">
-            <div class="relative mx-auto px-6 md:max-w-full md:px-12 lg:max-w-6xl xl:px-0">
-                <div class="items-end justify-between md:flex">
-                    <div class="h-max py-16 md:w-6/12 xl:w-5/12">
-                        <div class="text-center md:text-left">
-                            <h2 id="contact-title"
-                                class="text-3xl font-bold text-gray-800 dark:text-white md:w-max md:text-4xl xl:text-5xl">
-                                One step to improve <br />
-                                your workflow
-                            </h2>
-                            <p id="contact-description" class="mb-8 mt-6 text-gray-600 dark:text-gray-300">Praesentium,
-                                atque exercitationem
-                                dolorum, iste libero eaque animi illum magnam velit iusto quidem omnis quas! Ad expedita
-                                quaerat.</p>
-                            <script charset="utf-8" type="text/javascript"
-                                src="//js.hsforms.net/forms/embed/v2.js"></script>
-                            <script charset="utf-8" type="text/javascript"
-                                src="//js.hsforms.net/forms/embed/v2.js"></script>
-                            <script>
-                                hbspt.forms.create({
-                                    region: "na1",
-                                    portalId: "45121273",
-                                    formId: "40277a41-9472-4659-ac7a-b5875e163eb8"
-                                });
-                            </script>
+
+    <section class="max-w-6xl mx-auto pt-48 px-2 lg:px-0">
+        <h1 id="section2" class="text-center text-4xl dark:text-white text-neutral-700 font-semibold">Bitcoin Balance</h1>
+        <div class="flex flex-col md:flex-row items-center justify-center gap-9 pt-11">
+            <div class="text-center flex flex-col gap-10 w-full md:w-[50%]">
+                <h2 id="section2-title" class="text-neutral-700 text-xl font-medium dark:text-white">El Salvador Bitcoin treasury holdings live</h2>
+                <p class="text-5xl text-tourism-orange font-medium" id="balance-number">0</p>
+                <a id="section2-cta" href="https://bitcoin.gob.sv" target="_blank" class="rounded-lg font-semibold text-white w-3/4 self-center bg-blue-500 p-4 text-center">Check the mempool →</a>
+            </div>
+            <a target="_blank" href="https://x.com/nayibbukele/status/1593113857261965312"
+                                class="cursor-pointer tweet relative p-6 space-y-6 leading-none rounded-lg bg-white ring-white dark:bg-slate-800 ring-1 dark:ring-gray-900/5 border-2 border-slate-300 dark:border-slate-700">
+                                
+                                    <div class="flex items-center space-x-4"><img src="img/tourism/president.webp"
+                                            class="w-12 h-12 bg-center bg-cover border dark:border-slate-700 rounded-full" alt="president">
+                                        <div>
+                                            <h3 class="text-lg font-semibold  text-blue-800 dark:text-white flex items-center"><i
+                                                    class="fa-brands fa-twitter">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" fill="currentColor" width="18" height="18" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                                                </i> Nayib Bukele</h3>
+                                            <p class="text-gray-500 text-md">@nayibbukele</p>
+                                            <p id="section2-tweet-role" class="text-gray-500 text-md mt-2">President of El Salvador</p>
+                                        </div>
+                                    </div>
+                                    <p id="section2-tweet-text"
+                                        class="leading-normal  text-gray-900 dark:text-gray-300 text-md overflow-hidden">
+                                        We are buying one #Bitcoin every day starting tomorrow.
+                                    </p>
+                            </a>
+        </div>
+    </section>
+    
+    <section class="max-w-6xl mx-2 lg:mx-auto text-center pt-28 px-2 lg:px-0">
+        <h1 id="section3" class="text-3xl font-semibold text-tourism-blue dark:text-light-blue  pb-14">Salvadoran Bitcoin Companies</h1>
+        <div class="flex items-center flex-wrap justify-center gap-2 pt-12 shadow-xl py-12 rounded-xl border-gray-300 border-2 dark:border-slate-700">
+            <a href="https://tiankii.com" target="_blank" class="company lg:w-[32%] w-[45%] shrink-0 mx-auto mt-2 p-4 flex justify-center">
+                <img src="img/tourism/companies/tiankii.webp" class="object-contain h-12 w-auto" alt="Tiankii logo">
+            </a>
+            <a href="https://k1.sv" target="_blank" class="company w-[45%] shrink-0 mx-auto mt-2  lg:w-[32%] p-4 flex justify-center">
+                <img src="img/tourism/companies/k1.webp" class="object-contain h-12 w-auto" alt="K1 Technologies logo">
+            </a>
+            <a href="https://blink.sv" target="_blank" class="company w-[45%] shrink-0 mx-auto mt-2 lg:w-[32%] p-4 flex justify-center">
+                <img src="img/tourism/companies/blink.webp" class="object-contain h-12 w-auto dark:hidden" alt="Blink logo">
+                <img src="img/tourism/companies/blink-white.webp" class="object-contain h-12 w-auto dark:block hidden" alt="Blink logo">
+            </a>
+            <a href="https://ditobanx.com" target="_blank" class="company w-[45%] shrink-0 mx-auto mt-2 lg:w-[32%] p-4 flex justify-center">
+                <img src="img/tourism/companies/ditobanx.webp" class="object-contain h-12 w-auto dark:hidden" alt="DitoBanx logo">
+                <img src="img/tourism/companies/ditobanx-white.webp" class="object-contain h-12 w-auto dark:block hidden" alt="DitoBanx Logo">
+            </a>
+            <a href="https://athenabitcoin.com" target="_blank" class="company w-[45%] shrink-0 mx-auto mt-2 lg:w-[32%]  p-4 flex justify-center">
+                <img src="img/tourism/companies/athena.webp" class="object-contain h-12 w-auto dark:hidden" alt="Athena logo">
+                <img src="img/tourism/companies/athena-white.webp" class="object-contain h-12 w-auto dark:block hidden" alt="Athena Logo">
+            </a>
+            <a href="https://x.com/CheritoCafe" target="_blank" class="company w-[45%] shrink-0 mx-auto mt-2 lg:w-[32%]  p-4 flex justify-center">
+                <img src="img/tourism/companies/cherito.webp" class="object-contain h-12 w-auto" alt="Cherito logo">
+            </a>
+            <a href="https://x.com/tbhs_sv" target="_blank" class="company w-[45%] shrink-0 mx-auto mt-2 lg:w-[32%]  p-4 flex justify-center">
+                <img src="img/tourism/companies/tbhs.webp" class="object-contain h-12 w-auto" alt="tbhs logo">
+            </a>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto w-full pt-28 px-2 lg:px-0 hidden">
+        <h1 id="section4" class="text-3xl font-semibold text-tourism-blue dark:text-light-blue pb-14 text-center">Benefits for Bitcoin companies in El Salvador</h1>
+        <div class="flex flex-row flex-wrap gap-4 md:gap-8 text-center justify-center ">
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="img/tourism/icons/capitalgains.svg" alt="capital gains" class="h-52">
+                <h3 id="section4-benefit1" class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Capital gains tax exemption</h3>
+            </div>
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="img/tourism/icons/legaltender.svg" alt="capital gains" class="h-52">
+                <h3 id="section4-benefit2" class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Bitcoin as legal tender</h3>
+            </div>
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="img/tourism/icons/legal.svg" alt="capital gains" class="h-52">
+                <h3 id="section4-benefit3" class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Legal certainty</h3>
+            </div>
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="img/tourism/icons/entrepeneurs.svg" alt="capital gains" class="h-52">
+                <h3 id="section4-benefit4" class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Favorable climate entrepeneurs</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-2 lg:mx-auto pt-28 text-center px-2 lg:px-0">
+        <h1 id="section5" class="text-3xl font-semibold text-tourism-blue dark:text-light-blue pb-14">Bitcoin education initiatives in El Salvador</h1>
+        <div class="flex items-center justify-center flex-wrap gap-2 pt-12 shadow-xl py-12 rounded-xl border-gray-300 border-2 dark:border-slate-700">
+            <a href="https://planb.network" target="_blank" class="company lg:w-[32%] w-[45%] mx-auto mt-2 p-4 flex justify-center">
+                <img src="img/tourism/education/planb.webp" class="h-12 object-contain w-auto dark:hidden" alt="PlanB Network logo">
+                <img src="img/tourism/education/planb-white.webp" class="h-12 object-contain w-auto dark:block hidden" alt="PlanB Network logo">
+            </a>
+            <div class="company lg:w-[32%] w-[45%] mx-auto mt-2  p-4 flex justify-center">
+                <img src="img/logos/cubo-text-blue.svg" class="h-12 object-contain w-auto" alt="CUBO+ logo">
+            </div>
+            <a href="https://x.com/NodeNationSV" target="_blank" class="company lg:w-[32%] w-[45%] mx-auto mt-2  p-4  flex justify-center">
+                <img src="img/tourism/education/node-nation.webp" class="h-12 object-contain w-auto dark:hidden" alt="Node Nation Logo">
+                <img src="img/tourism/education/node-nation-white.webp" class="h-12 object-contain w-auto dark:block hidden" alt="Node Nation Logo">
+            </a>
+            <a href="https://es.myfirstbitcoin.io" target="_blank" class="company lg:w-[32%] w-[45%] mx-auto mt-2 p-4 flex justify-center">
+                <img src="img/tourism/education/mpb.webp" class="h-12 object-contain w-auto dark:hidden" alt="Mi primer Bitcoin logo">
+                <img src="img/tourism/education/mpb-white.webp" class="h-12 object-contain w-auto dark:block hidden" alt="Mi primer Bitcoin logo">
+            </a>
+            <a href="https://torogoz.dev" target="_blank" class="company lg:w-[32%] w-[45%] mx-auto mt-2 p-4  flex justify-center">
+                <img src="img/tourism/education/torogoz.webp" class="h-12 object-contain w-auto" alt="Torogoz Devs Logo">
+            </a>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto w-full pt-24 px-2 lg:px-0 flex flex-col pb-12">
+        <h1 id="section6" class="text-3xl font-semibold text-tourism-blue dark:text-light-blue text-center hidden">Discover the impact of the Bitcoin Law in El Salvador</h1>
+        <div class="flex-row flex-wrap gap-4 md:gap-8 text-center justify-center pt-12 hidden">
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="img/tourism/icons/freedom.svg" alt="capital gains" class="h-52">
+                <h3 id="section6-benefit1" class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Financial freedom</h3>
+            </div>
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="img/tourism/icons/fasttx.svg" alt="capital gains" class="h-52">
+                <h3 id="section6-benefit2" class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Faster transfers</h3>
+            </div>
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="img/tourism/icons/security.svg" alt="capital gains" class="h-52">
+                <h3 id="section6-benefit3" class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Securirty and transparency</h3>
+            </div>
+            <div class="w-[47%] lg:w-[22%] bg-blue-300 dark:bg-blue-900 rounded-xl p-2 md:p-10 flex justify-center flex-col shadow-lg">
+                <img src="img/tourism/icons/investment.svg" alt="capital gains" class="h-52">
+                <h3 id="section6-benefit4" class="text-xl font-semibold text-neutral-700 pt-2 md:pt-8 dark:text-white">Investment attraction</h3>
+            </div>
+        </div>
+        <a id="section6-button" href="files/Ley-Bitcoin.pdf" target="_blank" class="rounded-lg font-semibold text-white w-1/2 md:w-1/3 self-center bg-blue-500 p-4 text-center mt-12">Bitcoin Law</a>
+    </section>
+
+    <section class="max-w-6xl mx-auto p-8 my-16 bg-[#a1867159] rounded-xl shadow-md flex flex-col md:flex-row justify-between items-center">
+        <div class="w-full md:w-1/2 flex flex-col items-center md:items-start">
+            <div class="mb-6">
+                <img src="img/tourism/suggestion.svg" alt="suggestions" class="w-[25rem] h-80 object-contain suggestions-img">
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 md:p-8">
+            <h2 id="section7-question" class="text-xl font-semibold mb-6 text-gray-700 dark:text-white text-center">Do you have a suggestion?</h2>
+            <div id="hubspotForm">
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                <script>
+                hbspt.forms.create({
+                    region: "na1",
+                    portalId: "45121273",
+                    formId: "cc251cc5-e214-497f-bba3-088249882759"
+                });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="w-full bg-amber-900/30 dark:bg-blue-950 mt-32 px-2 lg:px-0 hidden">
+        <div class="max-w-6xl mx-auto w-full py-16">
+            <h1 id="section7" class="text-neutral-700 text-4xl dark:text-white text-center font-semibold">Frequently asked questions</h1>
+            <div class="flex flex-col justify-center items-center py-10 gap-8">
+                <div class="faq-item bg-white shadow-xl rounded-xl flex flex-col p-8 w-full gap-4 cursor-pointer">
+                    <div class="flex items-center justify-between w-full">
+                        <p class="text-xl text-neutral-700 font-semibold">Question 1</p>
+                        <div class="faq-icon rounded-full p-4 bg-white shadow-xl text-center transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out" viewBox="0 0 11 20" fill="none">
+                                <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </div>
                     </div>
-
-                    <div class="md:w-[42%] lg:w-1/2">
-                        <img src="./img/unsorted/undraw_subscriber_re_om92.svg" alt="image" loading="lazy" width="1299"
-                            height="678" />
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                        <p class="text-lg text-neutral-600 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa expedita quos, ea perspiciatis exercitationem ab, similique harum incidunt nihil corrupti voluptatum quo facere facilis accusamus illum, quam quas tempora?</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white shadow-xl rounded-xl flex flex-col p-8 w-full gap-4 cursor-pointer">
+                    <div class="flex items-center justify-between w-full">
+                        <p class="text-xl text-neutral-700 font-semibold">Question 2</p>
+                        <div class="faq-icon rounded-full p-4 bg-white shadow-xl text-center transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out" viewBox="0 0 11 20" fill="none">
+                                <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                        <p class="text-lg text-neutral-600 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa expedita quos, ea perspiciatis exercitationem ab, similique harum incidunt nihil corrupti voluptatum quo facere facilis accusamus illum, quam quas tempora?</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white shadow-xl rounded-xl flex flex-col p-8 w-full gap-4 cursor-pointer">
+                    <div class="flex items-center justify-between w-full">
+                        <p class="text-xl text-neutral-700 font-semibold">Question 3</p>
+                        <div class="faq-icon rounded-full p-4 bg-white shadow-xl text-center transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out" viewBox="0 0 11 20" fill="none">
+                                <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                        <p class="text-lg text-neutral-600 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa expedita quos, ea perspiciatis exercitationem ab, similique harum incidunt nihil corrupti voluptatum quo facere facilis accusamus illum, quam quas tempora?</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white shadow-xl rounded-xl flex flex-col p-8 w-full gap-4 cursor-pointer">
+                    <div class="flex items-center justify-between w-full">
+                        <p class="text-xl text-neutral-700 font-semibold">Question 4</p>
+                        <div class="faq-icon rounded-full p-4 bg-white shadow-xl text-center transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out" viewBox="0 0 11 20" fill="none">
+                                <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                        <p class="text-lg text-neutral-600 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa expedita quos, ea perspiciatis exercitationem ab, similique harum incidunt nihil corrupti voluptatum quo facere facilis accusamus illum, quam quas tempora?</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white shadow-xl rounded-xl flex flex-col p-8 w-full gap-4 cursor-pointer">
+                    <div class="flex items-center justify-between w-full">
+                        <p class="text-xl text-neutral-700 font-semibold">Question 5</p>
+                        <div class="faq-icon rounded-full p-4 bg-white shadow-xl text-center transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out" viewBox="0 0 11 20" fill="none">
+                                <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                        <p class="text-lg text-neutral-600 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa expedita quos, ea perspiciatis exercitationem ab, similique harum incidunt nihil corrupti voluptatum quo facere facilis accusamus illum, quam quas tempora?</p>
+                    </div>
+                </div>
+                <div class="faq-item bg-white shadow-xl rounded-xl flex flex-col p-8 w-full gap-4 cursor-pointer">
+                    <div class="flex items-center justify-between w-full">
+                        <p class="text-xl text-neutral-700 font-semibold">Question 6</p>
+                        <div class="faq-icon rounded-full p-4 bg-white shadow-xl text-center transition-all duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out" viewBox="0 0 11 20" fill="none">
+                                <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500">
+                        <p class="text-lg text-neutral-600 text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsa expedita quos, ea perspiciatis exercitationem ab, similique harum incidunt nihil corrupti voluptatum quo facere facilis accusamus illum, quam quas tempora?</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-white dark:bg-gray-900">
+     <!-- Feedbacks -->
+     <section class="w-full max-w-6xl mx-auto pt-12 md:pt-24 hidden">
+        <h2 class="text-2xl font-semibold mb-4 text-center dark:text-white ">Community Feedback</h2>
+        
+        <div class="relative carousel-container overflow-hidden">
+          <div id="slider" class="flex gap-4 transition-transform duration-300 ease-in-out">
+            <div class="relative w-full md:w-[33%] flex-shrink-0 p-4">   
+              <div class="bg-white dark:bg-blue-900 rounded-lg shadow-lg p-6 flex flex-col justify-between h-full">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h3 class="text-lg font-semibold dark:text-gray-300">Jacob Jones</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Marketing Coordinator</p>
+                  </div>
+                  <div class="flex items-center">
+                    <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-1 rounded-lg">Testimonial</span>
+                  </div>
+                </div>
+                <p class="mt-4 text-gray-700 dark:text-gray-200">I would recommend Notion for anyone trying to get the word out about their business. It has saved me so much time!</p>
+              </div>
+            </div>
+
+            <div class="relative w-full md:w-[33%] flex-shrink-0 p-4">   
+                <div class="bg-white dark:bg-blue-900  rounded-lg shadow-lg p-6 flex flex-col justify-between h-full">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h3 class="text-lg font-semibold dark:text-gray-300">Jacob Jones</h3>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">Marketing Coordinator</p>
+                    </div>
+                    <div class="flex items-center">
+                      <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-1 rounded-lg">Testimonial</span>
+                    </div>
+                  </div>
+                  <p class="mt-4 text-gray-700 dark:text-gray-200">I would recommend Notion for anyone trying to get the word out about their business. It has saved me so much time!</p>
+                </div>
+              </div>
+
+              <div class="relative w-full md:w-[33%] flex-shrink-0 p-4">   
+                <div class="bg-white dark:bg-blue-900  rounded-lg shadow-lg p-6 flex flex-col justify-between h-full">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h3 class="text-lg font-semibold dark:text-gray-300">Jacob Jones</h3>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">Marketing Coordinator</p>
+                    </div>
+                    <div class="flex items-center">
+                      <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-1 rounded-lg">Testimonial</span>
+                    </div>
+                  </div>
+                  <p class="mt-4 text-gray-700 dark:text-gray-200">I would recommend Notion for anyone trying to get the word out about their business. It has saved me so much time!</p>
+                </div>
+              </div>
+
+              <div class="relative w-full md:w-[33%] flex-shrink-0 p-4">   
+                <div class=" bg-white dark:bg-blue-900 rounded-lg shadow-lg p-6 flex flex-col justify-between h-full">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h3 class="text-lg font-semibold dark:text-gray-300">Jacob Jones</h3>
+                      <p class="text-sm dark:text-gray-400 text-gray-500">Marketing Coordinator</p>
+                    </div>
+                    <div class="flex items-center">
+                      <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-1 rounded-lg">Testimonial</span>
+                    </div>
+                  </div>
+                  <p class="mt-4 text-gray-700 dark:text-gray-200">I would recommend Notion for anyone trying to get the word out about their business. It has saved me so much time!</p>
+                </div>
+              </div>
+
+              
+
+              <div class="relative w-full md:w-[33%] flex-shrink-0 p-4">   
+                <div class="bg-white dark:bg-blue-900 rounded-lg shadow-lg p-6 flex flex-col justify-between h-full">
+                  <div class="flex justify-between items-start">
+                    <div>
+                      <h3 class="text-lg dark:text-gray-300 font-semibold">Jacob Jones</h3>
+                      <p class="text-sm dark:text-gray-400 text-gray-500">Marketing Coordinator</p>
+                    </div>
+                    <div class="flex items-center">
+                      <span class="bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-1 rounded-lg">Testimonial</span>
+                    </div>
+                  </div>
+                  <p class="mt-4 text-gray-700 dark:text-gray-200">I would recommend Notion for anyone trying to get the word out about their business. It has saved me so much time!</p>
+                </div>
+              </div>
+          </div>
+
+          <button id="prev" class="absolute z-30 top-1/2 left-0 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full shadow-md hover:bg-blue-700">
+            &#10094;
+          </button>
+          <button id="next" class="absolute z-30 top-1/2 right-0 transform -translate-y-1/2 bg-blue-500 text-white p-2 rounded-full shadow-md hover:bg-blue-700">
+            &#10095;
+          </button>
+
+        </div>
+    </section>
+      
+
+
+    <footer class="bg-white dark:bg-gray-900 pt-12">
         <div class="relative mx-auto px-6 md:max-w-full my-6 md:px-12 lg:max-w-6xl xl:px-0">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
@@ -1176,17 +743,11 @@
                             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Links</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
-                                <a href="pages/faq.html" class="hover:underline">FAQ</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="pages/maintenance.html" class="hover:underline">Resources</a>
-                            </li>
-                            <li class="mb-4">
                                 <a target="_blank" href="https://bitcoin.org/bitcoin.pdf"
                                     class="hover:underline">Bitcoin whitepaper</a>
                             </li>
                             <li class="mb-4">
-                                <a href="pages/legal/cookies.html" class="hover:underline">Cookies Policy</a>
+                                <a href="legal/cookies.html" class="hover:underline">Cookies Policy</a>
                             </li>
                         </ul>
                     </div>
@@ -1204,9 +765,11 @@
     <script src="js/lib/swiperjs/swiper-bundle.min.js"></script>
     <script src="js/lib/flowbite/dist/flowbite.min.js"></script>
     <script src="js/component.js"></script>
-    <script src="js/cookies.js"></script>
-    <script src="js/carousel.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/cookies/cookies.js"></script>
+    <script src="js/tourism.js"></script>
+    <script src="js/helpers/upButton.js"></script>
+    <script src="js/helpers/touristScroll.js"></script>
 </body>
 
 </html>
