@@ -17,6 +17,13 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="output.css">
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "o6hcuommdo");
+    </script>
 
 <script>
     if (
@@ -81,15 +88,6 @@
     #slider {
       transition: transform 0.3s ease-in-out;
     }
-
-    @media (prefers-color-scheme: dark) {
-        .suggestions-img {
-            filter: invert(1) brightness(1.7) hue-rotate(180deg); 
-        }
-    }
-
-
-
     </style>
 </head>
 
@@ -489,7 +487,7 @@
     <section class="max-w-6xl mx-auto p-8 my-16 bg-[#a1867159] rounded-xl shadow-md flex flex-col md:flex-row justify-between items-center">
         <div class="w-full md:w-1/2 flex flex-col items-center md:items-start">
             <div class="mb-6">
-                <img src="img/tourism/suggestion.svg" alt="suggestions" class="w-[25rem] h-80 object-contain suggestions-img">
+                <img src="img/tourism/suggestion.svg" alt="suggestions" class="w-[25rem] h-80 object-contain dark:contrast-50">
             </div>
         </div>
         <div class="w-full md:w-1/2 md:p-8">
