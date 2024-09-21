@@ -3058,6 +3058,26 @@ input:checked + .toggle-bg {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+:is(.dark .dark\:shadow-blue-500) {
+  --tw-shadow-color: #3F83F8;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+:is(.dark .dark\:shadow-blue-800) {
+  --tw-shadow-color: #1E429F;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+:is(.dark .dark\:shadow-blue-800\/40) {
+  --tw-shadow-color: rgb(30 66 159 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+:is(.dark .dark\:shadow-blue-900\/40) {
+  --tw-shadow-color: rgb(35 56 118 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 :is(.dark .dark\:ring-gray-900\/5) {
   --tw-ring-color: rgb(17 24 39 / 0.05);
 }

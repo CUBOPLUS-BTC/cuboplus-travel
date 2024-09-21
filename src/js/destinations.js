@@ -99,7 +99,7 @@ const renderDestinations = (destinations) => {
     let html = "";
 
     destinations.map((destination) => {
-        html += `<div class="bg-white shadow-xl shadow-blue-500/40 dark:bg-slate-900 border-gray-300 border-2 rounded-xl dark:border-slate-700 p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+        html += `<div class="bg-white shadow-xl shadow-blue-500/40 dark:shadow-blue-900/40 dark:bg-slate-900 border-gray-300 border-2 rounded-xl dark:border-slate-700 p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
                     <img src="${TOURISM_ASSETS + `destinations/${destination.id}.webp`}" class="rounded-2xl w-full object-cover h-64 md:w-1/2 flex-shrink-0" alt="${destination.title}">
                     <div class="flex flex-col dark:text-white gap-8 w-full md:w-1/2">
                         <h2 class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
