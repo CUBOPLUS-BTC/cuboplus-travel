@@ -1,5 +1,5 @@
 {
-    "version": "1.0",
+    "version": "1.1",
     "layout": {
         "navbar": {
             "home": "Home",
@@ -53,9 +53,9 @@
         "section1-legend": "Use our interactive map to discover destinations, see photos, and get all the info you need in a country where Bitcoin enhances the experience.",
         "section2": "Bitcoin events in El Salvador",
         "section2-legend": "Find out about the Bitcoin events happening in El Salvador, the best places to increase your network and meet like-minded individuals.",
-        "section3": "Bitcoin commmunities",
+        "section3": "Bitcoin communities",
         "section3-legend": "Through their proof of work, dedication and effort, they have established the first communities in El Salvador.",
-        "section4": "Bitcoin touris places",
+        "section4": "Bitcoin tourist places",
         "section4-legend": "Explore Bitcoin-friendly travel destinations",
         "section5": "El Salvador Travel",
         "section5-legend": "Do you prefer exploring alternative destinations? <br> <br> Discover more options in El Salvador's official tourism website",
