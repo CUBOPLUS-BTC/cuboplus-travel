@@ -258,9 +258,41 @@ const setElements = (content) => {
   })
 }
 
+const paths = document.querySelectorAll('#map-container svg path');
+
 document.addEventListener("DOMContentLoaded", () => {
+  let isDark = document.documentElement.classList.contains('dark');
+  let color = "";
+  isDark ? color = "#fff" : color = "#193D99";
+
+  paths.forEach((path) => {
+    path.setAttribute("stroke", color);
+  })
+  
   changeLanguage("travel", localStorage.getItem("language-tourism"), setElements);
 });
+
+const switchers = document.querySelectorAll(".switcher");
+
+switchers[0].addEventListener("click", () => {
+  let isDark = !document.documentElement.classList.contains('dark');
+  let color = "";
+  isDark ? color = "#fff" : color = "#193D99";
+
+  paths.forEach((path) => {
+    path.setAttribute("stroke", color);
+  })
+})
+
+switchers[1].addEventListener("click", () => {
+  let isDark = !document.documentElement.classList.contains('dark');
+  let color = "";
+  isDark ? color = "#fff" : color = "#193D99";
+
+  paths.forEach((path) => {
+    path.setAttribute("stroke", color);
+  })
+})
 
 jpButton[0].addEventListener("click", () => {
   changeLanguage("travel", "jp", setElements);
