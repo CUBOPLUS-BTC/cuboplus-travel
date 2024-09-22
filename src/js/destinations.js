@@ -108,7 +108,7 @@ const renderDestinations = (destinations) => {
                         <p class="text-xs md:text-sm text-start">
                             ${destination.legend}
                         </p>
-                        <a href="destination.html?id=${destination.id}" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">See more</a>
+                        <a href="destination.html?id=${destination.id}" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center button">See more</a>
                     </div>
                 </div>`
     });
