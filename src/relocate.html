@@ -276,12 +276,11 @@
     </section>
 
     <section class="h-screen w-full relative">
-        <video class="absolute top-0 left-0 w-full h-full object-cover z-10" autoplay muted loop playsinline
-            >
-            <source src="img/output-tourism.mp4" type="video/mp4">
-            <source src="img/output-tourism.webm" type="video/webm">
+        <video class="absolute top-0 left-0 w-full h-full object-cover z-10 lazy" autoplay muted loop playsinline preload="metadata" poster="img/thumbnail.webp">
+            <source data-src="img/output-tourism.mp4" type="video/mp4">
+            <source data-src="img/output-tourism.webm" type="video/webm">
             Your browser does not support the video tag.
-        </video>
+         </video>
 
         <div
             class="absolute top-0 left-0 z-20 w-full h-full flex items-center justify-center flex-col p-5 gap-6 lg:gap-20 lg:p-20">
@@ -459,6 +458,7 @@
 
     <script src="js/lib/swiperjs/swiper-bundle.min.js"></script>
     <script src="js/lib/flowbite/dist/flowbite.min.js"></script>
+    <script src="js/helpers/lazyLoader.js"></script>
     <script src="js/component.js"></script>
     <script src="js/relocate.js"></script>
     <script src="js/cookies/cookies.js"></script>
