@@ -181,6 +181,11 @@ const renderOnboard = (onboard) => {
 const renderCalendar = (events) => {
     const calendarEl = document.getElementById("calendar");
     const calendar = new FullCalendar.Calendar(calendarEl, {
+        headerToolbar: {
+          left: "title",
+          center: "",
+          right: "prev,next"
+        },
         height: 514,
         initialView: window.innerWidth <= 640 ? "listMonth" : "dayGridMonth",
         displayEventTime: false,
