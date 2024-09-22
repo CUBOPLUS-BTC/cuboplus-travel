@@ -98,3 +98,15 @@ img.fade-out {
 .scroll-container:active {
     cursor: grabbing;
 }
+
+.button:hover {
+    background-color: #3667bd;
+}
+
+.button {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.text-shadow {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
