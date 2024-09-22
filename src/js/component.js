@@ -5,7 +5,7 @@ const TOURISM_DATA_URL = "https://raw.githubusercontent.com/CUBOPLUS-BTC/tourism
 const TOURISM_ASSETS = TOURISM_DATA_URL + "assets/";
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("footer-copyright").innerHTML = `© ${new Date().getFullYear()} cuboplus.`;
+  document.getElementById("footer-copyright").innerHTML = `© ${new Date().getFullYear()} CUBO+.`;
 });
 
 const setLayout = (content) => {
