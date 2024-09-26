@@ -191,13 +191,13 @@ const renderCalendar = (events) => {
         displayEventTime: false,
         events: events,
     
-        eventContent: function (info) {
+        eventContent: function (info) {          
           const props = info.event._def.extendedProps;
-          const hour = `${info.event._instance.range.start.getHours()}:${
+          const hour = `${info.event._instance.range.start.getHours() + 6}:${
             info.event._instance.range.start.getMinutes()
               ? info.event._instance.range.start.getMinutes()
               : "00"
-          } - ${info.event._instance.range.end.getHours()}:${
+          } - ${info.event._instance.range.end.getHours() + 6}:${
             info.event._instance.range.end.getMinutes()
               ? info.event._instance.range.end.getMinutes()
               : "00"
