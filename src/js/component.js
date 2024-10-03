@@ -5,6 +5,7 @@ const TOURISM_DATA_URL = "https://raw.githubusercontent.com/CUBOPLUS-BTC/tourism
 const TOURISM_ASSETS = TOURISM_DATA_URL + "assets/";
 
 document.addEventListener("DOMContentLoaded", () => {
+  if (!localStorage.getItem("language-tourism")) localStorage.setItem("language-tourism", "en");
   document.getElementById("footer-copyright").innerHTML = `© ${new Date().getFullYear()} CUBO+.`;
 });
 
