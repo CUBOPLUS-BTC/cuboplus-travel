@@ -61,7 +61,7 @@ const departmentsList = [
 ];
 
 document.addEventListener("DOMContentLoaded", async (e) => {
-  const { recurringEvents, events, communities, destinations, onboard } = await fetchData();
+  const { recurringEvents, events, communities, destinations, onboard } = await fetchData(localStorage.getItem("language-tourism"));
   const allEvents = [...recurringEvents, ...events];
 
   renderCalendar(allEvents);
@@ -70,8 +70,8 @@ document.addEventListener("DOMContentLoaded", async (e) => {
   renderOnboard(onboard);
 });
 
-const fetchData = async () => {
-    const request = await fetch(TOURISM_DATA_URL + `destinations/en.json`);
+const fetchData = async (language = "en") => {
+    const request = await fetch(TOURISM_DATA_URL + `destinations/${language}.json`);
     const response = await request.json();
     return response;
 };
@@ -108,7 +108,7 @@ const renderDestinations = (destinations) => {
                         <p class="text-xs md:text-sm text-start">
                             ${destination.legend}
                         </p>
-                        <a href="destination.html?id=${destination.id}" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center button">See more</a>
+                        <a href="destination.html?id=${destination.id}" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center button">${destination.button}</a>
                     </div>
                 </div>`
     });
@@ -299,18 +299,46 @@ switchers[1].addEventListener("click", () => {
   })
 })
 
-jpButton[0].addEventListener("click", () => {
+jpButton[0].addEventListener("click", async () => {
   changeLanguage("travel", "jp", setElements);
+  const { recurringEvents, events, communities, destinations, onboard } = await fetchData("jp");
+  const allEvents = [...recurringEvents, ...events];
+
+  renderCalendar(allEvents);
+  renderCommunities(communities);
+  renderDestinations(destinations);
+  renderOnboard(onboard);
 });
 
-jpButton[1].addEventListener("click", () => {
+jpButton[1].addEventListener("click", async () => {
   changeLanguage("travel", "jp", setElements);
+  const { recurringEvents, events, communities, destinations, onboard } = await fetchData("jp");
+  const allEvents = [...recurringEvents, ...events];
+
+  renderCalendar(allEvents);
+  renderCommunities(communities);
+  renderDestinations(destinations);
+  renderOnboard(onboard);
 });
 
-enButton[0].addEventListener("click", () => {
+enButton[0].addEventListener("click", async () => {
   changeLanguage("travel", "en", setElements);
+  const { recurringEvents, events, communities, destinations, onboard } = await fetchData("en");
+  const allEvents = [...recurringEvents, ...events];
+
+  renderCalendar(allEvents);
+  renderCommunities(communities);
+  renderDestinations(destinations);
+  renderOnboard(onboard);
 });
 
-enButton[1].addEventListener("click", () => {
+enButton[1].addEventListener("click", async () => {
   changeLanguage("travel", "en", setElements);
+  const { recurringEvents, events, communities, destinations, onboard } = await fetchData("en");
+  const allEvents = [...recurringEvents, ...events];
+
+  renderCalendar(allEvents);
+  renderCommunities(communities);
+  renderDestinations(destinations);
+  renderOnboard(onboard);
 });
