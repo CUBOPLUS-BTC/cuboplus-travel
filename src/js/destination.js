@@ -2,10 +2,10 @@ const urlParams = new URLSearchParams(window.location.search);
 const destinationId = urlParams.get("id");
 const language = localStorage.getItem("language") || "en";
 const DESTINATION_URL =
-  TOURISM_DATA_URL + `destinations/${destinationId}/en.json`;
+  TOURISM_DATA_URL + `destinations/${destinationId}/`;
 const pageElement = document.getElementById("page-content");
 
-async function loadDestination(data) {
+async function loadDestination(data) {  
   if (!destinationId) {
     pageElement.innerHTML = `
                 <div class="text-center text-red-500 mt-10">
@@ -18,7 +18,7 @@ async function loadDestination(data) {
   
 document.getElementById("tab-title").innerHTML = data.title;
   document.getElementById("destinationname").textContent =
-    "Welcome to " + data.title;
+    "" + data.title;
   document.getElementById("description").textContent = data.legend;
   document.getElementById("destination-map").innerHTML = `
                                                             <iframe 
@@ -174,9 +174,14 @@ function loadAllSlides(data) {
 
 }
 
-document.addEventListener("DOMContentLoaded", async (e) => {
-  const response = await fetch(DESTINATION_URL);
+const fetchData = async (language) => {
+  const response = await fetch(DESTINATION_URL + `${language}.json`);
   const data = await response.json();
+  return data;
+}
+
+document.addEventListener("DOMContentLoaded", async (e) => {
+  const data = await fetchData(localStorage.getItem("language-tourism"));
 
   loadDestination(data);
 
@@ -235,18 +240,66 @@ document.addEventListener("DOMContentLoaded", () => {
   changeLanguage("destination", localStorage.getItem("language-tourism"), setElements);
 });
 
-jpButton[0].addEventListener("click", () => {
+jpButton[0].addEventListener("click", async () => {
   changeLanguage("destination", "jp", setElements);
+
+  const data = await fetchData("jp");
+
+  loadDestination(data);
+
+  if (data.community) {
+    renderCommunity(data.community)
+  } else {
+    document.getElementById("community-section").classList = "hidden";
+  }
+
+  loadAllSlides(data);
 });
 
-jpButton[1].addEventListener("click", () => {
+jpButton[1].addEventListener("click", async () => {
   changeLanguage("destination", "jp", setElements);
+
+  const data = await fetchData("jp");
+
+  loadDestination(data);
+
+  if (data.community) {
+    renderCommunity(data.community)
+  } else {
+    document.getElementById("community-section").classList = "hidden";
+  }
+
+  loadAllSlides(data);
 });
 
-enButton[0].addEventListener("click", () => {
+enButton[0].addEventListener("click", async () => {
   changeLanguage("destination", "en", setElements);
+
+  const data = await fetchData("en");
+
+  loadDestination(data);
+
+  if (data.community) {
+    renderCommunity(data.community)
+  } else {
+    document.getElementById("community-section").classList = "hidden";
+  }
+
+  loadAllSlides(data);
 });
 
-enButton[1].addEventListener("click", () => {
+enButton[1].addEventListener("click", async () => {
   changeLanguage("destination", "en", setElements);
+
+  const data = await fetchData("en");
+
+  loadDestination(data);
+
+  if (data.community) {
+    renderCommunity(data.community)
+  } else {
+    document.getElementById("community-section").classList = "hidden";
+  }
+
+  loadAllSlides(data);
 });
