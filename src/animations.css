@@ -37,6 +37,11 @@ img.fade-out {
     background-image: linear-gradient(180deg, #fee3a0, #00000000);
 }
 
+.navbar-tourism-travel:not(.scrolled){
+    background-color: rgba(255, 255, 255, 0) !important;
+    background-image: linear-gradient(180deg, #31b9fb, #00000000);
+}
+
 .navbar-tourism.scrolled {
     background-color: rgb(255, 255, 255) ;
 }
