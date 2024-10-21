@@ -28,7 +28,7 @@
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  background-color: red !important;
 }
 
 a {
@@ -224,4 +224,6 @@ a {
 .button:hover .button__triangle {
   transform: rotate(-12deg) scale(1.1);
 }
-
+.card-img-desing{
+  background: black;
+}

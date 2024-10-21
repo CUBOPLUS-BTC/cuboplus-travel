@@ -3374,9 +3374,13 @@ input:checked + .toggle-bg {
 .bg-transparent {
   background-color: transparent;
 }
+.bg-light {
+  background-color: #ffffff;
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: #fbfcfd;
 }
 .bg-white\/30 {
   background-color: rgb(255 255 255 / 0.3);
