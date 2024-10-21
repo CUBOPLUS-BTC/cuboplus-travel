@@ -2086,10 +2086,12 @@ input:checked + .toggle-bg {
   --tw-bg-opacity: 1;
   background-color: rgb(12 74 110 / var(--tw-bg-opacity));
 }
+.bg-light {
+  background-color: #ffffff;
+}
 
 .bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: #fbfcfd;
 }
 
 .bg-white\/50 {
