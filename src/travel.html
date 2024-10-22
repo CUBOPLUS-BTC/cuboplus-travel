@@ -245,8 +245,10 @@
         </nav>
     </header>
     <button id="backToTop" class="fixed z-40 bottom-10 right-10 bg-blue-500 text-white p-3 rounded-full shadow-lg">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out" style="transform: rotate(270deg);" viewBox="0 0 11 20" fill="none">
-            <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out"
+            style="transform: rotate(270deg);" viewBox="0 0 11 20" fill="none">
+            <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="white" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
         </svg>
     </button>
 
@@ -279,13 +281,21 @@
         </div>
     </section>
 
-    <section class="w-full relative init-background">
+    <section class="w-full relative parallax parallax-lake items-center flex justify-start" style="height: 40vh;">
+        <div class="main-page-title w-full items-center flex justify-between flex-wrap" style="top: 0 !important;">
+            <div class="sub-title-page">
+                <div class="items-center flex justify-start flex-wrap gap-7">
+                    <h1><span style="color: #ff8a4c;">#Bitcoin</span> Country </h1>
+                    <img data-src="img/icons/flagElSalvador.png" width="70" class="ml-4 object-contain lazy"
+                        alt="btc logo">
+                </div>
+            </div>
+        </div>
         <!-- <video class="absolute top-0 left-0 w-full h-full object-cover z-10 lazy" autoplay muted loop playsinline preload="metadata" poster="img/thumbnail.webp">
             <source data-src="img/output-tourism.mp4" type="video/mp4">
             <source data-src="img/output-tourism.webm" type="video/webm">
             Your browser does not support the video tag.
          </video> -->
-        <img src="img/background/lake.png" style="height: 100vm; width: 100vm;" alt="background">
     </section>
 
     <section class="mx-auto max-w-6xl w-full pt-28 px-4 lg:px-0">
@@ -356,12 +366,18 @@
         </div>
     </section>
 
-    <section  style="position: relative; padding: 60px 10px 60px 10px; border-radius: 12px; margin-top: 100px;" class="parallax parallax-catedral mx-auto w-full pt-48 px-4 lg:px-0 flex flex-col gap-14 items-center text-center">
-        <h1 id="section2" class="text-4xl text-white font-semibold leading-normal text-neutral-700 " style="z-index: 1;">Bitcoin Events
-            in El Salvador</h1>
-        <p id="section2-legend" class="w-full md:w-3/4 text-white" style="z-index: 1;">Look for the events happening in El Salvador
+    <section style="position: relative; padding: 100px 10px 100px 10px; margin-top: 160px;"
+        class="parallax parallax-catedral mx-auto w-full pt-48 px-4 lg:px-0 flex flex-col gap-14 items-center text-center">
+        <div class="flex align-center justify-center" style="z-index: 1; flex-wrap: wrap;">
+            <h1 id="section2" class="text-4xl text-white font-semibold leading-normal text-neutral-700 ">Bitcoin Events
+                in El Salvador</h1>
+            <img data-src="img/icons/flagElSalvador.png" width="70" class="ml-4 object-contain lazy" alt="btc logo">
+        </div>
+        <p id="section2-legend" class="w-full md:w-3/4 text-white" style="z-index: 1;">Look for the events happening in
+            El Salvador
             about Bitcoin, the best places to increase your network, meet friends and develop your image.</p>
-        <div id="calendar" class="md:dark:text-white max-w-6xl w-full bg-light rounded-xl p-4" style="z-index: 1;"></div>
+        <div id="calendar" class="md:dark:text-white max-w-6xl w-full bg-light rounded-xl p-4" style="z-index: 1;">
+        </div>
     </section>
 
     <section class="mx-auto max-w-6xl px-4 lg:px-0 w-full pt-36 flex flex-col gap-14 items-center text-center">
@@ -376,7 +392,7 @@
         </div>
     </section>
 
-    <section class="mx-auto max-w-6xl px-4 lg:px-0 w-full pt-36 flex flex-col gap-14 items-center text-center">
+    <section class="mx-auto max-w-6xl px-4 lg:px-0 w-full pt-36 flex flex-col gap-1 items-center text-center">
         <h1 id="section4" class="text-4xl dark:text-white font-semibold leading-normal text-neutral-700">Bitcoin tourist
             places</h1>
         <p id="section4-legend" class="w-full md:w-3/4 dark:text-white">Explore Bitcoin-friendly travel destinations in
@@ -385,7 +401,7 @@
         <div id="tourist-places" class="flex flex-col flex-wrap gap-9 w-full"></div>
     </section>
 
-    <section class="mx-auto max-w-6xl px-4 lg:px-0 w-full pt-36 flex flex-col gap-14 items-center text-center">
+    <section class="mx-auto max-w-6xl px-4 lg:px-0 w-full pt-36 flex flex-col items-center text-center">
         <h1 id="section6" class="text-4xl dark:text-white font-semibold leading-normal text-neutral-700">Bitcoin ATMs
             Services</h1>
         <p id="section6-legend" class="w-full md:w-3/4 dark:text-white">Easily find Bitcoin ATMs in El Salvador.
@@ -393,11 +409,11 @@
             convenience.</p>
         <div id="tourist-places" class="flex flex-col flex-wrap gap-9">
             <div
-                class="bg-white dark:bg-slate-900 rounded-xl p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
-                <img src="img/tourism/wallets/chivo.webp" class="rounded-2xl w-full md:w-1/2 h-full object-cover" alt="Destination">
+                class="mt-20 bg-white dark:bg-slate-900 rounded-xl p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+                <img src="img/tourism/wallets/chivo.webp" class="rounded-2xl w-full md:w-1/2 h-full object-cover"
+                    alt="Destination">
                 <div class="flex flex-col dark:text-white gap-8">
-                    <h2 id="section6-opt1"
-                        class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
+                    <h2 id="section6-opt1" class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
                         Chivo wallet
                     </h2>
                     <p id="section6-opt1-legend" class="text-xs md:text-sm text-end">
@@ -405,16 +421,15 @@
                         infraestructure to withdrawal Bitcoin for dollars and deposit dollars for Bitcoin via on-chain.
                     </p>
                     <a href="https://www.chivowallet.com/index.html#ubicacion" id="section6-opt1-cta" target="_blank"
-                        class="button rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">
+                        class="button rounded-full font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">
                         See locations
                     </a>
                 </div>
             </div>
             <div
-                class="reverse-card bg-white dark:bg-slate-900 rounded-xl p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+                class="mt-20 reverse-card bg-white dark:bg-slate-900 rounded-xl p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
                 <div class="flex flex-col dark:text-white gap-8">
-                    <h2 id="section6-opt2"
-                        class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
+                    <h2 id="section6-opt2" class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
                         Athena Bitcoin
                     </h2>
                     <p id="section6-opt2-legend" class="text-xs md:text-sm text-start">
@@ -422,12 +437,14 @@
                         Bitcoin for dollars and deposit dollars for Bitcoin via on-chain and Lightning Network.
                     </p>
                     <a href="https://athenabitcoin.com/atm-locations/" id="section6-opt2-cta" target="_blank"
-                        class="button rounded-lg font-semibold text-white w-1/2 self-start bg-blue-500 p-4 text-center">
+                        class="button rounded-full font-semibold text-white w-1/2 self-start bg-blue-500 p-4 text-center">
                         See locations
                     </a>
                 </div>
-                <img src="img/tourism/companies/athena-square.webp" class="rounded-2xl w-full md:w-1/2 h-full object-covey dark:hidden" alt="Athena">
-                <img src="img/tourism/companies/athena-square-white.webp" class="rounded-2xl w-full md:w-1/2 h-full object-covey hidden" alt="Athena">
+                <img src="img/tourism/companies/athena-square.webp"
+                    class="rounded-2xl w-full md:w-1/2 h-full object-covey dark:hidden" alt="Athena">
+                <img src="img/tourism/companies/athena-square-white.webp"
+                    class="rounded-2xl w-full md:w-1/2 h-full object-covey hidden" alt="Athena">
             </div>
         </div>
     </section>
@@ -465,7 +482,8 @@
         </div>
     </section>
 
-    <section class="parallax parallax-catedral2 w-full bg-light dark:bg-blue-950 mt-32 px-4 lg:px-0 " style="position: relative;">
+    <section class="parallax parallax-catedra2 w-full bg-light dark:bg-blue-950 mt-32 px-4 lg:px-0 "
+        style="position: relative;">
         <div class="max-w-6xl mx-auto w-full py-16" style="z-index: 1; position: relative;">
             <h1 id="section8" class="text-neutral-700 text-4xl text-white text-center font-semibold">Select an
                 option</h1>

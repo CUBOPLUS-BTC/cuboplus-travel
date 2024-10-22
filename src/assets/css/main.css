@@ -1,3 +1,67 @@
+.main-page-title{
+    font-family: 'Space Grotesk', sans-serif;
+    z-index: 1;
+    top: 78px;
+    position: relative;
+    padding-left: 40px;
+}
+.main-page-title h1{
+    font-size: 8rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 0.7em;
+}
+.sub-title-page{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.main-page-title h3{
+    font-size: 4.8em;
+    color: #ffffff;
+
+}
+.sub-title-page a {
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1220px) {
+    .main-page-title h1{
+        font-size: 7rem;
+        
+    }
+    .main-page-title h3{
+        font-size: 3em;
+    }
+
+}
+@media only screen and (max-width: 1000px) {
+    .main-page-title h1{
+        font-size: 6rem;
+        
+    }
+    .main-page-title h3{
+        font-size: 2em;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+    .main-page-title h1{
+        font-size: 3.5rem;
+        
+    }
+    .main-page-title h3{
+        font-size: 1.5em;
+    }
+    .sub-title-page a {
+        font-size: 1em;
+        padding: 15px;
+    }
+}
 .card-img-desing {
     position: relative;
     display: flex;
@@ -8,8 +72,9 @@
 }
 
 .card-img-desing h1 {
-    max-width: 232px;
+    max-width: 300px;
     text-align: center;
+    font-size: 3em;
 }
 
 .img-content {
@@ -37,7 +102,7 @@
     box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 1px 1em #2c51ab33;
     width: 300px;
     height: 150px;
-    background: #ffffff6b;
+    background: #ffffffb5;
     backdrop-filter: blur(7px);
 }
 
@@ -105,16 +170,22 @@
 }
 
 .parallax-catedral {
-    background-image: url('/src/img/background/catedra.jpeg') !important;
+    background-image: url('../../img/background/catedra.jpeg') !important;
 }
-.parallax-catedral2 {
-    background-image: url('/src/img/background/catedra2.jpeg') !important;
+.parallax-catedra2 {
+    background-image: url('../../img/background/catedra2.jpeg') !important;
+}
+.parallax-lake{
+    background-image: url('../../img/background/lake.png') !important;
 }
 .parallax-agency{
-    background-image: url('/src/img/tourism/agency/agency.webp') !important;
+    background-image: url('../../img/tourism/agency/agency.webp') !important;
 }
 .parallax-agency-blur{
-    background-image: url('/src/img/tourism/agency/agency.webp') !important;
+    background-image: url('../../img/tourism/agency/agency.webp') !important;
+}
+.parallax-relocate{
+    background-image: url('../../img/tourism/relocation/background.webp') !important;
 }
 .parallax::before {
     content: '';
