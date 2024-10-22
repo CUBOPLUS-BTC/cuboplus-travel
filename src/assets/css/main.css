@@ -17,8 +17,11 @@
     width: 100%;
     max-width: 641px;
     min-width: 641px;
-    max-height: 500px;
-    height: 394px;
+    flex-wrap: wrap;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .img-content span a {
@@ -31,58 +34,15 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
-    position: absolute;
     box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 1px 1em #2c51ab33;
-}
-
-.img-content span#item1 {
-    width: 125px;
-    height: 125px;
-    left: 519px;
-    top: 134px;
-
-}
-
-.img-content span#item2 {
-    width: 125px;
-    height: 125px;
-    top: 134px;
-    left: 0;
-}
-
-.img-content span#item3 {
-    width: 150px;
+    width: 300px;
     height: 150px;
-    bottom: 0;
-    left: 117px;
+    background: #ffffff6b;
+    backdrop-filter: blur(7px);
 }
 
-.img-content span#item4 {
-    width: 150px;
-    height: 150px;
-    left: 117px;
-    top: 0;
-}
-
-.img-content span#item5 {
-    width: 125px;
-    height: 125px;
-    top: 134px;
-    left: 260px;
-}
-
-.img-content span#item6 {
-    width: 150px;
-    height: 150px;
-    top: 0;
-    left: 377px;
-}
-
-.img-content span#item7 {
-    width: 150px;
-    height: 150px;
-    bottom: 0;
-    left: 377px;
+.img-content span img {
+    max-height: 100px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -100,14 +60,18 @@
     }
 }
 
+@media only screen and (max-width: 1040px) {
+    .img-content {
+        transform: scale(0.9);
+    }
+
+}
+
 @media only screen and (max-width: 710px) {
     .img-content {
         transform: scale(0.8);
     }
 
-    .card-img-desing.initiatives-img .img-content {
-        transform: scale(1);
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -115,18 +79,11 @@
         transform: scale(0.7);
     }
 
-    .card-img-desing.initiatives-img .img-content {
-        transform: scale(1);
-    }
 }
 
 @media only screen and (max-width: 560px) {
     .img-content {
         transform: scale(0.6);
-    }
-
-    .card-img-desing.initiatives-img .img-content {
-        transform: scale(0.9);
     }
 }
 
@@ -147,10 +104,11 @@
 }
 
 .parallax-catedral {
-    background-image: url('/src/img/background/catedra.jpeg');
-
+    background-image: url('/src/img/background/catedra.jpeg') !important;
 }
-
+.parallax-catedral2 {
+    background-image: url('/src/img/background/catedra2.jpeg') !important;
+}
 .parallax::before {
     content: '';
     position: absolute;
@@ -159,4 +117,19 @@
     right: 0;
     bottom: 0;
     background-color: #00000059;
+}
+
+::-webkit-scrollbar {
+    height: 1rem;
+    width: 0.5rem;
+}
+ ::-webkit-scrollbar-thumb {
+    --tw-bg-opacity: 1;
+    background-color: #3f83f8;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 9999px;
 }

@@ -32,19 +32,35 @@ img.fade-out {
     transition: opacity 0.5s ease, visibility 0.5s ease;
     border: none;
 }
-.navbar-tourism:not(.scrolled){
-    background-color: rgba(255, 255, 255, 0) !important;
-    background-image: linear-gradient(180deg, #fee3a0, #00000000);
+/* .navbar-tourism button.language{
+    height: 30px;
+    width: 30px;
+} */
+.navbar-tourism .content-nav{
+    padding: 11px;
+}
+@media only screen and (max-width: 1023px){
+    .navbar-tourism .content-nav{
+        padding:0px !important;
+     }
 }
 
-.navbar-tourism-travel:not(.scrolled){
-    background-color: rgba(255, 255, 255, 0) !important;
-    background-image: linear-gradient(180deg, #31b9fb, #00000000);
+.navbar-tourism {
+    background-color: rgb(255, 255, 255) !important;
+}
+.init-background{
+    position: relative;
+}
+.init-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000059;
 }
 
-.navbar-tourism.scrolled {
-    background-color: rgb(255, 255, 255) ;
-}
 .nav-menu li{
     font-size: 1.1em;
 }

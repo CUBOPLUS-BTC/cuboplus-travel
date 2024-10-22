@@ -86,20 +86,21 @@
         }
     </script>
     <link rel="stylesheet" href="./assets/css/medias.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body class="font-[Poppins] min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
     <header>
         <nav id="navbar"
-            class="navbar-tourism navbar-tourism-travel p-1 fixed inset-x-0 z-40 w-full border-b border-gray-100 bg-white dark:border-gray-700/30 dark:bg-gray-900">
+            class="navbar-tourism navbar-tourism-travel fixed inset-x-0 z-40 w-full border-b border-gray-100 bg-white dark:border-gray-700/30 dark:bg-gray-900">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
+                <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 content-nav">
                     <div class="relative z-20 flex w-full justify-between lg:px-0 lg:w-max">
                         <div aria-label="logo" class="flex items-center space-x-2">
                             <img src="img/logos/cubo-text-blue.svg" class="hidden sm:block"
-                                style="height: 50px; width: 164px;" alt="cubo logo">
+                                style="height: 30px; width: 164px;" alt="cubo logo">
                             <img src="img/logos/cubo-logo-azul1.svg" class="block sm:hidden"
-                                style="height: 40px; width: 48px;" alt="cubo logo">
+                                style="height: 30px; width: 48px;" alt="cubo logo">
                         </div>
 
                         <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
@@ -278,7 +279,7 @@
         </div>
     </section>
 
-    <section class="w-full relative">
+    <section class="w-full relative init-background">
         <!-- <video class="absolute top-0 left-0 w-full h-full object-cover z-10 lazy" autoplay muted loop playsinline preload="metadata" poster="img/thumbnail.webp">
             <source data-src="img/output-tourism.mp4" type="video/mp4">
             <source data-src="img/output-tourism.webm" type="video/webm">
@@ -355,12 +356,12 @@
         </div>
     </section>
 
-    <section class="mx-auto max-w-6xl w-full pt-48 px-4 lg:px-0 flex flex-col gap-14 items-center text-center">
-        <h1 id="section2" class="text-4xl dark:text-white font-semibold leading-normal text-neutral-700">Bitcoin Events
+    <section  style="position: relative; padding: 60px 10px 60px 10px; border-radius: 12px; margin-top: 100px;" class="parallax parallax-catedral mx-auto w-full pt-48 px-4 lg:px-0 flex flex-col gap-14 items-center text-center">
+        <h1 id="section2" class="text-4xl text-white font-semibold leading-normal text-neutral-700 " style="z-index: 1;">Bitcoin Events
             in El Salvador</h1>
-        <p id="section2-legend" class="w-full md:w-3/4 dark:text-white">Look for the events happening in El Salvador
+        <p id="section2-legend" class="w-full md:w-3/4 text-white" style="z-index: 1;">Look for the events happening in El Salvador
             about Bitcoin, the best places to increase your network, meet friends and develop your image.</p>
-        <div id="calendar" class="md:dark:text-white w-full bg-light rounded-xl p-4"></div>
+        <div id="calendar" class="md:dark:text-white max-w-6xl w-full bg-light rounded-xl p-4" style="z-index: 1;"></div>
     </section>
 
     <section class="mx-auto max-w-6xl px-4 lg:px-0 w-full pt-36 flex flex-col gap-14 items-center text-center">
@@ -399,7 +400,7 @@
                         class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
                         Chivo wallet
                     </h2>
-                    <p id="section6-opt1-legend" class="text-xs md:text-sm">
+                    <p id="section6-opt1-legend" class="text-xs md:text-sm text-end">
                         Chivo wallet is the Bitcoin wallet built by the government of El Salvador, it provides ATMs
                         infraestructure to withdrawal Bitcoin for dollars and deposit dollars for Bitcoin via on-chain.
                     </p>
@@ -416,7 +417,7 @@
                         class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
                         Athena Bitcoin
                     </h2>
-                    <p id="section6-opt2-legend" class="text-xs md:text-sm">
+                    <p id="section6-opt2-legend" class="text-xs md:text-sm text-start">
                         Athena Bitcoin is a Salvadorian Bitcoin company, it provides ATMs infraestructure to withdrawal
                         Bitcoin for dollars and deposit dollars for Bitcoin via on-chain and Lightning Network.
                     </p>
@@ -464,10 +465,9 @@
         </div>
     </section>
 
-    <section class="w-full bg-light dark:bg-blue-950 mt-32 px-4 lg:px-0">
-        <!-- <img data-src="https://raw.githubusercontent.com/CUBOPLUS-BTC/tourism-portal-data/main/assets/categories/accomodation/palo_verde_el_zonte.webp" class="lazy" /> -->
-        <div class="max-w-6xl mx-auto w-full py-16">
-            <h1 id="section8" class="text-neutral-700 text-4xl dark:text-white text-center font-semibold">Select an
+    <section class="parallax parallax-catedral2 w-full bg-light dark:bg-blue-950 mt-32 px-4 lg:px-0 " style="position: relative;">
+        <div class="max-w-6xl mx-auto w-full py-16" style="z-index: 1; position: relative;">
+            <h1 id="section8" class="text-neutral-700 text-4xl text-white text-center font-semibold">Select an
                 option</h1>
             <div id="onboard" class="flex flex-col justify-center items-center py-10 gap-8"></div>
         </div>
