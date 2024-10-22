@@ -100,7 +100,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden
+    overflow: hidden;
+    position: relative;
 }
 
 .parallax-catedral {
@@ -108,6 +109,12 @@
 }
 .parallax-catedral2 {
     background-image: url('/src/img/background/catedra2.jpeg') !important;
+}
+.parallax-agency{
+    background-image: url('/src/img/tourism/agency/agency.webp') !important;
+}
+.parallax-agency-blur{
+    background-image: url('/src/img/tourism/agency/agency.webp') !important;
 }
 .parallax::before {
     content: '';
@@ -117,6 +124,16 @@
     right: 0;
     bottom: 0;
     background-color: #00000059;
+}
+.parallax.parallax-agency-blur::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000059;
+    backdrop-filter: blur(5px);
 }
 
 ::-webkit-scrollbar {
@@ -132,4 +149,7 @@
 ::-webkit-scrollbar-track {
     background-color: transparent;
     border-radius: 9999px;
+}
+.custom-shadow{
+    box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 1px 1em #2c51ab33;
 }

@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="output.css">
     <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "o6hcuommdo");
     </script>
 
@@ -36,9 +36,9 @@
             align-items: center;
         }
 
-        .animate-pulse {    
-            animation: pulse 9s infinite; 
-             }
+        .animate-pulse {
+            animation: pulse 9s infinite;
+        }
 
         @keyframes pulse {
             0% {
@@ -50,10 +50,12 @@
                 transform: scale(1);
                 box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
             }
+
             50% {
                 transform: scale(1);
                 box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
             }
+
             60% {
                 transform: scale(1);
                 box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
@@ -67,21 +69,20 @@
         }
 
         @keyframes fade-in-up {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
 
-.animate-fade-in-up {
-    animation: fade-in-up 0.5s ease-out;
-}
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-
+        .animate-fade-in-up {
+            animation: fade-in-up 0.5s ease-out;
+        }
     </style>
 
     <script>
@@ -95,21 +96,22 @@
             document.documentElement.classList.remove("dark");
         }
     </script>
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body class="font-[Poppins] min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
     <header>
         <nav id="navbar"
-            class="navbar-tourism shadow-lg fixed inset-x-0 z-40 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
+            class="navbar-tourism navbar-tourism-travel fixed inset-x-0 z-40 w-full border-b border-gray-100 bg-white dark:border-gray-700/30 dark:bg-gray-900">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
+                <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 content-nav">
                     <div class="relative z-20 flex w-full justify-between lg:px-0 lg:w-max">
-                        <a href="index.html" aria-label="logo" class="flex items-center space-x-2">
+                        <div aria-label="logo" class="flex items-center space-x-2">
                             <img src="img/logos/cubo-text-blue.svg" class="hidden sm:block"
-                                style="height: 64px; width: 164px;" alt="cubo logo">
+                                style="height: 30px; width: 164px;" alt="cubo logo">
                             <img src="img/logos/cubo-logo-azul1.svg" class="block sm:hidden"
-                                style="height: 48px; width: 48px;" alt="cubo logo">
-                        </a>
+                                style="height: 30px; width: 48px;" alt="cubo logo">
+                        </div>
 
                         <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
                             <div aria-hidden="true"
@@ -126,11 +128,11 @@
                     <div id="navlinks"
                         class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0 dark:lg:bg-transparent">
                         <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
-                            <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
+                            <ul
+                                class="nav-menu space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
                                 <li>
-                                    <a id="navbar-home-button"
-                                        class='block md:px-4 hover:text-orange-400 dark:hover:text-primaryLight'
-                                        href="index.html">
+                                    <a id="navbar-home-button" href="index.html"
+                                        class='block md:px-4  hover:text-orange-400 dark:text-primaryLight'>
                                         <span>Home</span>
                                     </a>
                                 </li>
@@ -141,13 +143,13 @@
                                         <span>Visit Bitcoin Country</span>
                                     </a>
                                 </li>
+                                </li>
                                 <li>
                                     <a id="navbar-agency-button"
-                                        class='block transition text-orange-400 dark:text-primaryLight md:px-4'
-                                        >
+                                        class='block transition text-orange-400 dark:hover:text-primaryLight md:px-4'
+                                        href='agency.html'>
                                         <span>Travel with CUBO+</span>
                                     </a>
-                                </li>
                                 </li>
                                 <li>
                                     <a id="navbar-relocate-button"
@@ -188,8 +190,8 @@
                             </ul>
                         </div>
 
-                        <button aria-label="switch theme"
-                            class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
+                        <button aria-label="switch theme" style="display: none;"
+                            class="hidden switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
                                 viewBox="0 0 20 20" fill="currentColor">
@@ -205,7 +207,7 @@
                         </button>
                     </div>
 
-                    <div class="fixed flex top-3 right-14 z-20 sm:right-24 lg:hidden">
+                    <div class="fixed flex right-14 z-20 sm:right-24 lg:hidden">
                         <button aria-label="switch language"
                             class="group mr-1 relative flex h-9 w-9 text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-300 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800"
                             data-dropdown-toggle="dropdown-language2" data-dropdown-delay="50">
@@ -232,7 +234,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <button aria-label="switch theme"
+                        <button aria-label="switch theme" style="display: none;"
                             class="switcher group relative flex h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
@@ -254,104 +256,124 @@
     </header>
 
     <button id="backToTop" class="fixed z-40 bottom-10 right-10 bg-blue-500 text-white p-3 rounded-full shadow-lg">
-        ↑ Top
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-900 transition-all duration-300 ease-in-out"
+            style="transform: rotate(270deg);" viewBox="0 0 11 20" fill="none">
+            <path d="M1.37793 18.2695L9.5972 10.0129L1.37793 1.75635" stroke="white" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
     </button>
-     
-    
-    <section id="cookies-modal" class="hidden flex-col md:flex-row z-30 fixed max-w-2xl p-4 mx-4 md:mx-auto bottom-4 bg-white border border-gray-200 md:gap-x-4 md:left-12 md:bottom-16 dark:bg-gray-900 md:items-center dark:border-gray-700 rounded-2xl">
-            <div class="flex md:items-center gap-x-4">
-                <span class="inline-flex p-2 text-blue-500 rounded-lg shrink-0 dark:bg-gray-800 bg-blue-100/80">
-                    <svg class="w-8 md:w-8 md:h-8" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.9803 8.5468C17.5123 8.69458 17.0197 8.7931 16.5271 8.7931C14.2118 8.76847 12.3399 6.89655 12.3153 4.58128C12.3153 4.13793 12.3892 3.69458 12.537 3.27586C11.9951 2.68473 11.6995 1.92118 11.6995 1.13301C11.6995 0.812808 11.7488 0.492611 11.8473 0.172414C11.2315 0.0738918 10.6158 0 10 0C4.48276 0 0 4.48276 0 10C0 15.5172 4.48276 20 10 20C15.5172 20 20 15.5172 20 10C20 9.77833 20 9.55665 19.9754 9.33498C19.2611 9.26108 18.5468 8.99015 17.9803 8.5468ZM4.58128 7.31527C6.30542 7.31527 6.30542 10.0246 4.58128 10.0246C2.85714 10.0246 2.61084 7.31527 4.58128 7.31527ZM6.05912 15.7635C4.08867 15.7635 4.08867 12.8079 6.05912 12.8079C8.02956 12.8079 8.02956 15.7635 6.05912 15.7635ZM9.01478 1.33005C10.7389 1.33005 10.7389 4.28571 9.01478 4.28571C7.29064 4.28571 7.04434 1.33005 9.01478 1.33005ZM10.2463 8.84237C11.7241 8.84237 11.7241 10.8128 10.2463 10.8128C8.76848 10.8128 9.01478 8.84237 10.2463 8.84237ZM11.9704 16.9458C10.4926 16.9458 10.4926 14.9754 11.9704 14.9754C13.4483 14.9754 13.202 16.9458 11.9704 16.9458ZM16.6503 13.1034C15.4187 13.1034 15.4187 11.133 16.6503 11.133C17.8818 11.133 17.8818 13.1034 16.6503 13.1034Z" fill="currentColor"/>
-                    </svg>
-                </span>
-        
-                <p id="cookies-text" class="text-sm text-gray-600 dark:text-gray-300">We use cookies to ensure that we give you the best experience on our website. <a href="legal/cookies.html" class="text-blue-500 hover:underline">Cookies Policy</a>. </p>
-            </div>
-            
-            <div class="block md:flex align-middle md:items-center gap-x-4 shrink-0 mt-6 md:mt-0 lg:mt-0">
-                <button id="accept-cookies" class="text-xs w-1/2 md:w-auto font-medium bg-gray-800 rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
-                    Accept
-                </button>
-                <button id="decline-cookies" class="text-xs w-1/2 md:w-auto font-medium bg-gray-800 rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none mt-3 md:mt-0">
-                    Decline
-                </button>
-            </div>
-    </section>
 
-    <section class="h-screen w-full relative">
-        <video class="absolute top-0 left-0 w-full h-full object-cover z-10 lazy" autoplay muted loop playsinline preload="metadata" poster="img/thumbnail.webp">
-            <source data-src="img/output-tourism.mp4" type="video/mp4">
-            <source data-src="img/output-tourism.webm" type="video/webm">
-            Your browser does not support the video tag.
-         </video>
-    
-        <div class="absolute top-0 left-0 z-20 w-full h-full flex items-center justify-center flex-col p-5 gap-6 lg:gap-20 lg:p-20">
-            <div class="bg-gray-300/60 p-5 rounded-lg max-w-6xl w-full h-72">
-                <div class="text-center flex items-center justify-center lg:p-5 h-72">
-                    <h1 id="page-title" class="text-4xl lg:text-6xl text-white font-semibold pb-4 lg:pb-10">Travel with CUBO+</h1>
-                </div>
-            </div>
 
-            <div id="nav-tourism" class="bg-gray-300/60 backdrop-blur-sm p-2 rounded-lg md:rounded-full max-w-6xl w-full gap-1 md:gap-8 flex-col md:flex-row flex items-center justify-center">
-                <a id="header-home-button" href="index.html" class="w-full md:w-auto px-4 py-1 text-lg font-medium rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-500">Home</a>
-                <a id="header-travel-button" href="travel.html" class="w-full md:w-auto px-4 py-1 text-lg font-medium rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-500">Visit Bitcoin Country</a>
-                <p id="header-agency-button" class="w-full md:w-auto px-4 py-1 text-lg font-semibold rounded-lg md:rounded-full bg-blue-500 text-white">Travel with CUBO+</p>
-                <a id="header-relocate-button" href="relocate.html" class="w-full md:w-auto px-4 py-1 text-lg font-medium rounded-lg md:rounded-full  text-black hover:font-semibold hover:text-white hover:bg-blue-500">Relocate to El Salvador</a>
-            </div>
+    <section id="cookies-modal"
+        class="hidden flex-col md:flex-row z-30 fixed max-w-2xl p-4 mx-4 md:mx-auto bottom-4 bg-white border border-gray-200 md:gap-x-4 md:left-12 md:bottom-16 dark:bg-gray-900 md:items-center dark:border-gray-700 rounded-2xl">
+        <div class="flex md:items-center gap-x-4">
+            <span class="inline-flex p-2 text-blue-500 rounded-lg shrink-0 dark:bg-gray-800 bg-blue-100/80">
+                <svg class="w-8 md:w-8 md:h-8" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.9803 8.5468C17.5123 8.69458 17.0197 8.7931 16.5271 8.7931C14.2118 8.76847 12.3399 6.89655 12.3153 4.58128C12.3153 4.13793 12.3892 3.69458 12.537 3.27586C11.9951 2.68473 11.6995 1.92118 11.6995 1.13301C11.6995 0.812808 11.7488 0.492611 11.8473 0.172414C11.2315 0.0738918 10.6158 0 10 0C4.48276 0 0 4.48276 0 10C0 15.5172 4.48276 20 10 20C15.5172 20 20 15.5172 20 10C20 9.77833 20 9.55665 19.9754 9.33498C19.2611 9.26108 18.5468 8.99015 17.9803 8.5468ZM4.58128 7.31527C6.30542 7.31527 6.30542 10.0246 4.58128 10.0246C2.85714 10.0246 2.61084 7.31527 4.58128 7.31527ZM6.05912 15.7635C4.08867 15.7635 4.08867 12.8079 6.05912 12.8079C8.02956 12.8079 8.02956 15.7635 6.05912 15.7635ZM9.01478 1.33005C10.7389 1.33005 10.7389 4.28571 9.01478 4.28571C7.29064 4.28571 7.04434 1.33005 9.01478 1.33005ZM10.2463 8.84237C11.7241 8.84237 11.7241 10.8128 10.2463 10.8128C8.76848 10.8128 9.01478 8.84237 10.2463 8.84237ZM11.9704 16.9458C10.4926 16.9458 10.4926 14.9754 11.9704 14.9754C13.4483 14.9754 13.202 16.9458 11.9704 16.9458ZM16.6503 13.1034C15.4187 13.1034 15.4187 11.133 16.6503 11.133C17.8818 11.133 17.8818 13.1034 16.6503 13.1034Z"
+                        fill="currentColor" />
+                </svg>
+            </span>
+
+            <p id="cookies-text" class="text-sm text-gray-600 dark:text-gray-300">We use cookies to ensure that we give
+                you the best experience on our website. <a href="legal/cookies.html"
+                    class="text-blue-500 hover:underline">Cookies Policy</a>. </p>
+        </div>
+
+        <div class="block md:flex align-middle md:items-center gap-x-4 shrink-0 mt-6 md:mt-0 lg:mt-0">
+            <button id="accept-cookies"
+                class="text-xs w-1/2 md:w-auto font-medium bg-gray-800 rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+                Accept
+            </button>
+            <button id="decline-cookies"
+                class="text-xs w-1/2 md:w-auto font-medium bg-gray-800 rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none mt-3 md:mt-0">
+                Decline
+            </button>
         </div>
     </section>
 
-    <section class="max-w-6xl mx-auto text-center w-full dark:text-white pt-24 pb-6 px-4 lg:px-0">
-            <h1 id="section1" class="text-3xl font-bold mb-4">Travel with CUBO+</h1>
-            <p id="section1-legend" class="text-lg text-gray-700 dark:text-gray-300 mb-8">
-                Discover a new way to travel with our agency, where Bitcoin opens the doors to unforgettable experiences in El Salvador. Simplify the planning of your adventure and pay securely while exploring the wonders of the country.
-            </p>
+    <section class="w-full relative init-background">
+        <!--<video class="absolute top-0 left-0 w-full h-full object-cover z-10 lazy" autoplay muted loop playsinline preload="metadata" poster="img/thumbnail.webp">
+            <source data-src="img/output-tourism.mp4" type="video/mp4">
+            <source data-src="img/output-tourism.webm" type="video/webm">
+            Your browser does not support the video tag.
+         </video> -->
+        <img src="img/background/lake.png" style="height: 100vm; width: 100vm;" alt="background">
     </section>
-    
-    <section class="w-full bg-[#A186714D]">
-        <div class="max-w-6xl mx-auto p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14 h-full">
-            <img src="img/tourism/agency/agency.webp" class="rounded-2xl w-full md:w-1/2 h-[450px] object-cover" alt="">
-            <div class="flex flex-col dark:text-white gap-8 py-4">
-                    <div class="flex items-start gap-4 w-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-14" viewBox="0 0 52 52" fill="currentColor">
-                            <rect class="text-gray-700" width="51.4521" height="51.4521" rx="10" transform="matrix(-1 0 0 1 51.4521 0.3125)" fill="currentColor"/>
-                            <path class="text-white" d="M26.4776 39.8174C28.1875 38.1527 29.7725 36.3278 31.2159 34.3616C33.3819 31.4089 35.9541 27.0115 35.9541 22.8212C35.955 20.6812 35.3997 18.5889 34.3584 16.8092C33.3171 15.0295 31.8366 13.6424 30.1043 12.8234C28.372 12.0044 26.4658 11.7903 24.6268 12.2083C22.7879 12.6262 21.0989 13.6574 19.7737 15.1714C18.8913 16.1739 18.192 17.3662 17.7161 18.6793C17.2402 19.9924 16.9972 21.4002 17.0011 22.8212C17.0011 27.0115 19.5733 31.4089 21.7394 34.3616C23.1828 36.3278 24.7677 38.1527 26.4776 39.8174ZM26.4776 18.1859C27.5548 18.1859 28.5878 18.6742 29.3494 19.5435C30.1111 20.4128 30.539 21.5918 30.539 22.8212C30.539 24.0506 30.1111 25.2296 29.3494 26.0989C28.5878 26.9682 27.5548 27.4565 26.4776 27.4565C25.4005 27.4565 24.3675 26.9682 23.6058 26.0989C22.8442 25.2296 22.4163 24.0506 22.4163 22.8212C22.4163 21.5918 22.8442 20.4128 23.6058 19.5435C24.3675 18.6742 25.4005 18.1859 26.4776 18.1859Z" fill="currentColor"/>
-                        </svg>
-                        <div class="block w-full space-y-1">
-                            <h2 id="section1-feat1" class="text-xl font-semibold">Peer 2 Peer customized adventures</h2>
-                            <p id="section1-feat1-legend" class="text-sm">Live a unique tourism experience with personalized recommendations for you to enjoy Bitcoin Country.</p>
-                        </div>
+
+    <section class="max-w-6xl mx-auto text-center w-full dark:text-white pt-24 pb-6 px-4 lg:px-0">
+        <h1 id="section1" class="text-3xl font-bold mb-4">Travel with CUBO+</h1>
+        <p id="section1-legend" class="text-lg text-gray-700 dark:text-gray-300 mb-8">
+            Discover a new way to travel with our agency, where Bitcoin opens the doors to unforgettable experiences in
+            El Salvador. Simplify the planning of your adventure and pay securely while exploring the wonders of the
+            country.
+        </p>
+    </section>
+
+    <section class="w-full bg-light rounded-2xl parallax parallax-agency-blur"
+        style="padding-top: 60px; padding-bottom: 60px;">
+        <div class="max-w-6xl mx-auto p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14 h-full"
+            style="position: relative; z-index: 1;">
+            <img src="img/tourism/agency/agency.webp" class="rounded-2xl w-full md:w-1/2 h-[450px] object-cover" alt=""
+                style="box-shadow: 0px 0px 20px 0px #00000021;">
+            <div class="flex flex-col text-white gap-8 py-4">
+                <div class="flex items-start gap-4 w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-14" viewBox="0 0 52 52" fill="currentColor">
+                        <rect class="text-gray-700" width="51.4521" height="51.4521" rx="10"
+                            transform="matrix(-1 0 0 1 51.4521 0.3125)" fill="currentColor" />
+                        <path class="text-white"
+                            d="M26.4776 39.8174C28.1875 38.1527 29.7725 36.3278 31.2159 34.3616C33.3819 31.4089 35.9541 27.0115 35.9541 22.8212C35.955 20.6812 35.3997 18.5889 34.3584 16.8092C33.3171 15.0295 31.8366 13.6424 30.1043 12.8234C28.372 12.0044 26.4658 11.7903 24.6268 12.2083C22.7879 12.6262 21.0989 13.6574 19.7737 15.1714C18.8913 16.1739 18.192 17.3662 17.7161 18.6793C17.2402 19.9924 16.9972 21.4002 17.0011 22.8212C17.0011 27.0115 19.5733 31.4089 21.7394 34.3616C23.1828 36.3278 24.7677 38.1527 26.4776 39.8174ZM26.4776 18.1859C27.5548 18.1859 28.5878 18.6742 29.3494 19.5435C30.1111 20.4128 30.539 21.5918 30.539 22.8212C30.539 24.0506 30.1111 25.2296 29.3494 26.0989C28.5878 26.9682 27.5548 27.4565 26.4776 27.4565C25.4005 27.4565 24.3675 26.9682 23.6058 26.0989C22.8442 25.2296 22.4163 24.0506 22.4163 22.8212C22.4163 21.5918 22.8442 20.4128 23.6058 19.5435C24.3675 18.6742 25.4005 18.1859 26.4776 18.1859Z"
+                            fill="currentColor" />
+                    </svg>
+                    <div class="block w-full space-y-1">
+                        <h2 id="section1-feat1" class="text-xl font-semibold">Peer 2 Peer customized adventures</h2>
+                        <p id="section1-feat1-legend" class="text-sm">Live a unique tourism experience with personalized
+                            recommendations for you to enjoy Bitcoin Country.</p>
                     </div>
-                    <div class="flex items-start gap-4 w-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-14" viewBox="0 0 52 52" fill="currentColor">
-                            <rect class="text-gray-700" width="51.4521" height="51.4521" rx="10" transform="matrix(-1 0 0 1 51.4521 0.3125)" fill="currentColor"/>
-                            <g xmlns="http://www.w3.org/2000/svg" clip-path="url(#clip0_1003_1670)">
-                                <path d="M35.2495 16.335H29.2495C28.8375 16.335 28.2605 16.6337 27.9695 16.9975L20.5305 26.2962C20.3903 26.4724 20.3115 26.7108 20.3115 26.9593C20.3115 27.2079 20.3903 27.4463 20.5305 27.6225L26.9695 35.6712C27.1105 35.8465 27.3012 35.945 27.5 35.945C27.6989 35.945 27.8896 35.8465 28.0305 35.6712L35.4695 26.3725C35.7615 26.0075 35.9995 25.2875 35.9995 24.7725V17.2725C35.999 17.024 35.9198 16.7859 35.7793 16.6103C35.6387 16.4346 35.4483 16.3356 35.2495 16.335V16.335ZM31.4995 23.835C31.3025 23.8349 31.1074 23.7863 30.9254 23.6919C30.7433 23.5976 30.578 23.4594 30.4387 23.2852C30.2994 23.1109 30.1889 22.9041 30.1136 22.6765C30.0382 22.4489 29.9995 22.205 29.9995 21.9587C29.9996 21.7124 30.0385 21.4685 30.1139 21.241C30.1894 21.0135 30.3 20.8067 30.4394 20.6326C30.5788 20.4585 30.7442 20.3204 30.9263 20.2262C31.1084 20.1321 31.3035 20.0836 31.5005 20.0837C31.8985 20.0839 32.2801 20.2816 32.5614 20.6335C32.8427 20.9854 33.0007 21.4625 33.0005 21.96C33.0004 22.4574 32.8422 22.9344 32.5607 23.286C32.2792 23.6377 31.8975 23.8351 31.4995 23.835Z" fill="white"/>
-                                <path d="M17.9995 26.96L26.4995 16.335H25.2495C24.8375 16.335 24.2605 16.6337 23.9695 16.9975L16.5305 26.2962C16.3903 26.4724 16.3115 26.7108 16.3115 26.9593C16.3115 27.2079 16.3903 27.4463 16.5305 27.6225L22.9695 35.6712C23.1105 35.8465 23.3012 35.945 23.5 35.945C23.6989 35.945 23.8896 35.8465 24.0305 35.6712L24.5005 35.0837L18.0005 26.9587L17.9995 26.96Z" fill="white"/>
-                            </g>
-                            <defs xmlns="http://www.w3.org/2000/svg">
-                                <clipPath id="clip0_1003_1670">
-                                <rect width="20" height="20" fill="white" transform="translate(16 16.335)"/>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        <div class="block w-full space-y-1">
-                            <h2 id="section1-feat2" class="text-xl font-semibold">Lightning complementary services </h2>
-                            <p id="section1-feat2-legend" class="text-sm">Secure the extras you need to make your bitcoiner trip an unforgettable one. We help you optimize every aspect of your trip, making your experience as smooth and efficient as a lightning transaction!</p>
-                        </div>
+                </div>
+                <div class="flex items-start gap-4 w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-14" viewBox="0 0 52 52" fill="currentColor">
+                        <rect class="text-gray-700" width="51.4521" height="51.4521" rx="10"
+                            transform="matrix(-1 0 0 1 51.4521 0.3125)" fill="currentColor" />
+                        <g xmlns="http://www.w3.org/2000/svg" clip-path="url(#clip0_1003_1670)">
+                            <path
+                                d="M35.2495 16.335H29.2495C28.8375 16.335 28.2605 16.6337 27.9695 16.9975L20.5305 26.2962C20.3903 26.4724 20.3115 26.7108 20.3115 26.9593C20.3115 27.2079 20.3903 27.4463 20.5305 27.6225L26.9695 35.6712C27.1105 35.8465 27.3012 35.945 27.5 35.945C27.6989 35.945 27.8896 35.8465 28.0305 35.6712L35.4695 26.3725C35.7615 26.0075 35.9995 25.2875 35.9995 24.7725V17.2725C35.999 17.024 35.9198 16.7859 35.7793 16.6103C35.6387 16.4346 35.4483 16.3356 35.2495 16.335V16.335ZM31.4995 23.835C31.3025 23.8349 31.1074 23.7863 30.9254 23.6919C30.7433 23.5976 30.578 23.4594 30.4387 23.2852C30.2994 23.1109 30.1889 22.9041 30.1136 22.6765C30.0382 22.4489 29.9995 22.205 29.9995 21.9587C29.9996 21.7124 30.0385 21.4685 30.1139 21.241C30.1894 21.0135 30.3 20.8067 30.4394 20.6326C30.5788 20.4585 30.7442 20.3204 30.9263 20.2262C31.1084 20.1321 31.3035 20.0836 31.5005 20.0837C31.8985 20.0839 32.2801 20.2816 32.5614 20.6335C32.8427 20.9854 33.0007 21.4625 33.0005 21.96C33.0004 22.4574 32.8422 22.9344 32.5607 23.286C32.2792 23.6377 31.8975 23.8351 31.4995 23.835Z"
+                                fill="white" />
+                            <path
+                                d="M17.9995 26.96L26.4995 16.335H25.2495C24.8375 16.335 24.2605 16.6337 23.9695 16.9975L16.5305 26.2962C16.3903 26.4724 16.3115 26.7108 16.3115 26.9593C16.3115 27.2079 16.3903 27.4463 16.5305 27.6225L22.9695 35.6712C23.1105 35.8465 23.3012 35.945 23.5 35.945C23.6989 35.945 23.8896 35.8465 24.0305 35.6712L24.5005 35.0837L18.0005 26.9587L17.9995 26.96Z"
+                                fill="white" />
+                        </g>
+                        <defs xmlns="http://www.w3.org/2000/svg">
+                            <clipPath id="clip0_1003_1670">
+                                <rect width="20" height="20" fill="white" transform="translate(16 16.335)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div class="block w-full space-y-1">
+                        <h2 id="section1-feat2" class="text-xl font-semibold">Lightning complementary services </h2>
+                        <p id="section1-feat2-legend" class="text-sm">Secure the extras you need to make your bitcoiner
+                            trip an unforgettable one. We help you optimize every aspect of your trip, making your
+                            experience as smooth and efficient as a lightning transaction!</p>
                     </div>
-                    <div class="flex items-start gap-4 w-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-14" viewBox="0 0 47 52" fill="currentColor">
-                            <rect class="text-gray-700" width="46.2719" height="51.45" rx="10" transform="matrix(-1 0 0 1 46.2715 0)" fill="currentColor"/>
-                            <path d="M34.3333 31.9655C34.3332 33.6033 33.788 35.1919 32.788 36.4682C31.7881 37.7444 30.3933 38.6317 28.8348 38.983L28.0905 36.6909C28.7722 36.5759 29.4205 36.307 29.9886 35.9036C30.5568 35.5002 31.0306 34.9723 31.3758 34.3581H28.5C27.8812 34.3581 27.2877 34.1058 26.8501 33.6566C26.4125 33.2075 26.1667 32.5983 26.1667 31.9631V27.1729C26.1667 26.5377 26.4125 25.9285 26.8501 25.4793C27.2877 25.0302 27.8812 24.7778 28.5 24.7778H31.9277C31.643 22.4629 30.5451 20.3341 28.84 18.791C27.1349 17.2478 24.9399 16.3964 22.6667 16.3964C20.3935 16.3964 18.1984 17.2478 16.4933 18.791C14.7883 20.3341 13.6904 22.4629 13.4057 24.7778H16.8333C17.4522 24.7778 18.0457 25.0302 18.4832 25.4793C18.9208 25.9285 19.1667 26.5377 19.1667 27.1729V31.9631C19.1667 32.5983 18.9208 33.2075 18.4832 33.6566C18.0457 34.1058 17.4522 34.3581 16.8333 34.3581H13.3333C12.7145 34.3581 12.121 34.1058 11.6834 33.6566C11.2458 33.2075 11 32.5983 11 31.9631V25.9754C11 19.3614 16.2232 14 22.6667 14C29.1102 14 34.3333 19.3614 34.3333 25.9754V31.9655Z" fill="white"/>
-                          </svg>
-                        <div class="block w-full space-y-1">
-                            <h2 id="section1-feat3" class="text-xl font-semibold">Support on your trip</h2>
-                            <p id="section1-feat3-legend" class="text-sm">You never travel alone when you have Bitcoin on your side. Relax, we've got your back faster than you'd confirm a block and keep enjoying your adventure, we'll take care of the rest!</p>
-                        </div>
+                </div>
+                <div class="flex items-start gap-4 w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-14" viewBox="0 0 47 52" fill="currentColor">
+                        <rect class="text-gray-700" width="46.2719" height="51.45" rx="10"
+                            transform="matrix(-1 0 0 1 46.2715 0)" fill="currentColor" />
+                        <path
+                            d="M34.3333 31.9655C34.3332 33.6033 33.788 35.1919 32.788 36.4682C31.7881 37.7444 30.3933 38.6317 28.8348 38.983L28.0905 36.6909C28.7722 36.5759 29.4205 36.307 29.9886 35.9036C30.5568 35.5002 31.0306 34.9723 31.3758 34.3581H28.5C27.8812 34.3581 27.2877 34.1058 26.8501 33.6566C26.4125 33.2075 26.1667 32.5983 26.1667 31.9631V27.1729C26.1667 26.5377 26.4125 25.9285 26.8501 25.4793C27.2877 25.0302 27.8812 24.7778 28.5 24.7778H31.9277C31.643 22.4629 30.5451 20.3341 28.84 18.791C27.1349 17.2478 24.9399 16.3964 22.6667 16.3964C20.3935 16.3964 18.1984 17.2478 16.4933 18.791C14.7883 20.3341 13.6904 22.4629 13.4057 24.7778H16.8333C17.4522 24.7778 18.0457 25.0302 18.4832 25.4793C18.9208 25.9285 19.1667 26.5377 19.1667 27.1729V31.9631C19.1667 32.5983 18.9208 33.2075 18.4832 33.6566C18.0457 34.1058 17.4522 34.3581 16.8333 34.3581H13.3333C12.7145 34.3581 12.121 34.1058 11.6834 33.6566C11.2458 33.2075 11 32.5983 11 31.9631V25.9754C11 19.3614 16.2232 14 22.6667 14C29.1102 14 34.3333 19.3614 34.3333 25.9754V31.9655Z"
+                            fill="white" />
+                    </svg>
+                    <div class="block w-full space-y-1">
+                        <h2 id="section1-feat3" class="text-xl font-semibold">Support on your trip</h2>
+                        <p id="section1-feat3-legend" class="text-sm">You never travel alone when you have Bitcoin on
+                            your side. Relax, we've got your back faster than you'd confirm a block and keep enjoying
+                            your adventure, we'll take care of the rest!</p>
                     </div>
-                <a href="#contact" id="section1-button" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center button">Contact us</a>
+                </div>
+                <a href="#contact" id="section1-button"
+                    class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center button">Contact
+                    us</a>
             </div>
         </div>
     </section>
@@ -360,112 +382,153 @@
         <div class="max-w-6xl mx-auto text-center">
             <h1 id="section2" class="text-3xl font-bold mb-4">Travel with CUBO+</h1>
             <p id="section2-legend" class="text-lg text-gray-700 dark:text-gray-300 mb-8">
-                Discover a new way to travel with our agency, where Bitcoin opens the doors to unforgettable experiences in El Salvador. Simplify the planning of your adventure and pay securely while exploring the wonders of the country.
+                Discover a new way to travel with our agency, where Bitcoin opens the doors to unforgettable experiences
+                in El Salvador. Simplify the planning of your adventure and pay securely while exploring the wonders of
+                the country.
             </p>
         </div>
     </section>
-    
+
     <section class="w-full bg-[#A186714D] hidden">
-        <div class="max-w-6xl mx-auto p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14 h-full">
+        <div
+            class="max-w-6xl mx-auto p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14 h-full">
             <img src="img/tourism/agency/agency.webp" class="rounded-2xl w-full md:w-1/2 h-[450px] object-cover" alt="">
             <div class="flex flex-col dark:text-white gap-8 py-4">
-                    <div class="flex items-start gap-4 w-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-14" viewBox="0 0 52 52" fill="currentColor">
-                            <rect class="text-gray-700" width="51.4521" height="51.4521" rx="10" transform="matrix(-1 0 0 1 51.4521 0.3125)" fill="currentColor"/>
-                            <path class="text-white" d="M26.4776 39.8174C28.1875 38.1527 29.7725 36.3278 31.2159 34.3616C33.3819 31.4089 35.9541 27.0115 35.9541 22.8212C35.955 20.6812 35.3997 18.5889 34.3584 16.8092C33.3171 15.0295 31.8366 13.6424 30.1043 12.8234C28.372 12.0044 26.4658 11.7903 24.6268 12.2083C22.7879 12.6262 21.0989 13.6574 19.7737 15.1714C18.8913 16.1739 18.192 17.3662 17.7161 18.6793C17.2402 19.9924 16.9972 21.4002 17.0011 22.8212C17.0011 27.0115 19.5733 31.4089 21.7394 34.3616C23.1828 36.3278 24.7677 38.1527 26.4776 39.8174ZM26.4776 18.1859C27.5548 18.1859 28.5878 18.6742 29.3494 19.5435C30.1111 20.4128 30.539 21.5918 30.539 22.8212C30.539 24.0506 30.1111 25.2296 29.3494 26.0989C28.5878 26.9682 27.5548 27.4565 26.4776 27.4565C25.4005 27.4565 24.3675 26.9682 23.6058 26.0989C22.8442 25.2296 22.4163 24.0506 22.4163 22.8212C22.4163 21.5918 22.8442 20.4128 23.6058 19.5435C24.3675 18.6742 25.4005 18.1859 26.4776 18.1859Z" fill="currentColor"/>
-                        </svg>
-                        <div class="block w-full space-y-1">
-                            <h2 id="section2-feat1" class="text-xl font-semibold">Peer 2 Peer customized adventures</h2>
-                            <p id="section2-feat1-legend" class="text-sm">Live a unique tourism experience with personalized recommendations for you to enjoy Bitcoin Country.</p>
-                        </div>
+                <div class="flex items-start gap-4 w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-14" viewBox="0 0 52 52" fill="currentColor">
+                        <rect class="text-gray-700" width="51.4521" height="51.4521" rx="10"
+                            transform="matrix(-1 0 0 1 51.4521 0.3125)" fill="currentColor" />
+                        <path class="text-white"
+                            d="M26.4776 39.8174C28.1875 38.1527 29.7725 36.3278 31.2159 34.3616C33.3819 31.4089 35.9541 27.0115 35.9541 22.8212C35.955 20.6812 35.3997 18.5889 34.3584 16.8092C33.3171 15.0295 31.8366 13.6424 30.1043 12.8234C28.372 12.0044 26.4658 11.7903 24.6268 12.2083C22.7879 12.6262 21.0989 13.6574 19.7737 15.1714C18.8913 16.1739 18.192 17.3662 17.7161 18.6793C17.2402 19.9924 16.9972 21.4002 17.0011 22.8212C17.0011 27.0115 19.5733 31.4089 21.7394 34.3616C23.1828 36.3278 24.7677 38.1527 26.4776 39.8174ZM26.4776 18.1859C27.5548 18.1859 28.5878 18.6742 29.3494 19.5435C30.1111 20.4128 30.539 21.5918 30.539 22.8212C30.539 24.0506 30.1111 25.2296 29.3494 26.0989C28.5878 26.9682 27.5548 27.4565 26.4776 27.4565C25.4005 27.4565 24.3675 26.9682 23.6058 26.0989C22.8442 25.2296 22.4163 24.0506 22.4163 22.8212C22.4163 21.5918 22.8442 20.4128 23.6058 19.5435C24.3675 18.6742 25.4005 18.1859 26.4776 18.1859Z"
+                            fill="currentColor" />
+                    </svg>
+                    <div class="block w-full space-y-1">
+                        <h2 id="section2-feat1" class="text-xl font-semibold">Peer 2 Peer customized adventures</h2>
+                        <p id="section2-feat1-legend" class="text-sm">Live a unique tourism experience with personalized
+                            recommendations for you to enjoy Bitcoin Country.</p>
                     </div>
-                    <div class="flex items-start gap-4 w-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-14" viewBox="0 0 52 52" fill="currentColor">
-                            <rect class="text-gray-700" width="51.4521" height="51.4521" rx="10" transform="matrix(-1 0 0 1 51.4521 0.3125)" fill="currentColor"/>
-                            <g xmlns="http://www.w3.org/2000/svg" clip-path="url(#clip0_1003_1670)">
-                                <path d="M35.2495 16.335H29.2495C28.8375 16.335 28.2605 16.6337 27.9695 16.9975L20.5305 26.2962C20.3903 26.4724 20.3115 26.7108 20.3115 26.9593C20.3115 27.2079 20.3903 27.4463 20.5305 27.6225L26.9695 35.6712C27.1105 35.8465 27.3012 35.945 27.5 35.945C27.6989 35.945 27.8896 35.8465 28.0305 35.6712L35.4695 26.3725C35.7615 26.0075 35.9995 25.2875 35.9995 24.7725V17.2725C35.999 17.024 35.9198 16.7859 35.7793 16.6103C35.6387 16.4346 35.4483 16.3356 35.2495 16.335V16.335ZM31.4995 23.835C31.3025 23.8349 31.1074 23.7863 30.9254 23.6919C30.7433 23.5976 30.578 23.4594 30.4387 23.2852C30.2994 23.1109 30.1889 22.9041 30.1136 22.6765C30.0382 22.4489 29.9995 22.205 29.9995 21.9587C29.9996 21.7124 30.0385 21.4685 30.1139 21.241C30.1894 21.0135 30.3 20.8067 30.4394 20.6326C30.5788 20.4585 30.7442 20.3204 30.9263 20.2262C31.1084 20.1321 31.3035 20.0836 31.5005 20.0837C31.8985 20.0839 32.2801 20.2816 32.5614 20.6335C32.8427 20.9854 33.0007 21.4625 33.0005 21.96C33.0004 22.4574 32.8422 22.9344 32.5607 23.286C32.2792 23.6377 31.8975 23.8351 31.4995 23.835Z" fill="white"/>
-                                <path d="M17.9995 26.96L26.4995 16.335H25.2495C24.8375 16.335 24.2605 16.6337 23.9695 16.9975L16.5305 26.2962C16.3903 26.4724 16.3115 26.7108 16.3115 26.9593C16.3115 27.2079 16.3903 27.4463 16.5305 27.6225L22.9695 35.6712C23.1105 35.8465 23.3012 35.945 23.5 35.945C23.6989 35.945 23.8896 35.8465 24.0305 35.6712L24.5005 35.0837L18.0005 26.9587L17.9995 26.96Z" fill="white"/>
-                            </g>
-                            <defs xmlns="http://www.w3.org/2000/svg">
-                                <clipPath id="clip0_1003_1670">
-                                <rect width="20" height="20" fill="white" transform="translate(16 16.335)"/>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        <div class="block w-full space-y-1">
-                            <h2 id="section2-feat2" class="text-xl font-semibold">Lightning complementary services </h2>
-                            <p id="section2-feat2-legend" class="text-sm">Secure the extras you need to make your bitcoiner trip an unforgettable one. We help you optimize every aspect of your trip, making your experience as smooth and efficient as a lightning transaction!</p>
-                        </div>
+                </div>
+                <div class="flex items-start gap-4 w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-14" viewBox="0 0 52 52" fill="currentColor">
+                        <rect class="text-gray-700" width="51.4521" height="51.4521" rx="10"
+                            transform="matrix(-1 0 0 1 51.4521 0.3125)" fill="currentColor" />
+                        <g xmlns="http://www.w3.org/2000/svg" clip-path="url(#clip0_1003_1670)">
+                            <path
+                                d="M35.2495 16.335H29.2495C28.8375 16.335 28.2605 16.6337 27.9695 16.9975L20.5305 26.2962C20.3903 26.4724 20.3115 26.7108 20.3115 26.9593C20.3115 27.2079 20.3903 27.4463 20.5305 27.6225L26.9695 35.6712C27.1105 35.8465 27.3012 35.945 27.5 35.945C27.6989 35.945 27.8896 35.8465 28.0305 35.6712L35.4695 26.3725C35.7615 26.0075 35.9995 25.2875 35.9995 24.7725V17.2725C35.999 17.024 35.9198 16.7859 35.7793 16.6103C35.6387 16.4346 35.4483 16.3356 35.2495 16.335V16.335ZM31.4995 23.835C31.3025 23.8349 31.1074 23.7863 30.9254 23.6919C30.7433 23.5976 30.578 23.4594 30.4387 23.2852C30.2994 23.1109 30.1889 22.9041 30.1136 22.6765C30.0382 22.4489 29.9995 22.205 29.9995 21.9587C29.9996 21.7124 30.0385 21.4685 30.1139 21.241C30.1894 21.0135 30.3 20.8067 30.4394 20.6326C30.5788 20.4585 30.7442 20.3204 30.9263 20.2262C31.1084 20.1321 31.3035 20.0836 31.5005 20.0837C31.8985 20.0839 32.2801 20.2816 32.5614 20.6335C32.8427 20.9854 33.0007 21.4625 33.0005 21.96C33.0004 22.4574 32.8422 22.9344 32.5607 23.286C32.2792 23.6377 31.8975 23.8351 31.4995 23.835Z"
+                                fill="white" />
+                            <path
+                                d="M17.9995 26.96L26.4995 16.335H25.2495C24.8375 16.335 24.2605 16.6337 23.9695 16.9975L16.5305 26.2962C16.3903 26.4724 16.3115 26.7108 16.3115 26.9593C16.3115 27.2079 16.3903 27.4463 16.5305 27.6225L22.9695 35.6712C23.1105 35.8465 23.3012 35.945 23.5 35.945C23.6989 35.945 23.8896 35.8465 24.0305 35.6712L24.5005 35.0837L18.0005 26.9587L17.9995 26.96Z"
+                                fill="white" />
+                        </g>
+                        <defs xmlns="http://www.w3.org/2000/svg">
+                            <clipPath id="clip0_1003_1670">
+                                <rect width="20" height="20" fill="white" transform="translate(16 16.335)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div class="block w-full space-y-1">
+                        <h2 id="section2-feat2" class="text-xl font-semibold">Lightning complementary services </h2>
+                        <p id="section2-feat2-legend" class="text-sm">Secure the extras you need to make your bitcoiner
+                            trip an unforgettable one. We help you optimize every aspect of your trip, making your
+                            experience as smooth and efficient as a lightning transaction!</p>
                     </div>
-                    <div class="flex items-start gap-4 w-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-14" viewBox="0 0 47 52" fill="currentColor">
-                            <rect class="text-gray-700" width="46.2719" height="51.45" rx="10" transform="matrix(-1 0 0 1 46.2715 0)" fill="currentColor"/>
-                            <path d="M34.3333 31.9655C34.3332 33.6033 33.788 35.1919 32.788 36.4682C31.7881 37.7444 30.3933 38.6317 28.8348 38.983L28.0905 36.6909C28.7722 36.5759 29.4205 36.307 29.9886 35.9036C30.5568 35.5002 31.0306 34.9723 31.3758 34.3581H28.5C27.8812 34.3581 27.2877 34.1058 26.8501 33.6566C26.4125 33.2075 26.1667 32.5983 26.1667 31.9631V27.1729C26.1667 26.5377 26.4125 25.9285 26.8501 25.4793C27.2877 25.0302 27.8812 24.7778 28.5 24.7778H31.9277C31.643 22.4629 30.5451 20.3341 28.84 18.791C27.1349 17.2478 24.9399 16.3964 22.6667 16.3964C20.3935 16.3964 18.1984 17.2478 16.4933 18.791C14.7883 20.3341 13.6904 22.4629 13.4057 24.7778H16.8333C17.4522 24.7778 18.0457 25.0302 18.4832 25.4793C18.9208 25.9285 19.1667 26.5377 19.1667 27.1729V31.9631C19.1667 32.5983 18.9208 33.2075 18.4832 33.6566C18.0457 34.1058 17.4522 34.3581 16.8333 34.3581H13.3333C12.7145 34.3581 12.121 34.1058 11.6834 33.6566C11.2458 33.2075 11 32.5983 11 31.9631V25.9754C11 19.3614 16.2232 14 22.6667 14C29.1102 14 34.3333 19.3614 34.3333 25.9754V31.9655Z" fill="white"/>
-                          </svg>
-                        <div class="block w-full space-y-1">
-                            <h2 id="section2-feat3" class="text-xl font-semibold">Support on your trip</h2>
-                            <p id="section2-feat3-legend" class="text-sm">You never travel alone when you have Bitcoin on your side. Relax, we've got your back faster than you'd confirm a block and keep enjoying your adventure, we'll take care of the rest!</p>
-                        </div>
+                </div>
+                <div class="flex items-start gap-4 w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-14" viewBox="0 0 47 52" fill="currentColor">
+                        <rect class="text-gray-700" width="46.2719" height="51.45" rx="10"
+                            transform="matrix(-1 0 0 1 46.2715 0)" fill="currentColor" />
+                        <path
+                            d="M34.3333 31.9655C34.3332 33.6033 33.788 35.1919 32.788 36.4682C31.7881 37.7444 30.3933 38.6317 28.8348 38.983L28.0905 36.6909C28.7722 36.5759 29.4205 36.307 29.9886 35.9036C30.5568 35.5002 31.0306 34.9723 31.3758 34.3581H28.5C27.8812 34.3581 27.2877 34.1058 26.8501 33.6566C26.4125 33.2075 26.1667 32.5983 26.1667 31.9631V27.1729C26.1667 26.5377 26.4125 25.9285 26.8501 25.4793C27.2877 25.0302 27.8812 24.7778 28.5 24.7778H31.9277C31.643 22.4629 30.5451 20.3341 28.84 18.791C27.1349 17.2478 24.9399 16.3964 22.6667 16.3964C20.3935 16.3964 18.1984 17.2478 16.4933 18.791C14.7883 20.3341 13.6904 22.4629 13.4057 24.7778H16.8333C17.4522 24.7778 18.0457 25.0302 18.4832 25.4793C18.9208 25.9285 19.1667 26.5377 19.1667 27.1729V31.9631C19.1667 32.5983 18.9208 33.2075 18.4832 33.6566C18.0457 34.1058 17.4522 34.3581 16.8333 34.3581H13.3333C12.7145 34.3581 12.121 34.1058 11.6834 33.6566C11.2458 33.2075 11 32.5983 11 31.9631V25.9754C11 19.3614 16.2232 14 22.6667 14C29.1102 14 34.3333 19.3614 34.3333 25.9754V31.9655Z"
+                            fill="white" />
+                    </svg>
+                    <div class="block w-full space-y-1">
+                        <h2 id="section2-feat3" class="text-xl font-semibold">Support on your trip</h2>
+                        <p id="section2-feat3-legend" class="text-sm">You never travel alone when you have Bitcoin on
+                            your side. Relax, we've got your back faster than you'd confirm a block and keep enjoying
+                            your adventure, we'll take care of the rest!</p>
                     </div>
-                <a href="#contact" id="section2-button" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">Contact us</a>
+                </div>
+                <a href="#contact" id="section2-button"
+                    class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center">Contact
+                    us</a>
             </div>
         </div>
     </section>
 
     <section id="contact" class="pt-24 max-w-6xl mx-auto w-full pb-12 px-4 lg:px-0">
         <h1 id="section3" class="text-4xl text-center pb-12 dark:text-white">Plan your Bitcoin Trip Here</h1>
-        <div class="shadow-lg rounded-xl flex-col md:flex-row overflow-hidden w-full flex items-center bg-[#a1867159]">
+        <div class="rounded-xl flex-col md:flex-row overflow-hidden w-full flex items-center bg-light custom-shadow">
             <div class="w-full lg:w-1/2 p-4">
-                <img  src="img/tourism/agency/camping.svg" alt="Volcano" class="h-64 lg:h-full w-full object-contain shrink-0">
+                <img src="img/tourism/agency/camping.svg" alt="Volcano"
+                    class="h-64 lg:h-full w-full object-contain shrink-0">
             </div>
             <div class="w-full lg:w-1/2 p-8 flex flex-col justify-center gap-4">
-                <h2 id="section3-cta" class="text-xl mb-4 text-center dark:text-white">Complete the form to plan yout trip to Bitcoin Country</h2>
-                <a href="https://api.whatsapp.com/send/?phone=50376482924" target="_blank" class="bg-[#009951] px-4 py-2 flex items-center text-white text-semibold rounded-full justify-center gap-7 wp-button"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                    <g clip-path="url(#clip0_1053_1500)">
-                      <path d="M0.640234 14.8204C0.639531 17.341 1.30328 19.8021 2.56539 21.9714L0.519531 29.3833L8.16391 27.3944C10.2782 28.5365 12.6472 29.135 15.0545 29.1351H15.0609C23.0079 29.1351 29.477 22.7185 29.4804 14.8316C29.482 11.0099 27.9834 7.41618 25.2606 4.71246C22.5384 2.00897 18.9179 0.519322 15.0603 0.517578C7.11227 0.517578 0.643633 6.93386 0.640352 14.8204" fill="url(#paint0_linear_1053_1500)"/>
-                      <path d="M0.640234 14.8204C0.639531 17.341 1.30328 19.8021 2.56539 21.9714L0.519531 29.3833L8.16391 27.3944C10.2782 28.5365 12.6472 29.135 15.0545 29.1351H15.0609C23.0079 29.1351 29.477 22.7185 29.4804 14.8316C29.482 11.0099 27.9834 7.41618 25.2606 4.71246C22.5384 2.00897 18.9179 0.519322 15.0603 0.517578C7.11227 0.517578 0.643633 6.93386 0.640352 14.8204" fill="black" fill-opacity="0.2"/>
-                      <path d="M0.125391 14.8158C0.12457 17.4271 0.812109 19.9763 2.11922 22.2233L0 29.9008L7.91848 27.8407C10.1003 29.021 12.5568 29.6434 15.0564 29.6443H15.0628C23.295 29.6443 29.9965 22.9969 30 14.8277C30.0014 10.8686 28.4489 7.1457 25.6289 4.34512C22.8086 1.54488 19.0586 0.00162791 15.0628 0C6.82922 0 0.128672 6.64651 0.125391 14.8158ZM4.84113 21.8363L4.54547 21.3706C3.30258 19.4096 2.64656 17.1436 2.6475 14.8167C2.65008 8.02663 8.2193 2.50233 15.0675 2.50233C18.3839 2.50372 21.5006 3.78651 23.8448 6.11395C26.1889 8.44163 27.4788 11.5358 27.478 14.8267C27.475 21.6169 21.9056 27.1419 15.0628 27.1419H15.0579C12.8298 27.1407 10.6446 26.547 8.73891 25.425L8.28539 25.1581L3.58641 26.3806L4.84113 21.8363Z" fill="url(#paint1_linear_1053_1500)"/>
-                      <path d="M11.3293 8.62116C11.0497 8.00453 10.7554 7.99209 10.4895 7.98127C10.2718 7.97197 10.0229 7.97267 9.77422 7.97267C9.52531 7.97267 9.1209 8.06558 8.77906 8.43592C8.43687 8.80662 7.47266 9.70244 7.47266 11.5244C7.47266 13.3464 8.81012 15.1073 8.99656 15.3546C9.18324 15.6015 11.5786 19.4601 15.3721 20.9445C18.525 22.1781 19.1666 21.9328 19.8508 21.8709C20.5352 21.8093 22.0591 20.9753 22.37 20.1106C22.6811 19.2459 22.6811 18.5048 22.5879 18.3499C22.4946 18.1956 22.2457 18.1029 21.8724 17.9178C21.4992 17.7327 19.6641 16.8366 19.3221 16.713C18.9799 16.5895 18.7311 16.5279 18.4822 16.8987C18.2333 17.2689 17.5186 18.1029 17.3007 18.3499C17.0831 18.5974 16.8652 18.6282 16.4921 18.443C16.1186 18.2572 14.9166 17.8666 13.4906 16.6051C12.3811 15.6235 11.632 14.4113 11.4143 14.0405C11.1965 13.6702 11.3909 13.4695 11.5781 13.285C11.7458 13.1191 11.9514 12.8526 12.1382 12.6364C12.3243 12.4201 12.3864 12.2658 12.5109 12.0188C12.6355 11.7716 12.5731 11.5553 12.48 11.3701C12.3864 11.1849 11.6612 9.35337 11.3293 8.62116Z" fill="white"/>
-                    </g>
-                    <defs>
-                      <linearGradient id="paint0_linear_1053_1500" x1="1448.56" y1="2887.09" x2="1448.56" y2="0.517578" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#1FAF38"/>
-                        <stop offset="1" stop-color="#60D669"/>
-                      </linearGradient>
-                      <linearGradient id="paint1_linear_1053_1500" x1="1500" y1="2990.08" x2="1500" y2="0" gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#F9F9F9"/>
-                        <stop offset="1" stop-color="white"/>
-                      </linearGradient>
-                      <clipPath id="clip0_1053_1500">
-                        <rect width="30" height="30" fill="white"/>
-                      </clipPath>
-                    </defs>
-                  </svg> <p id="section3-whatsapp-button">Make your reservation in whatsapp</p></a>
-                <div class="flex items-center gap-6 justify-center "><div class="w-1/4 border-2 border-black dark:border-white"></div><p id="section3-or" class="dark:text-white">Or</p><div class="w-1/4 border-2 border-black dark:border-white"></div></div>
-                <div class="">
+                <h2 id="section3-cta" class="text-xl mb-4 text-center dark:text-white">Complete the form to plan yout
+                    trip to Bitcoin Country</h2>
+                <a href="https://api.whatsapp.com/send/?phone=50376482924" target="_blank"
+                    class="bg-[#009951] px-4 py-4 flex items-center text-white text-semibold rounded-full justify-center gap-7 wp-button"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <g clip-path="url(#clip0_1053_1500)">
+                            <path
+                                d="M0.640234 14.8204C0.639531 17.341 1.30328 19.8021 2.56539 21.9714L0.519531 29.3833L8.16391 27.3944C10.2782 28.5365 12.6472 29.135 15.0545 29.1351H15.0609C23.0079 29.1351 29.477 22.7185 29.4804 14.8316C29.482 11.0099 27.9834 7.41618 25.2606 4.71246C22.5384 2.00897 18.9179 0.519322 15.0603 0.517578C7.11227 0.517578 0.643633 6.93386 0.640352 14.8204"
+                                fill="url(#paint0_linear_1053_1500)" />
+                            <path
+                                d="M0.640234 14.8204C0.639531 17.341 1.30328 19.8021 2.56539 21.9714L0.519531 29.3833L8.16391 27.3944C10.2782 28.5365 12.6472 29.135 15.0545 29.1351H15.0609C23.0079 29.1351 29.477 22.7185 29.4804 14.8316C29.482 11.0099 27.9834 7.41618 25.2606 4.71246C22.5384 2.00897 18.9179 0.519322 15.0603 0.517578C7.11227 0.517578 0.643633 6.93386 0.640352 14.8204"
+                                fill="black" fill-opacity="0.2" />
+                            <path
+                                d="M0.125391 14.8158C0.12457 17.4271 0.812109 19.9763 2.11922 22.2233L0 29.9008L7.91848 27.8407C10.1003 29.021 12.5568 29.6434 15.0564 29.6443H15.0628C23.295 29.6443 29.9965 22.9969 30 14.8277C30.0014 10.8686 28.4489 7.1457 25.6289 4.34512C22.8086 1.54488 19.0586 0.00162791 15.0628 0C6.82922 0 0.128672 6.64651 0.125391 14.8158ZM4.84113 21.8363L4.54547 21.3706C3.30258 19.4096 2.64656 17.1436 2.6475 14.8167C2.65008 8.02663 8.2193 2.50233 15.0675 2.50233C18.3839 2.50372 21.5006 3.78651 23.8448 6.11395C26.1889 8.44163 27.4788 11.5358 27.478 14.8267C27.475 21.6169 21.9056 27.1419 15.0628 27.1419H15.0579C12.8298 27.1407 10.6446 26.547 8.73891 25.425L8.28539 25.1581L3.58641 26.3806L4.84113 21.8363Z"
+                                fill="url(#paint1_linear_1053_1500)" />
+                            <path
+                                d="M11.3293 8.62116C11.0497 8.00453 10.7554 7.99209 10.4895 7.98127C10.2718 7.97197 10.0229 7.97267 9.77422 7.97267C9.52531 7.97267 9.1209 8.06558 8.77906 8.43592C8.43687 8.80662 7.47266 9.70244 7.47266 11.5244C7.47266 13.3464 8.81012 15.1073 8.99656 15.3546C9.18324 15.6015 11.5786 19.4601 15.3721 20.9445C18.525 22.1781 19.1666 21.9328 19.8508 21.8709C20.5352 21.8093 22.0591 20.9753 22.37 20.1106C22.6811 19.2459 22.6811 18.5048 22.5879 18.3499C22.4946 18.1956 22.2457 18.1029 21.8724 17.9178C21.4992 17.7327 19.6641 16.8366 19.3221 16.713C18.9799 16.5895 18.7311 16.5279 18.4822 16.8987C18.2333 17.2689 17.5186 18.1029 17.3007 18.3499C17.0831 18.5974 16.8652 18.6282 16.4921 18.443C16.1186 18.2572 14.9166 17.8666 13.4906 16.6051C12.3811 15.6235 11.632 14.4113 11.4143 14.0405C11.1965 13.6702 11.3909 13.4695 11.5781 13.285C11.7458 13.1191 11.9514 12.8526 12.1382 12.6364C12.3243 12.4201 12.3864 12.2658 12.5109 12.0188C12.6355 11.7716 12.5731 11.5553 12.48 11.3701C12.3864 11.1849 11.6612 9.35337 11.3293 8.62116Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear_1053_1500" x1="1448.56" y1="2887.09" x2="1448.56"
+                                y2="0.517578" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#1FAF38" />
+                                <stop offset="1" stop-color="#60D669" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_1053_1500" x1="1500" y1="2990.08" x2="1500" y2="0"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F9F9F9" />
+                                <stop offset="1" stop-color="white" />
+                            </linearGradient>
+                            <clipPath id="clip0_1053_1500">
+                                <rect width="30" height="30" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <p id="section3-whatsapp-button">Make your reservation in whatsapp</p>
+                </a>
+                <div class="flex items-center gap-6 justify-center ">
+                    <div class="w-1/4 border-2 border-black dark:border-white"></div>
+                    <p id="section3-or" class="dark:text-white">Or</p>
+                    <div class="w-1/4 border-2 border-black dark:border-white"></div>
+                </div>
+                <div class="form-reservation">
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                     <script>
-                    hbspt.forms.create({
-                        region: "na1",
-                        portalId: "45121273",
-                        formId: "440e25d2-02cc-43e7-8251-67583663f0c6"
-                    });
+                        hbspt.forms.create({
+                            region: "na1",
+                            portalId: "45121273",
+                            formId: "440e25d2-02cc-43e7-8251-67583663f0c6"
+                        });
                     </script>
                 </div>
             </div>
         </div>
     </section>
-    
-    <footer class="bg-white dark:bg-gray-900">
+
+    <footer class="bg-white dark:bg-gray-900 pt-12 text-center">
         <div class="relative mx-auto px-4 md:max-w-full my-6 md:px-12 lg:max-w-6xl xl:px-0">
-            <div class="md:flex md:justify-between">
+            <div class="md:flex md:justify-between sm:justify-center">
                 <div class="mb-6 md:mb-0">
                     <a href="index.html" class="flex items-center">
-                        <img src="img/logos/cubo-logo-blue.svg" class="h-28 md:h-40 me-3" alt="Cuboplus Logo" />
+                        <img src="img/logos/cubo-logo-blue.svg" class="h-28 md:h-40 m-auto" alt="Cuboplus Logo" />
                     </a>
                 </div>
 
-                <div class="grid grid-cols-1 gap-8 md:gap-16 md:grid-cols-3">
+                <div class=" grid grid-cols-1 gap-8 md:gap-16 md:grid-cols-3">
                     <div>
                         <h2 id="footer-contact"
                             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
@@ -478,8 +541,8 @@
                     <div>
                         <h2 id="footer-follow"
                             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
-                        <div class="sm:flex sm:items-center sm:justify-between">
-                            <div class="flex mt-4 sm:justify-center sm:mt-0">
+                        <div class="md:flex md:items-center sm:justify-center">
+                            <div class="flex mt-4 justify-center sm:mt-0">
                                 <a target="_blank" href="https://www.youtube.com/@cuboplus"
                                     class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                                     <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -500,11 +563,14 @@
                                     </svg>
                                     <span class="sr-only">Twitter page</span>
                                 </a>
-                                <a target="_blank" href="https://primal.net/p/npub144xzazs5q8muwnjmfqfndrsjc7zqrah53jrszw6pkgqfgsmf55jsnp97fn"
+                                <a target="_blank"
+                                    href="https://primal.net/p/npub144xzazs5q8muwnjmfqfndrsjc7zqrah53jrszw6pkgqfgsmf55jsnp97fn"
                                     class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1062 1240" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M537.44,861.41c21.91-6.71,42.19-12.99,62.5-19.13,46.18-13.96,92.39-27.87,138.59-41.78,10.13-3.05,20.44-3.14,30.63-.76,13.02,3.03,22.39,11.15,29.56,22.23,12.32,19.01,24.85,37.88,37.25,56.83,3.46,5.29,6.96,10.58,10.13,16.05,5.03,8.66,5.25,17.56.87,22.46-4.43,4.95-13.28,5.71-22.39,1.52-3.59-1.65-7.33-3.55-10.13-6.25-7.42-7.15-16.24-10.08-26.24-10.49-3.99-.16-7.98-.49-11.95-.97-13.96-1.67-23.05-9.14-27.54-22.6-5.6-16.78-7.93-18.11-25.29-12.8-47.73,14.6-95.33,29.64-143.05,44.26-22.33,6.84-44.32,14.31-64.61,26.17-3.96,2.31-8.54,3.69-12.97,5.05-19.85,6.09-37.68-9.26-41.08-25.18-3.26-15.26-.7-29.95,5.22-43.93,11.98-28.29,27.76-54.58,43.8-80.7,7.65-12.46,15.46-24.82,24.21-38.84-4.16,1.15-6.68,1.56-8.97,2.52-14.74,6.16-29.63,12.02-44.06,18.85-8.36,3.96-16.46,8.87-23.78,14.52-25.3,19.56-50.18,39.66-75.28,59.49-4.89,3.86-7.64,8.58-9.42,14.7-4.55,15.69-13.69,28.78-28.99,35.06-19.55,8.02-32.43,22.63-44.34,38.94-49.34,67.52-98.67,135.05-148.31,202.34-9.67,13.1-20.46,25.42-31.23,37.66-13.26,15.07-25.67,30.52-33.53,49.32-5.07,12.12-11.13,15.58-20.15,13.61-6.82-1.49-9.93-7.24-11.17-19.14-2.14-20.49,1.78-39.76,10.91-58.1,2.23-4.47,4.57-8.9,6.44-13.52,2.54-6.28,3.45-12.66,1.49-19.51-1.82-6.37-2.94-13-3.82-19.58-1.96-14.63,4.75-25.52,18.83-30.06,6.3-2.03,12.91-3.65,19.48-4.18,18.01-1.47,31.18-10.2,41.19-24.85,15.22-22.28,30.72-44.37,46.16-66.51,20.96-30.06,41.91-60.13,63.02-90.09,7-9.93,12.12-20.55,14.8-32.45,4.68-20.78,16.86-36.28,35.69-45.66,11.22-5.59,21.17-12.62,30.47-20.66,24.45-21.13,48.7-42.49,72.8-64.03,5.93-5.3,11.25-11.38,16.33-17.53,4.45-5.38,3.97-9.73-1.97-13.37-5.29-3.24-11.32-5.55-17.29-7.38-21.94-6.74-44.07-12.89-66-19.67-26.23-8.11-51.06-19.28-73.45-35.4-10.79-7.77-23.2-9.8-36-10-33.6-.51-64.53,8.26-92.32,27.39-10.22,7.04-20.64,13.79-33.4,14.68-5.16.36-11.16.49-15.54-1.73-24.96-12.61-49.58-25.78-71.55-43.51-18.91-15.26-25.27-34-20.43-57.55,6.62-32.17,21.19-59.4,47.56-79.58,12.57-9.61,27.02-15.61,41.95-20.58,28.99-9.65,59.01-13.3,89.26-15.86,36.83-3.12,73.75-5.64,110.43-10.09,35.27-4.28,68.81-14.86,99.9-32.84,38.72-22.39,79.19-41.05,122.05-54.2,54.29-16.66,109.69-24.99,166.55-20.9,22.05,1.58,43.16,8.11,63.93,15.27,33.66,11.6,67.12,23.79,100.68,35.69,24.35,8.63,49.17,14.82,75.29,12.3,10.24-.99,20.81-1.58,30.48-4.68,24.29-7.78,42.51-22.7,51.36-47.73,7.4-20.93,13.07-41.92,9.49-64.45-1.83-11.51-6.4-21.53-13.74-30.54-13.32-16.36-28.7-30.56-44.72-44.2-13.44-11.44-26.91-22.94-39.39-35.39-26.64-26.59-41.07-58.73-40.48-96.78.29-18.34,5.44-35.49,15.69-50.85,8.5-12.74,20.76-19.34,35.85-20.83,17.22-1.7,33.16,1.86,47.27,12.16,5.65,4.12,11.4,8.2,16.5,12.94,13.32,12.37,28.9,19.78,46.57,23.7,6.32,1.4,12.28,4.78,18.15,7.75,2.24,1.13,4.07,3.46,5.55,5.61,3.93,5.74,3.3,10.36-2.96,13.12-5.95,2.62-12.63,4.56-19.08,4.87-13.63.66-27.34-.48-40.97.14-11.26.51-22.51,2.13-33.67,3.89-23.65,3.74-29.26,31.04-15.39,45.36,10.64,10.98,21.82,21.47,33.25,31.62,9.96,8.84,20.74,16.75,30.93,25.33,36.86,31.06,53.69,70.95,52.56,118.93-1.2,50.96-22.83,93.19-55.92,130.19-25.76,28.8-56.57,51.67-90.16,70.53-14.74,8.27-21.43,19.36-21.25,36.29.29,26.47-3.78,52.44-13.2,77.36-7.53,19.92-18.24,37.7-34.82,51.56-8.61,7.2-18.63,11.59-29,15.27-38.34,13.6-77.7,23.46-117.52,31.57-12.39,2.52-24.8,4.96-37.19,7.52-16.87,3.48-31.38,12.1-42.99,24.11-31.13,32.23-56.5,69.03-81.27,106.22-.53.79-.7,1.82-1.67,4.48Z"/>
-                                      </svg>
+                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1062 1240"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M537.44,861.41c21.91-6.71,42.19-12.99,62.5-19.13,46.18-13.96,92.39-27.87,138.59-41.78,10.13-3.05,20.44-3.14,30.63-.76,13.02,3.03,22.39,11.15,29.56,22.23,12.32,19.01,24.85,37.88,37.25,56.83,3.46,5.29,6.96,10.58,10.13,16.05,5.03,8.66,5.25,17.56.87,22.46-4.43,4.95-13.28,5.71-22.39,1.52-3.59-1.65-7.33-3.55-10.13-6.25-7.42-7.15-16.24-10.08-26.24-10.49-3.99-.16-7.98-.49-11.95-.97-13.96-1.67-23.05-9.14-27.54-22.6-5.6-16.78-7.93-18.11-25.29-12.8-47.73,14.6-95.33,29.64-143.05,44.26-22.33,6.84-44.32,14.31-64.61,26.17-3.96,2.31-8.54,3.69-12.97,5.05-19.85,6.09-37.68-9.26-41.08-25.18-3.26-15.26-.7-29.95,5.22-43.93,11.98-28.29,27.76-54.58,43.8-80.7,7.65-12.46,15.46-24.82,24.21-38.84-4.16,1.15-6.68,1.56-8.97,2.52-14.74,6.16-29.63,12.02-44.06,18.85-8.36,3.96-16.46,8.87-23.78,14.52-25.3,19.56-50.18,39.66-75.28,59.49-4.89,3.86-7.64,8.58-9.42,14.7-4.55,15.69-13.69,28.78-28.99,35.06-19.55,8.02-32.43,22.63-44.34,38.94-49.34,67.52-98.67,135.05-148.31,202.34-9.67,13.1-20.46,25.42-31.23,37.66-13.26,15.07-25.67,30.52-33.53,49.32-5.07,12.12-11.13,15.58-20.15,13.61-6.82-1.49-9.93-7.24-11.17-19.14-2.14-20.49,1.78-39.76,10.91-58.1,2.23-4.47,4.57-8.9,6.44-13.52,2.54-6.28,3.45-12.66,1.49-19.51-1.82-6.37-2.94-13-3.82-19.58-1.96-14.63,4.75-25.52,18.83-30.06,6.3-2.03,12.91-3.65,19.48-4.18,18.01-1.47,31.18-10.2,41.19-24.85,15.22-22.28,30.72-44.37,46.16-66.51,20.96-30.06,41.91-60.13,63.02-90.09,7-9.93,12.12-20.55,14.8-32.45,4.68-20.78,16.86-36.28,35.69-45.66,11.22-5.59,21.17-12.62,30.47-20.66,24.45-21.13,48.7-42.49,72.8-64.03,5.93-5.3,11.25-11.38,16.33-17.53,4.45-5.38,3.97-9.73-1.97-13.37-5.29-3.24-11.32-5.55-17.29-7.38-21.94-6.74-44.07-12.89-66-19.67-26.23-8.11-51.06-19.28-73.45-35.4-10.79-7.77-23.2-9.8-36-10-33.6-.51-64.53,8.26-92.32,27.39-10.22,7.04-20.64,13.79-33.4,14.68-5.16.36-11.16.49-15.54-1.73-24.96-12.61-49.58-25.78-71.55-43.51-18.91-15.26-25.27-34-20.43-57.55,6.62-32.17,21.19-59.4,47.56-79.58,12.57-9.61,27.02-15.61,41.95-20.58,28.99-9.65,59.01-13.3,89.26-15.86,36.83-3.12,73.75-5.64,110.43-10.09,35.27-4.28,68.81-14.86,99.9-32.84,38.72-22.39,79.19-41.05,122.05-54.2,54.29-16.66,109.69-24.99,166.55-20.9,22.05,1.58,43.16,8.11,63.93,15.27,33.66,11.6,67.12,23.79,100.68,35.69,24.35,8.63,49.17,14.82,75.29,12.3,10.24-.99,20.81-1.58,30.48-4.68,24.29-7.78,42.51-22.7,51.36-47.73,7.4-20.93,13.07-41.92,9.49-64.45-1.83-11.51-6.4-21.53-13.74-30.54-13.32-16.36-28.7-30.56-44.72-44.2-13.44-11.44-26.91-22.94-39.39-35.39-26.64-26.59-41.07-58.73-40.48-96.78.29-18.34,5.44-35.49,15.69-50.85,8.5-12.74,20.76-19.34,35.85-20.83,17.22-1.7,33.16,1.86,47.27,12.16,5.65,4.12,11.4,8.2,16.5,12.94,13.32,12.37,28.9,19.78,46.57,23.7,6.32,1.4,12.28,4.78,18.15,7.75,2.24,1.13,4.07,3.46,5.55,5.61,3.93,5.74,3.3,10.36-2.96,13.12-5.95,2.62-12.63,4.56-19.08,4.87-13.63.66-27.34-.48-40.97.14-11.26.51-22.51,2.13-33.67,3.89-23.65,3.74-29.26,31.04-15.39,45.36,10.64,10.98,21.82,21.47,33.25,31.62,9.96,8.84,20.74,16.75,30.93,25.33,36.86,31.06,53.69,70.95,52.56,118.93-1.2,50.96-22.83,93.19-55.92,130.19-25.76,28.8-56.57,51.67-90.16,70.53-14.74,8.27-21.43,19.36-21.25,36.29.29,26.47-3.78,52.44-13.2,77.36-7.53,19.92-18.24,37.7-34.82,51.56-8.61,7.2-18.63,11.59-29,15.27-38.34,13.6-77.7,23.46-117.52,31.57-12.39,2.52-24.8,4.96-37.19,7.52-16.87,3.48-31.38,12.1-42.99,24.11-31.13,32.23-56.5,69.03-81.27,106.22-.53.79-.7,1.82-1.67,4.48Z" />
+                                    </svg>
                                     <span class="sr-only">Nostr</span>
                                 </a>
                             </div>
@@ -514,7 +580,6 @@
                         <h2 id="footer-links"
                             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Links</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                            
                             <li class="mb-4">
                                 <a target="_blank" href="https://bitcoin.org/bitcoin.pdf"
                                     class="hover:underline">Bitcoin whitepaper</a>
@@ -528,7 +593,8 @@
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div class="flex items-center justify-between">
-                <span id="footer-copyright" class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 CUBO+.
+                <span id="footer-copyright" class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024
+                    CUBO+.
                 </span>
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 text-right">
                     Made with love by CUBO+ graduates.
