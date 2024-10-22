@@ -100,7 +100,7 @@ const renderDestinations = (destinations) => {
 
   destinations.map((destination, index) => {
     html += index % 2 !== 0 ? `<div
-                class="reverse-card bg-white dark:bg-slate-900 rounded-xl p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+                class="mt-20 reverse-card bg-white dark:bg-slate-900 rounded-xl p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
                 <div class="flex flex-col dark:text-white gap-8">
                     <h2 id="section1-agency-title" class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
                         ${destination.title}
@@ -109,11 +109,11 @@ const renderDestinations = (destinations) => {
                         ${destination.legend}
                     </p>
                     <a  href="destination.html?id=${destination.id}"
-                        class="button rounded-lg font-semibold text-white w-1/2 self-start bg-blue-500 p-4 text-center button">${destination.button}</a>
+                        class="button rounded-full font-semibold text-white w-1/2 self-start bg-blue-500 p-4 text-center button">${destination.button}</a>
                 </div>
                 <img src="${TOURISM_ASSETS + `destinations/${destination.id}.webp`}" class="rounded-2xl w-full md:w-1/2 h-full object-covey" alt="${destination.title}">
             </div>`:
-      `<div class="bg-white dark:bg-slate-900 rounded-xl p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
+      `<div class="mt-20 bg-white dark:bg-slate-900 rounded-xl p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
                     <img src="${TOURISM_ASSETS + `destinations/${destination.id}.webp`}" class="rounded-2xl w-full object-cover h-64 md:w-1/2 flex-shrink-0" alt="${destination.title}">
                     <div class="flex flex-col dark:text-white gap-8 w-full md:w-1/2">
                         <h2 class="text-2xl text-neutral-700 dark:text-white text-center font-semibold">
@@ -122,7 +122,7 @@ const renderDestinations = (destinations) => {
                         <p class="text-xs md:text-sm text-start">
                             ${destination.legend}
                         </p>
-                        <a href="destination.html?id=${destination.id}" class="rounded-lg font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center button">${destination.button}</a>
+                        <a href="destination.html?id=${destination.id}" class="rounded-full font-semibold text-white w-1/2 self-end bg-blue-500 p-4 text-center button">${destination.button}</a>
                     </div>
                 </div>`
   });
@@ -135,7 +135,7 @@ const renderOnboard = (onboard) => {
   let html = "";
 
   onboard.map((section) => {
-    html += `<div class="faq-item bg-white rounded-lg flex flex-col p-5 w-full gap-4 cursor-pointer">
+    html += `<div class="faq-item bg-white rounded-lg flex flex-col p-5 w-full cursor-pointer">
                 <div class="flex items-center justify-between w-full">
                     <p class="text-xl text-neutral-700 font-semibold">${section.title}</p>
                     <div class="faq-icon rounded-full p-4 bg-white text-center transition-all duration-300 ease-in-out">
@@ -146,7 +146,7 @@ const renderOnboard = (onboard) => {
                 </div>
                 <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 flex flex-wrap items-center gap-2 lg:gap-6 ">
                     ${section.places.map((place) => {
-                      return `<a href="${place.url}" target="_blank" class="bg-light p-4 w-[48%] h-64 md:w-[30%] md:h-[30%] lg:w-[20%] lg:h-[20%] aspect-square flex flex-col rounded-xl" style="height:auto;">
+                      return `<a href="${place.url}" target="_blank" class="cursor-pointer tweet bg-light p-4 w-[48%] h-64 md:w-[30%] md:h-[30%] lg:w-[20%] lg:h-[20%] aspect-square flex flex-col rounded-xl" style="height:auto;">
                                 <img src="${TOURISM_ASSETS + `categories/${section.id}/${place.id}.webp`}" class="w-full h-48 object-cover rounded-lg" alt="Logo">
                                 <p class="text-sm h-14 flex" style="align-items:center; height:auto;">${place.title}</p>
                               </a>`;
