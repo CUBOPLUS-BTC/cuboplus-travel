@@ -1,9 +1,13 @@
 const setElements = (content) => {
-    Object.keys(content).forEach(id => {
-        const element = document.getElementById(id);
-        element.innerHTML = content[id];
-    })
-  }
+  Object.keys(content).forEach(id => {
+      const element = document.getElementById(id);
+      try {
+          element.innerHTML = content[id];
+      } catch (e) {
+
+      }
+  })
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     changeLanguage("relocate", localStorage.getItem("language-tourism"), setElements);
