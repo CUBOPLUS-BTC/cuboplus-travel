@@ -2114,11 +2114,6 @@ input:checked + .toggle-bg {
      object-fit: cover;
 }
 
-.object-top {
-  -o-object-position: top;
-     object-position: top;
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -2219,14 +2214,14 @@ input:checked + .toggle-bg {
   padding-bottom: 1rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-12 {
@@ -2424,6 +2419,11 @@ input:checked + .toggle-bg {
 
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-blue-500 {
@@ -3228,10 +3228,6 @@ input:checked + .toggle-bg {
     height: 300px;
   }
 
-  .md\:h-screen {
-    height: 100vh;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -3406,6 +3402,11 @@ input:checked + .toggle-bg {
     line-height: 1.25rem;
   }
 
+  .md\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
   :is(.dark .md\:dark\:text-white) {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3476,10 +3477,6 @@ input:checked + .toggle-bg {
 
   .lg\:h-\[20\%\] {
     height: 20%;
-  }
-
-  .lg\:h-auto {
-    height: auto;
   }
 
   .lg\:h-full {
