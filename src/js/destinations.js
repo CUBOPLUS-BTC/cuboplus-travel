@@ -111,7 +111,7 @@ const renderDestinations = (destinations) => {
                     <a  href="destination.html?id=${destination.id}"
                         class="button rounded-full font-semibold text-white w-1/2 self-start bg-blue-500 p-4 text-center button">${destination.button}</a>
                 </div>
-                <img src="${TOURISM_ASSETS + `destinations/${destination.id}.webp`}" class="rounded-2xl w-full md:w-1/2 h-full object-covey" alt="${destination.title}">
+                <img src="${TOURISM_ASSETS + `destinations/${destination.id}.webp`}" class="rounded-2xl w-full md:w-1/2 h-64 object-cover flex-shrink-0" alt="${destination.title}">
             </div>`:
       `<div class="mt-20 bg-white dark:bg-slate-900 rounded-xl p-4 md:p-8 flex flex-col md:flex-row items-center gap-7 md:gap-12 lg:gap-14">
                     <img src="${TOURISM_ASSETS + `destinations/${destination.id}.webp`}" class="rounded-2xl w-full object-cover h-64 md:w-1/2 flex-shrink-0" alt="${destination.title}">
@@ -201,7 +201,7 @@ const renderCalendar = (events) => {
       center: "",
       right: "prev,next"
     },
-    height: 514,
+    height: window.innerWidth <= 640 ? 514 : 720,
     initialView: window.innerWidth <= 640 ? "listMonth" : "dayGridMonth",
     displayEventTime: false,
     events: events,

@@ -70,17 +70,18 @@ const renderCommunity = (community) => {
     TOURISM_ASSETS + `/communities/${community.id}/logo_white.webp`;
 
   const leadersContainer = document.getElementById("leadersContainer");
-
+  let leadersHtml = '';
   community.leaders.forEach((leader) => {
-    const leaderDiv = document.createElement("div");
-    leaderDiv.className = "mb-8 md:mb-0";
-    leaderDiv.innerHTML = `
-                    <img src="${TOURISM_ASSETS + `communities/${community.id}/leaders/${leader.id}.webp`}" class="mx-auto rounded-xl w-64 h-64 object-cover max-w-full mb-4" alt="">
+
+    leadersHtml += `
+      <div class="mb-8 md:mb-0">
+          <img src="${TOURISM_ASSETS + `communities/${community.id}/leaders/${leader.id}.webp`}" class="mx-auto rounded-xl w-64 h-64 object-cover max-w-full mb-4" alt="">
                     <h3 class="text-xl font-semibold">${leader.name}</h3>
                     <p class="text-gray-700 dark:text-gray-300">${leader.role}</p>
-                `;
-    leadersContainer.appendChild(leaderDiv);
+      </div>
+    `
   });
+  leadersContainer.innerHTML = leadersHtml;
 };
 
 function loadSlide(category, sliderContainer) {

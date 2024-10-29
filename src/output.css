@@ -2114,6 +2114,11 @@ input:checked + .toggle-bg {
      object-fit: cover;
 }
 
+.object-top {
+  -o-object-position: top;
+     object-position: top;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -2219,6 +2224,11 @@ input:checked + .toggle-bg {
   padding-bottom: 2rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -2277,6 +2287,10 @@ input:checked + .toggle-bg {
 
 .pt-48 {
   padding-top: 12rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {

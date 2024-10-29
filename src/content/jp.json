@@ -78,7 +78,7 @@
         "section7-place2": "レストラン",
         "section7-place3": "交通手段",
         "section7-place4": "アクティビティ",
-        "section8": "オプションを選択してください。"
+        "section8": "ビットコインディレクトリ"
     },
     "destination": {
         "title": "目的地",
@@ -110,7 +110,8 @@
         "section3": "ビットコイン旅行を計画する",
         "section3-cta": "ビットコインの国への旅行を計画するために、フォームにご記入ください。",
         "section3-whatsapp-button": "WhatsAppで予約する",
-        "section3-or": "または"
+        "section3-or": "または",
+        "section3-form-button": "フォームで予約をする"
     },
     "relocate": {
         "page-title": "エルサルバドル移住",
