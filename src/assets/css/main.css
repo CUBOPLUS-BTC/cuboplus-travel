@@ -159,6 +159,10 @@
 
 }
 
+#fc-dom-1{
+    color: white;
+}
+
 .parallax {
     height: 100%;
     background-attachment: fixed;

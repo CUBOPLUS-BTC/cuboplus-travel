@@ -78,7 +78,7 @@
         "section7-place2": "Restaurants",
         "section7-place3": "Transportation",
         "section7-place4": "Activities",
-        "section8": "Select an option"
+        "section8": "Bitcoin directory"
     },
     "destination": {
         "title": "Destination",
@@ -110,7 +110,8 @@
         "section3": "Plan your Bitcoin Trip Here",
         "section3-cta": "Complete the form to plan your trip to Bitcoin country",
         "section3-whatsapp-button": "Make your reservation in WhatsApp",
-        "section3-or": "Or"
+        "section3-or": "Or",
+        "section3-form-button": "Make your reservation in a form"
     },
     "relocate": {
         "page-title": "Relocate to El Salvador",
