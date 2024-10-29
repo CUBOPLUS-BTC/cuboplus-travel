@@ -1,6 +1,6 @@
 const jpButton = document.getElementsByClassName("jp-button");
 const enButton = document.getElementsByClassName("en-button");
-const contentVersion = "1.3"
+const contentVersion = "1.4"
 const TOURISM_DATA_URL = "https://raw.githubusercontent.com/CUBOPLUS-BTC/tourism-portal-data/main/";
 const TOURISM_ASSETS = TOURISM_DATA_URL + "assets/";
 

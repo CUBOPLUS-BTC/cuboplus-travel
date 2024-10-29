@@ -1,0 +1,230 @@
+.main-page-title{
+    font-family: 'Space Grotesk', sans-serif;
+    z-index: 1;
+    top: 78px;
+    position: relative;
+    padding-left: 40px;
+}
+.main-page-title h1{
+    font-size: 8rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1em;
+}
+.sub-title-page{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.main-page-title h3{
+    font-size: 4.8em;
+    color: #ffffff;
+
+}
+.sub-title-page a {
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1220px) {
+    .main-page-title h1{
+        font-size: 7rem;
+        
+    }
+    .main-page-title h3{
+        font-size: 3em;
+    }
+
+}
+@media only screen and (max-width: 1000px) {
+    .main-page-title h1{
+        font-size: 6rem;
+        
+    }
+    .main-page-title h3{
+        font-size: 2em;
+    }
+
+}
+@media only screen and (max-width: 800px) {
+    .main-page-title h1{
+        font-size: 3.5rem;
+        
+    }
+    .main-page-title h3{
+        font-size: 1.5em;
+    }
+    .sub-title-page a {
+        font-size: 1em;
+        padding: 15px;
+    }
+}
+.card-img-desing {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.card-img-desing h1 {
+    max-width: 300px;
+    text-align: center;
+    font-size: 3em;
+}
+
+.img-content {
+    position: relative;
+    width: 100%;
+    max-width: 641px;
+    min-width: 641px;
+    flex-wrap: wrap;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.img-content span a {
+    max-width: 100%;
+}
+
+.img-content span {
+    padding: 15px;
+    border-radius: 10px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 1px 1em #2c51ab33;
+    width: 300px;
+    height: 150px;
+    background: #ffffffb5;
+    backdrop-filter: blur(7px);
+}
+
+.img-content span img {
+    max-height: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+    .card-img-desing {
+        justify-content: center !important;
+    }
+
+    .card-img-desing {
+        text-align: center;
+        flex-wrap: wrap !important;
+    }
+
+    .card-img-desing.initiatives-img {
+        flex-flow: column-reverse !important;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .img-content {
+        transform: scale(0.9);
+    }
+
+}
+
+@media only screen and (max-width: 710px) {
+    .img-content {
+        transform: scale(0.8);
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .img-content {
+        transform: scale(0.7);
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    .img-content {
+        transform: scale(0.6);
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .img-content {
+        transform: scale(0.5);
+    }
+
+}
+
+#fc-dom-1{
+    color: white;
+}
+
+.parallax {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.parallax-catedral {
+    background-image: url('../../img/background/catedra.jpeg') !important;
+}
+.parallax-catedra2 {
+    background-image: url('../../img/background/catedra2.jpeg') !important;
+}
+.parallax-lake{
+    background-image: url('../../img/background/lake.png') !important;
+}
+.parallax-agency{
+    background-image: url('../../img/tourism/agency/agency.webp') !important;
+}
+.parallax-agency-blur{
+    background-image: url('../../img/tourism/agency/agency.webp') !important;
+}
+.parallax-relocate{
+    background-image: url('../../img/tourism/relocation/background.webp') !important;
+}
+.parallax::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000059;
+}
+.parallax.parallax-agency-blur::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000059;
+    backdrop-filter: blur(5px);
+}
+
+::-webkit-scrollbar {
+    height: 1rem;
+    width: 0.5rem;
+}
+ ::-webkit-scrollbar-thumb {
+    --tw-bg-opacity: 1;
+    background-color: #3f83f8;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 9999px;
+}
+.custom-shadow{
+    box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 1px 1em #2c51ab33;
+}

@@ -29,17 +29,41 @@ img.fade-out {
 }
 
 .navbar-tourism {
-    opacity: 0;
-    visibility: 0;
     transition: opacity 0.5s ease, visibility 0.5s ease;
     border: none;
 }
-
-.navbar-tourism.scrolled {
-    opacity: 1;
-    visibility: 1;
+/* .navbar-tourism button.language{
+    height: 30px;
+    width: 30px;
+} */
+.navbar-tourism .content-nav{
+    padding: 11px;
+}
+@media only screen and (max-width: 1023px){
+    .navbar-tourism .content-nav{
+        padding:0px !important;
+     }
 }
 
+.navbar-tourism {
+    background-color: rgb(255, 255, 255) !important;
+}
+.init-background{
+    position: relative;
+}
+.init-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000059;
+}
+
+.nav-menu li{
+    font-size: 1.1em;
+}
 #nav-tourism a {
     transition: font-weigth 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
@@ -61,7 +85,7 @@ img.fade-out {
 }
 
 .tweet:hover {
-    box-shadow: 0 0px 25px 0px rgb(0 0 0 / 0.25);
+    box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 1px 1em #2c51ab33;
 }
 
 .card {
@@ -131,3 +155,24 @@ img.fade-out {
   video {
     opacity: 1 !important;
   }
+
+  @keyframes smoothAppear {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+
+  #hero-text-1 {
+    animation: 1s ease-out 0s 1 smoothAppear forwards;
+  } 
+  #hero-text-2 {
+    animation: 1s ease-out 0.5s 1 smoothAppear forwards;
+  } 
+  #section1-nav-button {
+    animation: 1s ease-out 1s 1 smoothAppear forwards;
+  } 
