@@ -173,6 +173,20 @@
     position: relative;
 }
 
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll; 
+        background-size: cover; 
+        background-position: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .parallax {
+        background-attachment: fixed; 
+    }
+}
+
 .parallax-catedral {
     background-image: url('../../img/background/catedra.jpeg') !important;
 }
