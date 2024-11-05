@@ -29,6 +29,21 @@
     padding: 20px;
 }
 
+@media (max-height: 700px) {
+    .parallax-catedral {
+        min-height: 600px;
+    }
+    
+    .parallax-catedral::after {
+        min-height: 600px;
+    }
+    .parallax-relocate {
+        min-height: 600px;
+    }
+    .parallax-relocate::after {
+        min-height: 600px;
+    }
+}
 @media only screen and (max-width: 1220px) {
     .main-page-title h1{
         font-size: 7rem;
@@ -110,7 +125,7 @@
     max-height: 100px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 905px) {
     .card-img-desing {
         justify-content: center !important;
     }
@@ -166,13 +181,13 @@
 .parallax {
     -webkit-clip-path: inset(0 0 0 0);
     clip-path: inset(0 0 0 0);
-    background-size: 0 !important;
+    background-size: cover !important; /* Cambiado a cover para que se ajuste */
     overflow: hidden;
     position: relative;
     top: 0;
 }
 
-.parallax::after{
+.parallax::after {
     content: "";
     position: fixed;
     width: 100%;
@@ -187,6 +202,7 @@
     z-index: -1;
     visibility: visible !important;
 }
+
 .parallax::before {
     content: '';
     position: absolute;
