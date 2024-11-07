@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="../assets/icono.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Cuboplus El Salvador 2024" />
-    <title>Cubo+</title>
+    <meta name="description" content="Under Construction" />
+    <title>Under Construction</title>
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
@@ -15,340 +15,135 @@
     <script type="module" crossorigin src="../assets/script.js"></script>
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="stylesheet" href="../output.css">
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "o6hcuommdo");
-    </script>
 
-    <script>
-        if (
-            localStorage.getItem("color-theme") === "dark" ||
-            (!("color-theme" in localStorage) &&
-                window.matchMedia("(prefers-color-scheme: dark)").matches)
-        ) {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
+<script>
+    localStorage.setItem('color-theme','light')
+    if (
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+        document.documentElement.classList.add("dark");
+    } else {
+        document.documentElement.classList.remove("dark");
+    }
+</script>
+
+<style>
+    .swiper-container .cart {
+        position: relative;
+        border-radius: 20px;
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .animate-pulse {
+        animation: pulse 9s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(0.87);
+            box-shadow: 0 0 0 0 rgb(63, 131, 248);
         }
-    </script>
-    <style>
-        .animate-pulse {    
-            animation: pulse 9s infinite; 
-             }
 
-        @keyframes pulse {
-            0% {
-                transform: scale(0.87);
-                box-shadow: 0 0 0 0 rgb(63, 131, 248);
-            }
-
-            20% {
-                transform: scale(1);
-                box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
-            }
-            50% {
-                transform: scale(1);
-                box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
-            }
-            60% {
-                transform: scale(1);
-                box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
-            }
-
-            100% {
-                transform: scale(0.87);
-                box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
-            }
-
+        20% {
+            transform: scale(1);
+            box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
         }
-    </style>
+
+        50% {
+            transform: scale(1);
+            box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
+        }
+
+        60% {
+            transform: scale(1);
+            box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
+        }
+
+        100% {
+            transform: scale(0.87);
+            box-shadow: 0 0 0 15px rgba(229, 62, 62, 0);
+        }
+
+    }
+
+    .testimonial-wrapper {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-container {
+        overflow: hidden;
+    }
+
+    #slider {
+        transition: transform 0.3s ease-in-out;
+    }
+</style>
+<link rel="stylesheet" href="../assets/css/medias.css">
+<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 
 <body class="font-[Poppins] min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
-    <header>
-        <nav id="navbar"
-            class="navbar-tourism shadow-lg fixed inset-x-0 z-40 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
-            <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-                <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
-                    <div class="relative z-20 flex w-full justify-between lg:px-0 lg:w-max">
-                        <a href="../index.html" aria-label="logo" class="flex items-center space-x-2">
-                            <img src="../img/logos/cubo-text-blue.svg" class="hidden sm:block"
-                                style="height: 64px; width: 164px;" alt="cubo logo">
-                            <img src="../img/logos/cubo-logo-azul1.svg" class="block sm:hidden"
-                                style="height: 48px; width: 48px;" alt="cubo logo">
-                        </a>
 
-                        <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
-                            <div aria-hidden="true"
-                                class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300">
-                            </div>
-                            <div aria-hidden="true"
-                                class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300">
-                            </div>
-                        </button>
-                    </div>
-                    <div id="layer" aria-hidden="true"
-                        class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-gray-900/70 lg:hidden">
-                    </div>
-                    <div id="navlinks"
-                        class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0 dark:lg:bg-transparent">
-                        <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
-                            <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
-                                <li>
-                                    <a id="navbar-home-button"
-                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
-                                        href="../index.html">
-                                        <span>Home</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a id="navbar-travel-button"
-                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
-                                        href='../travel.html'>
-                                        <span>Visit Bitcoin Country</span>
-                                    </a>
-                                </li>
-                                </li>
-                                <li>
-                                    <a id="navbar-agency-button"
-                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
-                                        href='../agency.html'>
-                                        <span>Travel with CUBO+</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a id="navbar-relocate-button"
-                                        class='block transition hover:text-orange-400 dark:hover:text-primaryLight md:px-4'
-                                        href='../relocate.html'>
-                                        <span>Relocate to El Salvador</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <button aria-label="switch language"
-                            class="group mr-1 relative hidden h-9 w-9 rounded-full before:absolute text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-300 before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex"
-                            data-dropdown-toggle="dropdown-language" data-dropdown-trigger="hover"
-                            data-dropdown-delay="50">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" data-slot="icon" class="w-5 h-5 relative m-auto ">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
-                            </svg>
-                        </button>
-
-                        <div id="dropdown-language"
-                            class="relative hidden border-gray-100 lg:z-10 lg:absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-                                <li>
-                                    <a href="#"
-                                        class="en-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                        <img src="../img/icons/united-kingdom.png" class="h-6 w-6 mr-2" alt="">
-                                        English</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="jp-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                        <img src="../img/icons/japan.png" class="h-6 w-6 mr-2" alt="">
-                                        日本語</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <button aria-label="switch theme"
-                            class="switcher group relative hidden h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 lg:flex">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="fixed flex top-3 right-14 z-20 sm:right-24 lg:hidden">
-                        <button aria-label="switch language"
-                            class="group mr-1 relative flex h-9 w-9 text-gray-500 dark:text-gray-300 hover:text-blue-900 dark:hover:text-blue-300 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800"
-                            data-dropdown-toggle="dropdown-language2" data-dropdown-delay="50">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" data-slot="icon" class="w-5 h-5 relative m-auto">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802" />
-                            </svg>
-                        </button>
-                        <div id="dropdown-language2"
-                            class="relative hidden border-gray-100 lg:z-10 lg:absolute bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-                                <li>
-                                    <a href="#"
-                                        class="en-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                        <img src="../img/icons/united-kingdom.png" class="h-6 w-6 mr-2" alt="">
-                                        English</a>
-                                </li>
-                                <li>
-                                    <a href="#"
-                                        class="jp-button flex items-center px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
-                                        <img src="../img/icons/japan.png" class="h-6 w-6 mr-2" alt="">
-                                        日本語</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <button aria-label="switch theme"
-                            class="switcher group relative flex h-9 w-9 rounded-full before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="transistion relative m-auto hidden h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 group-hover:fill-yellow-400 dark:block dark:fill-gray-300"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd"
-                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="transistion relative m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:-rotate-90 group-hover:fill-blue-900 dark:hidden"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
-
-    
-    <section id="cookies-modal" class="hidden flex-col md:flex-row z-30 fixed max-w-2xl p-4 mx-4 md:mx-auto bottom-4 bg-white border border-gray-200 md:gap-x-4 md:left-12 md:bottom-16 dark:bg-gray-900 md:items-center dark:border-gray-700 rounded-2xl">
-        <div class="flex md:items-center gap-x-4">
-            <span class="inline-flex p-2 text-blue-500 rounded-lg shrink-0 dark:bg-gray-800 bg-blue-100/80">
-                <svg class="w-8 md:w-8 md:h-8" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.9803 8.5468C17.5123 8.69458 17.0197 8.7931 16.5271 8.7931C14.2118 8.76847 12.3399 6.89655 12.3153 4.58128C12.3153 4.13793 12.3892 3.69458 12.537 3.27586C11.9951 2.68473 11.6995 1.92118 11.6995 1.13301C11.6995 0.812808 11.7488 0.492611 11.8473 0.172414C11.2315 0.0738918 10.6158 0 10 0C4.48276 0 0 4.48276 0 10C0 15.5172 4.48276 20 10 20C15.5172 20 20 15.5172 20 10C20 9.77833 20 9.55665 19.9754 9.33498C19.2611 9.26108 18.5468 8.99015 17.9803 8.5468ZM4.58128 7.31527C6.30542 7.31527 6.30542 10.0246 4.58128 10.0246C2.85714 10.0246 2.61084 7.31527 4.58128 7.31527ZM6.05912 15.7635C4.08867 15.7635 4.08867 12.8079 6.05912 12.8079C8.02956 12.8079 8.02956 15.7635 6.05912 15.7635ZM9.01478 1.33005C10.7389 1.33005 10.7389 4.28571 9.01478 4.28571C7.29064 4.28571 7.04434 1.33005 9.01478 1.33005ZM10.2463 8.84237C11.7241 8.84237 11.7241 10.8128 10.2463 10.8128C8.76848 10.8128 9.01478 8.84237 10.2463 8.84237ZM11.9704 16.9458C10.4926 16.9458 10.4926 14.9754 11.9704 14.9754C13.4483 14.9754 13.202 16.9458 11.9704 16.9458ZM16.6503 13.1034C15.4187 13.1034 15.4187 11.133 16.6503 11.133C17.8818 11.133 17.8818 13.1034 16.6503 13.1034Z" fill="currentColor"/>
-                </svg>
-            </span>
-    
-            <p id="cookies-text" class="text-sm text-gray-600 dark:text-gray-300">We use cookies to ensure that we give you the best experience on our website. <a href="../legal/cookies.html" class="text-blue-500 hover:underline">Cookies Policy</a>. </p>
-        </div>
-        
-        <div class="block md:flex align-middle md:items-center gap-x-4 shrink-0 mt-6 md:mt-0 lg:mt-0">
-            <button id="accept-cookies" class="text-xs w-1/2 md:w-auto font-medium bg-gray-800 rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
-                Accept
-            </button>
-            <button id="decline-cookies" class="text-xs w-1/2 md:w-auto font-medium bg-gray-800 rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none mt-3 md:mt-0">
-                Decline
-            </button>
-        </div>
-    </section>
-
-
-
-
-    <section class="pt-32 bg-white dark:bg-gray-900 mb-24">
+    <section class="bg-white dark:bg-gray-900 mb-24">
         <div class="py-8 px-4 mx-auto max-w-screen-md text-center lg:py-16 lg:px-12">
-            <svg class="mx-auto mb-4 w-10 h-10 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="currentColor"
-                    d="M331.8 224.1c28.29 0 54.88 10.99 74.86 30.97l19.59 19.59c40.01-17.74 71.25-53.3 81.62-96.65c5.725-23.92 5.34-47.08 .2148-68.4c-2.613-10.88-16.43-14.51-24.34-6.604l-68.9 68.9h-75.6V97.2l68.9-68.9c7.912-7.912 4.275-21.73-6.604-24.34c-21.32-5.125-44.48-5.51-68.4 .2148c-55.3 13.23-98.39 60.22-107.2 116.4C224.5 128.9 224.2 137 224.3 145l82.78 82.86C315.2 225.1 323.5 224.1 331.8 224.1zM384 278.6c-23.16-23.16-57.57-27.57-85.39-13.9L191.1 158L191.1 95.99l-127.1-95.99L0 63.1l96 127.1l62.04 .0077l106.7 106.6c-13.67 27.82-9.251 62.23 13.91 85.39l117 117.1c14.62 14.5 38.21 14.5 52.71-.0016l52.75-52.75c14.5-14.5 14.5-38.08-.0016-52.71L384 278.6zM227.9 307L168.7 247.9l-148.9 148.9c-26.37 26.37-26.37 69.08 0 95.45C32.96 505.4 50.21 512 67.5 512s34.54-6.592 47.72-19.78l119.1-119.1C225.5 352.3 222.6 329.4 227.9 307zM64 472c-13.25 0-24-10.75-24-24c0-13.26 10.75-24 24-24S88 434.7 88 448C88 461.3 77.25 472 64 472z" />
-            </svg>
+            <div class="w-full flex justify-center pb-8">
+                <img src="../img/logos/cubo-travel-logo.svg" alt="logo" class="h-12">
+            </div>
             <h1 id="title"
-                class="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">
+                class="mb-4 text-4xl font-bold tracking-tight leading-none text-orange-500 lg:mb-6 md:text-5xl xl:text-6xl dark:text-white">
                 Under Construction</h1>
-            <p id="legend" class="font-light text-gray-500 md:text-lg xl:text-xl dark:text-gray-400">We're building
-                something cool! This page is currently under construction, come back soon to find out!</p>
-        </div>
-        <div class="pt-12 w-96 mx-auto overflow-hidden sm:mt-20 lg:-mt-8 ">
-            <img class="w-full" src="../img/unsorted/undraw_under_construction_-46-pa.svg" class="w-full"
-                alt="team illustration" height="600" width="800" />
+            <p id="legend" class="font-light text-gray-500 md:text-lg xl:text-xl dark:text-gray-400">We are currently working in the website, please feel free to reach out to WhatsApp</p>
+            <a href="https://api.whatsapp.com/send/?phone=50376482924" target="_blank"
+                    class="bg-[#009951] px-4 py-4 mt-12 flex items-center text-white text-semibold rounded-full justify-center gap-7 wp-button"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <g clip-path="url(#clip0_1053_1500)">
+                            <path
+                                d="M0.640234 14.8204C0.639531 17.341 1.30328 19.8021 2.56539 21.9714L0.519531 29.3833L8.16391 27.3944C10.2782 28.5365 12.6472 29.135 15.0545 29.1351H15.0609C23.0079 29.1351 29.477 22.7185 29.4804 14.8316C29.482 11.0099 27.9834 7.41618 25.2606 4.71246C22.5384 2.00897 18.9179 0.519322 15.0603 0.517578C7.11227 0.517578 0.643633 6.93386 0.640352 14.8204"
+                                fill="url(#paint0_linear_1053_1500)" />
+                            <path
+                                d="M0.640234 14.8204C0.639531 17.341 1.30328 19.8021 2.56539 21.9714L0.519531 29.3833L8.16391 27.3944C10.2782 28.5365 12.6472 29.135 15.0545 29.1351H15.0609C23.0079 29.1351 29.477 22.7185 29.4804 14.8316C29.482 11.0099 27.9834 7.41618 25.2606 4.71246C22.5384 2.00897 18.9179 0.519322 15.0603 0.517578C7.11227 0.517578 0.643633 6.93386 0.640352 14.8204"
+                                fill="black" fill-opacity="0.2" />
+                            <path
+                                d="M0.125391 14.8158C0.12457 17.4271 0.812109 19.9763 2.11922 22.2233L0 29.9008L7.91848 27.8407C10.1003 29.021 12.5568 29.6434 15.0564 29.6443H15.0628C23.295 29.6443 29.9965 22.9969 30 14.8277C30.0014 10.8686 28.4489 7.1457 25.6289 4.34512C22.8086 1.54488 19.0586 0.00162791 15.0628 0C6.82922 0 0.128672 6.64651 0.125391 14.8158ZM4.84113 21.8363L4.54547 21.3706C3.30258 19.4096 2.64656 17.1436 2.6475 14.8167C2.65008 8.02663 8.2193 2.50233 15.0675 2.50233C18.3839 2.50372 21.5006 3.78651 23.8448 6.11395C26.1889 8.44163 27.4788 11.5358 27.478 14.8267C27.475 21.6169 21.9056 27.1419 15.0628 27.1419H15.0579C12.8298 27.1407 10.6446 26.547 8.73891 25.425L8.28539 25.1581L3.58641 26.3806L4.84113 21.8363Z"
+                                fill="url(#paint1_linear_1053_1500)" />
+                            <path
+                                d="M11.3293 8.62116C11.0497 8.00453 10.7554 7.99209 10.4895 7.98127C10.2718 7.97197 10.0229 7.97267 9.77422 7.97267C9.52531 7.97267 9.1209 8.06558 8.77906 8.43592C8.43687 8.80662 7.47266 9.70244 7.47266 11.5244C7.47266 13.3464 8.81012 15.1073 8.99656 15.3546C9.18324 15.6015 11.5786 19.4601 15.3721 20.9445C18.525 22.1781 19.1666 21.9328 19.8508 21.8709C20.5352 21.8093 22.0591 20.9753 22.37 20.1106C22.6811 19.2459 22.6811 18.5048 22.5879 18.3499C22.4946 18.1956 22.2457 18.1029 21.8724 17.9178C21.4992 17.7327 19.6641 16.8366 19.3221 16.713C18.9799 16.5895 18.7311 16.5279 18.4822 16.8987C18.2333 17.2689 17.5186 18.1029 17.3007 18.3499C17.0831 18.5974 16.8652 18.6282 16.4921 18.443C16.1186 18.2572 14.9166 17.8666 13.4906 16.6051C12.3811 15.6235 11.632 14.4113 11.4143 14.0405C11.1965 13.6702 11.3909 13.4695 11.5781 13.285C11.7458 13.1191 11.9514 12.8526 12.1382 12.6364C12.3243 12.4201 12.3864 12.2658 12.5109 12.0188C12.6355 11.7716 12.5731 11.5553 12.48 11.3701C12.3864 11.1849 11.6612 9.35337 11.3293 8.62116Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <linearGradient id="paint0_linear_1053_1500" x1="1448.56" y1="2887.09" x2="1448.56"
+                                y2="0.517578" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#1FAF38" />
+                                <stop offset="1" stop-color="#60D669" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_1053_1500" x1="1500" y1="2990.08" x2="1500" y2="0"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F9F9F9" />
+                                <stop offset="1" stop-color="white" />
+                            </linearGradient>
+                            <clipPath id="clip0_1053_1500">
+                                <rect width="30" height="30" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <p id="section3-whatsapp-button">Make your reservation on WhatsApp</p>
+                </a>
         </div>
     </section>
-
-    <footer class="bg-white dark:bg-gray-900">
-        <div class="relative mx-auto px-4 md:max-w-full my-6 md:px-12 lg:max-w-6xl xl:px-0">
-            <div class="md:flex md:justify-between">
-                <div class="mb-6 md:mb-0">
-                    <a href="../index.html" class="flex items-center">
-                        <img src="../img/logos/cubo-logo-blue.svg" class="h-28 md:h-40 me-3" alt="Cuboplus Logo" />
-                    </a>
-                </div>
-
-                <div class="grid grid-cols-1 gap-8 md:gap-16 md:grid-cols-3">
-                    <div>
-                        <h2 id="footer-contact"
-                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact us</h2>
-                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                            <li class="mb-4">
-                                <a href="#" class="hover:underline text-sm">info@cuboplus.travel</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h2 id="footer-follow"
-                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
-                        <div class="sm:flex sm:items-center sm:justify-between">
-                            <div class="flex mt-4 sm:justify-center sm:mt-0">
-                                <a target="_blank" href="https://www.youtube.com/@cuboplus"
-                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="currentColor" viewBox="0 0 20 14">
-                                        <path fill-rule="evenodd"
-                                            d="M19.7 3.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.84c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.84A4.225 4.225 0 0 0 .3 3.038a30.148 30.148 0 0 0-.2 3.206v1.5c.01 1.071.076 2.142.2 3.206.094.712.363 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.15 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965c.124-1.064.19-2.135.2-3.206V6.243a30.672 30.672 0 0 0-.202-3.206ZM8.008 9.59V3.97l5.4 2.819-5.4 2.8Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    <span class="sr-only">Youtube channel</span>
-                                </a>
-                                <a target="_blank" href="https://x.com/cuboplustravel"
-                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                                    <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="currentColor" viewBox="0 0 20 17">
-                                        <path fill-rule="evenodd"
-                                            d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    <span class="sr-only">Twitter page</span>
-                                </a>
-                                <a target="_blank" href="https://primal.net/p/npub144xzazs5q8muwnjmfqfndrsjc7zqrah53jrszw6pkgqfgsmf55jsnp97fn"
-                                    class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1062 1240" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M537.44,861.41c21.91-6.71,42.19-12.99,62.5-19.13,46.18-13.96,92.39-27.87,138.59-41.78,10.13-3.05,20.44-3.14,30.63-.76,13.02,3.03,22.39,11.15,29.56,22.23,12.32,19.01,24.85,37.88,37.25,56.83,3.46,5.29,6.96,10.58,10.13,16.05,5.03,8.66,5.25,17.56.87,22.46-4.43,4.95-13.28,5.71-22.39,1.52-3.59-1.65-7.33-3.55-10.13-6.25-7.42-7.15-16.24-10.08-26.24-10.49-3.99-.16-7.98-.49-11.95-.97-13.96-1.67-23.05-9.14-27.54-22.6-5.6-16.78-7.93-18.11-25.29-12.8-47.73,14.6-95.33,29.64-143.05,44.26-22.33,6.84-44.32,14.31-64.61,26.17-3.96,2.31-8.54,3.69-12.97,5.05-19.85,6.09-37.68-9.26-41.08-25.18-3.26-15.26-.7-29.95,5.22-43.93,11.98-28.29,27.76-54.58,43.8-80.7,7.65-12.46,15.46-24.82,24.21-38.84-4.16,1.15-6.68,1.56-8.97,2.52-14.74,6.16-29.63,12.02-44.06,18.85-8.36,3.96-16.46,8.87-23.78,14.52-25.3,19.56-50.18,39.66-75.28,59.49-4.89,3.86-7.64,8.58-9.42,14.7-4.55,15.69-13.69,28.78-28.99,35.06-19.55,8.02-32.43,22.63-44.34,38.94-49.34,67.52-98.67,135.05-148.31,202.34-9.67,13.1-20.46,25.42-31.23,37.66-13.26,15.07-25.67,30.52-33.53,49.32-5.07,12.12-11.13,15.58-20.15,13.61-6.82-1.49-9.93-7.24-11.17-19.14-2.14-20.49,1.78-39.76,10.91-58.1,2.23-4.47,4.57-8.9,6.44-13.52,2.54-6.28,3.45-12.66,1.49-19.51-1.82-6.37-2.94-13-3.82-19.58-1.96-14.63,4.75-25.52,18.83-30.06,6.3-2.03,12.91-3.65,19.48-4.18,18.01-1.47,31.18-10.2,41.19-24.85,15.22-22.28,30.72-44.37,46.16-66.51,20.96-30.06,41.91-60.13,63.02-90.09,7-9.93,12.12-20.55,14.8-32.45,4.68-20.78,16.86-36.28,35.69-45.66,11.22-5.59,21.17-12.62,30.47-20.66,24.45-21.13,48.7-42.49,72.8-64.03,5.93-5.3,11.25-11.38,16.33-17.53,4.45-5.38,3.97-9.73-1.97-13.37-5.29-3.24-11.32-5.55-17.29-7.38-21.94-6.74-44.07-12.89-66-19.67-26.23-8.11-51.06-19.28-73.45-35.4-10.79-7.77-23.2-9.8-36-10-33.6-.51-64.53,8.26-92.32,27.39-10.22,7.04-20.64,13.79-33.4,14.68-5.16.36-11.16.49-15.54-1.73-24.96-12.61-49.58-25.78-71.55-43.51-18.91-15.26-25.27-34-20.43-57.55,6.62-32.17,21.19-59.4,47.56-79.58,12.57-9.61,27.02-15.61,41.95-20.58,28.99-9.65,59.01-13.3,89.26-15.86,36.83-3.12,73.75-5.64,110.43-10.09,35.27-4.28,68.81-14.86,99.9-32.84,38.72-22.39,79.19-41.05,122.05-54.2,54.29-16.66,109.69-24.99,166.55-20.9,22.05,1.58,43.16,8.11,63.93,15.27,33.66,11.6,67.12,23.79,100.68,35.69,24.35,8.63,49.17,14.82,75.29,12.3,10.24-.99,20.81-1.58,30.48-4.68,24.29-7.78,42.51-22.7,51.36-47.73,7.4-20.93,13.07-41.92,9.49-64.45-1.83-11.51-6.4-21.53-13.74-30.54-13.32-16.36-28.7-30.56-44.72-44.2-13.44-11.44-26.91-22.94-39.39-35.39-26.64-26.59-41.07-58.73-40.48-96.78.29-18.34,5.44-35.49,15.69-50.85,8.5-12.74,20.76-19.34,35.85-20.83,17.22-1.7,33.16,1.86,47.27,12.16,5.65,4.12,11.4,8.2,16.5,12.94,13.32,12.37,28.9,19.78,46.57,23.7,6.32,1.4,12.28,4.78,18.15,7.75,2.24,1.13,4.07,3.46,5.55,5.61,3.93,5.74,3.3,10.36-2.96,13.12-5.95,2.62-12.63,4.56-19.08,4.87-13.63.66-27.34-.48-40.97.14-11.26.51-22.51,2.13-33.67,3.89-23.65,3.74-29.26,31.04-15.39,45.36,10.64,10.98,21.82,21.47,33.25,31.62,9.96,8.84,20.74,16.75,30.93,25.33,36.86,31.06,53.69,70.95,52.56,118.93-1.2,50.96-22.83,93.19-55.92,130.19-25.76,28.8-56.57,51.67-90.16,70.53-14.74,8.27-21.43,19.36-21.25,36.29.29,26.47-3.78,52.44-13.2,77.36-7.53,19.92-18.24,37.7-34.82,51.56-8.61,7.2-18.63,11.59-29,15.27-38.34,13.6-77.7,23.46-117.52,31.57-12.39,2.52-24.8,4.96-37.19,7.52-16.87,3.48-31.38,12.1-42.99,24.11-31.13,32.23-56.5,69.03-81.27,106.22-.53.79-.7,1.82-1.67,4.48Z"/>
-                                      </svg>
-                                    <span class="sr-only">Nostr</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h2 id="footer-links"
-                            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Useful Links</h2>
-                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
-                            
-                            <li class="mb-4">
-                                <a target="_blank" href="https://bitcoin.org/bitcoin.pdf"
-                                    class="hover:underline">Bitcoin whitepaper</a>
-                            </li>
-                            <li class="mb-4">
-                                <a href="legal/cookies.html" class="hover:underline">Cookies Policy</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div class="flex items-center justify-between">
-                <span id="footer-copyright" class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 CUBO+.
-                </span>
-                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 text-right">
-                    Made with love by CUBO+ graduates.
-                </span>
-            </div>
-        </div>
-    </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, 
+            once: true, 
+        });
+    </script>
     <script src="../js/lib/flowbite/dist/flowbite.min.js"></script>
     <script src="../js/component.js"></script>
     <script src="../js/helpers/defaultTranslation.js"></script>
