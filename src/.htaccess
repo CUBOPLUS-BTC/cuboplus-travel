@@ -89,4 +89,4 @@ RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-Redirect 301 / ./default/maintenance.html
+Redirect 301 / https://cuboplus.travel/default/maintenance.html
