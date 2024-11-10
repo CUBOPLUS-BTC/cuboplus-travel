@@ -89,4 +89,9 @@ RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-#RedirectMatch 301 ^/$ https://cuboplus.travel/default/maintenance
+<IfModule mod_headers.c>
+    # Desactivar la caché del navegador
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</IfModule>
