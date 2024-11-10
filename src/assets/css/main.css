@@ -43,6 +43,13 @@
     .parallax-relocate::after {
         min-height: 600px;
     }
+    .parallax-catedra2 {
+        min-height: 600px;
+    }
+    
+    .parallax-catedra2::after {
+        min-height: 600px;
+    }
 }
 @media only screen and (max-width: 1220px) {
     .main-page-title h1{
@@ -178,10 +185,16 @@
     color: white;
 }
 
+@media (max-width: 768px) {
+    .parallax::after {
+        max-height: 100vh;
+    }
+}
+
 .parallax {
     -webkit-clip-path: inset(0 0 0 0);
     clip-path: inset(0 0 0 0);
-    background-size: cover !important; /* Cambiado a cover para que se ajuste */
+    background-size: cover !important;
     overflow: hidden;
     position: relative;
     top: 0;
@@ -212,21 +225,50 @@
     bottom: 0;
     background-color: #00000059;
 }
+
 .parallax-catedral-full {
     background-image: url('../../img/background/catedra.jpeg') !important;
 }
-.parallax-catedral {
+
+.parallax-catedral-full:before{
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    position: fixed;
+    background-size: cover !important; 
+    background-position: center;
+    background-image: url('../../img/background/catedra.jpeg') !important;
+}
+
+.parallax-catedral:before{
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background-size: cover !important; 
+    background-position: center;
+    position: fixed;
     background-image: url('../../img/background/catedra.jpeg') !important;
 }
 .parallax-catedral::after{
     max-height: 70vh;
 }
-.parallax-catedra2 {
+.parallax-catedra2:before{
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    position: fixed;
+    background-size: cover !important; 
+    background-position: center;
     background-image: url('../../img/background/catedra2.jpeg') !important;
 }
+
 .parallax-lake{
     background-image: url('../../img/background/lake.png') !important;
 }
+
 .parallax-lake::after{
     max-height: 50vh;
 }
