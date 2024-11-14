@@ -21,14 +21,14 @@ const animateValue = (element, start, end, duration) => {
         if (!startTimestamp) startTimestamp = timestamp;
         const elapsed = (timestamp - startTimestamp) / duration;
         const progress = Math.min(easeOutPower(elapsed), 1);
-        const currentValue = (progress * (end - start) + start).toFixed(0);
+        const currentValue = (progress * (end - start) + start).toFixed(2);
 
         element.innerHTML = `${currentValue} BTC`; 
 
         if (elapsed < 1) {
             window.requestAnimationFrame(step);
         } else {
-            element.innerHTML = `${end.toFixed(0)} BTC`; // Ensure final value has two decimal places
+            element.innerHTML = `${end.toFixed(2)} BTC`; // Ensure final value has two decimal places
         }
     };
 

@@ -61,7 +61,7 @@ const departmentsList = [
 ];
 
 document.addEventListener("DOMContentLoaded", async (e) => {
-  const { recurringEvents, events, communities, destinations, onboard } = await fetchData();
+  const { recurringEvents, events, communities, destinations, onboard } = await fetchData(localStorage.getItem("language-tourism"));
   const allEvents = [...recurringEvents, ...events];
 
   renderCalendar(allEvents);
@@ -70,8 +70,8 @@ document.addEventListener("DOMContentLoaded", async (e) => {
   renderOnboard(onboard);
 });
 
-const fetchData = async () => {
-  const request = await fetch(TOURISM_DATA_URL + `destinations/en.json`);
+const fetchData = async (language = "en") => {
+  const request = await fetch(TOURISM_DATA_URL + `destinations/${language}.json`);
   const response = await request.json();
   return response;
 };
@@ -259,7 +259,7 @@ const changeDept = (pathDept) => {
 
     // Shows new image
     img.classList.remove("fade-out");
-  }, 400); // It's the same as the one in CSS
+  }, 200); // It's the same as the one in CSS
 };
 
 departments.forEach((pathDept) => {
@@ -280,6 +280,18 @@ const setElements = (content) => {
 }
 
 const paths = document.querySelectorAll('#map-container svg path');
+
+document.addEventListener("DOMContentLoaded", () => {
+  let isDark = document.documentElement.classList.contains('dark');
+  let color = "";
+  isDark ? color = "#fff" : color = "#193D99";
+
+  paths.forEach((path) => {
+    path.setAttribute("stroke", color);
+  })
+
+  changeLanguage("travel", localStorage.getItem("language-tourism"), setElements);
+});
 
 const switchers = document.querySelectorAll(".switcher");
 
@@ -303,7 +315,7 @@ switchers[1].addEventListener("click", () => {
   })
 })
 
-/* jpButton[0].addEventListener("click", async () => {
+jpButton[0].addEventListener("click", async () => {
   changeLanguage("travel", "jp", setElements);
   const { recurringEvents, events, communities, destinations, onboard } = await fetchData("jp");
   const allEvents = [...recurringEvents, ...events];
@@ -345,4 +357,4 @@ enButton[1].addEventListener("click", async () => {
   renderCommunities(communities);
   renderDestinations(destinations);
   renderOnboard(onboard);
-}); */
+});
