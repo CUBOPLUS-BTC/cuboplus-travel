@@ -10,8 +10,9 @@ const setElements = (content) => {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    changeLanguage("agency", localStorage.getItem("language-tourism"), setElements);
   });
-  /* 
+  
   jpButton[0].addEventListener("click", () => {
     changeLanguage("agency", "jp", setElements);
   });
@@ -26,4 +27,4 @@ document.addEventListener("DOMContentLoaded", () => {
   
   enButton[1].addEventListener("click", () => {
     changeLanguage("agency", "en", setElements);
-  }); */
+  });
