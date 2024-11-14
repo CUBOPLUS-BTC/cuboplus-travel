@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+
+/* 
 jpButton[0].addEventListener("click", () => {
     changeLanguage("index", "jp", setElements);
     $video.classList.remove("hidden");
@@ -37,4 +39,4 @@ enButton[0].addEventListener("click", () => {
 enButton[1].addEventListener("click", () => {
     changeLanguage("index", "en", setElements);
     $video.classList.add("hidden");
-});
+}); */

@@ -175,14 +175,14 @@ function loadAllSlides(data) {
 
 }
 
-const fetchData = async (language) => {
-  const response = await fetch(DESTINATION_URL + `${language}.json`);
+const fetchData = async () => {
+  const response = await fetch(DESTINATION_URL + `en.json`);
   const data = await response.json();
   return data;
 }
 
 document.addEventListener("DOMContentLoaded", async (e) => {
-  const data = await fetchData(localStorage.getItem("language-tourism"));
+  const data = await fetchData();
 
   loadDestination(data);
 
@@ -238,10 +238,10 @@ const setElements = (content) => {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  changeLanguage("destination", localStorage.getItem("language-tourism"), setElements);
+  /* changeLanguage("destination", localStorage.getItem("language-tourism"), setElements); */
 });
 
-jpButton[0].addEventListener("click", async () => {
+/* jpButton[0].addEventListener("click", async () => {
   changeLanguage("destination", "jp", setElements);
 
   const data = await fetchData("jp");
@@ -255,9 +255,9 @@ jpButton[0].addEventListener("click", async () => {
   }
 
   loadAllSlides(data);
-});
+}); */
 
-jpButton[1].addEventListener("click", async () => {
+/* jpButton[1].addEventListener("click", async () => {
   changeLanguage("destination", "jp", setElements);
 
   const data = await fetchData("jp");
@@ -271,9 +271,9 @@ jpButton[1].addEventListener("click", async () => {
   }
 
   loadAllSlides(data);
-});
+}); */
 
-enButton[0].addEventListener("click", async () => {
+/* enButton[0].addEventListener("click", async () => {
   changeLanguage("destination", "en", setElements);
 
   const data = await fetchData("en");
@@ -303,4 +303,4 @@ enButton[1].addEventListener("click", async () => {
   }
 
   loadAllSlides(data);
-});
+}); */
