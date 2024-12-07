@@ -48,7 +48,17 @@
         "section6-button": "Bitcoin Law",
         "section7": "Community feedback",
         "section7-question": "Do you have any suggestion?",
-        "section8": "Frequently asked questions"
+        "section8": "Frequently asked questions",
+        "section9": "This is why El Salvador is Bitcoin Country",
+        "section9-desc": "Discover the unique experiences El Salvador has to offer, from Bitcoin-friendly policies to beautiful landscapes and cultural heritage.",
+        "section9-one-title": "Bitcoin Legal Tender",
+        "section9-one": "El Salvador leads as the first country to recognize Bitcoin as legal tender, paving the way for a financial sovereignty-based economy.",
+        "section9-two-title": "Non-KYC Policy",
+        "section9-two": "Make private transactions under $25,000 with no ID required, upholding financial privacy and freedom in El Salvador.",
+        "section9-three-title": "1 BTC per Day Initiative",
+        "section9-three": "El Salvador is acquiring one bitcoin each day, securing the nation's financial future with a sovereign Bitcoin reserve.",
+        "section9-four-title": "Bitcoin Communities",
+        "section9-four": "Connect with a growing community of bitcoiners in El Salvador by attending events, meetups, and cultural exchanges focused on Bitcoin."
     },
     "travel": {
         "hero-text-1": "<span style='color: #ff8a4c;'>#Bitcoin</span> Country",

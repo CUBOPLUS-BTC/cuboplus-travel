@@ -48,7 +48,18 @@
         "section6-button": "ビットコイン法",
         "section7": "コミュニティフィードバック",
         "section7-question": "何か提案がありますか？",
-        "section8": "よくある質問"
+        "section8": "よくある質問",
+        "section9": "エルサルバドルがBitcoinの国である理由",
+        "section9-desc": "エルサルバドルが提供する、Bitcoinに優しい政策、美しい風景、豊かな文化遺産などのユニークな体験を発見しましょう。",
+        "section9-one-title": "Bitcoin法定通貨",
+        "section9-one": "エルサルバドルはBitcoinを法定通貨として認めた初めての国であり、金融主権に基づいた経済構築の道を切り開いています。",
+        "section9-two-title": "非KYCポリシー",
+        "section9-two": "エルサルバドルでは、25,000ドル未満の取引において身分証明書の提示が不要のため、資産とプライバシーの自由が保たれています。",
+        "section9-three-title": "1日1Bitcoinイニシアチブ",
+        "section9-three": "エルサルバドルは毎日1Bitcoinを取得しており、主権的なBitcoin準備金によって国家の財政的未来を確保しています。",
+        "section9-four-title": "Bitcoinコミュニティ",
+        "section9-four": "エルサルバドルでは、Bitcoinに焦点を当てたイベントやミートアップ、文化交流に参加することで、成長するBitcoinコミュニティとつながることができます。"
+
     },
     "travel": {
         "hero-text-1": "<span style='color: #ff8a4c;'>#Bitcoin</span>の国",        
